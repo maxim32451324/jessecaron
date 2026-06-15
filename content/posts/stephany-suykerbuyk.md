@@ -1,0 +1,38 @@
+# Stephany Suykerbuyk
+
+_2025-05-13_  
+slug: stephany-suykerbuyk  
+featured_image: https://www.jessecaron.com/wp-content/uploads/2025/05/Sportmassage-Groeipijnen-Stephany-Suykerbuyk.jpg  
+tags: Groeipijn, Massage, Sportmassage, Stephany Suykerbuyk
+
+---
+
+##### Deze keer heb ik een relaxte plek uitgekozen om een interview af te nemen: de massagetafel. Naast goed trainen wordt er door Jesse ook gedacht aan het herstel. Goed eten, lekker slapen en ontspannen (zoals rekken en strekken) zijn belangrijke onderdelen om te herstellen. Een sportmassage is een manier om nog sneller te herstellen voor een sporter. driejaar geleden had ik een klein pijntje in mijn kuit en toen maakte ik mijn debuut op de massagetafel van Stephany Suykerbuyk. Dat pijntje in de kuit is inmiddels weg, maar één keer in de drie weken kom ik nog steeds langs bij Stephany om mijn bovenbenen en kuiten los te maken. Gelukkig niet meer voor een pijntje, maar vooral als een soort onderhoudsbeurtje.
+
+### **sprinten**
+
+##### Op de atletiekbaan van Rotterdam Atletiek leerde Jesse en Stephany elkaar kennen. Op haar veertiende is Stephany begonnen met atletiek. Haar specialiteit was sprinten. “Hoe korter, hoe beter voor mij. Ik stond aan de start bij de 100 meter, 200 meter en 400 meter, maar die laatste twee afstanden waren eigenlijk al iets te lang voor mij. De 60 meter indoor was mijn favoriete onderdeel. Het sprinten combineerde ik met verspringen en hink-stap-springen.” Die combinatie was succesvol, want in 2010 behaalde ze op het onderdeel hink-stap-springen een bronzen medaille op het Nederlands Kampioenschap indoor. Dat NK was wel de laatste keer dat Stephany in actie kwam tijdens het hink-stap-springen. Een enkelblessure zorgde ervoor dat het springen niet meer mogelijk was en vrij snel daarna stopte ze helemaal met atletiek.
+
+### **trainer stephany**
+
+##### Tijdens haar atletiekcarrière gaf Stephany zelf ook training. Samen met Jesse gaven ze namens Rotterdam Atletiek trainingen en clinics op scholen. “Dat vond ik erg leuk om te doen. We gaven les en organiseerde toernooitjes voor de basisschoolleerlingen.” Toen Stephany begon met de opleiding om operatieassistent te worden, was het niet meer mogelijk om dat te combineren met training geven. “Die opleiding was best wel tijdrovend. Toen ik die opleiding had afgerond was Jesse inmiddels begonnen met zijn eigen sportschool. Zelf training geven was niet echt handig, maar ik wilde hem nog wel graag helpen.”
+
+### **TERUG VAN WEGGEWEEST**
+
+##### Jesse had wel een idee waar Stephany hem mee kon helpen. Zijn atleten konden wel een masseur gebruiken. Vooral de nog wat jongere atleten die last hebben van groeipijn. In 2015 volgde Stephany de acht maanden durende opleiding om sportmasseur te worden. “De cursus bestond uit praktijk- en theoriegedeeltes. Het grootste gedeelte van de theorie was voor mij bekend vanwege mijn achtergrond als operatieassistente.” Nadat Stephany de cursus had afgerond kon ze ook de atleten van Jesse gaan masseren.De eerste jaren na het afronden van de cursus was het vooral af en toe dat Stephany masseerde. Dat veranderde toen Jesse in 2018 zijn eigen locatie kreeg op Sportpark Willem-Alexander in Schiedam. Niet alleen Jesse kreeg een vaste locatie, ook Stephany kreeg een vaste werkplek. Naast het gedeelte van de atletiekbaan waar Jesse training geeft, is er een hoekje ingericht waar Stephany masseert. Terwijl Jesse training aan het geven is kan zij een atleet die net heeft getraind of nog moet trainen masseren. Vanaf de massagetafel kan je de training niet zien, maar wel horen. Inmiddels masseert ze niet meer af en toe, maar is ze bijna iedere zondag aanwezig om te masseren en soms ook doordeweeks op afspraak. Zoals Jesse zelf zou omschrijven: “Als Stephany niet op vakantie is, is ze beschikbaar voor een massage.”
+
+### **Waarom is een sportmassage belangrijk voor sporters?**
+
+##### Goed eten, slapen en ontspannen is belangrijk voor het herstel. Een sportmassage ontspant de spieren en draagt dus bij aan het herstel. Stephany: “Tijdens het sporten zijn je spieren aan het werk, ze krijgen dan kleine opdondertjes. Dat zorgt ervoor dat je progressie boekt in je spieren. Bij een massage kan een masseur de spieren losmaken en ervoor zorgen dat de doorbloeding op gang komt. Daardoor kan je sneller herstellen, nadat dit herstel heeft plaatsgevonden is een spier pas echt ontwikkeld. Vooral als je heel erg veel sport en veel bezig bent met je lichaam dan is een sportmassage echt aan te raden. Momenteel verschilt het per atleet hoe vaak diegene langskomt bij mij. Dat kan wekelijks zijn, één keer in de twee weken of zelfs één keer in de maand.” 
+
+### **progressie zien**
+
+##### Het masseren begon voor Stephany vooral met de intentie om Jesse te helpen en dacht ze er helemaal niet aan dat ze het ook leuk zou vinden. “Toch is het echt een hobby geworden. Ik vind het erg leuk om te doen. Het leukste vind ik om de progressie te zien. Ik werk veel met vaste klanten, vandaar dat ik de verandering heel erg goed kan zien. Als iemand voor het eerst komt dan is diegene vaak heel stijf en staat er veel spanning op de spieren. Als iemand heel erg frequent bij mij komt, dan merk je al heel snel de verandering in spierspanning.” De progressie zien zit niet alleen in het masseren zelf. “Je bouwt ook een band op tijdens het masseren. Het is super interessant om te horen hoe het gaat met school of voetbal bijvoorbeeld en om die vooruitgang te horen in de verhalen die de sporters vertellen.”
+
+### **Zit er een minimale leeftijdsgrens aan een sportmassage?**
+
+##### Stephany: “Nee, leeftijd maakt in principe niet zoveel uit. Het heeft er meer mee te maken hoe erg de spieren zijn ontwikkeld. Daar houd ik als masseur wel rekening mee. De intensiteit en de manier van masseren is wel anders bij een sporter die twaalf jaar oud is dan bij iemand die negentien jaar oud is. Het is niet zo dat we zeggen dat als iemand tien jaar oud is, dat diegene nog geen sportmassage mag. De meeste atleten die trainen bij Jesse trainen bijna elke dag in de week en dan is een sportmassage echt wel aan te raden. Vooral met de intentie om op latere leeftijd geen vervelende pijntjes te krijgen en om groeipijnen onder controle te houden.”
+
+##### Iedereen die bij Stephany komt voor een sportmassage traint bij Jesse. Vaak raad hij de sportmassage aan bij zijn atleten. Soms raad hij een sportmassage echt aan, omdat Jesse tijdens een training ziet dat een atleet heel erg stijf is of omdat iemand last van groeipijnen heeft. “Als iemand die heel erg stijf is bij mij komt, dan kan dat de eerste keer wel heftig zijn. Er staat dan veel spanning op de spieren en dat best wel pijn doen. Daarnaast komen er ook geblesseerde atleten naar Stephany voor een massage. Bij blessures kan een massage zeker helpen, maar helaas zijn niet alle blessures daar geschikt voor. Na blessures blijven atleten vaak terugkomen. De massage is dan vooral een onderhoudsbeurtje en draagt bij aan het goed onderhouden van je lichaam. Het goed onderhouden van je lichaam kan ook zelfstandig en vaak geef ik een atleet ook huiswerk mee. Rekoefeningen, zelfmassage met behulp van een massagestick of een foamroller zijn heel erg goed om thuis mee aan de slag te gaan. Als iemand dat frequent doet merk je dat heel erg.” Dat sluit weer aan bij het zien van progressie. “Dat geeft mij echt de meeste voldoening. Het voelt goed om die positieve verandering te merken en dat maakt het masseren ook extra leuk om te doen.” Als masseur ontwikkelt Stephany zichzelf ook nog steeds. Inmiddels kan zij naast sportmassage ook cuppingmassages geven.
+
+#####
