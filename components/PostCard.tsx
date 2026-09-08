@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { categoriesOf, localImg, type PostMeta } from "@/lib/content";
 
@@ -18,7 +19,10 @@ export const POSTCARD_CSS = `
      three grids (shop cards, footer links, the home video row) past their track. */
   .pcard { min-width:0; background:var(--ink); border:1px solid var(--line-d); display:flex; flex-direction:column; transition:transform var(--card-t), border-color var(--card-t); }
   .pcard:hover, .pcard:focus-visible { transform:translateY(var(--card-lift)); border-color:var(--blue); }
-  .pcard__img { aspect-ratio:16/10; overflow:hidden; background:#000; }
+  /* position:relative is what makes this the containing block for the next/image
+     fill inside it; without it the picture escapes to the nearest positioned
+     ancestor and covers the whole card. */
+  .pcard__img { position:relative; aspect-ratio:16/10; overflow:hidden; background:#000; }
   .pcard__img img { width:100%; height:100%; object-fit:cover; filter:grayscale(.45) brightness(.9); transition:filter .5s, transform .5s; }
   .pcard:hover .pcard__img img, .pcard:focus-visible .pcard__img img { filter:grayscale(0) brightness(1); transform:scale(1.04); }
   .pcard__b { padding:22px 22px 26px; display:flex; flex-direction:column; gap:10px; flex:1; min-width:0; }
@@ -33,6 +37,15 @@ export const POSTCARD_CSS = `
   @media(max-width:1000px){ .pgrid{ grid-template-columns:repeat(2,1fr);} }
   @media(max-width:640px){ .pgrid{ grid-template-columns:1fr;} }
 `;
+
+/**
+ * The card sits in `.pgrid`: three tracks inside the 1224px content column
+ * (392px each after the 24px gaps), two below 1000px, one below 640px. Spelling
+ * that out is the entire point of moving off `<img>` — the same 2000px featured
+ * photograph was being shipped whole to a 392px box.
+ */
+export const POSTCARD_SIZES =
+  "(max-width: 640px) calc(100vw - 56px), (max-width: 1000px) calc((100vw - 80px) / 2), 392px";
 
 export default function PostCard({
   p,
@@ -53,8 +66,10 @@ export default function PostCard({
   return (
     <Link href={`/blog/${p.slug}`} className="pcard">
       <div className="pcard__img">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={localImg(p.featured_image)} alt="" loading="lazy" />
+        {/* Always lazy: every route that renders this grid puts a PageHero above it,
+            and that hero is the LCP element. A second eager image would only compete
+            with it for the connection. */}
+        <Image src={localImg(p.featured_image)} alt="" fill sizes={POSTCARD_SIZES} />
       </div>
       <div className="pcard__b">
         <span className="pcard__meta">

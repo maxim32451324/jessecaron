@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 import PageHero from "@/components/PageHero";
 import ShopGrid from "@/components/ShopGrid";
 import { getProducts } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Shop",
+  alternates: { canonical: `${SITE_URL}/shop` },
   description: "Kleding, materiaal en online trainingen — Don't tell people your dreams, show them.",
 };
 

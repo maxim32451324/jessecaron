@@ -22,6 +22,8 @@ import {
   relatedProducts,
 } from "@/lib/content";
 import { getProductBodyAfterLead } from "@/lib/content.server";
+import { buyUrl } from "@/lib/shop";
+import { SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
   return getProducts().map((p) => ({ slug: p.slug }));
@@ -114,6 +116,7 @@ export async function generateMetadata({
   return {
     title: p.name,
     description: p.short_description,
+    alternates: { canonical: `${SITE_URL}/shop/${slug}` },
     openGraph: cover ? { images: [{ url: cover, alt: p.name }] } : undefined,
   };
 }
@@ -162,8 +165,15 @@ export default async function ProductPage({
                 <ProductGallery images={gallery} name={p.name} id={p.slug} />
               ) : (
                 <div className="pdp__mediafallback">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={localImg(p.image)} alt={p.name} />
+                  {/* Same 3:2 stage the gallery uses, so a product with no gallery
+                      still reserves an identical box and the page does not reflow. */}
+                  <Image
+                    src={localImg(p.image)}
+                    alt={p.name}
+                    fill
+                    sizes="(max-width:960px) 100vw, 640px"
+                    priority
+                  />
                 </div>
               )}
             </div>
@@ -219,14 +229,14 @@ export default async function ProductPage({
                       Dit artikel staat in de webshop als uitverkocht. Er valt hier niets te
                       bestellen.
                     </p>
-                    <a className="btn" href={p.url} target="_blank" rel="noopener noreferrer">
+                    <a className="btn" href={buyUrl(p.url)} target="_blank" rel="noopener noreferrer">
                       Bekijk in de webshop ↗
                     </a>
                   </>
                 ) : (
                   <a
                     className="btn btn--blue pdp__cta"
-                    href={p.url}
+                    href={buyUrl(p.url)}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -384,7 +394,7 @@ export default async function ProductPage({
         <StickyBuy
           name={p.name}
           price={hasPrice(p) ? fmtPrice(p.price_eur) : "Zie webshop"}
-          url={p.url}
+          url={buyUrl(p.url)}
           anchorId="pdp-buy"
         />
       )}
@@ -406,7 +416,7 @@ export default async function ProductPage({
         .pdp--nomedia .pdp__media { display:none; }
         .pdp__info { grid-area:info; min-width:0; }
         .pdp__copy { grid-area:copy; min-width:0; }
-        .pdp__mediafallback { background:#fff; border:1px solid var(--line-d); aspect-ratio:3/2; }
+        .pdp__mediafallback { position:relative; background:#fff; border:1px solid var(--line-d); aspect-ratio:3/2; }
         .pdp__mediafallback img { width:100%; height:100%; object-fit:contain; }
 
         .pdp__flags { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }

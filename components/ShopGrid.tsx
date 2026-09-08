@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { fmtPrice, hasPrice, isOnSale, isSoldOut, localImg, type Product } from "@/lib/content";
 
@@ -10,6 +11,15 @@ const TABS: { key: "all" | Product["category"]; label: string }[] = [
   { key: "ebook", label: "Online Training" },
   { key: "event", label: "Events" },
 ];
+
+/**
+ * `.sgrid` is four tracks in the 1224px column (291px each after the 20px gaps),
+ * three below 1000px, two below 760px. The product photographs are the heaviest
+ * files on the site — a 2000px shirt shot into a 291px tile was most of what the
+ * shop page weighed.
+ */
+const SPROD_SIZES =
+  "(max-width: 760px) calc((100vw - 70px) / 2), (max-width: 1000px) calc((100vw - 96px) / 3), 291px";
 
 export default function ShopGrid({ products }: { products: Product[] }) {
   const [tab, setTab] = useState<"all" | Product["category"]>("all");
@@ -35,8 +45,10 @@ export default function ShopGrid({ products }: { products: Product[] }) {
         {shown.map((p) => (
           <Link className="sprod" href={`/shop/${p.slug}`} key={p.slug}>
             <div className="sprod__img">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={localImg(p.image)} alt={p.name} loading="lazy" />
+              {/* `fill` inside the square: .sprod__img is already position:relative and
+                  aspect-ratio:1, so the box is reserved before the bytes land and the
+                  grid cannot jump as the row fills in. */}
+              <Image src={localImg(p.image)} alt={p.name} fill sizes={SPROD_SIZES} />
               {p.category === "ebook" ? <span className="sprod__badge">E-book</span> : null}
               {p.category === "event" ? <span className="sprod__badge">Event</span> : null}
               {/* The harvest brought per-variation stock with it, so the grid can be

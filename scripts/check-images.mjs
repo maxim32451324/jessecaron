@@ -19,6 +19,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { ASSET_ALIASES } from "../lib/legacy-routes.mjs";
 
 const ROOT = process.cwd();
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "lib/image-manifest.json"), "utf8"));
@@ -35,6 +36,22 @@ function resolve(url) {
 const IMG_URL = /https?:\/\/[^\s")']+\.(?:jpe?g|png|gif|webp|avif)/gi;
 
 /**
+ * The same check, for uploads that are not pictures.
+ *
+ * This started as an images-only guard, and that hole had a real occupant: the 2017
+ * Kleurplaat PDF, linked from `/training/schoolsport-vereniging` and the `kleurplaat`
+ * post, sat on the old host with nothing watching it. It is not a `.jpg`, so the loop
+ * below never saw it, and it would have turned into a broken download the day the
+ * WordPress host was switched off — on a page for parents of primary-school children,
+ * which is exactly the kind of link nobody re-tests.
+ *
+ * These resolve through `ASSET_ALIASES` in `lib/legacy-routes.mjs` (old path -> a file
+ * in `public/`) rather than through the image manifest, which is keyed on basename and
+ * only holds pictures.
+ */
+const DOC_URL = /https?:\/\/[^\s")']+\.(?:pdf|docx?|xlsx?|pptx?|zip|mp3|mp4|webm)/gi;
+
+/**
  * Only the old WordPress host is a risk. YouTube thumbnails (img.youtube.com) are
  * remote by design and stay up whatever happens to jessecaron.com, so flagging them
  * would train everyone to ignore this check — which is how a guard stops working.
@@ -42,6 +59,7 @@ const IMG_URL = /https?:\/\/[^\s")']+\.(?:jpe?g|png|gif|webp|avif)/gi;
 const AT_RISK = /(^|\/\/)(www\.)?jessecaron\.com\//i;
 const failures = [];
 let checked = 0;
+let docsChecked = 0;
 
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -65,19 +83,46 @@ function scan(file) {
       failures.push({ file: path.relative(ROOT, file), url: match, why: `manifest points at ${local}, which is not on disk` });
     }
   }
+
+  for (const match of text.match(DOC_URL) ?? []) {
+    if (!AT_RISK.test(match)) continue;
+    docsChecked++;
+    const oldPath = match.replace(/^https?:\/\/(?:www\.)?jessecaron\.com/i, "").split("?")[0];
+    const local = ASSET_ALIASES[oldPath];
+    if (!local) {
+      failures.push({
+        file: path.relative(ROOT, file),
+        url: match,
+        why: "no ASSET_ALIASES entry in lib/legacy-routes.mjs",
+      });
+      continue;
+    }
+    if (!fs.existsSync(path.join(ROOT, "public", local))) {
+      failures.push({
+        file: path.relative(ROOT, file),
+        url: match,
+        why: `ASSET_ALIASES points at ${local}, which is not on disk`,
+      });
+    }
+  }
 }
 
 walk(path.join(ROOT, "content"));
 
 if (failures.length) {
-  console.error(`\ncheck-images: ${failures.length} of ${checked} content image(s) do not resolve locally.\n`);
+  console.error(
+    `\ncheck-images: ${failures.length} of ${checked + docsChecked} content asset(s) do not resolve locally.\n`,
+  );
   for (const f of failures.slice(0, 30)) {
     console.error(`  ${f.file}\n    ${f.url}\n    ${f.why}\n`);
   }
   if (failures.length > 30) console.error(`  …and ${failures.length - 30} more.\n`);
-  console.error("Harvest the file into public/brand/photos and add it to lib/image-manifest.json.");
-  console.error("Leaving it remote means the picture disappears when the old WordPress goes off.\n");
+  console.error("Images: harvest the file into public/brand/photos and add it to lib/image-manifest.json.");
+  console.error("Other files (PDF, video, audio): put it in public/downloads and add a row to ASSET_ALIASES.");
+  console.error("Leaving it remote means it disappears when the old WordPress goes off.\n");
   process.exit(1);
 }
 
-console.log(`check-images: ${checked} content image reference(s), all resolve to files on disk.`);
+console.log(
+  `check-images: ${checked} content image reference(s) and ${docsChecked} other at-risk asset(s), all resolve to files on disk.`,
+);

@@ -1,10 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 import PageHero from "@/components/PageHero";
 import { brand } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Contact",
+  alternates: { canonical: `${SITE_URL}/contact` },
   description: `Neem contact op met Jesse Caron — ${brand.location}.`,
 };
 

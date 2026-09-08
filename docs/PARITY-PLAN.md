@@ -463,19 +463,47 @@ pages, and `lastModified` for pages (the old API has `modified` per page — car
 
 ### 8.4 When the domain moves
 
-1. Two weeks before: `NEXT_PUBLIC_SITE_URL=https://www.jessecaron.com` in Vercel (all three
-   emitters follow, per `lib/site.ts`); verify the sitemap and `robots.txt` in a preview.
-2. Search Console: add the property for the new host if not already there; be ready to submit the
+**The client-facing version of this section is `docs/DOMAIN-MOVE.md`** — same steps, written to be
+followed by somebody who does not read code. What follows is the engineering note behind it.
+
+**The shop is the whole risk, and it is not a redirect problem.** All 38 buy buttons resolve to
+`https://www.jessecaron.com/product/<slug>/`, because `content.json.products[].url` was harvested
+when the site and the shop were one WordPress. The moment DNS points `www` at Vercel, those buttons
+point at *this* site; the redirect map — correctly, for SEO — answers `/product/<slug>/` with a 301
+to `/shop/<slug>`, which is the page the customer clicked from. **No error is raised anywhere.** The
+shop simply stops converting, and the failure is invisible until somebody checks the takings.
+
+The redirect map deliberately does not paper over this. Instead:
+
+- `lib/shop.ts` makes the shop's origin a setting (`NEXT_PUBLIC_SHOP_URL`) and `buyUrl()` rewrites
+  every stored product URL onto it, so the 38 rows in `content.json` are never edited by hand;
+- `scripts/check-shop-links.mjs`, run by `prebuild`, **fails the build** when the shop's hostname
+  and the site's hostname are the same. Verified by simulation: building with
+  `NEXT_PUBLIC_SITE_URL=https://www.jessecaron.com` and no shop URL stops the build with an
+  explanation; adding `NEXT_PUBLIC_SHOP_URL=https://shop.jessecaron.com` lets it through and moves
+  all 38 buttons.
+
+Order of operations:
+
+1. **Decide the webshop's fate first** (§11 Q2). If WooCommerce stays, the host moves it to
+   `shop.jessecaron.com` **before** the flip. This has somebody else's timeline in it; start here.
+2. Two weeks before: `NEXT_PUBLIC_SITE_URL=https://www.jessecaron.com` and, if the shop moved,
+   `NEXT_PUBLIC_SHOP_URL=https://shop.jessecaron.com` in Vercel (all emitters follow, per
+   `lib/site.ts` and `lib/shop.ts`); verify the sitemap and `robots.txt` in a preview.
+3. Search Console: add the property for the new host if not already there; be ready to submit the
    sitemap the hour DNS flips.
-3. Decide the webshop's fate first (§11 Q2). If WooCommerce stays, move it to `shop.jessecaron.com`
-   *before* the flip, update every `url` in `content.json.products` and `StickyBuy`'s targets, and
-   test one purchase.
-4. Flip DNS to Vercel (A/CNAME per `DEPLOY.md`). Vercel handles `jessecaron.com` → `www` and HTTPS.
-5. Same hour: crawl the 757 old URLs with the redirect map (script in Phase 5) and confirm 0×404,
-   0×5xx, 0×redirect-chains longer than 1.
-6. Keep the old WordPress reachable on an internal hostname for 30 days for anything the crawl missed,
-   then switch it off. The `prebuild` image check (§5.3) guarantees the new site is not hotlinking
-   it on the day it dies.
+4. Day before: complete one real purchase on `shop.jessecaron.com`, and run
+   `npm run build && npm run check:redirects` — all assertions must pass.
+5. Flip DNS to Vercel (A/CNAME per `DEPLOY.md`). Vercel handles `jessecaron.com` → `www` and HTTPS.
+6. Same hour: submit the sitemap, spot-check ten old URLs by hand, and **complete one more real
+   purchase**. The purchase is the only check that proves the shop survived.
+7. Keep the old WordPress reachable for 30 days for anything the crawl missed, then switch it off —
+   unless it is still running the shop. The `prebuild` asset check (§5.3, extended in Phase 5 to
+   cover PDFs and other non-image uploads) guarantees the new site is not hotlinking it on the day
+   it dies.
+
+Expect indexed pages to fall from ~800 to ~105. That is the plan working: ~500 of the old URLs were
+one-post tag and category archives, and 62 were theme demos.
 
 ---
 
@@ -612,6 +640,12 @@ Critical path: 0 → 1 → 2 → 4 → 6, about five working days.
 
 ## 12. Uncertainties and contradictions with the brief
 
+- **The sitemap holds 797 URLs, not 757.** Re-fetched in Phase 5 and cached as
+  `content/data/old-urls.json`: 138 pages, 27 posts, 38 products, 21 portfolio items, 68 categories,
+  261 tags, 116 product tags, 100 portfolio tags, 14 portfolio categories, 4 product categories,
+  3 carousel + 2 testimonial categories, 2 shipping classes, 2 authors, 1 post format. Every number
+  in §8.1 still holds; the total in §1.1 was 40 short. The audit covers all 797 (plus 21 probes for
+  patterns WordPress served but never listed) and is committed as `content/data/redirect-audit.json`.
 - **Pages kept is 15, not 17.** `content/data/content.json` → `pages: 15`; `content/pages/` has 15
   files; README says 17. One of the 15 (`about`) is theme lorem ipsum and is live.
 - **Media: 1,065 advertised, 1,038 listable.** The API's own pagination stops at 1,038 unique ids

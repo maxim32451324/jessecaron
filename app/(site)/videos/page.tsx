@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import VideoFacade from "@/components/VideoFacade";
@@ -6,6 +7,7 @@ import { getVideos } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Videos",
+  alternates: { canonical: `${SITE_URL}/videos` },
   description: "Impressie van de trainingsmethode in beweging — voetbal, hockey, tennis en meer.",
 };
 

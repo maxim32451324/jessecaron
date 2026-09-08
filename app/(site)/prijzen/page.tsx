@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 import PageHero from "@/components/PageHero";
 import Markdown from "@/components/Markdown";
 import { getPage } from "@/lib/content";
@@ -8,6 +9,7 @@ import { getPageBody } from "@/lib/content.server";
 
 export const metadata: Metadata = {
   title: "Prijzen",
+  alternates: { canonical: `${SITE_URL}/prijzen` },
   description:
     "Prijzen en informatie over de trainingspakketten van Jesse Caron — intake, personal training, duo, groepstraining en open gym.",
 };

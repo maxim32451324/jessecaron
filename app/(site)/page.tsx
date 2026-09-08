@@ -1,11 +1,24 @@
+import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import LexiconMarquee from "@/components/LexiconMarquee";
 import Reveal from "@/components/Reveal";
 import VideoFacade from "@/components/VideoFacade";
-import { getVideos, getProducts, getPosts, localImg, fmtPrice } from "@/lib/content";
+import { getVideos, getProducts, getPosts, localDims, localImg, fmtPrice } from "@/lib/content";
 import { getPageFrontMatter, getPageStats } from "@/lib/content.server";
 import CountUp from "@/components/CountUp";
 import PostCard, { POSTCARD_CSS } from "@/components/PostCard";
+import { SITE_URL } from "@/lib/site";
+
+/**
+ * Title and description come from the root layout, which is right — the home page IS
+ * the site. The canonical is not inherited, though: without it the home page has no
+ * declared address, and `skipTrailingSlashRedirect` means both `/` and `//`-style
+ * variants, plus every `?utm_*` a campaign appends, look like separate pages.
+ */
+export const metadata: Metadata = {
+  alternates: { canonical: `${SITE_URL}/` },
+};
 
 const DISCIPLINES = [
   {
@@ -87,6 +100,39 @@ const PARTNERS = [
   { src: "/brand/partners/Smartgoals.jpg", alt: "Smartgoals", light: true },
 ];
 
+/**
+ * `sizes` for the two image grids on this page, each read off the CSS at the bottom
+ * of the file rather than guessed. The content column is 1224px (--maxw 1280 less
+ * 2×28 padding); subtract the gaps, divide by the track count at each breakpoint.
+ * Getting these wrong is not a layout bug but a silent one: the browser picks a
+ * candidate far larger than the box and the whole point of next/image is lost.
+ */
+// .disc-grid: 3 tracks, 1px gaps → 2 at ≤1000px → 1 at ≤640px
+const DISC_SIZES =
+  "(max-width: 640px) calc(100vw - 56px), (max-width: 1000px) calc((100vw - 58px) / 2), 407px";
+// .shop-grid: 4 tracks, 24px gaps → 2 at ≤1000px, and still 2 at ≤640px
+const PROD_SIZES = "(max-width: 1000px) calc((100vw - 80px) / 2), 288px";
+
+/**
+ * The about photograph and the five partner logos are laid out at their own aspect
+ * ratio rather than cropped into a fixed box, so they take real `width`/`height`
+ * from `lib/image-dimensions.json` instead of `fill`. All six are in
+ * `lib/image-manifest.json` and `scripts/check-images.mjs` fails the build if a
+ * manifest entry stops resolving — but the fallbacks are there so a missing entry
+ * degrades to a wrong box rather than a crashed build.
+ */
+const ABOUT_SRC = "19984196_10212602758331342_779455213785724961_o-b.jpg";
+const ABOUT_IMG = {
+  path: localImg(ABOUT_SRC),
+  w: localDims(ABOUT_SRC)?.w ?? 2000,
+  h: localDims(ABOUT_SRC)?.h ?? 1333,
+};
+
+function partnerDims(src: string): { w: number; h: number } {
+  const d = localDims(src);
+  return { w: d?.w ?? 200, h: d?.h ?? 60 };
+}
+
 export default function HomePage() {
   const dataStats = getPageStats("data");
   const counters = COUNTERS.filter((c) => Number.isFinite(dataStats[c.key]));
@@ -105,10 +151,16 @@ export default function HomePage() {
       {/* HERO */}
       <section className="hero">
         <div className="hero__bg">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          {/* The LCP element of the whole site: a full-viewport crop at the top of the
+              home page. `priority` so it is preloaded rather than discovered by the
+              lazy-load observer two paints later, and `fill` because its height comes
+              from the section (min-height:100vh), not from the photograph. */}
+          <Image
             src={localImg("DSC_0857-b-scaled.jpg")}
             alt="Atleet in startpositie op de baan"
+            fill
+            sizes="100vw"
+            priority
           />
         </div>
         <div className="hero__side">Rotterdam · est. 2005 · Origami™</div>
@@ -184,8 +236,7 @@ export default function HomePage() {
             {DISCIPLINES.map((d) => (
               <Link className="disc" href={d.href} key={d.no}>
                 <div className="disc__img">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={localImg(d.img)} alt="" />
+                  <Image src={localImg(d.img)} alt="" fill sizes={DISC_SIZES} />
                 </div>
                 <span className="disc__no">{d.no}</span>
                 <div>
@@ -277,8 +328,16 @@ export default function HomePage() {
       <section className="pad" id="about" style={{ background: "var(--ink-2)" }}>
         <div className="wrap about">
           <Reveal className="about__img">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={localImg("19984196_10212602758331342_779455213785724961_o-b.jpg")} alt="Sprintfinish op de atletiekbaan" />
+            {/* Intrinsic width/height rather than `fill`: this one is set by its own
+                aspect ratio inside a half-width column, so the manifest's dimensions
+                reserve exactly the right box and nothing below it moves. */}
+            <Image
+              src={ABOUT_IMG.path}
+              alt="Sprintfinish op de atletiekbaan"
+              width={ABOUT_IMG.w}
+              height={ABOUT_IMG.h}
+              sizes="(max-width: 1000px) calc(100vw - 56px), 580px"
+            />
             <span className="about__tag">Origami™ — Adelaar</span>
           </Reveal>
           <Reveal>
@@ -336,8 +395,7 @@ export default function HomePage() {
             {shopPicks.map((p) => (
               <Link className="prod" href={`/shop/${p!.slug}`} key={p!.slug}>
                 <div className="prod__img">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={localImg(p!.image)} alt={p!.name} loading="lazy" />
+                  <Image src={localImg(p!.image)} alt={p!.name} fill sizes={PROD_SIZES} />
                 </div>
                 <div className="prod__b">
                   <span className="prod__n">{p!.name}</span>
@@ -356,8 +414,13 @@ export default function HomePage() {
           <Reveal className="partners__row">
             {PARTNERS.map((p) => (
               <div className="partner-chip" key={p.alt}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={p.src} alt={p.alt} />
+                <Image
+                  src={p.src}
+                  alt={p.alt}
+                  width={partnerDims(p.src).w}
+                  height={partnerDims(p.src).h}
+                  sizes="(max-width: 640px) 45vw, 200px"
+                />
               </div>
             ))}
           </Reveal>
@@ -447,7 +510,8 @@ function HomeStyles() {
       .shop-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
       .prod { background:var(--ink-2); border:1px solid var(--line-d); transition:transform var(--card-t), border-color var(--card-t); display:block; }
       .prod:hover, .prod:focus-visible { transform:translateY(var(--card-lift)); border-color:var(--blue); }
-      .prod__img { aspect-ratio:1; overflow:hidden; background:#fff; }
+      /* position:relative: the containing block for the next/image fill inside. */
+      .prod__img { position:relative; aspect-ratio:1; overflow:hidden; background:#fff; }
       .prod__img img { width:100%; height:100%; object-fit:cover; transition:.5s; }
       .prod:hover .prod__img img, .prod:focus-visible .prod__img img { transform:scale(1.04); }
       .prod__b { padding:18px; display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }

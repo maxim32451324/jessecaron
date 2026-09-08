@@ -45,6 +45,31 @@ export const viewport: Viewport = {
   themeColor: "#0E0E10",
 };
 
+/**
+ * Who this site is, in the one format a search engine reads without guessing.
+ *
+ * The posts already emit `BlogPosting` and the archives `BreadcrumbList`, but nothing
+ * said whose site this is — and on a domain move that matters more than usual: the
+ * knowledge panel, the social profiles and the logo are the signals that tell Google
+ * the new host is the same business as the old one, not a squatter that took the name.
+ *
+ * `sameAs` lists the three profiles the footer already links. `url` follows `SITE_URL`,
+ * so it becomes www.jessecaron.com the moment the environment variable does, with
+ * nothing else to remember.
+ */
+const ORGANISATION = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: brand.name,
+  url: SITE_URL,
+  description: brand.description,
+  logo: `${SITE_URL}/brand/logo/Jesse-Caron-Origami-Adelaar-Eagle-Logo-White.png`,
+  image: `${SITE_URL}/brand/photos/DSC_0857-b-scaled.jpg`,
+  telephone: brand.phone,
+  areaServed: brand.location,
+  sameAs: [brand.socials.instagram, brand.socials.facebook, brand.socials.linkedin],
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="nl" className={`${anton.variable} ${inter.variable} ${jetbrains.variable}`}>
@@ -53,6 +78,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <noscript>
           <style>{`.reveal{opacity:1!important;transform:none!important}`}</style>
         </noscript>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANISATION) }}
+        />
       </head>
       <body>{children}</body>
     </html>

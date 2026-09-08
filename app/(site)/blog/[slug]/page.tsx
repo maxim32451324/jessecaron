@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -60,8 +61,9 @@ function AdjacentCard({ p, dir }: { p: PostMeta; dir: "prev" | "next" }) {
   return (
     <Link href={`/blog/${p.slug}`} className="adj">
       <div className="adj__img">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={localImg(p.featured_image)} alt="" loading="lazy" />
+        {/* A fixed 96px square, so `fill` with a flat 96px `sizes` — no breakpoint
+            changes it, and the box is reserved before the bytes arrive. */}
+        <Image src={localImg(p.featured_image)} alt="" fill sizes="96px" />
       </div>
       <div className="adj__b">
         <span className="adj__lab">{dir === "prev" ? "← Ouder artikel" : "Nieuwer artikel →"}</span>
@@ -232,7 +234,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         .adjgrid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
         .adj { min-width:0; display:flex; gap:18px; align-items:center; background:var(--ink); border:1px solid var(--line-d); padding:16px; transition:transform var(--card-t), border-color var(--card-t); }
         .adj:hover, .adj:focus-visible { transform:translateY(var(--card-lift)); border-color:var(--blue); }
-        .adj__img { flex:0 0 96px; width:96px; aspect-ratio:1/1; overflow:hidden; background:#000; }
+        .adj__img { position:relative; flex:0 0 96px; width:96px; aspect-ratio:1/1; overflow:hidden; background:#000; }
         .adj__img img { width:100%; height:100%; object-fit:cover; filter:grayscale(.45) brightness(.9); transition:filter .5s; }
         .adj:hover .adj__img img, .adj:focus-visible .adj__img img { filter:grayscale(0) brightness(1); }
         .adj__b { min-width:0; display:flex; flex-direction:column; gap:8px; }

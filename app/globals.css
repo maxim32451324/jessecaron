@@ -59,6 +59,14 @@ body {
 img {
   display: block;
   max-width: 100%;
+  /* height:auto is load-bearing now that next/image renders these. It emits real
+     `width`/`height` attributes so the browser can reserve the box before the bytes
+     arrive (that is the whole CLS win); with `max-width:100%` alone, any image whose
+     intrinsic width exceeds its column would be squeezed horizontally while keeping
+     the declared height, and every body photograph would render stretched. Every
+     rule that genuinely wants a fixed height — the card and hero crops — sets it
+     from a class and outranks this. */
+  height: auto;
 }
 a {
   color: inherit;

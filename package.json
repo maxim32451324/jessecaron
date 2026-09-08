@@ -7,8 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "prebuild": "node scripts/check-images.mjs",
-    "check:archives": "node scripts/check-archives.mjs"
+    "prebuild": "node scripts/check-images.mjs && node scripts/check-shop-links.mjs && node scripts/build-redirects.mjs --check",
+    "check:archives": "node scripts/check-archives.mjs",
+    "check:redirects": "node scripts/crawl-old-urls.mjs",
+    "build:redirects": "node scripts/build-redirects.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.0",

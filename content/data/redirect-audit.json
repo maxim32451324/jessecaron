@@ -1,0 +1,5809 @@
+{
+ "generated": "2026-09-08T20:13:16Z",
+ "base": "http://localhost:3100",
+ "note": "Produced by scripts/crawl-old-urls.mjs against a local production build. Every URL in content/data/old-urls.json (the old wp-sitemap.xml) plus a set of extra probes for patterns WordPress served but never listed. PARITY-PLAN §10 Phase 5.",
+ "old_urls": 797,
+ "probed": 818,
+ "assertions": {
+  "0 x 404": true,
+  "0 x 5xx": true,
+  "no chain > 1 hop": true,
+  "every redirect target 200": true,
+  "410 only on demo/plumbing": true,
+  "sitemap lists no redirecting URL": true
+ },
+ "totals": {
+  "200": 11,
+  "301": 733,
+  "302": 7,
+  "410": 67
+ },
+ "by_group": {
+  "page": {
+   "200": 9,
+   "301": 61,
+   "302": 6,
+   "410": 62
+  },
+  "portfolio-item": {
+   "301": 21
+  },
+  "post": {
+   "301": 27
+  },
+  "product": {
+   "301": 38
+  },
+  "carousels_category": {
+   "301": 3
+  },
+  "category": {
+   "301": 68
+  },
+  "portfolio-category": {
+   "301": 14
+  },
+  "portfolio-tag": {
+   "301": 100
+  },
+  "post_format": {
+   "301": 1
+  },
+  "post_tag": {
+   "301": 261
+  },
+  "product_cat": {
+   "301": 4
+  },
+  "product_shipping_class": {
+   "200": 2
+  },
+  "product_tag": {
+   "301": 116
+  },
+  "testimonials_category": {
+   "301": 2
+  },
+  "author": {
+   "301": 2
+  },
+  "extra-probes": {
+   "301": 15,
+   "302": 1,
+   "410": 5
+  }
+ },
+ "sitemap": {
+  "urls": 104,
+  "all_200_no_redirect": true
+ },
+ "failures": [],
+ "results": [
+  {
+   "group": "page",
+   "from": "/voorbeeld-pagina/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/winkel/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "page",
+   "from": "/winkelmand/",
+   "status": 302,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "page",
+   "from": "/afrekenen/",
+   "status": 302,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "page",
+   "from": "/mijn-account/",
+   "status": 302,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "page",
+   "from": "/media/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/business-home/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/services-2-2/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/cart/",
+   "status": 302,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "page",
+   "from": "/checkout/",
+   "status": 302,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "page",
+   "from": "/my-account/",
+   "status": 302,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "page",
+   "from": "/training/",
+   "status": 200,
+   "hops": 0,
+   "to": "/training/"
+  },
+  {
+   "group": "page",
+   "from": "/pinboard-portfolio/",
+   "status": 410,
+   "hops": 0,
+   "to": "/pinboard-portfolio/"
+  },
+  {
+   "group": "page",
+   "from": "/gallery-portfolio/",
+   "status": 410,
+   "hops": 0,
+   "to": "/gallery-portfolio/"
+  },
+  {
+   "group": "page",
+   "from": "/stretching/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/rekken"
+  },
+  {
+   "group": "page",
+   "from": "/boxes-portfolio/",
+   "status": 410,
+   "hops": 0,
+   "to": "/boxes-portfolio/"
+  },
+  {
+   "group": "page",
+   "from": "/masonry-portfolio/",
+   "status": 410,
+   "hops": 0,
+   "to": "/masonry-portfolio/"
+  },
+  {
+   "group": "page",
+   "from": "/parallax-home/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/coming-soon/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/portfolio-carousel/",
+   "status": 410,
+   "hops": 0,
+   "to": "/portfolio-carousel/"
+  },
+  {
+   "group": "page",
+   "from": "/records/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/snelheidsmetingen"
+  },
+  {
+   "group": "page",
+   "from": "/blog-2/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "page",
+   "from": "/about/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/offline/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/contact/",
+   "status": 200,
+   "hops": 0,
+   "to": "/contact/"
+  },
+  {
+   "group": "page",
+   "from": "/self-myofascial-release/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/functionele-kracht-trainen"
+  },
+  {
+   "group": "page",
+   "from": "/about/about-ext-alt/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/our-team/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/strenght-stability-exercises/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/functionele-kracht-trainen"
+  },
+  {
+   "group": "page",
+   "from": "/our-team-1/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/our-team-2/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/pricing/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/services/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/services-2/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/about/profile-page/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/boxed-home/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/strenght-stability/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/functionele-kracht-trainen"
+  },
+  {
+   "group": "page",
+   "from": "/snelheidsmetingen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/snelheidsmetingen"
+  },
+  {
+   "group": "page",
+   "from": "/jewelry-store/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/",
+   "status": 200,
+   "hops": 0,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/about/profile-page-alt/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/split-screen-slider/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/services-3/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/shop-masonry/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/testimonials/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/testimonials/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/accordions/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/accordions/"
+  },
+  {
+   "group": "page",
+   "from": "/blurb-elements/live-edit-page-builder/",
+   "status": 410,
+   "hops": 0,
+   "to": "/blurb-elements/live-edit-page-builder/"
+  },
+  {
+   "group": "page",
+   "from": "/blog-split-column/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "page",
+   "from": "/elements/buttons/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/buttons/"
+  },
+  {
+   "group": "page",
+   "from": "/blurb-elements/builder-sliders/",
+   "status": 410,
+   "hops": 0,
+   "to": "/blurb-elements/builder-sliders/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/call-to-action/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/call-to-action/"
+  },
+  {
+   "group": "page",
+   "from": "/blurb-elements/common-elements/",
+   "status": 410,
+   "hops": 0,
+   "to": "/blurb-elements/common-elements/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/google-maps/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/google-maps/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/contact-form/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/contact-form/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/image-gallery/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/image-gallery/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/progress-bars/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/progress-bars/"
+  },
+  {
+   "group": "page",
+   "from": "/blurb-elements/kioken-slides/",
+   "status": 410,
+   "hops": 0,
+   "to": "/blurb-elements/kioken-slides/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/process/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/process/"
+  },
+  {
+   "group": "page",
+   "from": "/blurb-elements/robust-options-panel/",
+   "status": 410,
+   "hops": 0,
+   "to": "/blurb-elements/robust-options-panel/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/pricing-tables/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/pricing-tables/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/pie-charts/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/pie-charts/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/pie-chart-with-icon/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/pie-chart-with-icon/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/full-pie-charts/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/full-pie-charts/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/doughnut-pie-charts/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/doughnut-pie-charts/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/headings-highlights/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/headings-highlights/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/custom-font/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/custom-font/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/icon-with-text/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/icon-with-text/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/message-boxes/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/message-boxes/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/lists-with-icon/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/lists-with-icon/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/countdown/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/countdown/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/counters/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/counters/"
+  },
+  {
+   "group": "page",
+   "from": "/parallax-portfolio/",
+   "status": 410,
+   "hops": 0,
+   "to": "/parallax-portfolio/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/elements-holder/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/elements-holder/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/team/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/team/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/variable-width-slider/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/variable-width-slider/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/carousel/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/carousel/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/blog-post/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/blog-post/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/clients/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/clients/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/separators/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/separators/"
+  },
+  {
+   "group": "page",
+   "from": "/prijzen/",
+   "status": 200,
+   "hops": 0,
+   "to": "/prijzen/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/columns/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/columns/"
+  },
+  {
+   "group": "page",
+   "from": "/voorwaarden/",
+   "status": 200,
+   "hops": 0,
+   "to": "/voorwaarden/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/dropcaps/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/dropcaps/"
+  },
+  {
+   "group": "page",
+   "from": "/groepstrainingen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/groepstrainingen"
+  },
+  {
+   "group": "page",
+   "from": "/elements/blockquote/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/blockquote/"
+  },
+  {
+   "group": "page",
+   "from": "/elements/portfolio-list/",
+   "status": 410,
+   "hops": 0,
+   "to": "/elements/portfolio-list/"
+  },
+  {
+   "group": "page",
+   "from": "/loopscholing/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/loopscholing"
+  },
+  {
+   "group": "page",
+   "from": "/aanmelden-padeltoernooi/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/padeltoernooi"
+  },
+  {
+   "group": "page",
+   "from": "/standard-portfolio-lists/three-columns/",
+   "status": 410,
+   "hops": 0,
+   "to": "/standard-portfolio-lists/three-columns/"
+  },
+  {
+   "group": "page",
+   "from": "/standard-portfolio-lists/",
+   "status": 410,
+   "hops": 0,
+   "to": "/standard-portfolio-lists/"
+  },
+  {
+   "group": "page",
+   "from": "/standard-portfolio-lists/four-columns/",
+   "status": 410,
+   "hops": 0,
+   "to": "/standard-portfolio-lists/four-columns/"
+  },
+  {
+   "group": "page",
+   "from": "/standard-portfolio-lists/five-columns-wide/",
+   "status": 410,
+   "hops": 0,
+   "to": "/standard-portfolio-lists/five-columns-wide/"
+  },
+  {
+   "group": "page",
+   "from": "/gallery-portfolio-lists/",
+   "status": 410,
+   "hops": 0,
+   "to": "/gallery-portfolio-lists/"
+  },
+  {
+   "group": "page",
+   "from": "/videos/",
+   "status": 200,
+   "hops": 0,
+   "to": "/videos/"
+  },
+  {
+   "group": "page",
+   "from": "/gallery-portfolio-lists/four-columns/",
+   "status": 410,
+   "hops": 0,
+   "to": "/gallery-portfolio-lists/four-columns/"
+  },
+  {
+   "group": "page",
+   "from": "/shop-home/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/sportmassage/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/sportmassage"
+  },
+  {
+   "group": "page",
+   "from": "/portfolio-masonry-lists/masonry-parallax-list/",
+   "status": 410,
+   "hops": 0,
+   "to": "/portfolio-masonry-lists/masonry-parallax-list/"
+  },
+  {
+   "group": "page",
+   "from": "/portfolio-masonry-lists/",
+   "status": 410,
+   "hops": 0,
+   "to": "/portfolio-masonry-lists/"
+  },
+  {
+   "group": "page",
+   "from": "/portfolio-masonry-lists/portfolio-masonry-list/",
+   "status": 410,
+   "hops": 0,
+   "to": "/portfolio-masonry-lists/portfolio-masonry-list/"
+  },
+  {
+   "group": "page",
+   "from": "/pinterest-portfolio-list/",
+   "status": 410,
+   "hops": 0,
+   "to": "/pinterest-portfolio-list/"
+  },
+  {
+   "group": "page",
+   "from": "/justified-gallery-list/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/standard-blog-list/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "page",
+   "from": "/shop-home-example/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/shop/",
+   "status": 200,
+   "hops": 0,
+   "to": "/shop/"
+  },
+  {
+   "group": "page",
+   "from": "/shop-masonry-example/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/standard-portfolio-lists/four-columns-wide/",
+   "status": 410,
+   "hops": 0,
+   "to": "/standard-portfolio-lists/four-columns-wide/"
+  },
+  {
+   "group": "page",
+   "from": "/gallery-portfolio-lists/five-columns-wide/",
+   "status": 410,
+   "hops": 0,
+   "to": "/gallery-portfolio-lists/five-columns-wide/"
+  },
+  {
+   "group": "page",
+   "from": "/gallery-portfolio-lists/four-columns-wide/",
+   "status": 410,
+   "hops": 0,
+   "to": "/gallery-portfolio-lists/four-columns-wide/"
+  },
+  {
+   "group": "page",
+   "from": "/shop-lists/shop-three-columns/",
+   "status": 410,
+   "hops": 0,
+   "to": "/shop-lists/shop-three-columns/"
+  },
+  {
+   "group": "page",
+   "from": "/shop-lists/shop-four-columns/",
+   "status": 410,
+   "hops": 0,
+   "to": "/shop-lists/shop-four-columns/"
+  },
+  {
+   "group": "page",
+   "from": "/shop-lists/shop-full-width/",
+   "status": 410,
+   "hops": 0,
+   "to": "/shop-lists/shop-full-width/"
+  },
+  {
+   "group": "page",
+   "from": "/shop-lists/",
+   "status": 410,
+   "hops": 0,
+   "to": "/shop-lists/"
+  },
+  {
+   "group": "page",
+   "from": "/landing/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/blog/",
+   "status": 200,
+   "hops": 0,
+   "to": "/blog/"
+  },
+  {
+   "group": "page",
+   "from": "/sample-page/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/main-home/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/functionele-snelheid-trainen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/functionele-snelheid-trainen"
+  },
+  {
+   "group": "page",
+   "from": "/functionele-kracht-trainen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/functionele-kracht-trainen"
+  },
+  {
+   "group": "page",
+   "from": "/personal-training/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/personal-training"
+  },
+  {
+   "group": "page",
+   "from": "/aanmelden/",
+   "status": 200,
+   "hops": 0,
+   "to": "/aanmelden/"
+  },
+  {
+   "group": "page",
+   "from": "/portfolio/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "page",
+   "from": "/shortcodes/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/voorbeeld-pagina-2/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/product-landing/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/blurb-elements/",
+   "status": 410,
+   "hops": 0,
+   "to": "/blurb-elements/"
+  },
+  {
+   "group": "page",
+   "from": "/zomerstop-training/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/zomerstop-training"
+  },
+  {
+   "group": "page",
+   "from": "/prijzen-concept/",
+   "status": 301,
+   "hops": 1,
+   "to": "/prijzen"
+  },
+  {
+   "group": "page",
+   "from": "/schoolsport-vereniging-rotterdam-atletiek/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/schoolsport-vereniging"
+  },
+  {
+   "group": "page",
+   "from": "/products/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "page",
+   "from": "/oefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/oefeningen"
+  },
+  {
+   "group": "page",
+   "from": "/shirts/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "page",
+   "from": "/testwachtwoord/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "page",
+   "from": "/teamkleding/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "page",
+   "from": "/massage/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/sportmassage"
+  },
+  {
+   "group": "page",
+   "from": "/smartgoals-kopen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "page",
+   "from": "/data/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/data"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/explosiviteit-sprongkracht-oefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/sem-van-aalst-wendbaarheid-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/samet-dag-jeremy-moreno-stabiliteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/soufiane-ben-addi-wendbaarheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/remy-van-der-vooren-snelheid-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/damian-muller-reactie-snelheid-wendbaarheid-voetbal-smartgoals/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/soufiane-ben-addi-reactiesnelheid-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/cognitief-trainen-voor-voetbal-met-smartgoals/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/jesse-caron-functionele-reactiesnelheid-voetbal-tennis/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/krachttraining-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/startsnelheid-trainen-voetbal-mini-bands-smartgoals/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/7052/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/anthony-rasmijn-sprinttraining-sprinttest/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/handelingssnelheid-trainen-met-smartgoals-voor-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/jesse-caron-de-beste-personal-trainer-van-nl-rtl4/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/spike-ball-voetbal-warming-up-oefening-reactievermogen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/functionele-snelheid-training-handelingssnelheid-blazepod-oefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/functionele-snelheid-voetbal-wendbaarheid-reactievermogen-blazepods/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/lucas-diniz-lima-functionele-kracht-snelheid-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/damian-muller-looptraining-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-item",
+   "from": "/portfolio-item/jesse-caron-krachttraining-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "post",
+   "from": "/looptrainer-looptraining-feyenoord/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/looptrainer-looptraining-feyenoord"
+  },
+  {
+   "group": "post",
+   "from": "/looptraining-hockey-craeyenhout-meisjes-c2/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/looptraining-hockey-craeyenhout-meisjes-c2"
+  },
+  {
+   "group": "post",
+   "from": "/bosu-trainingsmateriaal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/bosu-trainingsmateriaal"
+  },
+  {
+   "group": "post",
+   "from": "/damian-muller-0-to-100-real-quick/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/damian-muller-0-to-100-real-quick"
+  },
+  {
+   "group": "post",
+   "from": "/samenwerkingsverband-looptraining-sc-feyenoord-verlengd/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/samenwerkingsverband-looptraining-sc-feyenoord-verlengd"
+  },
+  {
+   "group": "post",
+   "from": "/zweetbanden/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/zweetbanden"
+  },
+  {
+   "group": "post",
+   "from": "/voetbal-specifieke-warming-up/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/voetbal-specifieke-warming-up"
+  },
+  {
+   "group": "post",
+   "from": "/rekken/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/rekken"
+  },
+  {
+   "group": "post",
+   "from": "/rotterdam-krijgt-talent-team-boksen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/rotterdam-krijgt-talent-team-boksen"
+  },
+  {
+   "group": "post",
+   "from": "/sport-performance-centre-spc-rijnmond-errol-esajas/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/sport-performance-centre-spc-rijnmond-errol-esajas"
+  },
+  {
+   "group": "post",
+   "from": "/zomerstop-loop-kracht-training/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/zomerstop-loop-kracht-training"
+  },
+  {
+   "group": "post",
+   "from": "/kbands-trainingsmateriaal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/kbands-trainingsmateriaal"
+  },
+  {
+   "group": "post",
+   "from": "/flickmyhouse-sponsort-jubileum-activiteiten-jesse-caron/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/flickmyhouse-sponsort-jubileum-activiteiten-jesse-caron"
+  },
+  {
+   "group": "post",
+   "from": "/kleurplaat/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/kleurplaat"
+  },
+  {
+   "group": "post",
+   "from": "/schoolsport-vereniging-rotterdam-atletiek-mannequin-shirt-challenge/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/schoolsport-vereniging-rotterdam-atletiek-mannequin-shirt-challenge"
+  },
+  {
+   "group": "post",
+   "from": "/reactiesnelheid-trainen-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/reactiesnelheid-trainen-voetbal"
+  },
+  {
+   "group": "post",
+   "from": "/startsnelheid-trainen-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/startsnelheid-trainen-voetbal"
+  },
+  {
+   "group": "post",
+   "from": "/esajas-statia-tahiri-winnen-bronzen-medaille-op-nk-atletiek/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/esajas-statia-tahiri-winnen-bronzen-medaille-op-nk-atletiek"
+  },
+  {
+   "group": "post",
+   "from": "/krachtraining-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/krachtraining-voetbal"
+  },
+  {
+   "group": "post",
+   "from": "/looptraining-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/looptraining-voetbal"
+  },
+  {
+   "group": "post",
+   "from": "/handelingssnelheid-trainen-voetbal-met-smartgoals/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/handelingssnelheid-trainen-voetbal-met-smartgoals"
+  },
+  {
+   "group": "post",
+   "from": "/isa-van-schaik/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/isa-van-schaik"
+  },
+  {
+   "group": "post",
+   "from": "/hamza-el-dahri/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/hamza-el-dahri"
+  },
+  {
+   "group": "post",
+   "from": "/esmee-de-willigen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/esmee-de-willigen"
+  },
+  {
+   "group": "post",
+   "from": "/djevan-en-djediel-jansen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/djevan-en-djediel-jansen"
+  },
+  {
+   "group": "post",
+   "from": "/team-caron/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/team-caron"
+  },
+  {
+   "group": "post",
+   "from": "/stephany-suykerbuyk/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/stephany-suykerbuyk"
+  },
+  {
+   "group": "product",
+   "from": "/product/longsleeved-shirt-black/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/longsleeved-shirt-black"
+  },
+  {
+   "group": "product",
+   "from": "/product/longsleeved-white/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/longsleeved-white"
+  },
+  {
+   "group": "product",
+   "from": "/product/shirt-white/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/shirt-white"
+  },
+  {
+   "group": "product",
+   "from": "/product/shirt-black/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/shirt-black"
+  },
+  {
+   "group": "product",
+   "from": "/product/reaction-balls/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/reaction-balls"
+  },
+  {
+   "group": "product",
+   "from": "/product/bidon/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/bidon"
+  },
+  {
+   "group": "product",
+   "from": "/product/zweetband-zwart-blauw/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/zweetband-zwart-blauw"
+  },
+  {
+   "group": "product",
+   "from": "/product/zweetbanden-zwart-wit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/zweetbanden-zwart-wit"
+  },
+  {
+   "group": "product",
+   "from": "/product/zweetbanden-wit-zwart/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/zweetbanden-wit-zwart"
+  },
+  {
+   "group": "product",
+   "from": "/product/shoe-bag/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/shoe-bag"
+  },
+  {
+   "group": "product",
+   "from": "/product/massage-stick/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/massage-stick"
+  },
+  {
+   "group": "product",
+   "from": "/product/stroboscoop-glasses/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/stroboscoop-glasses"
+  },
+  {
+   "group": "product",
+   "from": "/product/kids-shirt-white/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/kids-shirt-white"
+  },
+  {
+   "group": "product",
+   "from": "/product/dream-shirt-kids/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/dream-shirt-kids"
+  },
+  {
+   "group": "product",
+   "from": "/product/kids-shirt-black/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/kids-shirt-black"
+  },
+  {
+   "group": "product",
+   "from": "/product/dream-shirt/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/dream-shirt"
+  },
+  {
+   "group": "product",
+   "from": "/product/sport-shirt-black/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/sport-shirt-black"
+  },
+  {
+   "group": "product",
+   "from": "/product/functionele-looptraining-medicine-voetbaloefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/functionele-looptraining-medicine-voetbaloefeningen"
+  },
+  {
+   "group": "product",
+   "from": "/product/frisbees/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/frisbees"
+  },
+  {
+   "group": "product",
+   "from": "/product/bidon-blauw/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/bidon-blauw"
+  },
+  {
+   "group": "product",
+   "from": "/product/reactie-training-hand-oog-coordinatie-oefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/reactie-training-hand-oog-coordinatie-oefeningen"
+  },
+  {
+   "group": "product",
+   "from": "/product/sports-tech-gloves/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/sports-tech-gloves"
+  },
+  {
+   "group": "product",
+   "from": "/product/kids-sport-shirt-black/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/kids-sport-shirt-black"
+  },
+  {
+   "group": "product",
+   "from": "/product/kids-sport-shirt-white/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/kids-sport-shirt-white"
+  },
+  {
+   "group": "product",
+   "from": "/product/reflection-hoodie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/reflection-hoodie"
+  },
+  {
+   "group": "product",
+   "from": "/product/reflection-cowl-sweatshirt/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/reflection-cowl-sweatshirt"
+  },
+  {
+   "group": "product",
+   "from": "/product/sport-shirt-white/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/sport-shirt-white"
+  },
+  {
+   "group": "product",
+   "from": "/product/sport-shirt-white-kopie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/sport-shirt-white-kopie"
+  },
+  {
+   "group": "product",
+   "from": "/product/sport-shirt-black-blue/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/sport-shirt-black-blue"
+  },
+  {
+   "group": "product",
+   "from": "/product/vector-ball/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/vector-ball"
+  },
+  {
+   "group": "product",
+   "from": "/product/functional-speed-training-stair-running-jumping-exercises/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/functional-speed-training-stair-running-jumping-exercises"
+  },
+  {
+   "group": "product",
+   "from": "/product/tennisballs-3/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/tennisballs-3"
+  },
+  {
+   "group": "product",
+   "from": "/product/springtouw/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/springtouw"
+  },
+  {
+   "group": "product",
+   "from": "/product/jumprope/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/jumprope"
+  },
+  {
+   "group": "product",
+   "from": "/product/backpack/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/backpack"
+  },
+  {
+   "group": "product",
+   "from": "/product/functional-speed-training-vector-ball-cognitive-vision-exercises/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/functional-speed-training-vector-ball-cognitive-vision-exercises"
+  },
+  {
+   "group": "product",
+   "from": "/product/functionele-warming-up-oefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/functionele-warming-up-oefeningen"
+  },
+  {
+   "group": "product",
+   "from": "/product/padeltoernooi/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/padeltoernooi"
+  },
+  {
+   "group": "carousels_category",
+   "from": "/carousels-category/about-us-clients-slider/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "carousels_category",
+   "from": "/carousels-category/home-carousel-slider/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "carousels_category",
+   "from": "/carousels-category/small-business-home-slider/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "category",
+   "from": "/category/geen-categorie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/rekken/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/rekken"
+  },
+  {
+   "group": "category",
+   "from": "/category/spierpijn/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/flexibiliteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/flexibiliteit"
+  },
+  {
+   "group": "category",
+   "from": "/category/blog/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/atletiek/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/atletiek"
+  },
+  {
+   "group": "category",
+   "from": "/category/hockey/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/hockey"
+  },
+  {
+   "group": "category",
+   "from": "/category/informatie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/krachttraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/krachttraining"
+  },
+  {
+   "group": "category",
+   "from": "/category/looptraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/looptraining"
+  },
+  {
+   "group": "category",
+   "from": "/category/videos/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/voetbal"
+  },
+  {
+   "group": "category",
+   "from": "/category/wedstrijd/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/zomerstoptraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/zweetband/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/zweetband-adelaar/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/looptraining-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/looptraining-voetbal"
+  },
+  {
+   "group": "category",
+   "from": "/category/looptraining-hockey/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/nieuws/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/nieuws"
+  },
+  {
+   "group": "category",
+   "from": "/category/tennis/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/spc/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/errol-esajas/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/sport-performance-centre-spc-rijnmond-errol-esajas"
+  },
+  {
+   "group": "category",
+   "from": "/category/sport-performance-centre-rijnmond/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/looptraining-boksen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/atletiektraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/maatschappelijk/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/schoolsport-vereniging/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/schoolsport-vereniging"
+  },
+  {
+   "group": "category",
+   "from": "/category/rotterdam-atletiek/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/sprinten/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/explosiviteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/explosiviteit"
+  },
+  {
+   "group": "category",
+   "from": "/category/stabiliteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/stabiliteit"
+  },
+  {
+   "group": "category",
+   "from": "/category/kracht/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/snelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/snelheid"
+  },
+  {
+   "group": "category",
+   "from": "/category/coordinatie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/coordinatie"
+  },
+  {
+   "group": "category",
+   "from": "/category/wendbaarheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/wendbaarheid"
+  },
+  {
+   "group": "category",
+   "from": "/category/reactiviteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/reactiviteit"
+  },
+  {
+   "group": "category",
+   "from": "/category/feyenoord/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/looptraining-feyenoord/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/varkenoord/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/looptrainer-feyenoord/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/sportfysiotherapeut/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/pieter-jan-van-der-heiden/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/voetbal-specifieke-warming-up"
+  },
+  {
+   "group": "category",
+   "from": "/category/polsband/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/polsband-adelaar/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/tarik-tahiri/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/esajas-statia-tahiri-winnen-bronzen-medaille-op-nk-atletiek"
+  },
+  {
+   "group": "category",
+   "from": "/category/warming-up/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/warming-up-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/reactiesnelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/reactievermogen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/smartgoals/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/trainen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/oefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/oefeningen"
+  },
+  {
+   "group": "category",
+   "from": "/category/startsnelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/nargelis-statia/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/esajas-statia-tahiri-winnen-bronzen-medaille-op-nk-atletiek"
+  },
+  {
+   "group": "category",
+   "from": "/category/massage-stick/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/functionele-krachttraining-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/functioneel/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/functionele-kracht/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/rompstabiliteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/beweegpatronen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/blessure/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/performance-trainer/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/handelingssnelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/football-awareness/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "category",
+   "from": "/category/interview/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/interviews"
+  },
+  {
+   "group": "category",
+   "from": "/category/interviews/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/interviews"
+  },
+  {
+   "group": "category",
+   "from": "/category/sportmassage/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/sportmassage"
+  },
+  {
+   "group": "category",
+   "from": "/category/groeipijn/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "portfolio-category",
+   "from": "/portfolio-category/video/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-category",
+   "from": "/portfolio-category/atletiek/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-category",
+   "from": "/portfolio-category/voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-category",
+   "from": "/portfolio-category/weerstand/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-category",
+   "from": "/portfolio-category/wendbaarheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-category",
+   "from": "/portfolio-category/snelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-category",
+   "from": "/portfolio-category/reactiesnelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-category",
+   "from": "/portfolio-category/stabiliteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-category",
+   "from": "/portfolio-category/kracht/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-category",
+   "from": "/portfolio-category/explosiviteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-category",
+   "from": "/portfolio-category/motivatie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-category",
+   "from": "/portfolio-category/flexibiliteit-video/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-category",
+   "from": "/portfolio-category/smartgoals/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-category",
+   "from": "/portfolio-category/snelheid-2/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/functionele-kracht/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/kracht/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/functioneel/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/training/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/krachttraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/tennis/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/hockey/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/explosiviteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/rotterdam/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/snelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/wendbaarheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/looptraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/functionele/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/reactienselheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/reactievermogen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/bril/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/stabiliteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/reactieballen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/samet-dag/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/jeremy-moreno/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/looptraining-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/oefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/soufiane-ben-addi/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/ben-addi/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/soufiane/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/reactiesnelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/versnellen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/omschakelen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/jesse-caron/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/loopoefeningen-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/remy-van-der-vooren/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/remy/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/van-der-vooren/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/loopoefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/functionele-looptraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/sem-van-aalst/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/videos/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/startsnelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/smartgoals/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/reactie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/damian-muller/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/reactiebril/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/stroboscoopbril/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/strobe-glasses/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/stroboscoop/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/feyenoord/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/reactiebal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/sparta/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/kbands/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/kinitec-bands/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/reactiensnelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/reactiesnelheid-trainen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/reactiesnelheid-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/krachttraining-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/functionele-krachttraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/functionele-kracht-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/anthony-rasmijn/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/functionele-krachttraining-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/sprinttraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/starttraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/sprinttest/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/timing-set/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/honkbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/basketbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/400m-sprint/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/smartgoal-oefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/de-beste-van-nederland/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/rtl4/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/personal-trainer/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/schiedam/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/looptrainer/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/mini-bands/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/functionele-snelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/video/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/ky-liem/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/alexandria-66/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/furkan-ulutas/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/handelingssnelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/balcontrole/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/reactielichten/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/wariming-up/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/warmingup/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/warming-up/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/warming-up-oefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/spikeball/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/spelletjes/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/spellen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/spel/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/blazepod/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/blazepods/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/cognitieve-snelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/cognitief/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/trainen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/reflex/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/trainingen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/sprongkracht/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/sprongkracht-oefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/lucas-diniz-lima/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "portfolio-tag",
+   "from": "/portfolio-tag/snelheid-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "post_format",
+   "from": "/type/video/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/bindweefsel/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/blessures/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/dynamisch/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/flexibel/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/flexibiliteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/flexibiliteit"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/korte/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/lening/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/lenigheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/spieren/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/spierpijn/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/rekken/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/rekken"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/rekoefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/self-myofascial-release/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/statisch/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/stijve/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/voetbal"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/hockey/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/hockey"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/looptraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/looptraining"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/training/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/warming-up/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/warmingup/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/jesse-caron/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/pieter-jan-van-der-heiden/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/voetbal-specifieke-warming-up"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/looptrainer/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/foamroller/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/massagestick/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/sportfysiotherapeut/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/abbygail-deekman/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/adelaar/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/agility/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/atletiek/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/atletiek"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/atletiekbaan/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/balance/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/balans/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/blauw/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/bosu/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/c1/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/coordinatie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/coordinatie"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/core/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/craeyenhout/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/d1/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/damian/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/den-haag/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/errol-esajas/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/sport-performance-centre-spc-rijnmond-errol-esajas"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/excelsior/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/explosiviteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/explosiviteit"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/feyenoord/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/feyenoord-academy/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/functioneel/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/kbands/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/kinderen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/kinetic-bands/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/kracht/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/krachttraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/krachttraining"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/loopcoordinatie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/loopoefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/looptechniek/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/looptrainer-feyenoord/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/looptraining-feyenoord/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/muller/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/nenijto/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/oefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/oefeningen"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/olympische-spelen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/opwarmen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/origami/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/origami-adelaar/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/patrick-van-luijk/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/polsband/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/polsband-adelaar/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/reactievermogen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/reactiviteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/reactiviteit"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/rijnmond/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/robert-lathouwers/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/rotterdam/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/rotterdam-atletiek/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/rotterdam-boxing/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/schoolsport/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/schoolsport-vereniging/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/schoolsport-vereniging"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/snelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/snelheid"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/snelhiedtraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/sparta/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/spc/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/speed/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/speedladder/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/spieractivatie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/sportfysio/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/sprint/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/sprinten/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/stabiliteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/stabiliteit"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/stability/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/startsnelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/strandtraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/strenght/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/tarik-tahiri/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/esajas-statia-tahiri-winnen-bronzen-medaille-op-nk-atletiek"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/techniek/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/tennis/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/trainen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/trainer/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/video/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/vogel/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/wendbaarheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/wendbaarheid"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/zomerstop/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/zomerstoptraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/zweetband/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/zweetband-adelaar/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/zweetband-vogel/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/functionele-snelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/bentincklaan-40/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/sport-performance-centre-rijnmond/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/sportcentrum/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/rex-meijer/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/felix-jordan/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/dari-duarte/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/delano-james/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/artjom-kasparian/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/michael-kok/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/roy-korving/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/ton-dunk/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/robert-nokhai/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/flickmyhouse/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/jubilieum/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/sponsoring/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/sponsor/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/de-provenier/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/het-nieuwe-westen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/kleurplaat/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/marvin-bruin/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/illustratie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/kleurplaatwedstrijd/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/leg-resistance-bands/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/weerstandsbanden/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/feyenoord-d1/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/feyenoord-c1/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/dynamisch-rekken/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/statisch-rekken/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/looptraining-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/looptraining-voetbal"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/workshop/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/nac-breda/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/voetbalspecifieke-warming-up/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/van-der-heiden/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/fysio/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/fysiotherapeut/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/elite/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/topsport/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/zwart/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/zwart-blauw/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/blauw-zwart/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/looptraining-hockey/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/looptrainer-hockey/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/zandtraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/damian-muller/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/real-quick/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/voetballer/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/plyometrie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/voetbal-warming-up/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/gymzaal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/reactie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/reactiesnelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/smartgoals/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/reactiebal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/reactieballen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/rugby/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/hand-oog-coordinatie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/voet-oog-coordinatie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/reflex/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/warmlopen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/trainingen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/reactiebril/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/vapor-strobe/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/strobe/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/bril/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/stroboscoop/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/duckhee-lee/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/zichtvermogen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/startsnelheid-trainen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/basketbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/starten/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/uithoudingsvermogen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/wendbaarheid-trainen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/functionele-kracht/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/startsnelheid-trainen-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/explosiviteit-trainen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/nargelis-statia/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/esajas-statia-tahiri-winnen-bronzen-medaille-op-nk-atletiek"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/nargelis/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/statia/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/ruben-esajas/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/100-meter/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/200-meter/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/topsnelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/stroboscoopbril/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/knipperbril/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/reactiesnelheid-trainen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/reactievermogen-trainen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/massage-stok/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/fitness/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/vermogen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/rompstabiliteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/beweegpatronen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/gewichten/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/krachtoefening/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/sprongkracht/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/personal-training/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/personal-training"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/conditie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/sprintsnelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/motoriek/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/download/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/performance-trainer/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/smartgoals-oefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/smartgoal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/smartgoal-oefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/handelingssnelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/handelingssnelheid-trainen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/kijkgedrag/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/football-awareness/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/awareness/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/handelingssnelheid-trainen-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/smartgoals-kopen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/korting/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/smartgoals-voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/smartgoals-hockey/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/reactielichten/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/isa-van-schaik/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/ado-den-haag/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/interview/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog/categorie/interviews"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/voetbalster/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/hamza-el-dari/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/melika-el-dari/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/el-dari/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/sparta-rotterdam/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/esmee-de-willigen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/amerika/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/hcr/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/michigan/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/honkbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/djediel/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/djediel-2/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/djevan-jansen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/jansen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/unicorns/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/omschakelen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/neptunes/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/mlb/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/major-league-baseball/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/curacao/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/catcher/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/groepstraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/strekken/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/redouan-khealiram/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/schiedam/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/daymon-mathilda/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/djediel-janssen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/djevan-janssen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/marcelo-montengro/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/rayan-bentaib/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/salahedinne-ajjouch/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/wenden-en-keren/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/hordes/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/groeipijn/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/sportmassage/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/sportmassage"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/massage/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "post_tag",
+   "from": "/tag/stephany-suykerbuyk/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "product_cat",
+   "from": "/product-categorie/exercises/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_cat",
+   "from": "/product-categorie/shirts/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_cat",
+   "from": "/product-categorie/products/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_cat",
+   "from": "/product-categorie/new/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_shipping_class",
+   "from": "/?taxonomy=product_shipping_class&term=nederland-groot",
+   "status": 200,
+   "hops": 0,
+   "to": "/?taxonomy=product_shipping_class&term=nederland-groot"
+  },
+  {
+   "group": "product_shipping_class",
+   "from": "/?taxonomy=product_shipping_class&term=nederland-klein",
+   "status": 200,
+   "hops": 0,
+   "to": "/?taxonomy=product_shipping_class&term=nederland-klein"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/blue/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/white/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/origami/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/black/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/longsleeve/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/reaction/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/balls/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/ballen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/reactie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/reactieballen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/reactievermogen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/trainingsmateriaal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/training/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/bidon/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/bottle/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/shortsleeve/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/shirt/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/shoe/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/bag/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/massage/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/massagestick/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/zweetband/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/stick/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/reactiebril/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/stroboscoop/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/glasses/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/eagle/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/adelaar/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/kids/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/quote/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/sport/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/chris-garia/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/masseerstok/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/looptraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/medicinebal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/voetbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/oefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/warming-up/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/kracht/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/stabiliteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/lenigheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/snelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/coordinatie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/techniek/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/looptechniek/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/trainingsschema/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/frisbee/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/frisbees/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/tennis/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/basketbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/honkbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/reactiebal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/reactiesnelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/sporthandschoenen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/voetbalhandschoenen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/handschoenen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/vogel/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/zwart/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/hoodie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/reflection/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/vector/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/vision-training/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/kleurenbal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/lichtgevende-bal/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/traplopen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/traptraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/snelheidtraining/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/functionele-snelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/springoefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/sprongoefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/jump-exercises/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/running-exercises/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/jumping-exercises/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/functional-speed/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/dynamic-stretching/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/dynamic-strength/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/warm-up/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/explosive/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/stronger/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/faster/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/training-program/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/training-schedule/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/tennisballs/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/tennisballen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/hand-oog-coordinatie/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/cognitief-vermogen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/cognitieve-oefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/rhythm/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/ritme/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/springtouw/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/blauw/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/jumprope/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/rugzak/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/backpack/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/vector-ball/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/exercises/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/cognitive-vision/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/cognitive-training/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/ebook/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/warmingup/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/warming-up-warming-up/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/rekoefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/strekoefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/krachtoefeningen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/voorbeelden/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/illustraties/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/plaatjes/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/motoriek/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/functionele/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/trainingen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/explosiviteit/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/loopscholing/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/opwarmen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/romp/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/padel/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "product_tag",
+   "from": "/product-tag/padeltoernooi/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "testimonials_category",
+   "from": "/testimonials-category/testimonials-blocks/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "testimonials_category",
+   "from": "/testimonials-category/testimonials-slider/",
+   "status": 301,
+   "hops": 1,
+   "to": "/"
+  },
+  {
+   "group": "author",
+   "from": "/author/jesse-caron/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "author",
+   "from": "/author/tijnvangiezen/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/page/2/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/blog/page/2/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/category/voetbal/page/2/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/tag/voetbal/page/2/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/feed/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/blog/feed/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/looptraining-voetbal/feed/",
+   "status": 301,
+   "hops": 1,
+   "to": "/blog"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/?s=snelheid",
+   "status": 302,
+   "hops": 1,
+   "to": "/blog?s=snelheid"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/product/stroboscoop-knipper-bril/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop/stroboscoop-glasses"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/functionele-snelheid/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/functionele-snelheid-trainen"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/functionele-kracht/",
+   "status": 301,
+   "hops": 1,
+   "to": "/training/functionele-kracht-trainen"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/portfolio_item/guyon-balsemhof/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/category/samet-dag/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/category/shirtsponsor/",
+   "status": 301,
+   "hops": 1,
+   "to": "/shop"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/portfolio-item/mannequin-challenge-schoolsport-vereniging-rotterdam-atletiek/",
+   "status": 301,
+   "hops": 1,
+   "to": "/videos"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/shop-lists/shop-four-columns/",
+   "status": 410,
+   "hops": 0,
+   "to": "/shop-lists/shop-four-columns/"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/wp-json/wp/v2/posts",
+   "status": 410,
+   "hops": 0,
+   "to": "/wp-json/wp/v2/posts"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/wp-admin/",
+   "status": 410,
+   "hops": 0,
+   "to": "/wp-admin/"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/wp-login.php",
+   "status": 410,
+   "hops": 0,
+   "to": "/wp-login.php"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/xmlrpc.php",
+   "status": 410,
+   "hops": 0,
+   "to": "/xmlrpc.php"
+  },
+  {
+   "group": "extra-probes",
+   "from": "/wp-content/uploads/2017/01/Rotterdam-Atletiek-Schoolsport-Vereniging-Jesse-Caron-Kleurplaat.pdf",
+   "status": 301,
+   "hops": 1,
+   "to": "/downloads/Rotterdam-Atletiek-Schoolsport-Vereniging-Jesse-Caron-Kleurplaat.pdf"
+  }
+ ]
+}

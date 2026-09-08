@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 import PageHero from "@/components/PageHero";
 import IntakeForm from "@/components/IntakeForm";
 
 export const metadata: Metadata = {
   title: "Aanmelden",
+  alternates: { canonical: `${SITE_URL}/aanmelden` },
   description: "Meld je aan voor een persoonlijke intake bij Jesse Caron.",
 };
 

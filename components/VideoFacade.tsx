@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 // YouTube facade: shows a thumbnail; loads the iframe only on click.
 export default function VideoFacade({
@@ -32,8 +33,11 @@ export default function VideoFacade({
         />
       ) : (
         <button className="vthumb__btn" onClick={() => setPlay(true)} aria-label={`Speel video: ${title}`}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={thumb} alt={title} loading="lazy" />
+          {/* Served by YouTube, and optimised like everything else — `img.youtube.com` is
+              on the `images.remotePatterns` allow-list in next.config.ts. The 16:9 box is
+              reserved before the bytes land, so a row of video cards cannot jump as the
+              thumbnails arrive. */}
+          <Image src={thumb} alt={title} fill sizes="(max-width: 1000px) 100vw, 50vw" />
           <span className="vthumb__play">
             <span className="vthumb__circle">
               <svg viewBox="0 0 24 24" width="22" height="22">

@@ -2,94 +2,25 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 import { getPages, getPosts, getProducts, localImg } from "@/lib/content";
+import { ASSET_ALIASES, buildSlugRoutes, resolveInternal } from "@/lib/legacy-routes.mjs";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
-// Real routes in the app router that a scraped link may point at directly.
-const STATIC_ROUTES = new Set([
-  "",
-  "/training",
-  "/videos",
-  "/blog",
-  "/shop",
-  "/academy",
-  "/contact",
-  "/aanmelden",
-  "/prijzen",
-  "/voorwaarden",
-]);
-
-// Pages that live at their own route rather than under /training/[slug].
-const PAGE_ROUTES: Record<string, string> = {
-  contact: "/contact",
-  prijzen: "/prijzen",
-  voorwaarden: "/voorwaarden",
-};
-
-// Old WordPress paths with no 1:1 slug on the new site.
-const ALIASES: Record<string, string> = {
-  "/functionele-snelheid": "/training/functionele-snelheid-trainen",
-  "/functionele-kracht": "/training/functionele-kracht-trainen",
-  "/products": "/shop",
-  "/product-categorie": "/shop",
-  "/productcategorie": "/shop",
-  "/webshop": "/shop",
-  // The old portfolio (one page per video) is `/videos` here. Without this, the
-  // "Video" link on `/training/schoolsport-vereniging` still pointed at
-  // www.jessecaron.com — at a portfolio item that is not even among the 21 the
-  // harvest found, so it was a link off our own site to a page that will not exist.
-  // `portfolio_item` (underscore) is the older permalink; `content/pages/records.md`
-  // uses it.
-  "/portfolio-item": "/videos",
-  "/portfolio_item": "/videos",
-};
-
-// Products the shop renamed when it moved.
-const RENAMED_SLUGS: Record<string, string> = {
-  "stroboscoop-knipper-bril": "stroboscoop-glasses",
-};
-
-// slug -> new route, built once from the content indexes rather than a
-// hand-maintained list (the old map missed ~100 links, /aanmelden included).
+/**
+ * slug -> new route, built once from the content indexes rather than a
+ * hand-maintained list (the old map missed ~100 links, /aanmelden included).
+ *
+ * The rules themselves — ALIASES, RENAMED_SLUGS, the unrouted `records` page —
+ * live in `lib/legacy-routes.mjs`, because `scripts/build-redirects.mjs` has to
+ * answer the same question for the HTTP 301 map, and the two must not drift apart:
+ * a link in a body and a link from Google have to land on the same page.
+ * See the header of that file.
+ */
 let SLUG_ROUTES: Map<string, string> | null = null;
 function slugRoutes(): Map<string, string> {
   if (SLUG_ROUTES) return SLUG_ROUTES;
-  const m = new Map<string, string>();
-  for (const p of getProducts()) m.set(p.slug, `/shop/${p.slug}`);
-  for (const p of getPosts()) m.set(p.slug, `/blog/${p.slug}`);
-  for (const p of getPages()) m.set(p.slug, PAGE_ROUTES[p.slug] ?? `/training/${p.slug}`);
-  SLUG_ROUTES = m;
-  return m;
-}
-
-// Maps an old jessecaron.com path onto the new site, or returns null to leave
-// the absolute URL alone (genuinely gone / external assets).
-function resolveInternal(rawPath: string): string | null {
-  const [withoutHash, hash = ""] = rawPath.split("#");
-  const clean = withoutHash.split("?")[0].replace(/\/+$/, "").toLowerCase();
-  const suffix = hash ? `#${hash}` : "";
-  const hit = (route: string) => `${route}${suffix}`;
-
-  if (STATIC_ROUTES.has(clean)) return hit(clean === "" ? "/" : clean);
-
-  const segments = clean.split("/").filter(Boolean);
-  if (segments.length === 0) return hit("/");
-
-  // /product/<slug>/ and /product-categorie/<anything>/
-  if (segments.length >= 2) {
-    const prefix = `/${segments[0]}`;
-    if (prefix === "/product") {
-      const slug = RENAMED_SLUGS[segments[1]] ?? segments[1];
-      const route = slugRoutes().get(slug);
-      return route ? hit(route) : null;
-    }
-    if (ALIASES[prefix]) return hit(ALIASES[prefix]);
-    return null;
-  }
-
-  if (ALIASES[clean]) return hit(ALIASES[clean]);
-  const route = slugRoutes().get(RENAMED_SLUGS[segments[0]] ?? segments[0]);
-  return route ? hit(route) : null;
+  SLUG_ROUTES = buildSlugRoutes({ products: getProducts(), posts: getPosts(), pages: getPages() });
+  return SLUG_ROUTES;
 }
 
 function rewriteMarkdown(md: string): string {
@@ -111,7 +42,13 @@ function rewriteMarkdown(md: string): string {
     (_m, url: string, title: string) => {
       if (/\.(jpg|jpeg|png|gif|webp|svg)$/i.test(url)) return `(${localImg(url)}${title})`;
       const pathPart = url.replace(/^https?:\/\/(?:www\.)?jessecaron\.com/, "");
-      const internal = resolveInternal(pathPart);
+      // Non-image uploads — today exactly one, the 2017 Kleurplaat PDF, linked from
+      // `/training/schoolsport-vereniging` and the `kleurplaat` post. `localImg()`
+      // only knows about pictures, so before this the two links pointed at the old
+      // host and would have died with it, silently, on a page nobody re-reads.
+      const asset = ASSET_ALIASES[pathPart.split("?")[0]];
+      if (asset) return `(${asset}${title})`;
+      const internal = resolveInternal(pathPart, slugRoutes());
       return `(${internal ?? url}${title})`;
     },
   );

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { localImg } from "@/lib/content";
 
 // Compact interior-page hero: eyebrow + big title over an optional image.
@@ -6,18 +7,28 @@ export default function PageHero({
   title,
   sub,
   image,
+  priority = true,
 }: {
   eyebrow: string;
   title: string;
   sub?: string;
   image?: string;
+  /**
+   * A hero is the first thing on its page and therefore the LCP element, so it
+   * loads eagerly by default rather than waiting for the lazy-load observer.
+   * A prop rather than a constant only so a page that puts something heavier
+   * above the hero can hand the priority over instead of bidding against itself.
+   */
+  priority?: boolean;
 }) {
   return (
     <section className="phero">
       {image ? (
         <div className="phero__bg">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={localImg(image)} alt="" />
+          {/* `fill` rather than intrinsic width/height: this is a full-bleed crop whose
+              height comes from the section's padding, never from the photograph. The
+              parent is already the `position:absolute; inset:0` box `fill` requires. */}
+          <Image src={localImg(image)} alt="" fill sizes="100vw" priority={priority} />
         </div>
       ) : null}
       <div className="wrap phero__inner">

@@ -1,10 +1,12 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Markdown from "@/components/Markdown";
-import { TRAINING_SLUGS, getPage, getTrainingPages, localImg } from "@/lib/content";
+import { TRAINING_SLUGS, getPage, getTrainingPages, localDims, localImg } from "@/lib/content";
 import { getPageBody } from "@/lib/content.server";
+import { SITE_URL } from "@/lib/site";
 import { TRAINING_HERO } from "../hero-images";
 import { splitImageRuns } from "./image-runs";
 import RecordsBlock from "./records";
@@ -25,6 +27,14 @@ export function generateStaticParams() {
  */
 export const dynamicParams = false;
 
+/**
+ * .igal is three tracks with 1px gaps in the 1224px content column (2 at ≤1000px,
+ * 1 at ≤640px); .igal--wide collapses to a single track and takes the whole column.
+ */
+const IGAL_SIZES =
+  "(max-width: 640px) calc(100vw - 56px), (max-width: 1000px) calc((100vw - 58px) / 2), 407px";
+const IGAL_WIDE_SIZES = "(max-width: 1280px) calc(100vw - 56px), 1224px";
+
 // Pages that own a top-level route must not answer here as well.
 const OWN_ROUTE = new Set(["prijzen", "voorwaarden", "contact"]);
 
@@ -36,7 +46,10 @@ export async function generateMetadata({
   const { slug } = await params;
   const page = getPage(slug);
   if (!page || OWN_ROUTE.has(slug)) return {};
-  return { title: page.title };
+  return {
+    title: page.title,
+    alternates: { canonical: `${SITE_URL}/training/${slug}` },
+  };
 }
 
 export default async function TrainingPage({
@@ -67,10 +80,22 @@ export default async function TrainingPage({
               <Markdown key={i}>{s.text}</Markdown>
             ) : (
               <figure className={`igal${s.wide ? " igal--wide" : ""}`} key={i}>
-                {s.images.map((img) => (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img key={img.src} src={localImg(img.src)} alt={img.alt} loading="lazy" />
-                ))}
+                {s.images.map((img) => {
+                  // These are technique diagrams and result tables of a dozen different
+                  // shapes, laid out at their own ratio inside the tile rather than
+                  // cropped, so they take real dimensions rather than `fill`.
+                  const d = localDims(img.src);
+                  return (
+                    <Image
+                      key={img.src}
+                      src={localImg(img.src)}
+                      alt={img.alt}
+                      width={d?.w ?? 1600}
+                      height={d?.h ?? 1000}
+                      sizes={s.wide ? IGAL_WIDE_SIZES : IGAL_SIZES}
+                    />
+                  );
+                })}
               </figure>
             ),
           )}

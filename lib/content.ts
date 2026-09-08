@@ -2,6 +2,7 @@
 // Filesystem-backed markdown bodies live in `lib/content.server.ts`.
 import contentJson from "@/content/data/content.json";
 import taxonomyJson from "@/content/data/taxonomy.json";
+import imageDimensions from "@/lib/image-dimensions.json";
 import imageManifest from "@/lib/image-manifest.json";
 
 // ----------------------------------------------------------------------------
@@ -116,9 +117,13 @@ type ContentShape = {
 
 type TaxonomyShape = { categories: Category[]; tags: Tag[] };
 
+/** One row of `lib/image-dimensions.json` — the manifest's `{path, w, h}` companion. */
+export type ImageDims = { path: string; w: number | null; h: number | null };
+
 const data = contentJson as unknown as ContentShape;
 const taxonomy = taxonomyJson as unknown as TaxonomyShape;
 const manifest = imageManifest as Record<string, string>;
+const dimensions = imageDimensions as Record<string, ImageDims>;
 
 // ----------------------------------------------------------------------------
 // Image mapping: remote URL -> local copy (fallback to remote, which is live)
@@ -138,6 +143,26 @@ export function localImg(url: string | undefined | null): string {
   if (unsized !== base && manifest[unsized]) return manifest[unsized];
 
   return url;
+}
+
+/**
+ * The pixel size of a local image, for `next/image`'s `width`/`height`.
+ *
+ * Lives in `lib/image-dimensions.json`, a *companion* to the manifest rather than
+ * a widening of it: `imageManifest` is a `Record<string, string>` and both this
+ * module and `scripts/check-images.mjs` index it that way, so turning its values
+ * into objects would be a breaking change to a file two other phases touch. Same
+ * keys, same order, generated in the same pass.
+ *
+ * Returns `undefined` for anything not on disk — a remote URL `localImg` had to
+ * fall through on. Callers that cannot render without a box (`Markdown`) fall back
+ * to an intrinsic-size-free layout; callers using `fill` don't ask at all.
+ */
+export function localDims(url: string | undefined | null): ImageDims | undefined {
+  if (!url) return undefined;
+  const base = decodeURIComponent(url.split("?")[0].split("#")[0].split("/").pop() ?? "");
+  const hit = dimensions[base] ?? dimensions[base.replace(/-\d+x\d+(?=\.[a-z0-9]+$)/i, "")];
+  return hit && hit.w && hit.h ? hit : undefined;
 }
 
 // ----------------------------------------------------------------------------
