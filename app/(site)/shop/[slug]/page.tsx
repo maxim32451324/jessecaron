@@ -3,8 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Markdown from "@/components/Markdown";
+import PaymentMarks from "@/components/PaymentMarks";
 import ProductGallery from "@/components/ProductGallery";
 import ProductOptions from "@/components/ProductOptions";
+import StickyBuy from "@/components/StickyBuy";
 import {
   categoryLabel,
   fmtPrice,
@@ -29,6 +31,71 @@ export function generateStaticParams() {
 function localOnly(paths: string[]): string[] {
   return paths.filter((s) => s.startsWith("/"));
 }
+
+/**
+ * The guarantees, and where each one comes from.
+ *
+ * Four lines, every one of them a promise this business has already put in
+ * writing — the terms page or the shipping paragraph the product copy carries.
+ * Nothing here is a shop-page cliché: there is no free delivery (this business
+ * publishes no threshold anywhere), no money-back beyond the statutory
+ * withdrawal right, and no padlock, because the payment happens on the webshop
+ * and not on this page.
+ */
+const GUARANTEES: { glyph: React.ReactElement; head: string; sub: string }[] = [
+  {
+    // voorwaarden.md § Herroepingsrecht — "de mogelijkheid de overeenkomst
+    // zonder opgave van redenen te ontbinden gedurende 14 dagen", and "komen
+    // ten hoogste de kosten van terugzending voor zijn rekening".
+    glyph: (
+      <>
+        <path d="M3 5.4h6.4a3.3 3.3 0 0 1 0 6.6H5.2" />
+        <path d="M5.8 2.6 3 5.4l2.8 2.8" />
+      </>
+    ),
+    head: "14 dagen bedenktijd",
+    sub: "Retourzending voor eigen rekening",
+  },
+  {
+    // voorwaarden.md § Garantie — "De garantietermijn van de ondernemer komt
+    // overeen met de fabrieksgarantietermijn", and defects reported "binnen 14
+    // dagen na levering".
+    glyph: (
+      <>
+        <path d="M8 1.7 2.7 3.8v3.9c0 3.3 2.2 5.5 5.3 6.6 3.1-1.1 5.3-3.3 5.3-6.6V3.8L8 1.7Z" />
+        <path d="M5.9 7.9 7.4 9.4l2.9-2.9" />
+      </>
+    ),
+    head: "Fabrieksgarantie",
+    sub: "Gebreken binnen 14 dagen melden",
+  },
+  {
+    // Product copy, on 29 of the 38 products — "estimated up to 5 business days
+    // by Post NL".
+    glyph: (
+      <>
+        <path d="M1.4 3.9h7.3v6.9H1.4z" />
+        <path d="M8.7 6.4h2.8l2.1 2.2v2.2H8.7z" />
+        <circle cx="4.4" cy="12.3" r="1.4" />
+        <circle cx="11.2" cy="12.3" r="1.4" />
+      </>
+    ),
+    head: "Verzending met PostNL",
+    sub: "Doorgaans binnen 5 werkdagen",
+  },
+  {
+    // voorwaarden.md § Feedback & Klachten — "Ingediende klachten worden binnen
+    // een termijn van 14 dagen gerekend vanaf de datum van ontvangst beantwoord."
+    glyph: (
+      <>
+        <path d="M1.9 3.1h12.2v7.5H8.3l-3.2 2.9v-2.9H1.9z" />
+        <path d="M4.8 5.9h6.4M4.8 8h4" />
+      </>
+    ),
+    head: "Antwoord binnen 14 dagen",
+    sub: "Op elke ingediende klacht",
+  },
+];
 
 export async function generateMetadata({
   params,
@@ -129,9 +196,10 @@ export default async function ProductPage({
                   </p>
                 )}
                 {hasPrice(p) ? (
-                  <p className="pdp__pricenote">
-                    Prijs zoals vermeld in de officiële webshop op jessecaron.com.
-                  </p>
+                  // Provenance, kept because it is honest, but demoted to a
+                  // footnote: it explains where the number came from, it is not
+                  // something the reader has to weigh before buying.
+                  <p className="pdp__pricenote">Prijs zoals vermeld in de officiële webshop.</p>
                 ) : null}
               </div>
 
@@ -139,7 +207,7 @@ export default async function ProductPage({
 
               {run ? <ProductOptions run={run} id={p.slug} /> : null}
 
-              <div className="pdp__buy">
+              <div className="pdp__buy" id="pdp-buy">
                 {soldOut ? (
                   <>
                     <p className="pdp__unavailable">
@@ -157,15 +225,47 @@ export default async function ProductPage({
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Bestel via de webshop ↗
+                    Toevoegen aan winkelwagen ↗
                   </a>
                 )}
+                {/*
+                  One line, said once. The old note apologised three times over —
+                  no stock, no payments, finish elsewhere — which read as a
+                  disclaimer rather than a shop. The true part is that the order
+                  is completed on the webshop, so that is the part that is said,
+                  and the arrow on the button already tells you it leaves.
+                */}
                 <p className="pdp__note">
-                  Bestellen verloopt via de officiële webshop. Deze pagina houdt geen voorraad aan
-                  en verwerkt geen betalingen — je rondt de bestelling af op jessecaron.com
-                  {run && !soldOut ? `, waar je ook je ${run.label.toLowerCase()} opgeeft` : ""}.
+                  Je rondt je bestelling af in de officiële webshop op jessecaron.com
+                  {run && !soldOut ? `, waar je ook je ${run.label.toLowerCase()} kiest` : ""}.
                 </p>
               </div>
+
+              <ul className="pguar" role="list">
+                {GUARANTEES.map((g) => (
+                  <li className="pguar__i" key={g.head}>
+                    <svg
+                      className="pguar__g"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      height="16"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden
+                      focusable="false"
+                    >
+                      {g.glyph}
+                    </svg>
+                    <span className="pguar__t">
+                      <span className="pguar__h">{g.head}</span>
+                      <span className="pguar__s">{g.sub}</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
 
               {facts.length ? (
                 <dl className="pdl" aria-label="Productgegevens">
@@ -192,28 +292,23 @@ export default async function ProductPage({
                 It says "op jessecaron.com" rather than "hier" because the basket, the payment
                 and the stock all live on the old webshop — promising a secure checkout on a
                 page that cannot take a payment would be the one dishonest line on it.
+
+                The strip carries five marks. Bankoverschrijving is a sixth method the copy
+                lists but has no logo of its own, so it is a sentence underneath rather than a
+                chip pretending to be a brand.
               */}
               <section className="ptrust" aria-labelledby="ptrust-h">
                 <h2 className="ptrust__h" id="ptrust-h">
                   Veilig afrekenen op jessecaron.com
                 </h2>
-                <ul className="ptrust__pay" role="list">
-                  {["iDEAL", "Visa", "Mastercard", "American Express", "PayPal", "Bankoverschrijving"].map(
-                    (m) => (
-                      <li className="ptrust__chip" key={m}>
-                        {m}
-                      </li>
-                    ),
-                  )}
-                </ul>
+                <PaymentMarks />
                 <ul className="ptrust__list" role="list">
-                  <li>Verzending met PostNL — doorgaans binnen 5 werkdagen</li>
+                  <li>Betalen kan ook per bankoverschrijving</li>
                   <li>Alleen bezorging in Nederland — daarbuiten eerst even mailen</li>
                   <li>Ophalen bij je personal of groepstraining kan ook</li>
                   <li>
-                    14 dagen bedenktijd —{" "}
-                    <Link href="/voorwaarden">retourvoorwaarden</Link> (retourzending voor eigen
-                    rekening)
+                    Levering wettelijk uiterlijk binnen 30 dagen —{" "}
+                    <Link href="/voorwaarden">lees de voorwaarden</Link>
                   </li>
                 </ul>
               </section>
@@ -275,6 +370,20 @@ export default async function ProductPage({
         </section>
       ) : null}
 
+      {/*
+        A sold-out product has no buy button, so it gets no sticky one either —
+        a bar offering to add a thing that cannot be bought is the sort of
+        detail that costs a shop its credibility.
+      */}
+      {soldOut ? null : (
+        <StickyBuy
+          name={p.name}
+          price={hasPrice(p) ? fmtPrice(p.price_eur) : "Zie webshop"}
+          url={p.url}
+          anchorId="pdp-buy"
+        />
+      )}
+
       <style>{`
         .pdp-wrap { padding:132px 0 0; }
         .pcrumb { margin-bottom:28px; }
@@ -308,7 +417,7 @@ export default async function ProductPage({
         .pdp__now { color:var(--blue); }
         .pdp__was { color:var(--ash); font-size:19px; text-decoration-thickness:1px; }
         .pdp__price--unknown { font-size:18px; color:var(--text-dim); }
-        .pdp__pricenote { margin-top:8px; font-size:13px; color:var(--text-dim); }
+        .pdp__pricenote { margin-top:7px; font-size:11.5px; line-height:1.5; color:var(--ash); }
         .pdp__sr { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
 
         .pdp__rule { border:0; border-top:1px solid var(--line-d); margin:30px 0; }
@@ -318,12 +427,30 @@ export default async function ProductPage({
         .pdp__unavailable { font-size:15px; color:var(--text-muted); margin-bottom:16px; }
         .pdp__note { margin-top:14px; font-size:13px; line-height:1.65; color:var(--text-dim); max-width:48ch; }
 
+        /* Guarantees, straight under the button. Two columns so four short
+           promises read as a block rather than a list to work through. */
+        .pguar { list-style:none; margin:22px 0 0; padding:0;
+          display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px 18px; }
+        .pguar__i { display:flex; align-items:flex-start; gap:10px; min-width:0; }
+        .pguar__g { flex:0 0 auto; margin-top:1px; color:var(--blue); }
+        .pguar__t { display:flex; flex-direction:column; gap:2px; min-width:0; }
+        .pguar__h { font-size:13px; font-weight:600; line-height:1.35; color:var(--paper); }
+        .pguar__s { font-size:11.5px; line-height:1.4; color:var(--text-dim); }
+
         .ptrust { margin:30px 0 0; padding:20px; border:1px solid var(--line-d); background:var(--ink-2); }
         .ptrust__h { font-family:var(--font-jetbrains),monospace; font-size:11px; font-weight:600;
           letter-spacing:.16em; text-transform:uppercase; color:var(--paper); margin:0 0 14px; }
-        .ptrust__pay { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 14px; padding:0; list-style:none; }
-        .ptrust__chip { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.06em;
-          color:var(--text-muted); border:1px solid var(--line-d); padding:4px 8px; white-space:nowrap; }
+
+        /* The marks are coloured artwork on a near-black page, so each one gets
+           a light chip to sit on — the same ground a real checkout gives them. */
+        .ppay { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 14px; padding:0; list-style:none; }
+        .ppay__item { display:flex; }
+        .ppay__mark { display:inline-flex; padding:3px;
+          background:#f7f7f5; border:1px solid rgba(0,0,0,.12); }
+        .ppay__mark svg { display:block; width:38px; height:24px; }
+        .ppay__vh { position:absolute; width:1px; height:1px; overflow:hidden;
+          clip-path:inset(50%); white-space:nowrap; }
+
         .ptrust__list { margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:7px; }
         .ptrust__list li { font-size:13.5px; line-height:1.5; color:var(--text-muted); padding-left:16px; position:relative; }
         .ptrust__list li::before { content:""; position:absolute; left:0; top:.62em; width:6px; height:1px; background:var(--blue); }
@@ -361,6 +488,9 @@ export default async function ProductPage({
         @media(max-width:640px){
           .pdp-wrap { padding-top:108px; }
           .prel { padding:72px 0 84px; }
+        }
+        @media(max-width:400px){
+          .pguar { grid-template-columns:minmax(0,1fr); gap:12px; }
         }
         @media print {
           .pcrumb, .pdp__back, .prel { display:none; }
