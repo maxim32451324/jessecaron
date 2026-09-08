@@ -149,6 +149,20 @@
       "chars": 2396
     },
     {
+      "title": "Data",
+      "slug": "data",
+      "url": "https://www.jessecaron.com/data/",
+      "featured_image": "",
+      "chars": 3662
+    },
+    {
+      "title": "Schoolsport Vereniging Rotterdam Atletiek",
+      "slug": "schoolsport-vereniging",
+      "url": "https://www.jessecaron.com/schoolsport-vereniging-rotterdam-atletiek/",
+      "featured_image": "",
+      "chars": 2416
+    },
+    {
       "title": "Prijzen",
       "slug": "prijzen",
       "url": "https://www.jessecaron.com/prijzen/",
@@ -163,32 +177,18 @@
       "chars": 15963
     },
     {
-      "title": "Shirts",
-      "slug": "shirts",
-      "url": "https://www.jessecaron.com/shirts/",
-      "featured_image": "",
-      "chars": 6678
-    },
-    {
-      "title": "Teamkleding",
-      "slug": "teamkleding",
-      "url": "https://www.jessecaron.com/teamkleding/",
-      "featured_image": "",
-      "chars": 3759
-    },
-    {
-      "title": "About",
-      "slug": "about",
-      "url": "https://www.jessecaron.com/about/",
-      "featured_image": "",
-      "chars": 12688
-    },
-    {
       "title": "Contact",
       "slug": "contact",
       "url": "https://www.jessecaron.com/contact/",
       "featured_image": "",
       "chars": 1030
+    },
+    {
+      "title": "Records",
+      "slug": "records",
+      "url": "https://www.jessecaron.com/records/",
+      "featured_image": "",
+      "chars": 932
     }
   ],
   "posts": [
@@ -204,7 +204,18 @@
         "Sportmassage",
         "Stephany Suykerbuyk"
       ],
-      "excerpt": "Deze keer heb ik een relaxte plek uitgekozen om een interview af te nemen: de massagetafel. Naast goed trainen wordt er door Jesse ook gedacht aan het herstel. Goed eten, lekker slapen en ontspannen (zoals rekken en strekken) zijn belangrijke onderdelen om te herstellen. Een…"
+      "excerpt": "Deze keer heb ik een relaxte plek uitgekozen om een interview af te nemen: de massagetafel. Naast goed trainen wordt er door Jesse ook gedacht aan het herstel. Goed eten, lekker slapen en ontspannen (zoals rekken en strekken) zijn belangrijke onderdelen om te herstellen. Een…",
+      "categories": [
+        "groeipijn",
+        "interviews",
+        "sportmassage"
+      ],
+      "tag_slugs": [
+        "groeipijn",
+        "massage",
+        "sportmassage",
+        "stephany-suykerbuyk"
+      ]
     },
     {
       "title": "Team Caron",
@@ -238,7 +249,36 @@
         "Strekken",
         "Wenden en Keren"
       ],
-      "excerpt": "Het grootste gedeelte van zijn week geeft hij privétrainingen, maar op vier momenten in de week is het wat drukker in de sportschool van Jesse Caron voor de groepstrainingen. Op vrijdagavond of zondagmiddag trainen atleten van verschillende sporten, leeftijden en niveaus samen. Ze maken elkaar beter, dagen elkaar uit om te winnen en hebben tussendoor veel plezier."
+      "excerpt": "Het grootste gedeelte van zijn week geeft hij privétrainingen, maar op vier momenten in de week is het wat drukker in de sportschool van Jesse Caron voor de groepstrainingen. Op vrijdagavond of zondagmiddag trainen atleten van verschillende sporten, leeftijden en niveaus samen. Ze maken elkaar beter, dagen elkaar uit om te winnen en hebben tussendoor veel plezier.",
+      "categories": [
+        "interviews"
+      ],
+      "tag_slugs": [
+        "daymon-mathilda",
+        "djediel-janssen",
+        "djevan-janssen",
+        "dynamisch-rekken",
+        "functionele-kracht",
+        "functionele-snelheid",
+        "groepstraining",
+        "handelingssnelheid",
+        "honkbal",
+        "hordes",
+        "isa-van-schaik",
+        "jesse-caron",
+        "looptraining",
+        "marcelo-montengro",
+        "rayan-bentaib",
+        "reactievermogen",
+        "redouan-khealiram",
+        "rekken",
+        "salahedinne-ajjouch",
+        "schiedam",
+        "snelheid",
+        "speedladder",
+        "strekken",
+        "wenden-en-keren"
+      ]
     },
     {
       "title": "Djevan en Djediel Jansen",
@@ -267,7 +307,31 @@
         "training",
         "Unicorns"
       ],
-      "excerpt": "Iedereen die bij Jesse traint komt binnen met een eigen doel. Verbetering van looptechniek of handelingssnelheid kan daar een goed voorbeeld van zijn. Soms zijn de trainingen onderdeel van een groter doel. Djevan (16) en Djediël (14) Jansen zijn daar een mooi voorbeeld van. Samen jagen zij hun grote honkbaldroom na."
+      "excerpt": "Iedereen die bij Jesse traint komt binnen met een eigen doel. Verbetering van looptechniek of handelingssnelheid kan daar een goed voorbeeld van zijn. Soms zijn de trainingen onderdeel van een groter doel. Djevan (16) en Djediël (14) Jansen zijn daar een mooi voorbeeld van. Samen jagen zij hun grote honkbaldroom na.",
+      "categories": [
+        "interviews"
+      ],
+      "tag_slugs": [
+        "catcher",
+        "curacao",
+        "djediel",
+        "djediel-2",
+        "djevan-jansen",
+        "handelingssnelheid",
+        "honkbal",
+        "jansen",
+        "looptechniek",
+        "looptraining",
+        "major-league-baseball",
+        "mlb",
+        "neptunes",
+        "omschakelen",
+        "reactiesnelheid",
+        "rotterdam",
+        "snelheid",
+        "training",
+        "unicorns"
+      ]
     },
     {
       "title": "Esmée de Willigen",
@@ -284,7 +348,19 @@
         "Looptraining Hockey",
         "Michigan"
       ],
-      "excerpt": "In de zomer hebben veel sportverenigingen een zomerstop. Dat geldt niet voor de sportschool van Jesse Caron; de zomervakantie is juist een periode dat er veel wordt getraind bij hem. Dat geldt ook voor Esmée de Willigen (19). Ze studeerde dit jaar voor eerst in…"
+      "excerpt": "In de zomer hebben veel sportverenigingen een zomerstop. Dat geldt niet voor de sportschool van Jesse Caron; de zomervakantie is juist een periode dat er veel wordt getraind bij hem. Dat geldt ook voor Esmée de Willigen (19). Ze studeerde dit jaar voor eerst in…",
+      "categories": [
+        "interviews"
+      ],
+      "tag_slugs": [
+        "amerika",
+        "esmee-de-willigen",
+        "hcr",
+        "hockey",
+        "looptraining",
+        "looptraining-hockey",
+        "michigan"
+      ]
     },
     {
       "title": "Melika (moeder Hamza) El Dahri",
@@ -302,7 +378,20 @@
         "Sparta Rotterdam",
         "voetbal"
       ],
-      "excerpt": "Al vanaf zijn zevende jaar voetbalt Hamza El Dahri (19) bij Sparta Rotterdam. Als kind van de club had hij vanaf kleins af aan de droom om in het eerste elftal van Sparta te spelen. Die droom had hij niet alleen, zijn moeder Melika had…"
+      "excerpt": "Al vanaf zijn zevende jaar voetbalt Hamza El Dahri (19) bij Sparta Rotterdam. Als kind van de club had hij vanaf kleins af aan de droom om in het eerste elftal van Sparta te spelen. Die droom had hij niet alleen, zijn moeder Melika had…",
+      "categories": [
+        "interviews"
+      ],
+      "tag_slugs": [
+        "el-dari",
+        "hamza-el-dari",
+        "looptechniek",
+        "looptraining",
+        "melika-el-dari",
+        "sparta",
+        "sparta-rotterdam",
+        "voetbal"
+      ]
     },
     {
       "title": "Isa van Schaik",
@@ -320,7 +409,20 @@
         "Trainen",
         "Voetbalster"
       ],
-      "excerpt": "“Maandag, woensdag en vrijdag train ik bij ADO. Op zaterdag spelen we een wedstrijd, dinsdag train ik zelf en op donderdag en zondag train ik bij Jesse. Donderdag heb ik techniek training en sluit ik af met krachttraining. Op zondag doe ik alleen krachttraining.” Isa…"
+      "excerpt": "“Maandag, woensdag en vrijdag train ik bij ADO. Op zaterdag spelen we een wedstrijd, dinsdag train ik zelf en op donderdag en zondag train ik bij Jesse. Donderdag heb ik techniek training en sluit ik af met krachttraining. Op zondag doe ik alleen krachttraining.” Isa…",
+      "categories": [
+        "interviews"
+      ],
+      "tag_slugs": [
+        "ado-den-haag",
+        "explosiviteit",
+        "interview",
+        "isa-van-schaik",
+        "looptechniek",
+        "looptraining",
+        "trainen",
+        "voetbalster"
+      ]
     },
     {
       "title": "Handelingssnelheid Trainen met Smartgoals",
@@ -359,7 +461,55 @@
         "voetbal",
         "Wendbaarheid"
       ],
-      "excerpt": "Een hoge handelingssnelheid is cruciaal bij spelsporten als voetbal en hockey. Het draait hoofdzakelijk om kijken, denken en handelen. Je maakt enkel snelle en vooral goede beslissingen als je bewust bent van de omgeving. Er ontbreekt bij veel trainers echter een brede perceptie van trainen…"
+      "excerpt": "Een hoge handelingssnelheid is cruciaal bij spelsporten als voetbal en hockey. Het draait hoofdzakelijk om kijken, denken en handelen. Je maakt enkel snelle en vooral goede beslissingen als je bewust bent van de omgeving. Er ontbreekt bij veel trainers echter een brede perceptie van trainen…",
+      "categories": [
+        "blog",
+        "coordinatie",
+        "football-awareness",
+        "functioneel",
+        "handelingssnelheid",
+        "hockey",
+        "nieuws",
+        "oefeningen",
+        "reactiesnelheid",
+        "reactievermogen",
+        "smartgoals",
+        "snelheid",
+        "tennis",
+        "voetbal",
+        "wendbaarheid"
+      ],
+      "tag_slugs": [
+        "awareness",
+        "basketbal",
+        "coordinatie",
+        "football-awareness",
+        "handelingssnelheid",
+        "handelingssnelheid-trainen",
+        "handelingssnelheid-trainen-voetbal",
+        "hockey",
+        "kijkgedrag",
+        "korting",
+        "oefeningen",
+        "reactieballen",
+        "reactielichten",
+        "reactiesnelheid",
+        "reactiesnelheid-trainen",
+        "reactievermogen",
+        "smartgoal",
+        "smartgoal-oefeningen",
+        "smartgoals",
+        "smartgoals-hockey",
+        "smartgoals-kopen",
+        "smartgoals-oefeningen",
+        "smartgoals-voetbal",
+        "snelheid",
+        "stroboscoopbril",
+        "tennis",
+        "trainen",
+        "voetbal",
+        "wendbaarheid"
+      ]
     },
     {
       "title": "Looptraining Voetbal",
@@ -390,7 +540,57 @@
         "voetbal",
         "Wendbaarheid"
       ],
-      "excerpt": "Een functionele looptraining voor het voetbal bestaat zeker niet alleen uit het heen en weer trekken van sprintjes. Voor het ontwikkelen van functioneel loopvermogen dient er getraind te worden op aspecten als uithoudingsvermogen, flexibiliteit, stabiliteit, kracht, explosiviteit, wendbaarheid, snelheid en reactievermogen. Het technisch niveau van…"
+      "excerpt": "Een functionele looptraining voor het voetbal bestaat zeker niet alleen uit het heen en weer trekken van sprintjes. Voor het ontwikkelen van functioneel loopvermogen dient er getraind te worden op aspecten als uithoudingsvermogen, flexibiliteit, stabiliteit, kracht, explosiviteit, wendbaarheid, snelheid en reactievermogen. Het technisch niveau van…",
+      "categories": [
+        "coordinatie",
+        "explosiviteit",
+        "flexibiliteit",
+        "functioneel",
+        "functionele-kracht",
+        "functionele-krachttraining-voetbal",
+        "geen-categorie",
+        "krachttraining",
+        "looptraining",
+        "looptraining-voetbal",
+        "nieuws",
+        "oefeningen",
+        "reactiesnelheid",
+        "reactievermogen",
+        "reactiviteit",
+        "rekken",
+        "rompstabiliteit",
+        "snelheid",
+        "stabiliteit",
+        "startsnelheid",
+        "trainen",
+        "voetbal",
+        "warming-up",
+        "warming-up-voetbal",
+        "wendbaarheid"
+      ],
+      "tag_slugs": [
+        "conditie",
+        "coordinatie",
+        "explosiviteit",
+        "flexibiliteit",
+        "functioneel",
+        "functionele-kracht",
+        "functionele-snelheid",
+        "kracht",
+        "lenigheid",
+        "looptechniek",
+        "looptraining-voetbal",
+        "motoriek",
+        "reactievermogen",
+        "sprintsnelheid",
+        "stabiliteit",
+        "startsnelheid",
+        "techniek",
+        "training",
+        "uithoudingsvermogen",
+        "voetbal",
+        "wendbaarheid"
+      ]
     },
     {
       "title": "Krachtraining Voetbal",
@@ -422,7 +622,48 @@
         "voetbal",
         "warming-up"
       ],
-      "excerpt": "Het voetbal kent de laatste jaren een opmerkelijke fysieke ontwikkeling, de inspanningen op het veld worden verricht met een hogere intensiteit. Het lichaam van een voetballer moet in topconditie verkeren wil het zich kunnen meten met- en staande weten te houden op het hoogste niveau…."
+      "excerpt": "Het voetbal kent de laatste jaren een opmerkelijke fysieke ontwikkeling, de inspanningen op het veld worden verricht met een hogere intensiteit. Het lichaam van een voetballer moet in topconditie verkeren wil het zich kunnen meten met- en staande weten te houden op het hoogste niveau….",
+      "categories": [
+        "beweegpatronen",
+        "blessure",
+        "blog",
+        "explosiviteit",
+        "functioneel",
+        "functionele-kracht",
+        "functionele-krachttraining-voetbal",
+        "kracht",
+        "krachttraining",
+        "nieuws",
+        "rompstabiliteit",
+        "stabiliteit",
+        "startsnelheid",
+        "trainen",
+        "voetbal"
+      ],
+      "tag_slugs": [
+        "beweegpatronen",
+        "explosiviteit",
+        "fitness",
+        "functioneel",
+        "functionele-kracht",
+        "gewichten",
+        "kinderen",
+        "kracht",
+        "krachtoefening",
+        "krachttraining",
+        "oefeningen",
+        "personal-training",
+        "rompstabiliteit",
+        "snelheid",
+        "sprongkracht",
+        "stabiliteit",
+        "startsnelheid",
+        "trainen",
+        "trainer",
+        "vermogen",
+        "voetbal",
+        "warming-up"
+      ]
     },
     {
       "title": "Esajas, Statia & Tahiri winnen bronzen Medaille op NK Atletiek",
@@ -443,7 +684,30 @@
         "Tarik Tahiri",
         "Topsnelheid"
       ],
-      "excerpt": "Afgelopen weekend vond het Nederlands Kampioenschap Atletiek plaats in Utrecht waar gestreden werd voor medailles op verschillende atletiek onderdelen. Dit wedstrijdseizoen heeft JesseCaron.com drie atleten gesponsord met sportkleding én producten, zij hebben de onderscheidende origami adelaar nog meer bekendheid gegeven door elk een bronzen medaille te…"
+      "excerpt": "Afgelopen weekend vond het Nederlands Kampioenschap Atletiek plaats in Utrecht waar gestreden werd voor medailles op verschillende atletiek onderdelen. Dit wedstrijdseizoen heeft JesseCaron.com drie atleten gesponsord met sportkleding én producten, zij hebben de onderscheidende origami adelaar nog meer bekendheid gegeven door elk een bronzen medaille te…",
+      "categories": [
+        "atletiek",
+        "blog",
+        "explosiviteit",
+        "nargelis-statia",
+        "nieuws",
+        "snelheid",
+        "sprinten",
+        "tarik-tahiri"
+      ],
+      "tag_slugs": [
+        "100-meter",
+        "200-meter",
+        "atletiek",
+        "nargelis",
+        "nargelis-statia",
+        "origami-adelaar",
+        "ruben-esajas",
+        "sprint",
+        "statia",
+        "tarik-tahiri",
+        "topsnelheid"
+      ]
     },
     {
       "title": "Startsnelheid Trainen",
@@ -479,7 +743,63 @@
         "Wendbaarheid",
         "Wendbaarheid Trainen"
       ],
-      "excerpt": "Als performance trainer krijg ik vaak de vraag en opdracht de startsnelheid te verbeteren. In eerste instantie denkt men vaak dat dit een fysiek aspect is, waar dit eigenlijk primair een motorisch aspect is. Motoriek staat voor het vermogen om te bewegen, de spieraansturing gebeurt vanuit…"
+      "excerpt": "Als performance trainer krijg ik vaak de vraag en opdracht de startsnelheid te verbeteren. In eerste instantie denkt men vaak dat dit een fysiek aspect is, waar dit eigenlijk primair een motorisch aspect is. Motoriek staat voor het vermogen om te bewegen, de spieraansturing gebeurt vanuit…",
+      "categories": [
+        "coordinatie",
+        "explosiviteit",
+        "flexibiliteit",
+        "functioneel",
+        "functionele-kracht",
+        "functionele-krachttraining-voetbal",
+        "hockey",
+        "kracht",
+        "krachttraining",
+        "looptraining",
+        "looptraining-hockey",
+        "looptraining-voetbal",
+        "nieuws",
+        "oefeningen",
+        "performance-trainer",
+        "reactiesnelheid",
+        "reactievermogen",
+        "reactiviteit",
+        "rekken",
+        "snelheid",
+        "spierpijn",
+        "sprinten",
+        "startsnelheid",
+        "trainen",
+        "voetbal",
+        "wendbaarheid"
+      ],
+      "tag_slugs": [
+        "basketbal",
+        "coordinatie",
+        "explosiviteit",
+        "explosiviteit-trainen",
+        "functionele-kracht",
+        "functionele-snelheid",
+        "hockey",
+        "kracht",
+        "lenigheid",
+        "looptrainer",
+        "performance-trainer",
+        "plyometrie",
+        "reactiesnelheid",
+        "reactievermogen",
+        "rugby",
+        "snelheid",
+        "sprinten",
+        "starten",
+        "startsnelheid",
+        "startsnelheid-trainen",
+        "startsnelheid-trainen-voetbal",
+        "tennis",
+        "uithoudingsvermogen",
+        "voetbal",
+        "wendbaarheid",
+        "wendbaarheid-trainen"
+      ]
     },
     {
       "title": "Reactiesnelheid Trainen",
@@ -522,7 +842,57 @@
         "Warmlopen",
         "Zichtvermogen"
       ],
-      "excerpt": "Het trainen van reactiesnelheid is bij voetbal, hockey, rugby, basketbal en tennis een belangrijk aandachtspunt. Er ontbreekt bij veel spelsporters en trainer echter een brede perceptie van het begrip reactiesnelheid, het trainen van je reactievermogen voor spelsporten dient te gebeuren met een grote variatie aan oefeningen…"
+      "excerpt": "Het trainen van reactiesnelheid is bij voetbal, hockey, rugby, basketbal en tennis een belangrijk aandachtspunt. Er ontbreekt bij veel spelsporters en trainer echter een brede perceptie van het begrip reactiesnelheid, het trainen van je reactievermogen voor spelsporten dient te gebeuren met een grote variatie aan oefeningen…",
+      "categories": [
+        "hockey",
+        "nieuws",
+        "oefeningen",
+        "reactiesnelheid",
+        "reactievermogen",
+        "reactiviteit",
+        "smartgoals",
+        "snelheid",
+        "tennis",
+        "trainen",
+        "voetbal",
+        "warming-up",
+        "warming-up-voetbal"
+      ],
+      "tag_slugs": [
+        "bril",
+        "duckhee-lee",
+        "functionele-snelheid",
+        "hand-oog-coordinatie",
+        "hockey",
+        "knipperbril",
+        "loopcoordinatie",
+        "oefeningen",
+        "reactie",
+        "reactiebal",
+        "reactieballen",
+        "reactiebril",
+        "reactiesnelheid",
+        "reactiesnelheid-trainen",
+        "reactievermogen",
+        "reactievermogen-trainen",
+        "reflex",
+        "rugby",
+        "smartgoals",
+        "snelheid",
+        "strobe",
+        "stroboscoop",
+        "stroboscoopbril",
+        "tennis",
+        "trainen",
+        "training",
+        "trainingen",
+        "vapor-strobe",
+        "voet-oog-coordinatie",
+        "voetbal",
+        "warming-up",
+        "warmlopen",
+        "zichtvermogen"
+      ]
     },
     {
       "title": "Zomerstop Loop- & Kracht Training",
@@ -557,7 +927,45 @@
         "Zomerstop",
         "Zomerstoptraining"
       ],
-      "excerpt": "“A dream without a plan is just a wish” Als het wedstrijdseizoen is afgelopen stoppen veel sporters tijdelijk met trainen, er wordt enkele weken tot maanden geen aandacht besteed aan de sport waardoor ook vaak de meeste blessures na de zomerstop ontstaan omdat het lichaam…"
+      "excerpt": "“A dream without a plan is just a wish” Als het wedstrijdseizoen is afgelopen stoppen veel sporters tijdelijk met trainen, er wordt enkele weken tot maanden geen aandacht besteed aan de sport waardoor ook vaak de meeste blessures na de zomerstop ontstaan omdat het lichaam…",
+      "categories": [
+        "hockey",
+        "krachttraining",
+        "looptraining",
+        "looptraining-hockey",
+        "looptraining-voetbal",
+        "nieuws",
+        "voetbal",
+        "zomerstoptraining",
+        "zweetband-adelaar"
+      ],
+      "tag_slugs": [
+        "atletiekbaan",
+        "bentincklaan-40",
+        "coordinatie",
+        "explosiviteit",
+        "flexibiliteit",
+        "functioneel",
+        "functionele-snelheid",
+        "hockey",
+        "jesse-caron",
+        "kracht",
+        "krachttraining",
+        "looptrainer",
+        "looptraining",
+        "nenijto",
+        "reactiviteit",
+        "snelheid",
+        "sprinten",
+        "stabiliteit",
+        "trainen",
+        "trainer",
+        "training",
+        "voetbal",
+        "wendbaarheid",
+        "zomerstop",
+        "zomerstoptraining"
+      ]
     },
     {
       "title": "Mannequin Challenge – Schoolsport Vereniging Rotterdam Atletiek",
@@ -575,7 +983,26 @@
         "Schoolsport",
         "Schoolsport Vereniging"
       ],
-      "excerpt": "Een mannequin zonder mooie kleding is als een training zonder goede oefeningen, op de schoolsport verenigingen van Rotterdam Atletiek ‘het Nieuwe Westen’ en ‘de Provenier’ wordt wekelijks direct na schooltijd en in de nabijgelegen gymzaal van school uitdagend getraind op alle onderdelen die atletiek te…"
+      "excerpt": "Een mannequin zonder mooie kleding is als een training zonder goede oefeningen, op de schoolsport verenigingen van Rotterdam Atletiek ‘het Nieuwe Westen’ en ‘de Provenier’ wordt wekelijks direct na schooltijd en in de nabijgelegen gymzaal van school uitdagend getraind op alle onderdelen die atletiek te…",
+      "categories": [
+        "atletiek",
+        "atletiektraining",
+        "blog",
+        "nieuws",
+        "rotterdam-atletiek",
+        "schoolsport-vereniging",
+        "sprinten"
+      ],
+      "tag_slugs": [
+        "atletiek",
+        "de-provenier",
+        "flickmyhouse",
+        "gymzaal",
+        "het-nieuwe-westen",
+        "rotterdam-atletiek",
+        "schoolsport",
+        "schoolsport-vereniging"
+      ]
     },
     {
       "title": "Kleurplaatwedstrijd – Schoolsport Vereniging – Rotterdam Atletiek",
@@ -594,7 +1021,28 @@
         "Schoolsport",
         "Schoolsport Vereniging"
       ],
-      "excerpt": "Jesse Caron is al tien jaar betrokken bij sportstimuleringsprojecten in Rotterdam, samen met huisverhuur platform ‘Flickmyhouse’ gaat hij in zijn jubileumjaar de sportieve prestaties van kinderen belonen met gratis sportkleding van zijn eigen merk. Speciaal voor dit jubileum heeft Marvin Bruin een aantal atleten én…"
+      "excerpt": "Jesse Caron is al tien jaar betrokken bij sportstimuleringsprojecten in Rotterdam, samen met huisverhuur platform ‘Flickmyhouse’ gaat hij in zijn jubileumjaar de sportieve prestaties van kinderen belonen met gratis sportkleding van zijn eigen merk. Speciaal voor dit jubileum heeft Marvin Bruin een aantal atleten én…",
+      "categories": [
+        "atletiek",
+        "atletiektraining",
+        "blog",
+        "nieuws",
+        "rotterdam-atletiek",
+        "schoolsport-vereniging",
+        "zweetband",
+        "zweetband-adelaar"
+      ],
+      "tag_slugs": [
+        "atletiek",
+        "illustratie",
+        "jesse-caron",
+        "kleurplaat",
+        "kleurplaatwedstrijd",
+        "marvin-bruin",
+        "rotterdam-atletiek",
+        "schoolsport",
+        "schoolsport-vereniging"
+      ]
     },
     {
       "title": "Flickmyhouse sponsort jubileum activiteiten Jesse Caron",
@@ -619,7 +1067,34 @@
         "Sprinten",
         "Trainer"
       ],
-      "excerpt": "Jesse Caron is al tien jaar betrokken bij sportstimuleringsprojecten in Rotterdam, samen met huisverhuur platform ‘Flickmyhouse’ gaat hij in zijn jubileumjaar de sportieve prestaties van kinderen belonen met gratis sportkleding van zijn eigen merk. Er is een feestelijke start gemaakt met twee atletiek wedstrijden bij…"
+      "excerpt": "Jesse Caron is al tien jaar betrokken bij sportstimuleringsprojecten in Rotterdam, samen met huisverhuur platform ‘Flickmyhouse’ gaat hij in zijn jubileumjaar de sportieve prestaties van kinderen belonen met gratis sportkleding van zijn eigen merk. Er is een feestelijke start gemaakt met twee atletiek wedstrijden bij…",
+      "categories": [
+        "atletiek",
+        "atletiektraining",
+        "blog",
+        "maatschappelijk",
+        "nieuws",
+        "rotterdam-atletiek",
+        "schoolsport-vereniging",
+        "sprinten"
+      ],
+      "tag_slugs": [
+        "adelaar",
+        "atletiek",
+        "de-provenier",
+        "flickmyhouse",
+        "functionele-snelheid",
+        "het-nieuwe-westen",
+        "jesse-caron",
+        "jubilieum",
+        "origami",
+        "rotterdam",
+        "rotterdam-atletiek",
+        "sponsor",
+        "sponsoring",
+        "sprinten",
+        "trainer"
+      ]
     },
     {
       "title": "Sport Performance Centre (SPC) Rijnmond  – Errol Esajas",
@@ -646,7 +1121,38 @@
         "training",
         "voetbal"
       ],
-      "excerpt": "Rotterdam Atletiek neemt afscheid van Errol Esajas (lid sinds 01-01-1977) en looptrainer bij onze vereniging sinds 1986 gaat Rotterdam Atletiek verlaten. In deze periode is hij niet alleen een verdienstelijk atleet geweest, maar heeft hij zich ook ontpopt als een uiterst succesvolle trainer van o.a…."
+      "excerpt": "Rotterdam Atletiek neemt afscheid van Errol Esajas (lid sinds 01-01-1977) en looptrainer bij onze vereniging sinds 1986 gaat Rotterdam Atletiek verlaten. In deze periode is hij niet alleen een verdienstelijk atleet geweest, maar heeft hij zich ook ontpopt als een uiterst succesvolle trainer van o.a….",
+      "categories": [
+        "atletiek",
+        "errol-esajas",
+        "hockey",
+        "krachttraining",
+        "looptraining",
+        "nieuws",
+        "spc",
+        "sport-performance-centre-rijnmond",
+        "tennis",
+        "voetbal"
+      ],
+      "tag_slugs": [
+        "atletiek",
+        "errol-esajas",
+        "hockey",
+        "jesse-caron",
+        "krachttraining",
+        "looptraining",
+        "patrick-van-luijk",
+        "robert-lathouwers",
+        "rotterdam",
+        "rotterdam-atletiek",
+        "spc",
+        "sport-performance-centre-rijnmond",
+        "sportcentrum",
+        "tennis",
+        "trainer",
+        "training",
+        "voetbal"
+      ]
     },
     {
       "title": "Rotterdam krijgt talent-team boksen",
@@ -672,7 +1178,30 @@
         "Roy Korving",
         "Ton Dunk"
       ],
-      "excerpt": "Rotterdam Boxing gaat starten met een talent-team. Onlangs werd op een sponsordiner 100.000 euro opgehaald. Daarmee kunnen de plannen voor het talent-team in 2015 worden uitgevoerd. Voor het talent-team zijn acht boksers uit de regio Rotterdam geselecteerd. Het gaat om Abbygail Deekman, Rex Meijer, Felix…"
+      "excerpt": "Rotterdam Boxing gaat starten met een talent-team. Onlangs werd op een sponsordiner 100.000 euro opgehaald. Daarmee kunnen de plannen voor het talent-team in 2015 worden uitgevoerd. Voor het talent-team zijn acht boksers uit de regio Rotterdam geselecteerd. Het gaat om Abbygail Deekman, Rex Meijer, Felix…",
+      "categories": [
+        "looptraining",
+        "looptraining-boksen",
+        "nieuws"
+      ],
+      "tag_slugs": [
+        "abbygail-deekman",
+        "artjom-kasparian",
+        "dari-duarte",
+        "delano-james",
+        "felix-jordan",
+        "jesse-caron",
+        "looptrainer",
+        "michael-kok",
+        "olympische-spelen",
+        "rex-meijer",
+        "rijnmond",
+        "robert-nokhai",
+        "rotterdam",
+        "rotterdam-boxing",
+        "roy-korving",
+        "ton-dunk"
+      ]
     },
     {
       "title": "Zweetbanden",
@@ -697,7 +1226,34 @@
         "Zweetband Adelaar",
         "Zweetband Vogel"
       ],
-      "excerpt": "Met het volgen van ‘Functionele Snelheid‘ trainingen bij Jesse Caron leer en train je op technieken die je functioneel sneller maken waarmee je jezelf kunt onderscheiden in de wedstrijd; je transformeert van sporter tot topsporter. Als beloning van het behalen van dit gevorderde niveau en…"
+      "excerpt": "Met het volgen van ‘Functionele Snelheid‘ trainingen bij Jesse Caron leer en train je op technieken die je functioneel sneller maken waarmee je jezelf kunt onderscheiden in de wedstrijd; je transformeert van sporter tot topsporter. Als beloning van het behalen van dit gevorderde niveau en…",
+      "categories": [
+        "hockey",
+        "looptraining",
+        "polsband",
+        "polsband-adelaar",
+        "tennis",
+        "voetbal",
+        "zweetband",
+        "zweetband-adelaar"
+      ],
+      "tag_slugs": [
+        "adelaar",
+        "blauw",
+        "blauw-zwart",
+        "elite",
+        "functionele-snelheid",
+        "jesse-caron",
+        "polsband",
+        "polsband-adelaar",
+        "topsport",
+        "vogel",
+        "zwart",
+        "zwart-blauw",
+        "zweetband",
+        "zweetband-adelaar",
+        "zweetband-vogel"
+      ]
     },
     {
       "title": "Voetbal Specifieke Warming-Up",
@@ -735,7 +1291,56 @@
         "warmingup",
         "Wendbaarheid"
       ],
-      "excerpt": "De voetbaltraining begint altijd met een warming-up, er ontbreekt echter bij veel voetbaltrainers de noodzakelijke theoretische en praktische kennis met betrekking tot de verschillende specifieke warming-up oefeningen voor het voetbal. De warming-up is vrijwel altijd het minst gevarieerde onderdeel van de training, het start vaak…"
+      "excerpt": "De voetbaltraining begint altijd met een warming-up, er ontbreekt echter bij veel voetbaltrainers de noodzakelijke theoretische en praktische kennis met betrekking tot de verschillende specifieke warming-up oefeningen voor het voetbal. De warming-up is vrijwel altijd het minst gevarieerde onderdeel van de training, het start vaak…",
+      "categories": [
+        "coordinatie",
+        "explosiviteit",
+        "flexibiliteit",
+        "informatie",
+        "kracht",
+        "oefeningen",
+        "pieter-jan-van-der-heiden",
+        "reactiviteit",
+        "rekken",
+        "snelheid",
+        "spierpijn",
+        "sportfysiotherapeut",
+        "stabiliteit",
+        "voetbal",
+        "warming-up",
+        "warming-up-voetbal",
+        "wedstrijd"
+      ],
+      "tag_slugs": [
+        "coordinatie",
+        "download",
+        "dynamisch-rekken",
+        "explosiviteit",
+        "flexibiliteit",
+        "fysiotherapeut",
+        "jesse-caron",
+        "kracht",
+        "loopoefeningen",
+        "looptrainer",
+        "oefeningen",
+        "pieter-jan-van-der-heiden",
+        "plyometrie",
+        "reactievermogen",
+        "reactiviteit",
+        "rekoefeningen",
+        "snelheid",
+        "spieractivatie",
+        "sportfysio",
+        "sportfysiotherapeut",
+        "stabiliteit",
+        "statisch-rekken",
+        "van-der-heiden",
+        "voetbal",
+        "voetbal-warming-up",
+        "warming-up",
+        "warmingup",
+        "wendbaarheid"
+      ]
     },
     {
       "title": "Damian Muller 0 to 100 Real Quick",
@@ -759,7 +1364,34 @@
         "Zomerstop",
         "Zomerstoptraining"
       ],
-      "excerpt": "Damian Muller is een elk jaar een graag geziene voetballer tijdens de zomerstop trainingen gericht op het ontwikkelen van functionele kracht en snelheid, de speler van Excelsior Rotterdam heeft een zeer hoge snelheid ontwikkeld maar kan deze ook optimaal benutten door zijn sterke stabiliteit en wendbaarheid. Wil je…"
+      "excerpt": "Damian Muller is een elk jaar een graag geziene voetballer tijdens de zomerstop trainingen gericht op het ontwikkelen van functionele kracht en snelheid, de speler van Excelsior Rotterdam heeft een zeer hoge snelheid ontwikkeld maar kan deze ook optimaal benutten door zijn sterke stabiliteit en wendbaarheid. Wil je…",
+      "categories": [
+        "explosiviteit",
+        "looptraining",
+        "looptraining-voetbal",
+        "snelheid",
+        "stabiliteit",
+        "videos",
+        "voetbal",
+        "wendbaarheid",
+        "zomerstoptraining"
+      ],
+      "tag_slugs": [
+        "damian",
+        "damian-muller",
+        "excelsior",
+        "jesse-caron",
+        "looptraining",
+        "muller",
+        "real-quick",
+        "strandtraining",
+        "video",
+        "voetbal",
+        "voetballer",
+        "zandtraining",
+        "zomerstop",
+        "zomerstoptraining"
+      ]
     },
     {
       "title": "Samenwerkingsverband looptraining SC Feyenoord verlengd",
@@ -794,7 +1426,48 @@
         "warming-up",
         "Workshop"
       ],
-      "excerpt": "Jesse Caron heeft gedurende het afgelopen seizoen (2013-14) wekelijks looptraining verzorgd aan zowel de D1- als C1 van SC Feyenoord als, hiermee zijn alle spelers gemiddeld 10% functioneel  sneller geworden. Bij de snelheidsmetingen is er extra aandacht besteed aan wendbaarheid; de snelheid van het keren…."
+      "excerpt": "Jesse Caron heeft gedurende het afgelopen seizoen (2013-14) wekelijks looptraining verzorgd aan zowel de D1- als C1 van SC Feyenoord als, hiermee zijn alle spelers gemiddeld 10% functioneel  sneller geworden. Bij de snelheidsmetingen is er extra aandacht besteed aan wendbaarheid; de snelheid van het keren….",
+      "categories": [
+        "coordinatie",
+        "feyenoord",
+        "flexibiliteit",
+        "looptrainer-feyenoord",
+        "looptraining",
+        "looptraining-feyenoord",
+        "looptraining-voetbal",
+        "pieter-jan-van-der-heiden",
+        "rekken",
+        "sportfysiotherapeut",
+        "stabiliteit",
+        "voetbal"
+      ],
+      "tag_slugs": [
+        "c1",
+        "d1",
+        "dynamisch-rekken",
+        "feyenoord",
+        "feyenoord-academy",
+        "flexibiliteit",
+        "fysio",
+        "fysiotherapeut",
+        "jesse-caron",
+        "lenigheid",
+        "looptrainer",
+        "looptrainer-feyenoord",
+        "looptraining",
+        "looptraining-feyenoord",
+        "looptraining-voetbal",
+        "nac-breda",
+        "pieter-jan-van-der-heiden",
+        "rekken",
+        "sportfysiotherapeut",
+        "statisch-rekken",
+        "van-der-heiden",
+        "voetbal",
+        "voetbalspecifieke-warming-up",
+        "warming-up",
+        "workshop"
+      ]
     },
     {
       "title": "KBands Trainingsmateriaal",
@@ -820,7 +1493,36 @@
         "weerstandsbanden",
         "Wendbaarheid"
       ],
-      "excerpt": "JesseCaron.com heeft zichzelf verrijkt met KBands ‘Leg Resistance Bands’, deze weerstandsbanden tussen de bovenbenen zullen worden ingezet bij de functionele looptrainingen t.b.v. het ontwikkelen van flexibiliteit, stabiliteit, kracht, coördinatie, reactiviteit, explosiviteit, wendbaarheid en snelheid."
+      "excerpt": "JesseCaron.com heeft zichzelf verrijkt met KBands ‘Leg Resistance Bands’, deze weerstandsbanden tussen de bovenbenen zullen worden ingezet bij de functionele looptrainingen t.b.v. het ontwikkelen van flexibiliteit, stabiliteit, kracht, coördinatie, reactiviteit, explosiviteit, wendbaarheid en snelheid.",
+      "categories": [
+        "coordinatie",
+        "explosiviteit",
+        "flexibiliteit",
+        "kracht",
+        "looptraining",
+        "reactiviteit",
+        "snelheid",
+        "stabiliteit",
+        "wendbaarheid"
+      ],
+      "tag_slugs": [
+        "coordinatie",
+        "explosiviteit",
+        "flexibiliteit",
+        "functionele-snelheid",
+        "jesse-caron",
+        "kbands",
+        "kinetic-bands",
+        "kracht",
+        "leg-resistance-bands",
+        "looptraining",
+        "reactiviteit",
+        "snelheid",
+        "stabiliteit",
+        "training",
+        "weerstandsbanden",
+        "wendbaarheid"
+      ]
     },
     {
       "title": "BOSU Trainingsmateriaal",
@@ -844,7 +1546,26 @@
         "voetbal",
         "Wendbaarheid"
       ],
-      "excerpt": "JesseCaron.com heeft zichzelf verrijkt met BOSU ‘Balance Trainer PRO’, gericht op het verbeteren van de (core) stabiliteit. Het materiaal erg compact en licht zodat het makkelijk kan worden gebruikt op alle gewenste trainingslocaties."
+      "excerpt": "JesseCaron.com heeft zichzelf verrijkt met BOSU ‘Balance Trainer PRO’, gericht op het verbeteren van de (core) stabiliteit. Het materiaal erg compact en licht zodat het makkelijk kan worden gebruikt op alle gewenste trainingslocaties.",
+      "categories": [
+        "geen-categorie"
+      ],
+      "tag_slugs": [
+        "agility",
+        "balance",
+        "balans",
+        "bosu",
+        "core",
+        "looptraining",
+        "rotterdam",
+        "snelhiedtraining",
+        "speed",
+        "stabiliteit",
+        "stability",
+        "strenght",
+        "voetbal",
+        "wendbaarheid"
+      ]
     },
     {
       "title": "Statisch en/of Dynamisch Rekken?",
@@ -883,7 +1604,48 @@
         "warming-up",
         "warmingup"
       ],
-      "excerpt": "Het beoefenen van sport vereist lenigheid, soepele – flexibele spieren. Deze maken een goede range of motion mogelijk; de bewegingshoeveelheid die mogelijk is ter hoogte van een gewricht. Stijve spieren hebben een beperkte range of motion, er kunnen blessures ontstaan als een sporter buiten zijn…"
+      "excerpt": "Het beoefenen van sport vereist lenigheid, soepele – flexibele spieren. Deze maken een goede range of motion mogelijk; de bewegingshoeveelheid die mogelijk is ter hoogte van een gewricht. Stijve spieren hebben een beperkte range of motion, er kunnen blessures ontstaan als een sporter buiten zijn…",
+      "categories": [
+        "flexibiliteit",
+        "hockey",
+        "informatie",
+        "massage-stick",
+        "nieuws",
+        "rekken",
+        "spierpijn",
+        "voetbal"
+      ],
+      "tag_slugs": [
+        "bindweefsel",
+        "blessures",
+        "dynamisch",
+        "flexibel",
+        "flexibiliteit",
+        "foamroller",
+        "hockey",
+        "jesse-caron",
+        "korte",
+        "lenigheid",
+        "lening",
+        "looptrainer",
+        "looptraining",
+        "massage-stok",
+        "massagestick",
+        "oefeningen",
+        "opwarmen",
+        "rekken",
+        "rekoefeningen",
+        "self-myofascial-release",
+        "spieren",
+        "spierpijn",
+        "sportfysiotherapeut",
+        "statisch",
+        "stijve",
+        "training",
+        "voetbal",
+        "warming-up",
+        "warmingup"
+      ]
     },
     {
       "title": "Looptraining Hockey – Craeyenhout Meisjes C2",
@@ -909,7 +1671,36 @@
         "Stabiliteit",
         "Wendbaarheid"
       ],
-      "excerpt": "De afgelopen periode heeft Jesse Caron veel talentvolle hockeyers getraind op functionele kracht en snelheid in personal trainingen of in de groepstrainingen op de vrijdagavond of zondagmiddag, dit is niet onopgemerkt gebleven bij de diverse hockeyverenigingen waar zij deze kracht en snelheid hebben ingezet. Jesse Caron…"
+      "excerpt": "De afgelopen periode heeft Jesse Caron veel talentvolle hockeyers getraind op functionele kracht en snelheid in personal trainingen of in de groepstrainingen op de vrijdagavond of zondagmiddag, dit is niet onopgemerkt gebleven bij de diverse hockeyverenigingen waar zij deze kracht en snelheid hebben ingezet. Jesse Caron…",
+      "categories": [
+        "coordinatie",
+        "explosiviteit",
+        "flexibiliteit",
+        "hockey",
+        "looptraining",
+        "looptraining-hockey",
+        "reactiviteit",
+        "snelheid",
+        "stabiliteit"
+      ],
+      "tag_slugs": [
+        "coordinatie",
+        "craeyenhout",
+        "den-haag",
+        "explosiviteit",
+        "flexibiliteit",
+        "hockey",
+        "jesse-caron",
+        "kracht",
+        "looptrainer",
+        "looptrainer-hockey",
+        "looptraining",
+        "looptraining-hockey",
+        "reactiviteit",
+        "snelheid",
+        "stabiliteit",
+        "wendbaarheid"
+      ]
     },
     {
       "title": "Looptrainer SC Feyenoord 2013/2014",
@@ -937,7 +1728,43 @@
         "warmingup",
         "Wendbaarheid"
       ],
-      "excerpt": "De afgelopen periode heeft Jesse Caron veel talentvolle voetballers getraind op functionele kracht en snelheid van- of naar diverse Feyenoord elftallen. Dat is niet onopgemerkt gebleven waardoor er na een goed gesprek met de technische directie van SC Feyenoord is besloten om het aankomende seizoen de…"
+      "excerpt": "De afgelopen periode heeft Jesse Caron veel talentvolle voetballers getraind op functionele kracht en snelheid van- of naar diverse Feyenoord elftallen. Dat is niet onopgemerkt gebleven waardoor er na een goed gesprek met de technische directie van SC Feyenoord is besloten om het aankomende seizoen de…",
+      "categories": [
+        "coordinatie",
+        "explosiviteit",
+        "feyenoord",
+        "flexibiliteit",
+        "looptrainer-feyenoord",
+        "looptraining",
+        "looptraining-feyenoord",
+        "looptraining-voetbal",
+        "reactiviteit",
+        "snelheid",
+        "stabiliteit",
+        "varkenoord",
+        "voetbal",
+        "wendbaarheid"
+      ],
+      "tag_slugs": [
+        "coordinatie",
+        "explosiviteit",
+        "feyenoord",
+        "feyenoord-c1",
+        "feyenoord-d1",
+        "flexibiliteit",
+        "functionele-snelheid",
+        "jesse-caron",
+        "kracht",
+        "looptrainer-feyenoord",
+        "looptraining-feyenoord",
+        "reactiviteit",
+        "rotterdam",
+        "snelheid",
+        "stabiliteit",
+        "warming-up",
+        "warmingup",
+        "wendbaarheid"
+      ]
     }
   ],
   "products": [
@@ -1304,7 +2131,7 @@
       ],
       "stock_status": "instock",
       "variant_stock": {
-        "164": {
+        "140": {
           "in_stock": true,
           "text": "Op voorraad"
         },
@@ -1312,7 +2139,7 @@
           "in_stock": true,
           "text": "Op voorraad"
         },
-        "140": {
+        "164": {
           "in_stock": true,
           "text": "Op voorraad"
         }

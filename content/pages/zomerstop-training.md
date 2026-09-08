@@ -4,10 +4,14 @@ slug: zomerstop-training
 url: https://www.jessecaron.com/zomerstop-training/
 
 ---
+![](https://www.jessecaron.com/wp-content/uploads/2017/01/Functionele-Looptraining-Voetbal-Functionele-Snelheid-Trainen.jpg)
+
 
 ##  Zomerstop Loop- & Kracht Training
 
 ###### Als het wedstrijdseizoen is afgelopen stoppen veel sporters tijdelijk met trainen, er wordt enkele weken tot maanden geen aandacht besteed aan de sport waardoor ook vaak de meeste blessures na de zomerstop ontstaan omdat het lichaam niet meer is gewend aan de gebruikelijke belasting en vermoeidheid. De zomerstop periode is het ideale moment om te werken aan het verbeteren en versterken van zwakke punten, doordat er in deze periode geen rekening gehouden hoeft te worden met wedstrijden en reguliere trainingen is het mogelijk in veel sterkere mate mentaal en fysiek te trainen waardoor betere resultaten behaald kunnen worden in een relatief korte periode.
+
+![](https://www.jessecaron.com/wp-content/uploads/2015/05/Zomerstop-Loop-Kracht-Training.jpg)
 
 ##### Jesse Caron heeft een trainingsprogramma opgesteld waarin op specifieke en essentiële voetbalgerichte eigenschappen getraind wordt zodat voetballers functioneel sterker én sneller met vol zelfvertrouwen aan het nieuwe seizoen kunnen beginnen. Dit trainingsprogramma kun je van mei tot augustus volgen middels personal trainingen en/of groepstrainingen, dit trainingsprogramma bestaat uit functionele snelheidstrainingen en functionele krachttrainingen. Bij nieuwe aanmeldingen wordt altijd gestart met een persoonlijke intake; een interactieve training gericht op de basistechnieken waarin trainee en trainer elkaar leren kennen, enerzijds de motoriek en leerstijl van de trainee anderzijds de werkwijze van de trainer. Hierdoor is een eventuele doorstroming naar de vervolg persoonlijke- en/of groepstrainingen, waar de moeilijkheidsgraad velen malen hoger ligt, soepeler, efficiënter en leuker.
 
@@ -24,3 +28,6 @@ url: https://www.jessecaron.com/zomerstop-training/
 ### SLUIT VERVOLGENS AAN BIJ EEN WEKELIJKE GROEPSTRAINING OF TRAIN PRIVE
 
 [ AANMELDEN ](http://www.jessecaron.com/aanmelden/)
+
+
+![](https://www.jessecaron.com/wp-content/uploads/2017/01/Reactie-Snelheid-Trainen-Voetbal.jpg)

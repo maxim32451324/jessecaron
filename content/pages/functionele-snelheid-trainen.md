@@ -4,8 +4,12 @@ slug: functionele-snelheid-trainen
 url: https://www.jessecaron.com/functionele-snelheid-trainen/
 
 ---
+![](https://www.jessecaron.com/wp-content/uploads/2020/01/Functionele-Snelheid-Trainen-Voetbal-Hockey.jpg)
+
 
 ###### Als je sneller wilt worden voor spelsporten als voetbal of hockey moet je trainingsprogramma uit meer bestaan dan alleen het heen en weer trekken van sprintjes. Voor het ontwikkelen van functionele snelheid voor dit soort type sporten is fysieke snelheid namelijk slechts één van de vele elementen, het gaat bij spelsporten veel meer om het technisch niveau- en daarmee de daadwerkelijke kwaliteit van de fysieke elementen als snelheid, kracht, lenigheid en uithoudingsvermogen. Technische elementen die men vaak vergeet, misplaatst of onderbelicht maar essentieel zijn voor het ontwikkelen van functionele snelheid zijn stabiliteit, explosiviteit, wendbaarheid en handelingssnelheid.
+
+![](https://www.jessecaron.com/wp-content/uploads/2017/01/Jesse-Caron-Functionele-Snelheid-Trainen.jpg)
 
 ##### Een spelsporter hoeft namelijk maar zelden lange rechte stukken te sprinten. Het zijn veelal korte sprints die vaak eindigen in een abrupte stop om vervolgens opnieuw te versnellen in een andere richting. Het vermogen snel te kunnen starten, stoppen, wenden en keren als reactie op visuele waarnemingen bepaalt de kwaliteit van de fysieke snelheid voor een spelsporter.
 

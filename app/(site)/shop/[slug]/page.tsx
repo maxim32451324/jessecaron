@@ -27,6 +27,11 @@ export function generateStaticParams() {
   return getProducts().map((p) => ({ slug: p.slug }));
 }
 
+/** Only the slugs generateStaticParams lists may answer here; anything else is a 404.
+ *  Without this Next renders unknown slugs on demand, which is how three Lorem ipsum
+ *  pages were live under /training. */
+export const dynamicParams = false;
+
 /** next/image can only serve what is on disk here; a stray remote URL falls back to <img>. */
 function localOnly(paths: string[]): string[] {
   return paths.filter((s) => s.startsWith("/"));

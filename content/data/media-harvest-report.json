@@ -1,0 +1,952 @@
+{
+  "generated": "2026-09-08T18:29:51.085Z",
+  "source_site": "https://www.jessecaron.com",
+  "method": "Sequential GET (1.5s delay, desktop UA, read-only). Image references resolved from the old site's REST page bodies: WPBakery [vc_single_image image=\"ID\"] and friends resolved through a metadata-only dump of /wp-json/wp/v2/media, plus <img src|srcset> and bare URLs. WordPress's -WxH size suffix is stripped so the full-size original is fetched. Files already on disk are matched by basename AND by basename with the size suffix stripped, exactly as localImg() does, so nothing is downloaded twice. Anything whose long edge exceeded 2000px was re-encoded to 2000px (quality 82) in place. The media library itself was NOT mirrored: 720 of 1,038 uploads are referenced by nothing.",
+  "pages": [
+    {
+      "slug": "loopscholing",
+      "refs": 9,
+      "basenames": [
+        "Hardloop-Oefeningen.png",
+        "Hardlooptraining.png",
+        "Loopscholing-Rotterdam.jpg",
+        "Loopscholing-Training-Rotterdam.jpg",
+        "Loopscholing.png",
+        "Looptechniek-Oefeningen.png",
+        "Looptechniek-Training.png",
+        "Looptraining-Marathon.png",
+        "Looptraining-Rotterdam.png"
+      ]
+    },
+    {
+      "slug": "functionele-kracht-trainen",
+      "refs": 6,
+      "basenames": [
+        "Functioneel-Kracht-Trainen-Oefeningen-Voetbal.jpg",
+        "Functionele-Kracht-Oefening-Voetbal-Medicine-Bal.jpg",
+        "Functionele-Kracht-Oefening-Voetbal-Parachute-Sprint.jpg",
+        "Functionele-Kracht-Oefening-Voetbal-Squats.jpg",
+        "Functionele-Kracht-Training-Voetbal.jpg",
+        "Functionele-Krachttraining-Voetballer.jpg"
+      ]
+    },
+    {
+      "slug": "functionele-snelheid-trainen",
+      "refs": 5,
+      "basenames": [
+        "Functionele-Snelheid-Trainen-Voetbal-Hockey.jpg",
+        "Jesse-Caron-Functionele-Snelheid-Trainen.jpg",
+        "Looptraining-Voetbal-Wendbaarheid.jpg",
+        "Reactiesnelheid-Training-voor-Tennis.jpg",
+        "Snelheid-Trainen-voor-Hockey.jpg"
+      ]
+    },
+    {
+      "slug": "personal-training",
+      "refs": 3,
+      "basenames": [
+        "Functionele-Looptraining-Voetbal-Functionele-Snelheid-Trainen.jpg",
+        "Jesse-Caron-Functionele-Snelheid-Trainen.jpg",
+        "Reactie-Snelheid-Trainen-Voetbal.jpg"
+      ]
+    },
+    {
+      "slug": "zomerstop-training",
+      "refs": 3,
+      "basenames": [
+        "Functionele-Looptraining-Voetbal-Functionele-Snelheid-Trainen.jpg",
+        "Reactie-Snelheid-Trainen-Voetbal.jpg",
+        "Zomerstop-Loop-Kracht-Training.jpg"
+      ]
+    },
+    {
+      "slug": "sportmassage",
+      "refs": 2,
+      "basenames": [
+        "Stephany-Suykerbuyk-Sportmassage.jpg",
+        "TV-Reclame.jpg"
+      ]
+    },
+    {
+      "slug": "oefeningen",
+      "refs": 7,
+      "basenames": [
+        "Loopoefeningen-Voetbal-Warming-Up.jpg",
+        "Nargelis-Statia-Jesse-Caron-Sportkleding-Blauw.jpg",
+        "Reactietraining-Hand-Oog-Coordinatie-Oefeningen.jpg",
+        "Shop-Banner-Label-Zweetbandje.jpg",
+        "Warming-Up-Rekoefeningen-Kracht-Oefeningen-Voorbeelden.jpg",
+        "Webshop-Functional-Speed-Training-Stair-Running-Jumping-Exercises.jpg",
+        "Webshop-Functional-Speed-Training-Vector-Ball-Cognitive-Vision-Exercises.jpg"
+      ]
+    },
+    {
+      "slug": "groepstrainingen",
+      "refs": 0,
+      "basenames": []
+    },
+    {
+      "slug": "prijzen",
+      "refs": 0,
+      "basenames": []
+    },
+    {
+      "slug": "snelheidsmetingen",
+      "refs": 0,
+      "basenames": []
+    },
+    {
+      "slug": "voorwaarden",
+      "refs": 0,
+      "basenames": []
+    },
+    {
+      "slug": "contact",
+      "refs": 3,
+      "basenames": [
+        "Looptrainer-Feyenoord-Jesse-Caron-e1484076867702.jpg",
+        "map-pin-2.png",
+        "snapcode.png"
+      ]
+    },
+    {
+      "slug": "data",
+      "refs": 6,
+      "basenames": [
+        "Jesse-Caron-Snelheid-Meten-Voetbal-Bewegingswetenschapper-Illustratie.jpg",
+        "POWER-UITSLAGEN-WEBSITE.jpg",
+        "REACTION-UITSLAGEN-WEBSITE.jpg",
+        "SMARTGOALS-UITSLAGEN-WEBSITE.jpg",
+        "SPRINT-UITSLAGEN-WEBSITE.jpg",
+        "WENDBAARHEID-UITSLAGEN-WEBSITE.jpg"
+      ]
+    },
+    {
+      "slug": "schoolsport-vereniging-rotterdam-atletiek",
+      "refs": 3,
+      "basenames": [
+        "Jesse-Caron-Schoolsport-Vereniging-Rotterdam-Atletiek-Sponsor-e1483972103718.jpg",
+        "Thumbnail-Mannequin-Shirt-Challenge.png",
+        "Youtube-Thumbnail.jpg"
+      ]
+    },
+    {
+      "slug": "records",
+      "refs": 0,
+      "basenames": []
+    }
+  ],
+  "totals": {
+    "pages_probed": 15,
+    "pages_found": 15,
+    "distinct_images_referenced": 44,
+    "already_present": 17,
+    "harvested": 27,
+    "fetched_this_run": 0,
+    "failed": 0,
+    "bytes_added": 12013824,
+    "bytes_added_this_run": 0,
+    "bytes_total_referenced": 16026649,
+    "http_requests": 0,
+    "manifest_entries_total": 209,
+    "max_edge_px": 2000,
+    "files_over_max_edge_in_manifest": 5
+  },
+  "files": [
+    {
+      "basename": "Functioneel-Kracht-Trainen-Oefeningen-Voetbal.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2017/01/Functioneel-Kracht-Trainen-Oefeningen-Voetbal.jpg",
+      "media_id": 6309,
+      "local_path": "/brand/photos/Functioneel-Kracht-Trainen-Oefeningen-Voetbal.jpg",
+      "bytes": 1461589,
+      "width": 1242,
+      "height": 1756,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "functionele-kracht-trainen"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.245Z"
+    },
+    {
+      "basename": "Functionele-Kracht-Oefening-Voetbal-Medicine-Bal.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2017/01/Functionele-Kracht-Oefening-Voetbal-Medicine-Bal.jpg",
+      "media_id": 6390,
+      "local_path": "/brand/photos/Functionele-Kracht-Oefening-Voetbal-Medicine-Bal.jpg",
+      "bytes": 68876,
+      "width": 500,
+      "height": 266,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "functionele-kracht-trainen"
+      ],
+      "reference_kind": [
+        "image"
+      ]
+    },
+    {
+      "basename": "Functionele-Kracht-Oefening-Voetbal-Parachute-Sprint.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2017/01/Functionele-Kracht-Oefening-Voetbal-Parachute-Sprint.jpg",
+      "media_id": 6391,
+      "local_path": "/brand/photos/Functionele-Kracht-Oefening-Voetbal-Parachute-Sprint.jpg",
+      "bytes": 79717,
+      "width": 500,
+      "height": 284,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "functionele-kracht-trainen"
+      ],
+      "reference_kind": [
+        "image"
+      ]
+    },
+    {
+      "basename": "Functionele-Kracht-Oefening-Voetbal-Squats.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2017/01/Functionele-Kracht-Oefening-Voetbal-Squats.jpg",
+      "media_id": 6389,
+      "local_path": "/brand/photos/Functionele-Kracht-Oefening-Voetbal-Squats.jpg",
+      "bytes": 68906,
+      "width": 500,
+      "height": 232,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "functionele-kracht-trainen"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Functionele-Kracht-Training-Voetbal.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2021/02/Functionele-Kracht-Training-Voetbal.jpg",
+      "media_id": 7614,
+      "local_path": "/brand/photos/Functionele-Kracht-Training-Voetbal.jpg",
+      "bytes": 77706,
+      "width": 600,
+      "height": 173,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "functionele-kracht-trainen"
+      ],
+      "reference_kind": [
+        "parallax_background_image"
+      ]
+    },
+    {
+      "basename": "Functionele-Krachttraining-Voetballer.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2021/02/Functionele-Krachttraining-Voetballer.jpg",
+      "media_id": 7620,
+      "local_path": "/brand/photos/Functionele-Krachttraining-Voetballer.jpg",
+      "bytes": 848597,
+      "width": 1920,
+      "height": 914,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "functionele-kracht-trainen"
+      ],
+      "reference_kind": [
+        "parallax_background_image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Functionele-Looptraining-Voetbal-Functionele-Snelheid-Trainen.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2017/01/Functionele-Looptraining-Voetbal-Functionele-Snelheid-Trainen.jpg",
+      "media_id": 6275,
+      "local_path": "/brand/photos/Functionele-Looptraining-Voetbal-Functionele-Snelheid-Trainen.jpg",
+      "bytes": 933191,
+      "width": 1920,
+      "height": 994,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "personal-training",
+        "zomerstop-training"
+      ],
+      "reference_kind": [
+        "parallax_background_image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Functionele-Snelheid-Trainen-Voetbal-Hockey.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2020/01/Functionele-Snelheid-Trainen-Voetbal-Hockey.jpg",
+      "media_id": 7443,
+      "local_path": "/brand/photos/Functionele-Snelheid-Trainen-Voetbal-Hockey.jpg",
+      "bytes": 1063132,
+      "width": 1920,
+      "height": 1076,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "functionele-snelheid-trainen"
+      ],
+      "reference_kind": [
+        "parallax_background_image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Hardloop-Oefeningen.png",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2018/04/Hardloop-Oefeningen.png",
+      "media_id": 6878,
+      "local_path": "/brand/photos/Hardloop-Oefeningen.png",
+      "bytes": 79281,
+      "width": 600,
+      "height": 277,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "loopscholing"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Hardlooptraining.png",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2018/04/Hardlooptraining.png",
+      "media_id": 6885,
+      "local_path": "/brand/photos/Hardlooptraining.png",
+      "bytes": 116832,
+      "width": 600,
+      "height": 401,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "loopscholing"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Jesse-Caron-Functionele-Snelheid-Trainen.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2017/01/Jesse-Caron-Functionele-Snelheid-Trainen.jpg",
+      "media_id": 6320,
+      "local_path": "/brand/photos/Jesse-Caron-Functionele-Snelheid-Trainen.jpg",
+      "bytes": 304382,
+      "width": 850,
+      "height": 2000,
+      "resized_from": "1065×2505",
+      "already_present": false,
+      "referenced_by": [
+        "functionele-snelheid-trainen",
+        "personal-training"
+      ],
+      "reference_kind": [
+        "image"
+      ]
+    },
+    {
+      "basename": "Jesse-Caron-Schoolsport-Vereniging-Rotterdam-Atletiek-Sponsor-e1483972103718.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2017/01/Jesse-Caron-Schoolsport-Vereniging-Rotterdam-Atletiek-Sponsor-e1483972103718.jpg",
+      "media_id": 5326,
+      "local_path": "/brand/photos/Jesse-Caron-Schoolsport-Vereniging-Rotterdam-Atletiek-Sponsor-e1483972103718.jpg",
+      "bytes": 73854,
+      "width": 800,
+      "height": 533,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "schoolsport-vereniging-rotterdam-atletiek"
+      ],
+      "reference_kind": [
+        "bare-url",
+        "img-src",
+        "srcset"
+      ]
+    },
+    {
+      "basename": "Jesse-Caron-Snelheid-Meten-Voetbal-Bewegingswetenschapper-Illustratie.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2024/03/Jesse-Caron-Snelheid-Meten-Voetbal-Bewegingswetenschapper-Illustratie.jpg",
+      "media_id": 7887,
+      "local_path": "/brand/photos/Jesse-Caron-Snelheid-Meten-Voetbal-Bewegingswetenschapper-Illustratie.jpg",
+      "bytes": 258730,
+      "width": 1920,
+      "height": 1080,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "data"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Loopoefeningen-Voetbal-Warming-Up.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2018/07/Loopoefeningen-Voetbal-Warming-Up.jpg",
+      "media_id": 7011,
+      "local_path": "/brand/photos/Loopoefeningen-Voetbal-Warming-Up.jpg",
+      "bytes": 532390,
+      "width": 1080,
+      "height": 720,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "oefeningen"
+      ],
+      "reference_kind": [
+        "bare-url",
+        "img-src",
+        "srcset"
+      ]
+    },
+    {
+      "basename": "Loopscholing-Rotterdam.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2018/04/Loopscholing-Rotterdam.jpg",
+      "media_id": 6818,
+      "local_path": "/brand/photos/Loopscholing-Rotterdam.jpg",
+      "bytes": 191656,
+      "width": 2000,
+      "height": 1000,
+      "resized_from": "2160×1080",
+      "already_present": false,
+      "referenced_by": [
+        "loopscholing"
+      ],
+      "reference_kind": [
+        "parallax_background_image"
+      ]
+    },
+    {
+      "basename": "Loopscholing-Training-Rotterdam.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2018/04/Loopscholing-Training-Rotterdam.jpg",
+      "media_id": 6847,
+      "local_path": "/brand/photos/Loopscholing-Training-Rotterdam.jpg",
+      "bytes": 682432,
+      "width": 950,
+      "height": 1080,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "loopscholing"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Loopscholing.png",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2018/04/Loopscholing.png",
+      "media_id": 6879,
+      "local_path": "/brand/photos/Loopscholing.png",
+      "bytes": 69200,
+      "width": 600,
+      "height": 262,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "loopscholing"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Looptechniek-Oefeningen.png",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2018/04/Looptechniek-Oefeningen.png",
+      "media_id": 6892,
+      "local_path": "/brand/photos/Looptechniek-Oefeningen.png",
+      "bytes": 35202,
+      "width": 115,
+      "height": 170,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "loopscholing"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Looptechniek-Training.png",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2018/04/Looptechniek-Training.png",
+      "media_id": 6875,
+      "local_path": "/brand/photos/Looptechniek-Training.png",
+      "bytes": 105680,
+      "width": 600,
+      "height": 336,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "loopscholing"
+      ],
+      "reference_kind": [
+        "image"
+      ]
+    },
+    {
+      "basename": "Looptrainer-Feyenoord-Jesse-Caron-e1484076867702.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2013/08/Looptrainer-Feyenoord-Jesse-Caron-e1484076867702.jpg",
+      "media_id": 5347,
+      "local_path": "/brand/photos/Looptrainer-Feyenoord-Jesse-Caron-e1484076867702.jpg",
+      "bytes": 177863,
+      "width": 1920,
+      "height": 1302,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "contact"
+      ],
+      "reference_kind": [
+        "image"
+      ]
+    },
+    {
+      "basename": "Looptraining-Marathon.png",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2018/04/Looptraining-Marathon.png",
+      "media_id": 6893,
+      "local_path": "/brand/photos/Looptraining-Marathon.png",
+      "bytes": 31033,
+      "width": 109,
+      "height": 170,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "loopscholing"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Looptraining-Rotterdam.png",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2018/04/Looptraining-Rotterdam.png",
+      "media_id": 6880,
+      "local_path": "/brand/photos/Looptraining-Rotterdam.png",
+      "bytes": 69965,
+      "width": 600,
+      "height": 269,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "loopscholing"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Looptraining-Voetbal-Wendbaarheid.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2018/05/Looptraining-Voetbal-Wendbaarheid.jpg",
+      "media_id": 6968,
+      "local_path": "/brand/photos/Looptraining-Voetbal-Wendbaarheid.jpg",
+      "bytes": 182381,
+      "width": 600,
+      "height": 400,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "functionele-snelheid-trainen"
+      ],
+      "reference_kind": [
+        "bare-url"
+      ]
+    },
+    {
+      "basename": "map-pin-2.png",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2016/09/map-pin-2.png",
+      "media_id": 2734,
+      "local_path": "/brand/photos/map-pin-2.png",
+      "bytes": 550,
+      "width": 25,
+      "height": 44,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "contact"
+      ],
+      "reference_kind": [
+        "bare-url"
+      ]
+    },
+    {
+      "basename": "Nargelis-Statia-Jesse-Caron-Sportkleding-Blauw.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2016/09/Nargelis-Statia-Jesse-Caron-Sportkleding-Blauw.jpg",
+      "media_id": 6647,
+      "local_path": "/brand/photos/Nargelis-Statia-Jesse-Caron-Sportkleding-Blauw.jpg",
+      "bytes": 455627,
+      "width": 1920,
+      "height": 881,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "oefeningen"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "POWER-UITSLAGEN-WEBSITE.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2024/03/POWER-UITSLAGEN-WEBSITE.jpg",
+      "media_id": 8000,
+      "local_path": "/brand/photos/POWER-UITSLAGEN-WEBSITE.jpg",
+      "bytes": 541986,
+      "width": 1920,
+      "height": 1080,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "data"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Reactie-Snelheid-Trainen-Voetbal.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2017/01/Reactie-Snelheid-Trainen-Voetbal.jpg",
+      "media_id": 6368,
+      "local_path": "/brand/photos/Reactie-Snelheid-Trainen-Voetbal.jpg",
+      "bytes": 377788,
+      "width": 1920,
+      "height": 1163,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "personal-training",
+        "zomerstop-training"
+      ],
+      "reference_kind": [
+        "parallax_background_image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Reactiesnelheid-Training-voor-Tennis.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2018/04/Reactiesnelheid-Training-voor-Tennis.jpg",
+      "media_id": 6938,
+      "local_path": "/brand/photos/Reactiesnelheid-Training-voor-Tennis.jpg",
+      "bytes": 135999,
+      "width": 600,
+      "height": 400,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "functionele-snelheid-trainen"
+      ],
+      "reference_kind": [
+        "bare-url"
+      ]
+    },
+    {
+      "basename": "Reactietraining-Hand-Oog-Coordinatie-Oefeningen.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2018/08/Reactietraining-Hand-Oog-Coordinatie-Oefeningen.jpg",
+      "media_id": 7048,
+      "local_path": "/brand/photos/Reactietraining-Hand-Oog-Coordinatie-Oefeningen.jpg",
+      "bytes": 495093,
+      "width": 1080,
+      "height": 720,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "oefeningen"
+      ],
+      "reference_kind": [
+        "bare-url",
+        "img-src",
+        "srcset"
+      ]
+    },
+    {
+      "basename": "REACTION-UITSLAGEN-WEBSITE.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2024/03/REACTION-UITSLAGEN-WEBSITE.jpg",
+      "media_id": 8006,
+      "local_path": "/brand/photos/REACTION-UITSLAGEN-WEBSITE.jpg",
+      "bytes": 595943,
+      "width": 1920,
+      "height": 1080,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "data"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Shop-Banner-Label-Zweetbandje.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2016/09/Shop-Banner-Label-Zweetbandje.jpg",
+      "media_id": 5905,
+      "local_path": "/brand/photos/Shop-Banner-Label-Zweetbandje.jpg",
+      "bytes": 382047,
+      "width": 1920,
+      "height": 1040,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "oefeningen"
+      ],
+      "reference_kind": [
+        "parallax_background_image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "SMARTGOALS-UITSLAGEN-WEBSITE.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2024/03/SMARTGOALS-UITSLAGEN-WEBSITE.jpg",
+      "media_id": 7998,
+      "local_path": "/brand/photos/SMARTGOALS-UITSLAGEN-WEBSITE.jpg",
+      "bytes": 571826,
+      "width": 1920,
+      "height": 1080,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "data"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "snapcode.png",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2017/01/snapcode.png",
+      "media_id": 5470,
+      "local_path": "/brand/photos/snapcode.png",
+      "bytes": 50828,
+      "width": 1024,
+      "height": 1024,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "contact"
+      ],
+      "reference_kind": [
+        "bare-url"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Snelheid-Trainen-voor-Hockey.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2018/04/Snelheid-Trainen-voor-Hockey.jpg",
+      "media_id": 6916,
+      "local_path": "/brand/photos/Snelheid-Trainen-voor-Hockey.jpg",
+      "bytes": 132347,
+      "width": 600,
+      "height": 400,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "functionele-snelheid-trainen"
+      ],
+      "reference_kind": [
+        "bare-url"
+      ]
+    },
+    {
+      "basename": "SPRINT-UITSLAGEN-WEBSITE.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2024/03/SPRINT-UITSLAGEN-WEBSITE.jpg",
+      "media_id": 7988,
+      "local_path": "/brand/photos/SPRINT-UITSLAGEN-WEBSITE.jpg",
+      "bytes": 535444,
+      "width": 1920,
+      "height": 1080,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "data"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Stephany-Suykerbuyk-Sportmassage.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2024/02/Stephany-Suykerbuyk-Sportmassage.jpg",
+      "media_id": 7850,
+      "local_path": "/brand/photos/Stephany-Suykerbuyk-Sportmassage.jpg",
+      "bytes": 1116887,
+      "width": 1572,
+      "height": 1920,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "sportmassage"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Thumbnail-Mannequin-Shirt-Challenge.png",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2017/02/Thumbnail-Mannequin-Shirt-Challenge.png",
+      "media_id": 5544,
+      "local_path": "/brand/photos/Thumbnail-Mannequin-Shirt-Challenge.png",
+      "bytes": 825406,
+      "width": 1920,
+      "height": 1080,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "schoolsport-vereniging-rotterdam-atletiek"
+      ],
+      "reference_kind": [
+        "bare-url",
+        "img-src",
+        "srcset"
+      ]
+    },
+    {
+      "basename": "TV-Reclame.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2024/02/TV-Reclame.jpg",
+      "media_id": 7838,
+      "local_path": "/brand/photos/TV-Reclame.jpg",
+      "bytes": 169712,
+      "width": 1920,
+      "height": 1080,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "sportmassage"
+      ],
+      "reference_kind": [
+        "parallax_background_image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Warming-Up-Rekoefeningen-Kracht-Oefeningen-Voorbeelden.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2021/03/Warming-Up-Rekoefeningen-Kracht-Oefeningen-Voorbeelden.jpg",
+      "media_id": 7663,
+      "local_path": "/brand/photos/Warming-Up-Rekoefeningen-Kracht-Oefeningen-Voorbeelden.jpg",
+      "bytes": 298026,
+      "width": 1080,
+      "height": 720,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "oefeningen"
+      ],
+      "reference_kind": [
+        "bare-url",
+        "img-src",
+        "srcset"
+      ]
+    },
+    {
+      "basename": "Webshop-Functional-Speed-Training-Stair-Running-Jumping-Exercises.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2020/04/Webshop-Functional-Speed-Training-Stair-Running-Jumping-Exercises.jpg",
+      "media_id": 7493,
+      "local_path": "/brand/photos/Webshop-Functional-Speed-Training-Stair-Running-Jumping-Exercises.jpg",
+      "bytes": 279042,
+      "width": 1080,
+      "height": 720,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "oefeningen"
+      ],
+      "reference_kind": [
+        "bare-url",
+        "img-src",
+        "srcset"
+      ]
+    },
+    {
+      "basename": "Webshop-Functional-Speed-Training-Vector-Ball-Cognitive-Vision-Exercises.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2021/03/Webshop-Functional-Speed-Training-Vector-Ball-Cognitive-Vision-Exercises.jpg",
+      "media_id": 7655,
+      "local_path": "/brand/photos/Webshop-Functional-Speed-Training-Vector-Ball-Cognitive-Vision-Exercises.jpg",
+      "bytes": 212290,
+      "width": 1080,
+      "height": 720,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "oefeningen"
+      ],
+      "reference_kind": [
+        "bare-url",
+        "img-src",
+        "srcset"
+      ]
+    },
+    {
+      "basename": "WENDBAARHEID-UITSLAGEN-WEBSITE.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2024/03/WENDBAARHEID-UITSLAGEN-WEBSITE.jpg",
+      "media_id": 7992,
+      "local_path": "/brand/photos/WENDBAARHEID-UITSLAGEN-WEBSITE.jpg",
+      "bytes": 568102,
+      "width": 1920,
+      "height": 1080,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "data"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    },
+    {
+      "basename": "Youtube-Thumbnail.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2017/02/Youtube-Thumbnail.jpg",
+      "media_id": 5543,
+      "local_path": "/brand/photos/Youtube-Thumbnail.jpg",
+      "bytes": 335605,
+      "width": 1920,
+      "height": 1242,
+      "resized_from": null,
+      "already_present": true,
+      "referenced_by": [
+        "schoolsport-vereniging-rotterdam-atletiek"
+      ],
+      "reference_kind": [
+        "bare-url",
+        "image",
+        "img-src",
+        "srcset"
+      ]
+    },
+    {
+      "basename": "Zomerstop-Loop-Kracht-Training.jpg",
+      "source_url": "https://www.jessecaron.com/wp-content/uploads/2015/05/Zomerstop-Loop-Kracht-Training.jpg",
+      "media_id": 6470,
+      "local_path": "/brand/photos/Zomerstop-Loop-Kracht-Training.jpg",
+      "bytes": 433506,
+      "width": 877,
+      "height": 1007,
+      "resized_from": null,
+      "already_present": false,
+      "referenced_by": [
+        "zomerstop-training"
+      ],
+      "reference_kind": [
+        "image"
+      ],
+      "fetched_at": "2026-09-08T18:29:46.246Z"
+    }
+  ],
+  "unresolved": [],
+  "failed": []
+}

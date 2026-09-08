@@ -4,6 +4,8 @@ slug: oefeningen
 url: https://www.jessecaron.com/oefeningen/
 
 ---
+![](https://www.jessecaron.com/wp-content/uploads/2016/09/Shop-Banner-Label-Zweetbandje.jpg)
+
 
 [ NEW __ ](https://www.jessecaron.com/shop)[ SHIRTS __ ](https://www.jessecaron.com/shirts)[ PRODUCTS __ ](https://www.jessecaron.com/products)[ EXERCISES __ ](https://www.jessecaron.com/oefeningen)
 
@@ -58,5 +60,7 @@ url: https://www.jessecaron.com/oefeningen/
 [](https://www.jessecaron.com/product/functional-speed-training-vector-ball-cognitive-vision-exercises/ "Functional Speed Training – Vector Ball – Cognitive Vision Exercises")
 
 ##  BLUE ON BLACK TEAM-CLOTHING ONLY AVAILABLE FOR REGISTERED MEMBERS
+
+![](https://www.jessecaron.com/wp-content/uploads/2016/09/Nargelis-Statia-Jesse-Caron-Sportkleding-Blauw.jpg)
 
 [ SIGN UP __ ](http://www.jessecaron.com/aanmelden)

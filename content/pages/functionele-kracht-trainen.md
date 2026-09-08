@@ -4,8 +4,12 @@ slug: functionele-kracht-trainen
 url: https://www.jessecaron.com/functionele-kracht-trainen/
 
 ---
+![](https://www.jessecaron.com/wp-content/uploads/2021/02/Functionele-Kracht-Training-Voetbal.jpg)
+
 
 ###### Bij functioneel kracht trainen is het van belang dat de verworven krachteigenschappen leiden tot het beter functioneren van het complete lichaam ten behoeve van een specifieke sport. Het is van belang deze sport met bijbehorende bewegingen, spiergroepen en daarmee functionele krachtoefeningen goed in beeld te hebben, zo verschilt een functionele krachttraining voor het voetbal met die van het tennis.
+
+![](https://www.jessecaron.com/wp-content/uploads/2017/01/Functioneel-Kracht-Trainen-Oefeningen-Voetbal.jpg)
 
 ### **Variatie**
 
@@ -45,8 +49,17 @@ url: https://www.jessecaron.com/functionele-kracht-trainen/
 
 ##### Bij deze oefeningen wordt maximale aanspraak gedaan op coördinatie , hierdoor activeer je veel spieren tegelijk en is het energieverbruik tijdens de training hoog. Deze oefeningen, zonder hele zware gewichten/machines, zijn uitermate geschikt voor (jonge) beginnende sporters. Door een verbeterde samenwerking en gebruik van de spieren (coördinatie en techniek) het lichaam toch sterker en legt het de basis voor gevorderde trainingsmethodes. Tevens voorkomt en verhelpt het blessures die vaak voortkomen uit onderontwikkelde en niet samenwerkende spieren.
 
+![](https://www.jessecaron.com/wp-content/uploads/2017/01/Functionele-Kracht-Oefening-Voetbal-Squats.jpg)
+
+![](https://www.jessecaron.com/wp-content/uploads/2017/01/Functionele-Kracht-Oefening-Voetbal-Medicine-Bal.jpg)
+
+![](https://www.jessecaron.com/wp-content/uploads/2017/01/Functionele-Kracht-Oefening-Voetbal-Parachute-Sprint.jpg)
+
 ##  MELD JE AAN VOOR EEN KENNISMAKING / INTAKE / TRAINING
 
 ### TRAIN VERVOLGENS IN ONZE OPEN GYM, PRIVE EN/OF OP AFSTAND
 
 [ AANMELDEN ](http://www.jessecaron.com/aanmelden/)
+
+
+![](https://www.jessecaron.com/wp-content/uploads/2021/02/Functionele-Krachttraining-Voetballer.jpg)

@@ -10,6 +10,11 @@ export function generateStaticParams() {
   return getPosts().map((p) => ({ slug: p.slug }));
 }
 
+/** Only the slugs generateStaticParams lists may answer here; anything else is a 404.
+ *  Without this Next renders unknown slugs on demand, which is how three Lorem ipsum
+ *  pages were live under /training. */
+export const dynamicParams = false;
+
 export async function generateMetadata({
   params,
 }: {
