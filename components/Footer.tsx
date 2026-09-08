@@ -2,11 +2,12 @@ import Link from "next/link";
 import { brand } from "@/lib/content";
 
 export default function Footer() {
-  const year = 2025;
+  const year = new Date().getFullYear();
   return (
     <footer
       id="contact-foot"
-      style={{ background: "var(--paper)", color: "var(--ink)", padding: "96px 0 40px" }}
+      /* extra bottom padding keeps the fixed BackToTop button off the colophon */
+      style={{ background: "var(--paper)", color: "var(--ink)", padding: "96px 0 96px" }}
     >
       <div className="wrap">
         <div className="foot-top">
@@ -71,6 +72,8 @@ export default function Footer() {
             <a href={brand.socials.linkedin} target="_blank" rel="noopener">
               LinkedIn
             </a>
+            <Link href="/prijzen">Prijzen</Link>
+            <Link href="/voorwaarden">Voorwaarden</Link>
           </div>
           <div className="foot-copy">© {year} Jesse Caron — Origami™</div>
         </div>
@@ -82,10 +85,10 @@ export default function Footer() {
         .foot-contact .row { border-bottom:1px solid var(--line-l); padding-bottom:14px; }
         .foot-contact .k { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--ash); margin-bottom:5px; }
         .foot-contact .v { font-size:18px; font-weight:600; }
-        .foot-contact .v a:hover { color:var(--blue-deep); }
+        .foot-contact .v a:hover, .foot-contact .v a:focus-visible { color:var(--blue-deep); }
         .foot-bottom { display:flex; justify-content:space-between; align-items:center; gap:24px; padding-top:26px; border-top:1px solid var(--line-l); flex-wrap:wrap; }
         .foot-social { display:flex; gap:22px; font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; }
-        .foot-social a:hover { color:var(--blue-deep); }
+        .foot-social a:hover, .foot-social a:focus-visible { color:var(--blue-deep); }
         .foot-copy { font-family:var(--font-jetbrains),monospace; font-size:11px; color:var(--ash); letter-spacing:.06em; }
         @media(max-width:860px){ .foot-top{ grid-template-columns:1fr; gap:36px; } }
       `}</style>

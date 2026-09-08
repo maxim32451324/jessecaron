@@ -15,6 +15,7 @@ export default function ShopPage() {
         eyebrow="Shop"
         title="Don't tell people your dreams. Show them."
         sub="Origami-merch, trainingsmateriaal en online trainingen. Bestellen verloopt via de officiële webshop."
+        image="Adelaar-Sport-Shirt-Jesse-Caron-Zwart.jpg"
       />
       <section className="pad">
         <div className="wrap">

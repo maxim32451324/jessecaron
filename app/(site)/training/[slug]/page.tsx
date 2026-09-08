@@ -3,13 +3,16 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Markdown from "@/components/Markdown";
-import { getPage, getPages, getTrainingPages } from "@/lib/content";
+import { TRAINING_SLUGS, getPage, getTrainingPages } from "@/lib/content";
 import { getPageBody } from "@/lib/content.server";
 
-// All real pages are previewable at /training/[slug] (service + info pages).
+// The nine training pages — not every page in the content index.
 export function generateStaticParams() {
-  return getPages().map((p) => ({ slug: p.slug }));
+  return TRAINING_SLUGS.map((slug) => ({ slug }));
 }
+
+// Pages that own a top-level route must not answer here as well.
+const OWN_ROUTE = new Set(["prijzen", "voorwaarden", "contact"]);
 
 const IMG: Record<string, string> = {
   "personal-training": "Reactiesnelheid-Trainen-Stroboscoop-Bril.jpg",
@@ -30,7 +33,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const page = getPage(slug);
-  if (!page) return {};
+  if (!page || OWN_ROUTE.has(slug)) return {};
   return { title: page.title };
 }
 
@@ -41,7 +44,7 @@ export default async function TrainingPage({
 }) {
   const { slug } = await params;
   const page = getPage(slug);
-  if (!page) notFound();
+  if (!page || OWN_ROUTE.has(slug)) notFound();
   const body = getPageBody(slug);
 
   const training = getTrainingPages();

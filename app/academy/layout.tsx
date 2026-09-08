@@ -47,10 +47,10 @@ export default async function AcademyLayout({ children }: { children: React.Reac
         .acad-top__row { display:flex; align-items:center; justify-content:space-between; height:64px; }
         .acad-nav { display:flex; align-items:center; gap:22px; font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.08em; text-transform:uppercase; }
         .acad-nav a { color:var(--paper); opacity:.82; }
-        .acad-nav a:hover { opacity:1; color:var(--blue); }
+        .acad-nav a:hover, .acad-nav a:focus-visible { opacity:1; color:var(--blue); }
         .acad-admin { color:var(--blue) !important; opacity:1 !important; }
         .acad-out { background:none; border:1px solid var(--line-d); color:var(--ash); font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.08em; text-transform:uppercase; padding:7px 12px; cursor:pointer; }
-        .acad-out:hover { color:var(--paper); border-color:var(--paper); }
+        .acad-out:hover, .acad-out:focus-visible { color:var(--blue); border-color:var(--blue); }
         .acad-main { flex:1; padding-top:48px; padding-bottom:80px; }
         .acad-foot { border-top:1px solid var(--line-d); padding:22px 0; }
         @media(max-width:640px){ .acad-nav{ gap:14px; } .acad-site{ display:none; } }

@@ -1,30 +1,114 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
-import { localImg } from "@/lib/content";
+import { getPages, getPosts, getProducts, localImg } from "@/lib/content";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
-const INTERNAL_LINK_MAP: Record<string, string> = {
-  "/videos/": "/videos",
-  "/blog/": "/blog",
-  "/contact/": "/contact",
-  "/aanmelden/": "/aanmelden",
-  "/shop/": "/shop",
-  "/functionele-kracht-trainen/": "/training/functionele-kracht-trainen",
-  "/functionele-snelheid-trainen/": "/training/functionele-snelheid-trainen",
-  "/personal-training/": "/training/personal-training",
-  "/loopscholing/": "/training/loopscholing",
-  "/groepstrainingen/": "/training/groepstrainingen",
+// Real routes in the app router that a scraped link may point at directly.
+const STATIC_ROUTES = new Set([
+  "",
+  "/training",
+  "/videos",
+  "/blog",
+  "/shop",
+  "/academy",
+  "/contact",
+  "/aanmelden",
+  "/prijzen",
+  "/voorwaarden",
+]);
+
+// Pages that live at their own route rather than under /training/[slug].
+const PAGE_ROUTES: Record<string, string> = {
+  contact: "/contact",
+  prijzen: "/prijzen",
+  voorwaarden: "/voorwaarden",
 };
 
+// Old WordPress paths with no 1:1 slug on the new site.
+const ALIASES: Record<string, string> = {
+  "/functionele-snelheid": "/training/functionele-snelheid-trainen",
+  "/functionele-kracht": "/training/functionele-kracht-trainen",
+  "/products": "/shop",
+  "/product-categorie": "/shop",
+  "/productcategorie": "/shop",
+  "/webshop": "/shop",
+};
+
+// Products the shop renamed when it moved.
+const RENAMED_SLUGS: Record<string, string> = {
+  "stroboscoop-knipper-bril": "stroboscoop-glasses",
+};
+
+// slug -> new route, built once from the content indexes rather than a
+// hand-maintained list (the old map missed ~100 links, /aanmelden included).
+let SLUG_ROUTES: Map<string, string> | null = null;
+function slugRoutes(): Map<string, string> {
+  if (SLUG_ROUTES) return SLUG_ROUTES;
+  const m = new Map<string, string>();
+  for (const p of getProducts()) m.set(p.slug, `/shop/${p.slug}`);
+  for (const p of getPosts()) m.set(p.slug, `/blog/${p.slug}`);
+  for (const p of getPages()) m.set(p.slug, PAGE_ROUTES[p.slug] ?? `/training/${p.slug}`);
+  SLUG_ROUTES = m;
+  return m;
+}
+
+// Maps an old jessecaron.com path onto the new site, or returns null to leave
+// the absolute URL alone (genuinely gone / external assets).
+function resolveInternal(rawPath: string): string | null {
+  const [withoutHash, hash = ""] = rawPath.split("#");
+  const clean = withoutHash.split("?")[0].replace(/\/+$/, "").toLowerCase();
+  const suffix = hash ? `#${hash}` : "";
+  const hit = (route: string) => `${route}${suffix}`;
+
+  if (STATIC_ROUTES.has(clean)) return hit(clean === "" ? "/" : clean);
+
+  const segments = clean.split("/").filter(Boolean);
+  if (segments.length === 0) return hit("/");
+
+  // /product/<slug>/ and /product-categorie/<anything>/
+  if (segments.length >= 2) {
+    const prefix = `/${segments[0]}`;
+    if (prefix === "/product") {
+      const slug = RENAMED_SLUGS[segments[1]] ?? segments[1];
+      const route = slugRoutes().get(slug);
+      return route ? hit(route) : null;
+    }
+    if (ALIASES[prefix]) return hit(ALIASES[prefix]);
+    return null;
+  }
+
+  if (ALIASES[clean]) return hit(ALIASES[clean]);
+  const route = slugRoutes().get(RENAMED_SLUGS[segments[0]] ?? segments[0]);
+  return route ? hit(route) : null;
+}
+
 function rewriteMarkdown(md: string): string {
-  return md.replace(/\((https?:\/\/(?:www\.)?jessecaron\.com[^)\s]*)\)/g, (_m, url: string) => {
-    if (/\.(jpg|jpeg|png|gif|webp|svg)$/i.test(url)) return `(${localImg(url)})`;
-    const pathPart = url.replace(/^https?:\/\/(?:www\.)?jessecaron\.com/, "");
-    if (INTERNAL_LINK_MAP[pathPart]) return `(${INTERNAL_LINK_MAP[pathPart]})`;
-    return `(${url})`;
-  });
+  let out = md;
+
+  // The scrape emitted body prose as h5/h6 (and inside list items), which the
+  // prose styles render as bold mini-headings. Demote those to plain text.
+  out = out.replace(/^([ \t]*(?:[*+-]|\d+[.)])[ \t]+)?#{5,6}(?:[ \t]+|[ \t]*$)/gm, (_m, lead = "") => lead ?? "");
+
+  // Leftover empty-bold separators / icon placeholders from the page builder.
+  out = out.replace(/^[ \t]*__[ \t]*$/gm, "");
+  out = out.replace(/\[[ \t]*__[ \t]*\]\(([^)\s]+)\)/g, "[$1]($1)");
+  out = out.replace(/^[ \t]*Δ[ \t]*$/gm, "");
+
+  // jessecaron.com -> local asset or new route. The optional trailing group is
+  // a markdown link title — `[x](url "Title")` — which the old map never matched.
+  out = out.replace(
+    /\((https?:\/\/(?:www\.)?jessecaron\.com[^)\s]*)((?:\s+"[^"]*")?)\)/g,
+    (_m, url: string, title: string) => {
+      if (/\.(jpg|jpeg|png|gif|webp|svg)$/i.test(url)) return `(${localImg(url)}${title})`;
+      const pathPart = url.replace(/^https?:\/\/(?:www\.)?jessecaron\.com/, "");
+      const internal = resolveInternal(pathPart);
+      return `(${internal ?? url}${title})`;
+    },
+  );
+
+  return out.replace(/\n{3,}/g, "\n\n");
 }
 
 function readBody(kind: "pages" | "posts" | "products", slug: string): string {
@@ -32,7 +116,7 @@ function readBody(kind: "pages" | "posts" | "products", slug: string): string {
   if (!fs.existsSync(file)) return "";
   const raw = fs.readFileSync(file, "utf8");
   const sep = raw.indexOf("\n---");
-  let body = sep >= 0 ? raw.slice(raw.indexOf("\n", sep + 1) + 1) : raw;
+  const body = sep >= 0 ? raw.slice(raw.indexOf("\n", sep + 1) + 1) : raw;
   return rewriteMarkdown(body.trim());
 }
 

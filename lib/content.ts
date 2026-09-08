@@ -76,8 +76,19 @@ const manifest = imageManifest as Record<string, string>;
 // ----------------------------------------------------------------------------
 export function localImg(url: string | undefined | null): string {
   if (!url) return "";
-  const base = url.split("?")[0].split("/").pop() ?? "";
-  return manifest[base] ?? url;
+  const base = decodeURIComponent(url.split("?")[0].split("#")[0].split("/").pop() ?? "");
+  if (manifest[base]) return manifest[base];
+
+  // WordPress serves resized copies as `Name-1024x683.jpg`, and the content export kept
+  // those URLs while we downloaded only the originals. Keying the manifest on the exact
+  // basename therefore missed them and `localImg` fell through to `?? url`, quietly
+  // hotlinking the old site for pictures we already have on disk. That fallback is the
+  // dangerous part: nothing looks broken until the old WordPress is switched off, and
+  // then those images vanish. Strip the size suffix and try the original.
+  const unsized = base.replace(/-\d+x\d+(?=\.[a-z0-9]+$)/i, "");
+  if (unsized !== base && manifest[unsized]) return manifest[unsized];
+
+  return url;
 }
 
 // ----------------------------------------------------------------------------

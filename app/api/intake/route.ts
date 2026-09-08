@@ -6,13 +6,16 @@ export async function POST(req: NextRequest) {
   try {
     body = await req.json();
   } catch {
-    return Response.json({ error: "invalid body" }, { status: 400 });
+    return Response.json({ ok: false, persisted: false, error: "invalid body" }, { status: 400 });
   }
 
   const name = String(body.name ?? "").trim();
   const email = String(body.email ?? "").trim();
   if (!name || !email) {
-    return Response.json({ error: "name and email required" }, { status: 400 });
+    return Response.json(
+      { ok: false, persisted: false, error: "name and email required" },
+      { status: 400 },
+    );
   }
 
   const result = await saveIntake({
@@ -25,5 +28,10 @@ export async function POST(req: NextRequest) {
     message: String(body.message ?? ""),
   });
 
-  return Response.json({ ok: true, persisted: result.persisted });
+  // A lead that was not stored is a lost lead — never report success for it.
+  if (!result.persisted) {
+    return Response.json({ ok: false, persisted: false, error: "not_persisted" }, { status: 500 });
+  }
+
+  return Response.json({ ok: true, persisted: true });
 }

@@ -34,7 +34,7 @@ export default function PageHero({
         .phero__inner > * { animation:pheroIn .7s cubic-bezier(.2,.7,.2,1) both; }
         .phero__inner > .eyebrow { animation-delay:.05s; }
         .phero__h1 { font-size:clamp(40px,7vw,96px); margin-top:18px; max-width:18ch; animation-delay:.14s; }
-        .phero__sub { margin-top:22px; max-width:54ch; color:#cfcfcc; font-size:17px; animation-delay:.24s; }
+        .phero__sub { margin-top:22px; max-width:54ch; color:var(--text-muted); font-size:17px; animation-delay:.24s; }
         .phero__bg img { animation:pheroZoom 14s ease-in-out infinite alternate; }
         @keyframes pheroIn { from{ opacity:0; transform:translateY(22px); } to{ opacity:1; transform:none; } }
         @keyframes pheroZoom { from{ transform:scale(1.05); } to{ transform:scale(1.13); } }

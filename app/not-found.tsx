@@ -19,7 +19,7 @@ export default function NotFound() {
         Verkeerde<br />
         afslag
       </h1>
-      <p style={{ color: "#cfcfcc", maxWidth: "42ch" }}>
+      <p style={{ color: "var(--text-muted)", maxWidth: "42ch" }}>
         Deze pagina bestaat niet (meer). Don&apos;t confuse movement with progress — keer terug
         naar de juiste route.
       </p>

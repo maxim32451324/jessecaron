@@ -1,5 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { localImg } from "@/lib/content";
 
 export default function Markdown({
   children,
@@ -25,8 +26,10 @@ export default function Markdown({
               </a>
             );
           },
-          // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
-          img: ({ src, alt }) => <img src={typeof src === "string" ? src : ""} alt={alt ?? ""} loading="lazy" />,
+          img: ({ src, alt }) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={localImg(typeof src === "string" ? src : "")} alt={alt ?? ""} loading="lazy" />
+          ),
         }}
       >
         {children}

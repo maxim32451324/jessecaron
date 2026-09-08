@@ -66,10 +66,11 @@ export default function CreateStudent({ courses }: { courses: Course[] }) {
         .cs label { display:grid; gap:6px; }
         .cs span { font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--ash); }
         .cs input { background:var(--ink); border:1px solid var(--line-d); color:var(--paper); padding:10px 11px; font-size:14px; }
-        .cs input:focus { border-color:var(--blue); outline:none; }
+        .cs input:focus { border-color:var(--blue); }
+        .cs input:focus-visible { border-color:var(--blue); outline:2px solid var(--blue); outline-offset:2px; }
         .cs-courses { border:1px solid var(--line-d); padding:14px 16px; display:grid; gap:8px; }
         .cs-courses legend { font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--ash); padding:0 6px; }
-        .cs-chk { display:flex !important; flex-direction:row; align-items:center; gap:8px; font-size:14px; color:#cfcfcc; }
+        .cs-chk { display:flex !important; flex-direction:row; align-items:center; gap:8px; font-size:14px; color:var(--text-muted); }
         .cs-msg { padding:11px 13px; font-size:13px; border:1px solid; }
         .cs-msg.ok { border-color:var(--blue); color:#bfe6f8; }
         .cs-msg.err { border-color:#a33; color:#ffb3b3; }

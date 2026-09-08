@@ -80,9 +80,9 @@
   ],
   "stats": {
     "posts": 27,
-    "pages": 17,
+    "pages": 15,
     "products": 38,
-    "videos": 21
+    "videos": 20
   },
   "pages": [
     {
@@ -126,13 +126,6 @@
       "url": "https://www.jessecaron.com/groepstrainingen/",
       "featured_image": "",
       "chars": 1865
-    },
-    {
-      "title": "Aanmelden",
-      "slug": "aanmelden",
-      "url": "https://www.jessecaron.com/aanmelden/",
-      "featured_image": "",
-      "chars": 426
     },
     {
       "title": "Oefeningen",
@@ -182,13 +175,6 @@
       "url": "https://www.jessecaron.com/teamkleding/",
       "featured_image": "",
       "chars": 3759
-    },
-    {
-      "title": "Smartgoals Kopen",
-      "slug": "smartgoals-kopen",
-      "url": "https://www.jessecaron.com/smartgoals-kopen/",
-      "featured_image": "",
-      "chars": 261
     },
     {
       "title": "About",
@@ -1266,140 +1252,140 @@
       "youtube_id": "J-rXp83cfgE",
       "slug": "explosiviteit-sprongkracht-oefeningen",
       "url": "https://www.jessecaron.com/portfolio-item/explosiviteit-sprongkracht-oefeningen/",
-      "thumbnail": "https://img.youtube.com/vi/J-rXp83cfgE/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/J-rXp83cfgE/hqdefault.jpg"
     },
     {
       "title": "Sem van Aalst – Wendbaarheid – Voetbal",
       "youtube_id": "jvPQJisglD0",
       "slug": "sem-van-aalst-wendbaarheid-voetbal",
       "url": "https://www.jessecaron.com/portfolio-item/sem-van-aalst-wendbaarheid-voetbal/",
-      "thumbnail": "https://img.youtube.com/vi/jvPQJisglD0/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/jvPQJisglD0/hqdefault.jpg"
     },
     {
       "title": "Samet Dag & Jeremy Moreno – Stabiliteit – Voetbal",
       "youtube_id": "3wXH1iUKvII",
       "slug": "samet-dag-jeremy-moreno-stabiliteit",
       "url": "https://www.jessecaron.com/portfolio-item/samet-dag-jeremy-moreno-stabiliteit/",
-      "thumbnail": "https://img.youtube.com/vi/3wXH1iUKvII/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/3wXH1iUKvII/hqdefault.jpg"
     },
     {
       "title": "Soufiane Ben Addi – Wendbaarheid – Voetbal",
       "youtube_id": "SDMdiqIZvmk",
       "slug": "soufiane-ben-addi-wendbaarheid",
       "url": "https://www.jessecaron.com/portfolio-item/soufiane-ben-addi-wendbaarheid/",
-      "thumbnail": "https://img.youtube.com/vi/SDMdiqIZvmk/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/SDMdiqIZvmk/hqdefault.jpg"
     },
     {
       "title": "Remy van der Vooren – (Ver)Snelheid – Voetbal",
       "youtube_id": "rMIRE63zyRk",
       "slug": "remy-van-der-vooren-snelheid-voetbal",
       "url": "https://www.jessecaron.com/portfolio-item/remy-van-der-vooren-snelheid-voetbal/",
-      "thumbnail": "https://img.youtube.com/vi/rMIRE63zyRk/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/rMIRE63zyRk/hqdefault.jpg"
     },
     {
       "title": "Damian Muller – Reactie Snelheid & Wendbaarheid – Voetbal",
       "youtube_id": "ecpn7oiMk84",
       "slug": "damian-muller-reactie-snelheid-wendbaarheid-voetbal-smartgoals",
       "url": "https://www.jessecaron.com/portfolio-item/damian-muller-reactie-snelheid-wendbaarheid-voetbal-smartgoals/",
-      "thumbnail": "https://img.youtube.com/vi/ecpn7oiMk84/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/ecpn7oiMk84/hqdefault.jpg"
     },
     {
       "title": "Soufiane Ben Addi – Reactiesnelheid – Voetbal",
       "youtube_id": "De4NL0Dgw1E",
       "slug": "soufiane-ben-addi-reactiesnelheid-voetbal",
       "url": "https://www.jessecaron.com/portfolio-item/soufiane-ben-addi-reactiesnelheid-voetbal/",
-      "thumbnail": "https://img.youtube.com/vi/De4NL0Dgw1E/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/De4NL0Dgw1E/hqdefault.jpg"
     },
     {
       "title": "Cognitief Trainen voor Voetbal met Smartgoals",
       "youtube_id": "Mig8lXQ3Enw",
       "slug": "cognitief-trainen-voor-voetbal-met-smartgoals",
       "url": "https://www.jessecaron.com/portfolio-item/cognitief-trainen-voor-voetbal-met-smartgoals/",
-      "thumbnail": "https://img.youtube.com/vi/Mig8lXQ3Enw/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/Mig8lXQ3Enw/hqdefault.jpg"
     },
     {
       "title": "Jesse Caron – Functionele Reactiesnelheid – Voetbal & Tennis",
       "youtube_id": "mOGCES6HOKU",
       "slug": "jesse-caron-functionele-reactiesnelheid-voetbal-tennis",
       "url": "https://www.jessecaron.com/portfolio-item/jesse-caron-functionele-reactiesnelheid-voetbal-tennis/",
-      "thumbnail": "https://img.youtube.com/vi/mOGCES6HOKU/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/mOGCES6HOKU/hqdefault.jpg"
     },
     {
       "title": "Anthony Rasmijn – Functionele Krachttraining Voetbal – Honkbal – Basketbal – Sprint",
       "youtube_id": "eUfWo1-yLXk",
       "slug": "krachttraining-voetbal",
       "url": "https://www.jessecaron.com/portfolio-item/krachttraining-voetbal/",
-      "thumbnail": "https://img.youtube.com/vi/eUfWo1-yLXk/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/eUfWo1-yLXk/hqdefault.jpg"
     },
     {
       "title": "Startsnelheid Trainen Voetbal – Mini Bands & Smartgoals",
       "youtube_id": "8ogSpZfruDA",
       "slug": "startsnelheid-trainen-voetbal-mini-bands-smartgoals",
       "url": "https://www.jessecaron.com/portfolio-item/startsnelheid-trainen-voetbal-mini-bands-smartgoals/",
-      "thumbnail": "https://img.youtube.com/vi/8ogSpZfruDA/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/8ogSpZfruDA/hqdefault.jpg"
     },
     {
       "title": "Samet Dag – Functionele Krachttraining Voetbal",
       "youtube_id": "F9Cf1sfHu_U",
       "slug": "7052",
       "url": "https://www.jessecaron.com/portfolio-item/7052/",
-      "thumbnail": "https://img.youtube.com/vi/F9Cf1sfHu_U/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/F9Cf1sfHu_U/hqdefault.jpg"
     },
     {
       "title": "Anthony Rasmijn – Sprinttraining / Sprinttest",
       "youtube_id": "UD6l2bmyNrg",
       "slug": "anthony-rasmijn-sprinttraining-sprinttest",
       "url": "https://www.jessecaron.com/portfolio-item/anthony-rasmijn-sprinttraining-sprinttest/",
-      "thumbnail": "https://img.youtube.com/vi/UD6l2bmyNrg/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/UD6l2bmyNrg/hqdefault.jpg"
     },
     {
       "title": "Handelingssnelheid Trainen met Smartgoals voor Voetbal",
       "youtube_id": "7zeCpcv8l5I",
       "slug": "handelingssnelheid-trainen-met-smartgoals-voor-voetbal",
       "url": "https://www.jessecaron.com/portfolio-item/handelingssnelheid-trainen-met-smartgoals-voor-voetbal/",
-      "thumbnail": "https://img.youtube.com/vi/7zeCpcv8l5I/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/7zeCpcv8l5I/hqdefault.jpg"
     },
     {
       "title": "Jesse Caron – De Beste Personal Trainer van NL – RTL4",
       "youtube_id": "R8R4p_4564U",
       "slug": "jesse-caron-de-beste-personal-trainer-van-nl-rtl4",
       "url": "https://www.jessecaron.com/portfolio-item/jesse-caron-de-beste-personal-trainer-van-nl-rtl4/",
-      "thumbnail": "https://img.youtube.com/vi/R8R4p_4564U/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/R8R4p_4564U/hqdefault.jpg"
     },
     {
       "title": "Spike Ball – Voetbal Warming Up – Oefening Reactievermogen",
       "youtube_id": "OOV8jZgRfEs",
       "slug": "spike-ball-voetbal-warming-up-oefening-reactievermogen",
       "url": "https://www.jessecaron.com/portfolio-item/spike-ball-voetbal-warming-up-oefening-reactievermogen/",
-      "thumbnail": "https://img.youtube.com/vi/OOV8jZgRfEs/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/OOV8jZgRfEs/hqdefault.jpg"
     },
     {
       "title": "Functionele Snelheid Training – Handelingssnelheid – Blazepod Oefeningen",
       "youtube_id": "LjHB4u8kU8k",
       "slug": "functionele-snelheid-training-handelingssnelheid-blazepod-oefeningen",
       "url": "https://www.jessecaron.com/portfolio-item/functionele-snelheid-training-handelingssnelheid-blazepod-oefeningen/",
-      "thumbnail": "https://img.youtube.com/vi/LjHB4u8kU8k/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/LjHB4u8kU8k/hqdefault.jpg"
     },
     {
       "title": "Functionele Snelheid Voetbal – Wendbaarheid & Reactievermogen – Blazepods",
       "youtube_id": "-Ar7i1mif7M",
       "slug": "functionele-snelheid-voetbal-wendbaarheid-reactievermogen-blazepods",
       "url": "https://www.jessecaron.com/portfolio-item/functionele-snelheid-voetbal-wendbaarheid-reactievermogen-blazepods/",
-      "thumbnail": "https://img.youtube.com/vi/-Ar7i1mif7M/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/-Ar7i1mif7M/hqdefault.jpg"
     },
     {
       "title": "Lucas Diniz Lima – Functionele Kracht & Snelheid – Voetbal",
       "youtube_id": "VxXvSgXWf0I",
       "slug": "lucas-diniz-lima-functionele-kracht-snelheid-voetbal",
       "url": "https://www.jessecaron.com/portfolio-item/lucas-diniz-lima-functionele-kracht-snelheid-voetbal/",
-      "thumbnail": "https://img.youtube.com/vi/VxXvSgXWf0I/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/VxXvSgXWf0I/hqdefault.jpg"
     },
     {
       "title": "Damian Muller – Looptraining Voetbal",
       "youtube_id": "w-dtfuvNhpc",
       "slug": "damian-muller-looptraining-voetbal",
       "url": "https://www.jessecaron.com/portfolio-item/damian-muller-looptraining-voetbal/",
-      "thumbnail": "https://img.youtube.com/vi/w-dtfuvNhpc/maxresdefault.jpg"
+      "thumbnail": "https://img.youtube.com/vi/w-dtfuvNhpc/hqdefault.jpg"
     },
     {
       "title": "Jesse Caron – Krachttraining Voetbal",

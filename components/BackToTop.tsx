@@ -7,35 +7,35 @@ export default function BackToTop() {
 
   useEffect(() => {
     const onScroll = () => setShow(window.scrollY > 800);
+    onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <button
-      aria-label="Terug naar boven"
-      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      style={{
-        position: "fixed",
-        right: 24,
-        bottom: 24,
-        zIndex: 90,
-        width: 46,
-        height: 46,
-        border: "1px solid var(--blue)",
-        background: "var(--blue)",
-        color: "#fff",
-        cursor: "pointer",
-        fontSize: 18,
-        display: "grid",
-        placeItems: "center",
-        opacity: show ? 1 : 0,
-        transform: show ? "translateY(0)" : "translateY(16px)",
-        pointerEvents: show ? "auto" : "none",
-        transition: ".3s",
-      }}
-    >
-      ↑
-    </button>
+    <>
+      <button
+        className={`btt ${show ? "is-on" : ""}`}
+        aria-label="Terug naar boven"
+        aria-hidden={!show}
+        tabIndex={show ? 0 : -1}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        ↑
+      </button>
+      <style>{`
+        .btt {
+          position:fixed; right:24px; bottom:24px; z-index:90;
+          width:46px; height:46px; display:grid; place-items:center;
+          border:1px solid var(--blue); background:var(--blue); color:#fff;
+          font-size:18px; cursor:pointer;
+          opacity:0; transform:translateY(16px); pointer-events:none;
+          transition:opacity .3s, transform .3s, background .2s, color .2s, border-color .2s;
+        }
+        .btt.is-on { opacity:1; transform:translateY(0); pointer-events:auto; }
+        .btt:hover, .btt:focus-visible { background:var(--blue-deep); border-color:var(--blue-deep); color:#fff; }
+        @media(prefers-reduced-motion:reduce){ .btt { transition:opacity .01s; } }
+      `}</style>
+    </>
   );
 }

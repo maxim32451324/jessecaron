@@ -13,5 +13,5 @@ Deze hand-oog-coördinatie oefeningen worden afgebeeld met reactieballen, beschi
 **Dit downloadbare e-book bestaat uit een functionele reactie training met tien duidelijk geïllustreerde oefeningen en toelichting m.b.t. de juiste technische uitvoering.**
 
 Payment  
-You can pay with several methods; through iDeal, Visa, Mastercard, American Express or PayPal. It is aslo possible to pay by bank transfer.  
+You can pay with several methods; through iDeal, Visa, Mastercard, American Express or PayPal. It is also possible to pay by bank transfer.  
 ![](http://www.jessecaron.com/wp-content/uploads/2016/09/betaalmogelijkheden.png)

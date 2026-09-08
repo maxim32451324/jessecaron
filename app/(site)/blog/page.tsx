@@ -41,6 +41,7 @@ export default function BlogIndex() {
         eyebrow="Blog"
         title="Kennis & resultaten"
         sub="Trainingsgidsen die de methode uitleggen, en verhalen van de atleten die ermee groeien."
+        image="Loopcoordinatie-Training-Voetbal-e1577925080993.jpg"
       />
 
       <section className="pad">
@@ -77,15 +78,15 @@ export default function BlogIndex() {
 
       <style>{`
         .pgrid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
-        .pcard { background:var(--ink); border:1px solid var(--line-d); display:flex; flex-direction:column; transition:.3s; }
-        .pcard:hover { transform:translateY(-5px); border-color:var(--blue); }
+        .pcard { background:var(--ink); border:1px solid var(--line-d); display:flex; flex-direction:column; transition:transform var(--card-t), border-color var(--card-t); }
+        .pcard:hover, .pcard:focus-visible { transform:translateY(var(--card-lift)); border-color:var(--blue); }
         .pcard__img { aspect-ratio:16/10; overflow:hidden; background:#000; }
-        .pcard__img img { width:100%; height:100%; object-fit:cover; filter:grayscale(.4) brightness(.8); transition:.5s; }
-        .pcard:hover .pcard__img img { filter:grayscale(0) brightness(.95); transform:scale(1.05); }
+        .pcard__img img { width:100%; height:100%; object-fit:cover; filter:grayscale(.45) brightness(.9); transition:filter .5s, transform .5s; }
+        .pcard:hover .pcard__img img, .pcard:focus-visible .pcard__img img { filter:grayscale(0) brightness(1); transform:scale(1.04); }
         .pcard__b { padding:22px 22px 26px; display:flex; flex-direction:column; gap:10px; flex:1; }
         .pcard__date { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.14em; color:var(--blue); }
         .pcard__t { font-size:20px; font-weight:700; line-height:1.2; }
-        .pcard__ex { font-size:14px; color:#a9a9a5; flex:1; }
+        .pcard__ex { font-size:14px; color:var(--text-dim); flex:1; }
         .pcard__tags { display:flex; gap:8px; flex-wrap:wrap; }
         .pcard__tags span { font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--ash); border:1px solid var(--line-d); padding:3px 8px; }
         @media(max-width:1000px){ .pgrid{ grid-template-columns:repeat(2,1fr);} }

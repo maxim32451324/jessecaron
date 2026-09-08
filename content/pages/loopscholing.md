@@ -5,8 +5,6 @@ url: https://www.jessecaron.com/loopscholing/
 
 ---
 
-##  Loopscholing
-
 ##### **Deze looptechniek training is onmisbaar in het schema voor de hardloper van lange afstanden en de marathon.** Ontwikkeld door looptechniektrainer Jesse Caron en master sportfysiotherapeut Pieter-Jan van der Heiden gericht op het herkennen van fouten in de looptechniek om deze vervolgens met specifieke oefeningen en loopscholing te verbeteren. Hierdoor worden blessures structureel verholpen en voorkomen en kan er makkelijker, langer én sneller worden gelopen. Doordat er zowel vanuit het specialisme van een sportfysiotherapeut als looptrainer persoonlijk en specifiek aandacht wordt gegeven is resultaat snel voelbaar. Verbeter je looptechniek middels personal- / groepstraining of een clinic.
 
 ### **RUN GOOD > FEEL BETTER !**

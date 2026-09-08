@@ -21,6 +21,7 @@ export default function AanmeldenPage() {
         eyebrow="Aanmelden"
         title="Start met een persoonlijke intake"
         sub="Iedere sporter begint met een interactieve intake waarin trainee en trainer elkaar leren kennen."
+        image="Reactiesnelheid-Trainen-Stroboscoop-Bril.jpg"
       />
       <section className="pad">
         <div className="wrap amgrid">
@@ -54,7 +55,7 @@ export default function AanmeldenPage() {
         .step { display:flex; gap:18px; }
         .step__n { font-family:var(--font-anton),sans-serif; font-size:30px; color:var(--blue); line-height:1; }
         .step__t { font-size:18px; font-weight:700; margin-bottom:4px; }
-        .step__d { font-size:14.5px; color:#a9a9a5; }
+        .step__d { font-size:14.5px; color:var(--text-dim); }
         @media(max-width:860px){ .amgrid{ grid-template-columns:1fr; gap:40px; } }
       `}</style>
     </>

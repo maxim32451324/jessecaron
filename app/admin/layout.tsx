@@ -17,7 +17,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
           <h1 className="display" style={{ fontSize: 48, margin: "12px 0 16px" }}>
             Geen toegang
           </h1>
-          <p style={{ color: "#cfcfcc", maxWidth: "40ch", margin: "0 auto 24px" }}>
+          <p style={{ color: "var(--text-muted)", maxWidth: "40ch", margin: "0 auto 24px" }}>
             Dit is het eigenaarsdashboard. Je account heeft de rol <code>{profile?.role ?? "member"}</code>.
             Promoveer dit account tot <code>owner</code> in Supabase om toegang te krijgen.
           </p>
@@ -36,7 +36,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
           <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
             <Link href="/admin" aria-label="Admin">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/brand/logo/Jesse-Caron-Origami-Adelaar-Eagle-Logo-White.png" alt="" style={{ height: 28 }} />
+              <img src="/brand/logo/Jesse-Caron-Origami-Adelaar-Eagle-Logo-White.png" alt="Jesse Caron" style={{ height: 28 }} />
             </Link>
             <span className="adm-badge">Owner</span>
           </div>
@@ -64,9 +64,9 @@ export default async function AdminLayout({ children }: { children: React.ReactN
         .adm-badge { font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; background:var(--blue); color:#fff; padding:4px 9px; }
         .adm-nav { display:flex; align-items:center; gap:22px; font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.08em; text-transform:uppercase; }
         .adm-nav a { color:var(--paper); opacity:.82; }
-        .adm-nav a:hover { opacity:1; color:var(--blue); }
+        .adm-nav a:hover, .adm-nav a:focus-visible { opacity:1; color:var(--blue); }
         .adm-out { background:none; border:1px solid var(--line-d); color:var(--ash); font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.08em; text-transform:uppercase; padding:7px 12px; cursor:pointer; }
-        .adm-out:hover { color:var(--paper); border-color:var(--paper); }
+        .adm-out:hover, .adm-out:focus-visible { color:var(--blue); border-color:var(--blue); }
       `}</style>
     </div>
   );

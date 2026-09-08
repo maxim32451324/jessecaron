@@ -106,16 +106,19 @@ export default function LoginForm() {
       <style>{`
         .lf-tabs { display:flex; gap:8px; margin-bottom:20px; }
         .lf-tabs button { flex:1; font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.08em; text-transform:uppercase; padding:10px; border:1px solid var(--line-d); background:transparent; color:var(--ash); cursor:pointer; }
+        .lf-tabs button:hover, .lf-tabs button:focus-visible { color:var(--blue); border-color:var(--blue); }
         .lf-tabs button.on { background:var(--blue); border-color:var(--blue); color:#fff; }
+        .lf-tabs button.on:hover, .lf-tabs button.on:focus-visible { background:var(--blue-deep); border-color:var(--blue-deep); color:#fff; }
         .lf form { display:grid; gap:16px; }
         .lf label { display:grid; gap:7px; }
         .lf span { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ash); }
         .lf input { background:var(--ink); border:1px solid var(--line-d); color:var(--paper); padding:12px 13px; font-size:15px; }
-        .lf input:focus { border-color:var(--blue); outline:none; }
+        .lf input:focus { border-color:var(--blue); }
+        .lf input:focus-visible { border-color:var(--blue); outline:2px solid var(--blue); outline-offset:2px; }
         .lf-link { background:none; border:none; color:var(--blue); font-size:13px; cursor:pointer; text-align:center; }
         .lf-msg { margin-top:16px; padding:12px 14px; font-size:13.5px; border:1px solid; }
         .lf-msg.ok { border-color:var(--blue); color:#bfe6f8; }
-        .lf-msg.info { border-color:var(--ash); color:#d9d9d4; }
+        .lf-msg.info { border-color:var(--ash); color:var(--text-muted); }
         .lf-msg.err { border-color:#a33; color:#ffb3b3; }
       `}</style>
     </div>

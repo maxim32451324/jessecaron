@@ -19,15 +19,15 @@ export default function CountUp({
     const el = ref.current;
     if (!el) return;
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced) {
-      setVal(to);
-      return;
-    }
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
           if (!e.isIntersecting) return;
           io.unobserve(e.target);
+          if (reduced) {
+            setVal(to);
+            return;
+          }
           const start = performance.now();
           const tick = (now: number) => {
             const p = Math.min(1, (now - start) / duration);

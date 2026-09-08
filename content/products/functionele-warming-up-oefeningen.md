@@ -15,5 +15,5 @@ image: https://www.jessecaron.com/wp-content/uploads/2021/03/Warming-Up-Rekoefen
 De eerste drie oefeningen richten zich op het fysiek opwarmen van het lichaam maar vooral ook op het verbeteren van de looptechniek. De daaropvolgende zestien oefeningen zijn strekoefeningen waarbij strekking (spanning) vanuit de benen en romp wordt geactiveerd, dit verbeterd naast een aantal fysieke aspecten als lenigheid en stabiliteit opnieuw ook de bewegingsmotoriek van de trainee. De laatste elf oefeningen zijn functionele krachtoefeningen die kracht, explosiviteit én opnieuw techniek ontwikkelen.
 
 Payment  
-You can pay with several methods; through iDeal, Visa, Mastercard, American Express or PayPal. It is aslo possible to pay by bank transfer.  
+You can pay with several methods; through iDeal, Visa, Mastercard, American Express or PayPal. It is also possible to pay by bank transfer.  
 ![](http://www.jessecaron.com/wp-content/uploads/2016/09/betaalmogelijkheden.png)

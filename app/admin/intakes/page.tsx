@@ -33,7 +33,7 @@ export default async function AdminIntakes() {
       <h1 className="display" style={{ fontSize: "clamp(32px,5vw,60px)", margin: "10px 0 20px" }}>
         Intake-aanvragen
       </h1>
-      <div className=" in-filters">
+      <div className="in-filters">
         {STATUSES.map((s) => (
           <span key={s} className="in-count">
             {s}: <strong>{counts[s] ?? 0}</strong>
@@ -76,11 +76,11 @@ export default async function AdminIntakes() {
         .in-card { display:flex; justify-content:space-between; gap:20px; align-items:center; border:1px solid var(--line-d); background:var(--ink-2); padding:20px 22px; }
         .in-top { display:flex; align-items:center; gap:12px; margin-bottom:6px; }
         .in-top strong { font-size:17px; }
-        .in-contact { font-size:14px; color:#cfcfcc; margin-bottom:8px; }
-        .in-contact a:hover { color:var(--blue); }
+        .in-contact { font-size:14px; color:var(--text-muted); margin-bottom:8px; }
+        .in-contact a:hover, .in-contact a:focus-visible { color:var(--blue); }
         .in-tags { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px; }
         .in-tags span { font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--ash); border:1px solid var(--line-d); padding:3px 8px; }
-        .in-msg { font-size:14px; color:#d9d9d4; font-style:italic; margin-bottom:8px; max-width:60ch; }
+        .in-msg { font-size:14px; color:var(--text-muted); font-style:italic; margin-bottom:8px; max-width:60ch; }
         .in-date { font-family:var(--font-jetbrains),monospace; font-size:11px; color:var(--ash); }
         .role { font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; padding:3px 8px; border:1px solid var(--line-d); color:var(--ash); }
         .role.new { color:var(--blue); border-color:var(--blue); }

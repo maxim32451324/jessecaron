@@ -94,6 +94,25 @@ create table if not exists public.lessons (
 );
 
 -- ---------------------------------------------------------------------------
+-- INTAKES  (public enquiry form -> /admin/intakes)
+--   Written by lib/intake.ts via the anon server client, so a public INSERT
+--   policy is required. Reading/updating stays owner-only.
+-- ---------------------------------------------------------------------------
+create table if not exists public.intakes (
+  id          uuid primary key default gen_random_uuid(),
+  name        text not null,
+  email       text not null,
+  phone       text,
+  sport       text,
+  level       text,
+  format      text,
+  message     text,
+  status      text not null default 'new'
+                check (status in ('new','contacted','converted','archived')),
+  created_at  timestamptz not null default now()
+);
+
+-- ---------------------------------------------------------------------------
 -- ENROLLMENTS  +  PROGRESS  (per-student scoping lives here)
 -- ---------------------------------------------------------------------------
 create table if not exists public.enrollments (
@@ -121,6 +140,7 @@ create index if not exists idx_lessons_module on public.lessons(module_id);
 create index if not exists idx_enroll_user on public.enrollments(user_id);
 create index if not exists idx_enroll_course on public.enrollments(course_id);
 create index if not exists idx_progress_user on public.lesson_progress(user_id);
+create index if not exists idx_intakes_created on public.intakes(created_at desc);
 
 -- updated_at triggers
 drop trigger if exists t_courses_upd on public.courses;
@@ -137,6 +157,7 @@ alter table public.modules         enable row level security;
 alter table public.lessons         enable row level security;
 alter table public.enrollments     enable row level security;
 alter table public.lesson_progress enable row level security;
+alter table public.intakes         enable row level security;
 
 -- PROFILES: user sees/edits own; owner sees/edits all
 drop policy if exists profiles_select on public.profiles;
@@ -203,6 +224,19 @@ create policy progress_upsert on public.lesson_progress for insert
 drop policy if exists progress_update on public.lesson_progress;
 create policy progress_update on public.lesson_progress for update
   using (user_id = auth.uid()) with check (user_id = auth.uid());
+
+-- INTAKES: anyone (incl. anon) may submit the public form; only the owner reads/manages.
+drop policy if exists intakes_insert on public.intakes;
+create policy intakes_insert on public.intakes for insert
+  with check (true);
+drop policy if exists intakes_select on public.intakes;
+create policy intakes_select on public.intakes for select
+  using (public.is_owner());
+drop policy if exists intakes_update on public.intakes;
+create policy intakes_update on public.intakes for update
+  using (public.is_owner()) with check (public.is_owner());
+drop policy if exists intakes_delete on public.intakes;
+create policy intakes_delete on public.intakes for delete using (public.is_owner());
 
 -- ============================================================================
 -- STORAGE  (images/attachments only — course VIDEO lives at Mux/Bunny, not here)

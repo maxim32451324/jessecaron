@@ -51,14 +51,14 @@ export default function ShopGrid({ products }: { products: Product[] }) {
       <style>{`
         .shop-tabs { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:40px; }
         .shop-tab { font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; padding:10px 18px; border:1px solid var(--line-d); background:transparent; color:var(--ash); cursor:pointer; transition:.2s; }
-        .shop-tab:hover { color:var(--paper); border-color:var(--paper); }
+        .shop-tab:hover, .shop-tab:focus-visible { color:var(--blue); border-color:var(--blue); }
         .shop-tab.active { background:var(--blue); border-color:var(--blue); color:#fff; }
         .sgrid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
-        .sprod { background:var(--ink-2); border:1px solid var(--line-d); transition:.3s; display:block; }
-        .sprod:hover { transform:translateY(-5px); border-color:var(--blue); }
+        .sprod { background:var(--ink-2); border:1px solid var(--line-d); transition:transform var(--card-t), border-color var(--card-t); display:block; }
+        .sprod:hover, .sprod:focus-visible { transform:translateY(var(--card-lift)); border-color:var(--blue); }
         .sprod__img { position:relative; aspect-ratio:1; overflow:hidden; background:#fff; }
         .sprod__img img { width:100%; height:100%; object-fit:cover; transition:.5s; }
-        .sprod:hover .sprod__img img { transform:scale(1.05); }
+        .sprod:hover .sprod__img img, .sprod:focus-visible .sprod__img img { transform:scale(1.04); }
         .sprod__badge { position:absolute; top:10px; left:10px; font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; background:var(--blue); color:#fff; padding:4px 8px; }
         .sprod__b { padding:16px; display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }
         .sprod__n { font-size:13.5px; font-weight:600; line-height:1.3; }

@@ -60,7 +60,7 @@ export default async function LessonPlayer({
             <h1 className="display" style={{ fontSize: "clamp(26px,3.5vw,44px)", margin: "10px 0 14px" }}>
               {lesson.title}
             </h1>
-            <p style={{ color: "#cfcfcc", maxWidth: "46ch", marginBottom: 24 }}>
+            <p style={{ color: "var(--text-muted)", maxWidth: "46ch", marginBottom: 24 }}>
               Deze les is alleen voor ingeschreven members. Vraag toegang aan of meld je aan.
             </p>
             <Link href={`/academy/${slug}`} className="btn btn--blue">
@@ -116,8 +116,8 @@ export default async function LessonPlayer({
         .psm { margin-bottom:18px; }
         .psm__t { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--blue); margin-bottom:8px; }
         .psm ul { list-style:none; display:grid; gap:2px; }
-        .psl { display:flex; align-items:center; gap:10px; padding:9px 10px; font-size:14px; color:#cfcfcc; border-left:2px solid transparent; }
-        .psl:hover { background:var(--ink-2); }
+        .psl { display:flex; align-items:center; gap:10px; padding:9px 10px; font-size:14px; color:var(--text-muted); border-left:2px solid transparent; }
+        .psl:hover, .psl:focus-visible { background:var(--ink-2); border-left-color:var(--blue); color:#fff; }
         .psl.active { background:var(--ink-2); border-left-color:var(--blue); color:#fff; }
         .psl__tick { width:18px; height:18px; border:1px solid var(--line-d); border-radius:50%; display:grid; place-items:center; font-size:10px; color:var(--blue); flex-shrink:0; }
         .psl__tick.on { background:var(--blue); border-color:var(--blue); color:#fff; }

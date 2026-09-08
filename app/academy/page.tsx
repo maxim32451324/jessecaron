@@ -30,7 +30,7 @@ export default async function AcademyCatalog() {
       <h1 className="display" style={{ fontSize: "clamp(34px,5vw,64px)", margin: "10px 0 8px" }}>
         Welkom{profile?.full_name ? `, ${profile.full_name.split(" ")[0]}` : ""}
       </h1>
-      <p style={{ color: "#bdbdba", maxWidth: "52ch", marginBottom: 44 }}>
+      <p style={{ color: "var(--text-dim)", maxWidth: "52ch", marginBottom: 44 }}>
         Train de vaardigheid, niet de oefening. Kies een cursus en ga verder waar je gebleven was.
       </p>
 
@@ -84,15 +84,15 @@ export default async function AcademyCatalog() {
         .continue__k { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.18em; text-transform:uppercase; opacity:.9; }
         .continue__t { font-family:var(--font-anton),sans-serif; text-transform:uppercase; font-size:28px; line-height:1; margin-top:6px; }
         .cat-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
-        .ccard { background:var(--ink-2); border:1px solid var(--line-d); display:flex; flex-direction:column; transition:.3s; }
-        .ccard:hover { border-color:var(--blue); transform:translateY(-4px); }
+        .ccard { background:var(--ink-2); border:1px solid var(--line-d); display:flex; flex-direction:column; transition:transform var(--card-t), border-color var(--card-t); }
+        .ccard:hover, .ccard:focus-visible { border-color:var(--blue); transform:translateY(var(--card-lift)); }
         .ccard__img { position:relative; aspect-ratio:16/9; overflow:hidden; background:#000; }
-        .ccard__img img { width:100%; height:100%; object-fit:cover; filter:grayscale(.3) brightness(.8); transition:.5s; }
-        .ccard:hover .ccard__img img { filter:grayscale(0) brightness(.95); transform:scale(1.04); }
+        .ccard__img img { width:100%; height:100%; object-fit:cover; filter:grayscale(.45) brightness(.9); transition:filter .5s, transform .5s; }
+        .ccard:hover .ccard__img img, .ccard:focus-visible .ccard__img img { filter:grayscale(0) brightness(1); transform:scale(1.04); }
         .ccard__badge { position:absolute; top:12px; left:12px; font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; background:var(--ink); color:var(--paper); padding:4px 9px; border:1px solid var(--line-d); }
         .ccard__b { padding:22px; display:flex; gap:16px; align-items:flex-start; }
         .ccard__t { font-size:20px; font-weight:700; line-height:1.2; margin-bottom:8px; }
-        .ccard__d { font-size:14px; color:#a9a9a5; margin-bottom:12px; }
+        .ccard__d { font-size:14px; color:var(--text-dim); margin-bottom:12px; }
         .ccard__meta { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--blue); }
         .empty { border:1px dashed var(--line-d); padding:48px; text-align:center; color:var(--ash); }
         @media(max-width:760px){ .cat-grid{ grid-template-columns:1fr; } }

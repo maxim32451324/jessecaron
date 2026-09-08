@@ -13,5 +13,5 @@ A functional speed training developed by Jesse Caron. **This downloadable e-book
 If you want to get faster, your training program should consist of more than just pulling sprints back and forth. For developing functional speed, physical speed is only one of the many elements, it is much more about the technical level and therefore the actual quality of the physical elements as speed, strength, agility and endurance. The aim of this functional training is therefore primarily to improve the movement technique, read; The correct execution of the specific exercises / movements. The specified physical aspects are developed simultaneously. The illustrated and described exercises intend to inform the reader about the technically correct implementation of these exercises.
 
 Payment  
-You can pay with several methods; through iDeal, Visa, Mastercard, American Express or PayPal. It is aslo possible to pay by bank transfer.  
+You can pay with several methods; through iDeal, Visa, Mastercard, American Express or PayPal. It is also possible to pay by bank transfer.  
 ![](http://www.jessecaron.com/wp-content/uploads/2016/09/betaalmogelijkheden.png)

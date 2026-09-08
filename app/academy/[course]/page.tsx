@@ -34,7 +34,7 @@ export default async function CourseOverview({
           <h1 className="display" style={{ fontSize: "clamp(30px,4.5vw,56px)", margin: "10px 0 14px" }}>
             {course.title}
           </h1>
-          <p style={{ color: "#cfcfcc", maxWidth: "52ch", marginBottom: 22 }}>{course.description}</p>
+          <p style={{ color: "var(--text-muted)", maxWidth: "52ch", marginBottom: 22 }}>{course.description}</p>
           <div className="co-meta">
             <span>{course.lessonCount} lessen</span>
             <span>{course.modules.length} modules</span>
@@ -100,7 +100,7 @@ export default async function CourseOverview({
 
       <style>{`
         .back { font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--ash); }
-        .back:hover { color:var(--blue); }
+        .back:hover, .back:focus-visible { color:var(--blue); }
         .co-hero { display:grid; grid-template-columns:1.3fr 1fr; gap:40px; align-items:center; margin:24px 0 56px; }
         .co-meta { display:flex; gap:18px; font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--ash); }
         .co-hero__img { position:relative; aspect-ratio:16/10; overflow:hidden; border:1px solid var(--line-d); background:#000; }
@@ -117,7 +117,7 @@ export default async function CourseOverview({
         .les__tick { width:22px; height:22px; border:1px solid var(--line-d); border-radius:50%; display:grid; place-items:center; font-size:12px; color:var(--blue); flex-shrink:0; }
         .les__tick.on { background:var(--blue); border-color:var(--blue); color:#fff; }
         .les__t { flex:1; font-size:15px; }
-        .les__t:hover { color:var(--blue); }
+        .les__t:hover, .les__t:focus-visible { color:var(--blue); }
         .les__tag { font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--blue); border:1px solid var(--line-d); padding:3px 7px; }
         .les__tag--lock { color:var(--ash); }
         @media(max-width:760px){ .co-hero{ grid-template-columns:1fr; } }

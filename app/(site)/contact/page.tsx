@@ -23,6 +23,7 @@ export default function ContactPage() {
         eyebrow="Contact"
         title="Laten we kennismaken"
         sub="Vragen over training, kleding of samenwerking? Bel, app of stuur een bericht via social."
+        image="Groepstraining-Team-Jesse-Caron.jpg"
       />
       <section className="pad">
         <div className="wrap cgrid">
@@ -46,7 +47,7 @@ export default function ContactPage() {
             <h2 className="display" style={{ fontSize: "clamp(26px,3vw,40px)", marginBottom: 18 }}>
               Klaar om te starten?
             </h2>
-            <p style={{ color: "#cfcfcc", marginBottom: 26 }}>
+            <p style={{ color: "var(--text-muted)", marginBottom: 26 }}>
               Iedere sporter start met een persoonlijke interactieve intake. Meld je aan en we
               plannen je eerste training.
             </p>
@@ -61,7 +62,7 @@ export default function ContactPage() {
         .crow { border-bottom:1px solid var(--line-d); padding:18px 0; }
         .ck { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--ash); margin-bottom:6px; }
         .cv { font-size:22px; font-weight:600; }
-        .cv a:hover { color:var(--blue); }
+        .cv a:hover, .cv a:focus-visible { color:var(--blue); }
         .ccta { background:var(--ink-2); border:1px solid var(--line-d); padding:36px; }
         @media(max-width:860px){ .cgrid{ grid-template-columns:1fr; gap:36px; } }
       `}</style>

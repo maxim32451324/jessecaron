@@ -52,7 +52,8 @@ export default async function AccountPage() {
         .acct label { display:grid; gap:7px; }
         .acct span { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ash); }
         .acct input { background:var(--ink-2); border:1px solid var(--line-d); color:var(--paper); padding:12px 13px; font-size:15px; }
-        .acct input:focus { border-color:var(--blue); outline:none; }
+        .acct input:focus { border-color:var(--blue); }
+        .acct input:focus-visible { border-color:var(--blue); outline:2px solid var(--blue); outline-offset:2px; }
         .acct input:disabled { color:var(--ash); }
       `}</style>
     </div>

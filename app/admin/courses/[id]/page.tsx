@@ -218,20 +218,22 @@ export default async function CourseEditor({ params }: { params: Promise<{ id: s
         .cform label, .lform label { display:grid; gap:6px; }
         .cform span, .lform span { font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--ash); }
         .cform input, .cform select, .cform textarea, .lform input, .lform select, .lform textarea { background:var(--ink); border:1px solid var(--line-d); color:var(--paper); padding:10px 11px; font-size:14px; width:100%; }
-        .cform input:focus, .lform input:focus, .cform textarea:focus, .lform textarea:focus, .cform select:focus, .lform select:focus { border-color:var(--blue); outline:none; }
+        .cform input:focus, .lform input:focus, .cform textarea:focus, .lform textarea:focus, .cform select:focus, .lform select:focus { border-color:var(--blue); }
+        .cform input:focus-visible, .lform input:focus-visible, .cform textarea:focus-visible, .lform textarea:focus-visible, .cform select:focus-visible, .lform select:focus-visible { border-color:var(--blue); outline:2px solid var(--blue); outline-offset:2px; }
         .cemod { border:1px solid var(--line-d); margin-bottom:14px; }
         .cemod__head { display:flex; justify-content:space-between; align-items:center; padding:14px 16px; border-bottom:1px solid var(--line-d); background:var(--ink); }
         .x { background:none; border:none; color:var(--ash); cursor:pointer; font-size:14px; }
-        .x:hover { color:#ffb3b3; }
+        .x:hover, .x:focus-visible { color:#ffb3b3; }
         .cemod__lessons { list-style:none; }
         .cemod__lessons > li { border-bottom:1px solid var(--line-d); }
         .cemod__lessons summary, .add-les summary, .add-mod summary { cursor:pointer; padding:12px 16px; display:flex; justify-content:space-between; gap:12px; align-items:center; font-size:14px; }
-        .cemod__lessons summary:hover, .add-les summary:hover, .add-mod summary:hover { background:var(--ink); }
+        .cemod__lessons summary:hover, .add-les summary:hover, .add-mod summary:hover,
+        .cemod__lessons summary:focus-visible, .add-les summary:focus-visible, .add-mod summary:focus-visible { background:var(--ink); color:var(--blue); }
         .lmeta { font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--ash); }
         .lform { display:grid; gap:12px; padding:16px; background:var(--ink); }
         .lrow { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
         .lform .lrow:has(> label:nth-child(3)) { grid-template-columns:1fr 1fr 80px; }
-        .chk { display:flex !important; flex-direction:row !important; align-items:center; gap:8px; font-size:13px; color:#cfcfcc; }
+        .chk { display:flex !important; flex-direction:row !important; align-items:center; gap:8px; font-size:13px; color:var(--text-muted); }
         .chk input { width:auto; }
         .add-les, .add-mod { border:1px dashed var(--line-d); margin-top:10px; }
         .add-mod { margin-top:16px; }

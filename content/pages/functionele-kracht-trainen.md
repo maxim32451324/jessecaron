@@ -5,8 +5,6 @@ url: https://www.jessecaron.com/functionele-kracht-trainen/
 
 ---
 
-##  Functionele Kracht Training
-
 ###### Bij functioneel kracht trainen is het van belang dat de verworven krachteigenschappen leiden tot het beter functioneren van het complete lichaam ten behoeve van een specifieke sport. Het is van belang deze sport met bijbehorende bewegingen, spiergroepen en daarmee functionele krachtoefeningen goed in beeld te hebben, zo verschilt een functionele krachttraining voor het voetbal met die van het tennis.
 
 ### **Variatie**

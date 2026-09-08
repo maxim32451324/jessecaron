@@ -20,6 +20,7 @@ export default function VideosPage() {
         eyebrow="Impressie"
         title="De methode in beweging"
         sub={`${videos.length} videos — van handelingssnelheid en reactievermogen tot kracht en wendbaarheid.`}
+        image="Handelingssnelheid-Trainen-Voetbal-Smartgoals-Oefeningen.jpg"
       />
       <section className="pad">
         <div className="wrap">

@@ -5,8 +5,6 @@ url: https://www.jessecaron.com/personal-training/
 
 ---
 
-##  Personal Training
-
 ###### Vaak blinken sporters uit in slechts enkele aspecten en zijn de overige veel minder of totaal niet ontwikkeld, hierdoor werken deze aspecten elkaar tegen in plaats van dat ze elkaar versterken. Iedere sporter heeft uiteraard zijn eigen sterke én zwakke punten, de grootste sportieve vooruitgang is te behalen door het verbeteren van deze specifieke (zwakke) aandachtspunten. Hiermee wordt het evenwicht hersteld en ontstaat er synergie. Persoonlijke trainingen zijn het ultieme middel om op deze aandachtspunten te verbeteren, de training wordt namelijk volledig afgestemd op persoonlijke niveau, leerstijl en agenda. Hierdoor ontstaat de optimale leercurve en kan er in een relatief korte periode veel worden bereikt op fysiek maar vooral technisch vlak waarmee resultaat direct zicht- én voelbaar is.
 
 ##### Alle sporters die zich aanmelden bij Jesse Caron starten met een persoonlijke interactieve intake; een personal training gericht op de basistechnieken waarin trainee en trainer elkaar leren kennen. Enerzijds de motoriek, leerstijl en aandachtspunten van de trainee anderzijds de werkwijze van Jesse Caron. Hierdoor is een eventuele doorstroming naar de vervolg persoonlijke- en/of groepstrainingen, waar de moeilijkheidsgraad steeds hoger zal liggen, soepeler, leuker en daarmee efficiënter.

@@ -17,5 +17,5 @@ Het doel van een functionele looptraining moet dus primair het verbeteren van de
 Deze twintig oefeningen worden met behulp van een medicine- en/of voetbal uitgevoerd en zijn perfect toepasbaar voor(afgaand) aan een loop- of voetbaltraining. De eerste vijf oefeningen richten zich op het verbeteren van de looptechniek waarbij tegelijkertijd het lichaam wordt opgewarmd, de daaropvolgende vijf oefeningen richten zich op **lenigheid** en **stabiliteit** met behulp van **dynamische rekoefeningen** om vervolgens met vijf **kracht** – en vijf **explosiviteitsoefeningen** om sporters **functioneel sneller** te maken.
 
 Payment  
-You can pay with several methods; through iDeal, Visa, Mastercard, American Express or PayPal. It is aslo possible to pay by bank transfer.  
+You can pay with several methods; through iDeal, Visa, Mastercard, American Express or PayPal. It is also possible to pay by bank transfer.  
 ![](http://www.jessecaron.com/wp-content/uploads/2016/09/betaalmogelijkheden.png)

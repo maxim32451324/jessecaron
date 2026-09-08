@@ -15,7 +15,11 @@ export default function VideoFacade({
   main?: boolean;
 }) {
   const [play, setPlay] = useState(false);
-  const thumb = thumbnail || `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
+  // hqdefault always exists; maxresdefault 404s for videos uploaded below 720p,
+  // so a stored maxres URL is normalised rather than trusted.
+  const thumb = youtubeId
+    ? `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`
+    : (thumbnail ?? "");
 
   return (
     <div className="vthumb" data-main={main}>
@@ -44,12 +48,12 @@ export default function VideoFacade({
       <style>{`
         .vthumb { position:relative; background:#000; overflow:hidden; aspect-ratio:16/9; }
         .vthumb__btn { position:absolute; inset:0; width:100%; height:100%; border:0; padding:0; cursor:pointer; background:#000; display:block; text-align:left; }
-        .vthumb__btn img { width:100%; height:100%; object-fit:cover; filter:grayscale(.5) brightness(.7); transition:.5s; }
-        .vthumb__btn:hover img { filter:grayscale(0) brightness(.85); transform:scale(1.04); }
+        .vthumb__btn img { width:100%; height:100%; object-fit:cover; filter:grayscale(.45) brightness(.9); transition:filter .5s, transform .5s; }
+        .vthumb__btn:hover img, .vthumb__btn:focus-visible img { filter:grayscale(0) brightness(1); transform:scale(1.04); }
         .vthumb__play { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; z-index:2; }
         .vthumb__circle { width:64px; height:64px; border-radius:50%; background:var(--blue); display:grid; place-items:center; transition:.3s; }
-        .vthumb__btn:hover .vthumb__circle { transform:scale(1.1); background:#fff; }
-        .vthumb__btn:hover .vthumb__circle svg path { fill:var(--blue); }
+        .vthumb__btn:hover .vthumb__circle, .vthumb__btn:focus-visible .vthumb__circle { transform:scale(1.1); background:#fff; }
+        .vthumb__btn:hover .vthumb__circle svg path, .vthumb__btn:focus-visible .vthumb__circle svg path { fill:var(--blue); }
         .vthumb__label { position:absolute; left:0; bottom:0; z-index:2; padding:16px 18px; font-family:var(--font-jetbrains),monospace; font-size:${main ? "14px" : "12px"}; letter-spacing:.06em; text-transform:uppercase; background:linear-gradient(0deg,rgba(0,0,0,.85),transparent); width:100%; color:var(--paper); }
         .vthumb iframe { position:absolute; inset:0; width:100%; height:100%; border:0; z-index:5; }
       `}</style>

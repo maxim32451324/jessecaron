@@ -9,7 +9,6 @@
 :root {
   --ink: #0e0e10;
   --ink-2: #16161a;
-  --ink-3: #1d1d22;
   --paper: #f4f4f1;
   --paper-2: #e8e8e3;
   --blue: #0090d8;
@@ -17,13 +16,19 @@
   --ash: #8c8c8a;
   --line-d: rgba(255, 255, 255, 0.14);
   --line-l: rgba(14, 14, 16, 0.14);
+  /* body copy greys — on dark (muted/dim) and on paper (ink-muted) */
+  --text-muted: #cfcfcc;
+  --text-dim: #a9a9a5;
+  --text-ink-muted: #3a3a38;
+  /* one hover system for every card: same lift, same blue accent, same timing */
+  --card-lift: -4px;
+  --card-t: 0.3s;
   --maxw: 1280px;
 }
 
 @theme inline {
   --color-ink: var(--ink);
   --color-ink-2: var(--ink-2);
-  --color-ink-3: var(--ink-3);
   --color-paper: var(--paper);
   --color-paper-2: var(--paper-2);
   --color-blue: var(--blue);
@@ -112,7 +117,8 @@ a {
   cursor: pointer;
   transition: 0.25s;
 }
-.btn:hover {
+.btn:hover,
+.btn:focus-visible {
   background: var(--paper);
   color: var(--ink);
 }
@@ -121,7 +127,8 @@ a {
   border-color: var(--blue);
   color: #fff;
 }
-.btn--blue:hover {
+.btn--blue:hover,
+.btn--blue:focus-visible {
   background: #fff;
   border-color: #fff;
   color: var(--ink);
@@ -130,7 +137,8 @@ a {
   border-color: var(--ink);
   color: var(--ink);
 }
-.btn--ink:hover {
+.btn--ink:hover,
+.btn--ink:focus-visible {
   background: var(--ink);
   color: var(--paper);
 }
@@ -193,7 +201,7 @@ section {
 }
 .lex__item .d {
   font-size: 13px;
-  color: #55554f;
+  color: var(--text-ink-muted);
 }
 @keyframes lexscroll {
   from {
@@ -228,17 +236,18 @@ section {
   font-size: 17px;
   font-weight: 600;
   margin: 28px 0 10px;
-  color: #d9d9d4;
+  color: var(--text-muted);
 }
 .prose p {
-  color: #c9c9c4;
+  color: var(--text-muted);
   margin: 0 0 20px;
 }
 .prose a {
   color: var(--blue);
   border-bottom: 1px solid rgba(0, 144, 216, 0.4);
 }
-.prose a:hover {
+.prose a:hover,
+.prose a:focus-visible {
   color: #fff;
 }
 .prose strong {
@@ -246,11 +255,11 @@ section {
   font-weight: 700;
 }
 .prose em {
-  color: #d9d9d4;
+  color: var(--text-muted);
 }
 .prose ul,
 .prose ol {
-  color: #c9c9c4;
+  color: var(--text-muted);
   margin: 0 0 20px 1.2em;
 }
 .prose li {
@@ -264,7 +273,7 @@ section {
   border-left: 2px solid var(--blue);
   padding-left: 20px;
   margin: 24px 0;
-  color: #d9d9d4;
+  color: var(--text-muted);
   font-style: italic;
 }
 .prose hr {
@@ -282,10 +291,12 @@ section {
 .prose--ink p,
 .prose--ink li,
 .prose--ink em {
-  color: #3a3a38;
+  color: var(--text-ink-muted);
 }
 
 /* ---- scroll reveal -------------------------------------------------------- */
+/* Without JS the IntersectionObserver never fires, so content must not stay
+   invisible — app/layout.tsx ships a <noscript> override alongside this. */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
