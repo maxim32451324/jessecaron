@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "prebuild": "node scripts/check-images.mjs"
+    "prebuild": "node scripts/check-images.mjs",
+    "check:archives": "node scripts/check-archives.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.0",

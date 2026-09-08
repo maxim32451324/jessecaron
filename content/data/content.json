@@ -48,9 +48,9 @@
       "meaning": "Vlugheid, tempo, handelingssnelheid. Het vermogen om lichaam of brein snel te laten handelen."
     },
     {
-      "word": "Kracht",
-      "phonetic": "kracht",
-      "meaning": "Fysiek en mentaal vermogen. Verworven krachteigenschappen leiden tot beter functioneren."
+      "word": "Uithoudingsvermogen",
+      "phonetic": "uit·hou·dings·ver·mo·gen",
+      "meaning": "Bestendigheid, focus, concentratie."
     },
     {
       "word": "Wendbaarheid",
@@ -58,9 +58,14 @@
       "meaning": "Behendigheid, souplesse, beweeglijkheid. Snel wenden, keren, draaien, stoppen."
     },
     {
-      "word": "Explosiviteit",
-      "phonetic": "ex·plo·si·vi·teit",
-      "meaning": "Sprong-, stoot-, trapkracht. Maximale kracht zo snel mogelijk toepassen."
+      "word": "Persoonlijk",
+      "phonetic": "per·soon·lijk",
+      "meaning": "Individueel, privé. Persoonlijke aandacht door middel van specifieke aanwijzingen tijdens de training."
+    },
+    {
+      "word": "Kracht",
+      "phonetic": "kracht",
+      "meaning": "Fysiek en mentaal vermogen. Verworven krachteigenschappen leiden tot beter functioneren."
     },
     {
       "word": "Coordinatie",
@@ -68,21 +73,56 @@
       "meaning": "Motoriek, techniek, samenwerking. Evenwichtige interactie tussen bewegingen."
     },
     {
+      "word": "Flexibiliteit",
+      "phonetic": "flex·i·bi·li·teit",
+      "meaning": "Buigzaam, soepel, lenig. Een flexibel lichaam heeft een grote bewegingsvrijheid."
+    },
+    {
+      "word": "Doelstelling",
+      "phonetic": "doel·stel·ling",
+      "meaning": "Gewenst eindresultaat, plan, streven, voornemen. De gewenste toestand waarin het lichaam terecht wil komen, uitgedrukt in concreet te bereiken resultaten."
+    },
+    {
+      "word": "Explosiviteit",
+      "phonetic": "ex·plo·si·vi·teit",
+      "meaning": "Sprong-, stoot-, trapkracht. Maximale kracht zo snel mogelijk toepassen."
+    },
+    {
       "word": "Reactievermogen",
       "phonetic": "re·ac·tie·ver·mo·gen",
       "meaning": "Alertheid, reflex, reactiesnelheid, startsnelheid."
     },
     {
-      "word": "Uithoudingsvermogen",
-      "phonetic": "uit·hou·dings·ver·mo·gen",
-      "meaning": "Bestendigheid, focus, concentratie."
+      "word": "Leerstijl",
+      "phonetic": "leer·stijl",
+      "meaning": "Kijken, denken, doen. De manier van leren en handelen die een persoon van nature toepast."
+    },
+    {
+      "word": "Origami",
+      "phonetic": "o·ri·ga·mi",
+      "meaning": "The art and technique of folding paper into shapes. To form a person, like a blank piece of paper, into a functional shape."
+    },
+    {
+      "word": "Technique",
+      "phonetic": "tech·nique",
+      "meaning": "Method of performance. The extent of your technique determines the quality of your sport performance and the functionality of your physical aspects."
+    },
+    {
+      "word": "Functionality",
+      "phonetic": "func·tion·al·i·ty",
+      "meaning": "Skills instead of exercises. To improve the functionality of your physical aspects you need to become reactive, explosive and agile like an eagle."
+    },
+    {
+      "word": "Eagle",
+      "phonetic": "ea·gle",
+      "meaning": "Power, strength, focus, vision. The large, soaring bird of prey used as an emblem."
     }
   ],
   "stats": {
     "posts": 27,
     "pages": 15,
     "products": 38,
-    "videos": 20
+    "videos": 21
   },
   "pages": [
     {
@@ -2857,6 +2897,13 @@
       "slug": "jesse-caron-krachttraining-voetbal",
       "url": "https://www.jessecaron.com/portfolio-item/jesse-caron-krachttraining-voetbal/",
       "thumbnail": null
+    },
+    {
+      "title": "Mannequin Challenge – Schoolsport Vereniging Rotterdam Atletiek",
+      "youtube_id": "xD6rsi2jzW8",
+      "slug": "mannequin-challenge-schoolsport-vereniging-rotterdam-atletiek",
+      "url": "https://www.jessecaron.com/portfolio-item/mannequin-challenge-schoolsport-vereniging-rotterdam-atletiek/",
+      "thumbnail": "https://img.youtube.com/vi/xD6rsi2jzW8/hqdefault.jpg"
     }
   ]
 }

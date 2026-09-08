@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { TRAINING_SLUGS, getPosts, getProducts } from "@/lib/content";
+import { TRAINING_SLUGS, getCategories, getPosts, getProducts } from "@/lib/content";
 import { SITE_URL } from "@/lib/site";
 
 // This site's own origin, never the old WordPress domain: a sitemap served from here
@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/training",
     "/videos",
     "/blog",
+    "/blog/onderwerpen",
     "/shop",
     "/aanmelden",
     "/contact",
@@ -22,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticRoutes.map((path) => ({ url: `${BASE}${path}`, changeFrequency: "monthly" as const })),
     ...TRAINING_SLUGS.map((slug) => ({ url: `${BASE}/training/${slug}` })),
+    // The 18 categories with >= 5 posts. The other 52 terms are labels, not routes, and
+    // a sitemap must never list a URL that redirects (PARITY-PLAN §8.3).
+    ...getCategories({ pagesOnly: true }).map((c) => ({
+      url: `${BASE}/blog/categorie/${c.slug}`,
+      changeFrequency: "monthly" as const,
+    })),
     ...getPosts().map((p) => ({ url: `${BASE}/blog/${p.slug}`, lastModified: p.date || undefined })),
     ...getProducts().map((p) => ({ url: `${BASE}/shop/${p.slug}` })),
   ];

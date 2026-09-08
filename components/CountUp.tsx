@@ -2,15 +2,27 @@
 
 import { useEffect, useRef, useState } from "react";
 
+/**
+ * Dutch thousands separator, done by hand rather than through `toLocaleString`: the
+ * value is rendered as 0 on the server and animated on the client, so the two
+ * runtimes never have to agree about ICU data. 15493 -> "15.493".
+ */
+function groupDigits(n: number): string {
+  return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
 // Counts up to `to` when scrolled into view. Respects reduced-motion.
 export default function CountUp({
   to,
   suffix = "",
   duration = 1400,
+  grouped = false,
 }: {
   to: number;
   suffix?: string;
   duration?: number;
+  /** Print a thousands separator — for the four- and five-digit counters. */
+  grouped?: boolean;
 }) {
   const ref = useRef<HTMLSpanElement | null>(null);
   const [val, setVal] = useState(0);
@@ -46,7 +58,7 @@ export default function CountUp({
 
   return (
     <span ref={ref}>
-      {val}
+      {grouped ? groupDigits(val) : val}
       {suffix}
     </span>
   );

@@ -34,6 +34,14 @@ const ALIASES: Record<string, string> = {
   "/product-categorie": "/shop",
   "/productcategorie": "/shop",
   "/webshop": "/shop",
+  // The old portfolio (one page per video) is `/videos` here. Without this, the
+  // "Video" link on `/training/schoolsport-vereniging` still pointed at
+  // www.jessecaron.com — at a portfolio item that is not even among the 21 the
+  // harvest found, so it was a link off our own site to a page that will not exist.
+  // `portfolio_item` (underscore) is the older permalink; `content/pages/records.md`
+  // uses it.
+  "/portfolio-item": "/videos",
+  "/portfolio_item": "/videos",
 };
 
 // Products the shop renamed when it moved.
@@ -128,6 +136,53 @@ export function getPostBody(slug: string): string {
 }
 export function getProductBody(slug: string): string {
   return readBody("products", slug);
+}
+
+/**
+ * The lines above the `---` in a harvested page: `slug`, `url`, `modified`, and on
+ * `/data/` a `stats:` line. They are not prose, so `readBody` throws them away —
+ * but they carry facts the layout needs, and the only honest place to keep those
+ * facts is next to the page they came from.
+ */
+function frontMatter(slug: string): Record<string, string> {
+  const file = path.join(CONTENT_DIR, "pages", `${slug}.md`);
+  if (!fs.existsSync(file)) return {};
+  const raw = fs.readFileSync(file, "utf8");
+  const sep = raw.indexOf("\n---");
+  const head = sep >= 0 ? raw.slice(0, sep) : "";
+  const out: Record<string, string> = {};
+  for (const line of head.split(/\r?\n/)) {
+    const m = /^([a-z_][a-z0-9_-]*):\s*(.*?)\s*$/i.exec(line.trim());
+    if (m) out[m[1].toLowerCase()] = m[2];
+  }
+  return out;
+}
+
+export function getPageFrontMatter(slug: string): Record<string, string> {
+  return frontMatter(slug);
+}
+
+/**
+ * `/data/`'s three `eltd-counter` values, which the old page showed as a blue
+ * three-up band (TRAININGSJAREN / TRAININGEN / ATLETEN) and the Phase 1 harvest
+ * resolved into the page's front matter rather than into its prose:
+ *
+ *   stats: trainingsjaren=19, trainingen=15493, atleten=1256
+ *
+ * The home stats band reads them from here so the numbers have exactly one source.
+ * Edit `content/pages/data.md` and the home page follows; there is no second copy
+ * to forget. Returns {} for a page without a `stats:` line.
+ */
+export function getPageStats(slug: string): Record<string, number> {
+  const line = frontMatter(slug).stats;
+  if (!line) return {};
+  const out: Record<string, number> = {};
+  for (const pair of line.split(",")) {
+    const [key, value] = pair.split("=").map((s) => s.trim());
+    const n = Number(value);
+    if (key && Number.isFinite(n)) out[key] = n;
+  }
+  return out;
 }
 
 /**

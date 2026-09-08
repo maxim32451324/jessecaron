@@ -1,8 +1,12 @@
 import Link from "next/link";
-import { brand } from "@/lib/content";
+import { brand, getCategories, categoryHref } from "@/lib/content";
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  /* The old site's category cloud lived in a sidebar that only appeared on single
+     posts. Here it is on every page instead, as the ten biggest archives with their
+     counts — the information the client actually pointed at, minus the widget. */
+  const topics = getCategories({ pagesOnly: true }).slice(0, 10);
   return (
     <footer
       id="contact-foot"
@@ -53,6 +57,23 @@ export default function Footer() {
               <div className="v">Origami™ — Functionele Snelheid</div>
             </div>
           </div>
+
+          <div className="foot-topics">
+            <div className="k">Onderwerpen</div>
+            <ul>
+              {topics.map((c) => (
+                <li key={c.slug}>
+                  <Link href={categoryHref(c.slug)}>
+                    <span className="n">{c.name}</span>
+                    <span className="c">{c.count}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <Link href="/blog/onderwerpen" className="foot-topics__all">
+              Alle onderwerpen →
+            </Link>
+          </div>
         </div>
 
         <div className="foot-bottom">
@@ -80,8 +101,22 @@ export default function Footer() {
       </div>
 
       <style>{`
-        .foot-top { display:grid; grid-template-columns:1.3fr 1fr; gap:60px; margin-bottom:70px; }
+        /* min-width:0 on all three: the default min-width:auto refuses to shrink a
+           track below its widest unbreakable word, and this row carries a phone
+           number, a URL-ish Instagram handle and Dutch compounds like
+           "Looptraining Voetbal". That is the same fault that made the footer links
+           row set the scrollWidth of every page on the site. */
+        .foot-top { display:grid; grid-template-columns:1.2fr .9fr .9fr; gap:60px; margin-bottom:70px; }
+        .foot-top > * { min-width:0; }
         .foot-contact { display:grid; gap:22px; align-content:start; }
+        .foot-topics .k { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--ash); margin-bottom:14px; }
+        .foot-topics ul { list-style:none; display:grid; gap:0; }
+        .foot-topics li { border-bottom:1px solid var(--line-l); }
+        .foot-topics li a { display:flex; justify-content:space-between; align-items:baseline; gap:12px; padding:8px 0; font-size:15px; font-weight:600; }
+        .foot-topics li a:hover, .foot-topics li a:focus-visible { color:var(--blue-deep); }
+        .foot-topics .n { min-width:0; overflow-wrap:anywhere; }
+        .foot-topics .c { font-family:var(--font-jetbrains),monospace; font-size:11px; color:var(--ash); flex:none; }
+        .foot-topics__all { display:inline-block; margin-top:16px; font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--blue-deep); }
         .foot-contact .row { border-bottom:1px solid var(--line-l); padding-bottom:14px; }
         .foot-contact .k { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--ash); margin-bottom:5px; }
         .foot-contact .v { font-size:18px; font-weight:600; }
@@ -95,7 +130,8 @@ export default function Footer() {
         .foot-social { display:flex; flex-wrap:wrap; gap:12px 22px; font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; }
         .foot-social a:hover, .foot-social a:focus-visible { color:var(--blue-deep); }
         .foot-copy { font-family:var(--font-jetbrains),monospace; font-size:11px; color:var(--ash); letter-spacing:.06em; }
-        @media(max-width:860px){ .foot-top{ grid-template-columns:1fr; gap:36px; } }
+        @media(max-width:1000px){ .foot-top{ grid-template-columns:1fr 1fr; gap:44px; } }
+        @media(max-width:640px){ .foot-top{ grid-template-columns:1fr; gap:36px; } }
       `}</style>
     </footer>
   );

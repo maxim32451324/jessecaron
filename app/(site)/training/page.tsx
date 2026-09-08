@@ -4,22 +4,11 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import LexiconMarquee from "@/components/LexiconMarquee";
 import { getTrainingPages, localImg } from "@/lib/content";
+import { TRAINING_HERO } from "./hero-images";
 
 export const metadata: Metadata = {
   title: "Training",
   description: "Personal, groeps- en online training in functionele snelheid en kracht voor spelsporters.",
-};
-
-const IMG: Record<string, string> = {
-  "personal-training": "Reactiesnelheid-Trainen-Stroboscoop-Bril.jpg",
-  "functionele-snelheid-trainen": "Sprintsnelheid-Voetbal.jpg",
-  "functionele-kracht-trainen": "Functionele-Kracht-Training-Voetbal.jpg",
-  loopscholing: "Functionele-Looptraining-voor-Voetbal.jpg",
-  groepstrainingen: "Groepstraining-Team-Jesse-Caron.jpg",
-  "zomerstop-training": "Startsnelheid-Trainen-Voetbal-1.jpg",
-  snelheidsmetingen: "Handelingssnelheid-Trainen-Voetbal-Smartgoals-Oefeningen.jpg",
-  sportmassage: "Sportmassage-Groeipijnen-Stephany-Suykerbuyk.jpg",
-  oefeningen: "Reactietraining-Hand-Oog-Coordinatie-Oefeningen.jpg",
 };
 
 export default function TrainingIndex() {
@@ -40,7 +29,7 @@ export default function TrainingIndex() {
               <Link key={p.slug} href={`/training/${p.slug}`} className="tcard">
                 <div className="tcard__img">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={localImg(IMG[p.slug] ?? "")} alt="" loading="lazy" />
+                  <img src={localImg(TRAINING_HERO[p.slug] ?? "")} alt="" loading="lazy" />
                 </div>
                 <div className="tcard__b">
                   <span className="tcard__no">{String(i + 1).padStart(2, "0")}</span>
@@ -63,15 +52,23 @@ export default function TrainingIndex() {
         </div>
       </section>
       <style>{`
-        .tgrid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line-d); border:1px solid var(--line-d); }
-        .tcard { position:relative; background:var(--ink); display:flex; flex-direction:column; transition:transform var(--card-t), box-shadow var(--card-t); z-index:0; }
-        .tcard:hover, .tcard:focus-visible { transform:translateY(var(--card-lift)); box-shadow:inset 0 0 0 1px var(--blue); z-index:2; }
+        /* The hairline grid is drawn by each card's own outline, not by a coloured
+           background showing through the 1px gaps. Eleven cards in three columns
+           leave one cell empty, and a background paints that empty cell as a large
+           pale block — invisible while the grid held exactly nine. */
+        .tgrid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; }
+        /* min-width:0 on every grid child: the default min-width:auto will not let a
+           card shrink below its widest unbreakable word, and "Schoolsport Vereniging
+           Rotterdam Atletiek" is exactly the kind of title that then pushes the row
+           past its track. Same fault that has already hit three grids on this site. */
+        .tcard { min-width:0; position:relative; background:var(--ink); display:flex; flex-direction:column; transition:transform var(--card-t), box-shadow var(--card-t); z-index:0; box-shadow:0 0 0 1px var(--line-d); }
+        .tcard:hover, .tcard:focus-visible { transform:translateY(var(--card-lift)); box-shadow:0 0 0 1px var(--blue), inset 0 0 0 1px var(--blue); z-index:2; }
         .tcard__img { aspect-ratio:16/10; overflow:hidden; }
         .tcard__img img { width:100%; height:100%; object-fit:cover; filter:grayscale(.45) brightness(.9); transition:filter .5s, transform .5s; }
         .tcard:hover .tcard__img img, .tcard:focus-visible .tcard__img img { filter:grayscale(0) brightness(1); transform:scale(1.04); }
         .tcard__b { padding:26px 26px 30px; }
         .tcard__no { font-family:var(--font-jetbrains),monospace; font-size:12px; color:var(--blue); letter-spacing:.2em; }
-        .tcard__t { font-family:var(--font-anton),sans-serif; text-transform:uppercase; font-size:26px; line-height:1; margin:12px 0 16px; }
+        .tcard__t { font-family:var(--font-anton),sans-serif; text-transform:uppercase; font-size:26px; line-height:1; margin:12px 0 16px; overflow-wrap:anywhere; }
         .tcard__go { font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--paper); display:inline-flex; gap:8px; align-items:center; }
         .tcard__go .ar { color:var(--blue); transition:.3s; }
         .tcard:hover .tcard__go .ar, .tcard:focus-visible .tcard__go .ar { transform:translateX(5px); }

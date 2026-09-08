@@ -2,8 +2,10 @@ import Link from "next/link";
 import LexiconMarquee from "@/components/LexiconMarquee";
 import Reveal from "@/components/Reveal";
 import VideoFacade from "@/components/VideoFacade";
-import { stats, getVideos, getProducts, localImg, fmtPrice } from "@/lib/content";
+import { getVideos, getProducts, getPosts, localImg, fmtPrice } from "@/lib/content";
+import { getPageFrontMatter, getPageStats } from "@/lib/content.server";
 import CountUp from "@/components/CountUp";
+import PostCard, { POSTCARD_CSS } from "@/components/PostCard";
 
 const DISCIPLINES = [
   {
@@ -50,6 +52,33 @@ const DISCIPLINES = [
   },
 ];
 
+/**
+ * The stats band is the counter row from the old `/data/` page: three numbers on
+ * brand blue, labelled TRAININGSJAREN / TRAININGEN / ATLETEN. They are Jesse's own
+ * figures, and they live in `content/pages/data.md`'s front matter — the band reads
+ * them from there, so the page and the home page can never disagree.
+ *
+ * They replace the four counts that used to stand here (years, videos, posts,
+ * products). Three of those four counted this website's own inventory, which is a
+ * fact about the site rather than about the work.
+ */
+const COUNTERS: { key: string; label: string }[] = [
+  { key: "trainingsjaren", label: "Trainingsjaren" },
+  { key: "trainingen", label: "Trainingen" },
+  { key: "atleten", label: "Atleten" },
+];
+
+const NL_MONTHS = [
+  "januari", "februari", "maart", "april", "mei", "juni",
+  "juli", "augustus", "september", "oktober", "november", "december",
+];
+
+/** "2024-03-29" -> "maart 2024". The counters are a measurement, so they carry a date. */
+function dutchMonth(iso: string): string {
+  const m = /^(\d{4})-(\d{2})/.exec(iso);
+  return m ? `${NL_MONTHS[Number(m[2]) - 1]} ${m[1]}` : "";
+}
+
 const PARTNERS = [
   { src: "/brand/partners/Looptrainer-Feyenoord.png", alt: "Feyenoord" },
   { src: "/brand/partners/Gemeente-Rotterdam.png", alt: "Gemeente Rotterdam" },
@@ -59,6 +88,10 @@ const PARTNERS = [
 ];
 
 export default function HomePage() {
+  const dataStats = getPageStats("data");
+  const counters = COUNTERS.filter((c) => Number.isFinite(dataStats[c.key]));
+  const measured = dutchMonth(getPageFrontMatter("data").modified ?? "");
+  const latest = getPosts().slice(0, 3);
   const videos = getVideos();
   const featured = videos.find((v) => v.youtube_id === "R8R4p_4564U") ?? videos[0];
   const secondary = videos.find((v) => v.youtube_id === "LjHB4u8kU8k") ?? videos[1];
@@ -108,35 +141,27 @@ export default function HomePage() {
 
       <LexiconMarquee />
 
-      {/* STATS */}
-      <section className="stats-band">
-        <div className="wrap stats-row">
-          <Reveal className="stat" as="div">
-            <div className="stat__v">
-              <CountUp to={20} suffix="" />
+      {/* STATS — the counters from /training/data */}
+      {counters.length ? (
+        <section className="stats-band">
+          <div className="wrap">
+            <div className="stats-row">
+              {counters.map((c) => (
+                <Reveal className="stat" as="div" key={c.key}>
+                  <div className="stat__v">
+                    <CountUp to={dataStats[c.key]} grouped />
+                  </div>
+                  <div className="stat__l">{c.label}</div>
+                </Reveal>
+              ))}
             </div>
-            <div className="stat__l">Jaar specialisatie</div>
-          </Reveal>
-          <Reveal className="stat" as="div">
-            <div className="stat__v">
-              <CountUp to={videos.length} />
+            <div className="stats-note">
+              {measured ? <span>Cijfers van {measured}</span> : null}
+              <Link href="/training/data">Alle data ↗</Link>
             </div>
-            <div className="stat__l">Trainingsvideo&apos;s</div>
-          </Reveal>
-          <Reveal className="stat" as="div">
-            <div className="stat__v">
-              <CountUp to={stats.posts} />
-            </div>
-            <div className="stat__l">Artikelen &amp; verhalen</div>
-          </Reveal>
-          <Reveal className="stat" as="div">
-            <div className="stat__v">
-              <CountUp to={stats.products} />
-            </div>
-            <div className="stat__l">Producten &amp; ebooks</div>
-          </Reveal>
-        </div>
-      </section>
+          </div>
+        </section>
+      ) : null}
 
       {/* DISCIPLINES */}
       <section className="pad" id="disciplines">
@@ -222,6 +247,32 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* LAATSTE ARTIKELEN — the home page had no route into the blog at all */}
+      {latest.length ? (
+        <section className="pad" style={{ paddingTop: 0 }} id="artikelen">
+          <div className="wrap">
+            <Reveal className="sec-head">
+              <div>
+                <span className="sec-num">03 — Blog</span>
+                <h2 className="display">
+                  Laatste
+                  <br />
+                  artikelen
+                </h2>
+              </div>
+              <Link href="/blog" className="btn btn--blue">
+                Alle artikelen ↗
+              </Link>
+            </Reveal>
+            <Reveal className="pgrid">
+              {latest.map((p) => (
+                <PostCard key={p.slug} p={p} />
+              ))}
+            </Reveal>
+          </div>
+        </section>
+      ) : null}
+
       {/* ABOUT / ORIGAMI */}
       <section className="pad" id="about" style={{ background: "var(--ink-2)" }}>
         <div className="wrap about">
@@ -231,7 +282,7 @@ export default function HomePage() {
             <span className="about__tag">Origami™ — Adelaar</span>
           </Reveal>
           <Reveal>
-            <span className="sec-num">03 — Over Jesse</span>
+            <span className="sec-num">04 — Over Jesse</span>
             <h2 className="display" style={{ fontSize: "clamp(28px,3.6vw,50px)", margin: "10px 0 24px" }}>
               Vorm jezelf
               <br />
@@ -270,7 +321,7 @@ export default function HomePage() {
         <div className="wrap">
           <Reveal className="sec-head">
             <div>
-              <span className="sec-num">04 — Shop</span>
+              <span className="sec-num">05 — Shop</span>
               <h2 className="display">
                 Don&apos;t tell people your
                 <br />
@@ -321,6 +372,9 @@ export default function HomePage() {
 function HomeStyles() {
   return (
     <style>{`
+      /* The blog card, exactly as /blog and the archives draw it — "Laatste
+         artikelen" here must not become a second, slightly different card. */
+      ${POSTCARD_CSS}
       .hero { position:relative; min-height:max(100vh, 720px); display:flex; align-items:flex-end; overflow:hidden; }
       .hero__bg { position:absolute; inset:0; z-index:0; overflow:hidden; }
       .hero__bg img { width:100%; height:100%; object-fit:cover; filter:grayscale(.15) contrast(1.08) brightness(.66); transform:scale(1.04); animation:heroZoom 18s ease-in-out infinite alternate; }
@@ -409,8 +463,14 @@ function HomeStyles() {
       .partner-chip:hover img { transform:scale(1.06); }
 
       .stats-band { border-bottom:1px solid var(--line-d); padding:44px 0; background:var(--ink-2); }
-      .stats-row { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; }
+      .stats-row { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; }
+      .stats-row > * { min-width:0; }
       .stats-band .stat { text-align:center; padding:8px 12px; }
+      /* The counters are a measurement taken on a date, so the date travels with
+         them, and the page they came from is one click away. */
+      .stats-note { display:flex; justify-content:center; align-items:center; gap:14px; flex-wrap:wrap; margin-top:26px; font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--ash); }
+      .stats-note a { color:var(--blue); border-bottom:1px solid rgba(0,144,216,.35); }
+      .stats-note a:hover, .stats-note a:focus-visible { color:var(--paper); border-bottom-color:var(--paper); }
       .stats-band .stat__v { font-family:var(--font-anton),sans-serif; font-size:clamp(40px,5vw,64px); line-height:1; color:var(--paper); }
       .stats-band .stat__l { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--blue); margin-top:10px; }
 
@@ -423,7 +483,7 @@ function HomeStyles() {
         .hero__side { display:none; }
       }
       @media(max-width:760px){
-        .stats-row { grid-template-columns:1fr 1fr; gap:28px 1px; }
+        .stats-row { grid-template-columns:1fr; gap:28px; }
       }
       @media(max-width:640px){
         .disc-grid { grid-template-columns:1fr; }

@@ -2,38 +2,22 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
-import { getPosts, postGenre, localImg, type PostMeta } from "@/lib/content";
+import PostCard, { POSTCARD_CSS } from "@/components/PostCard";
+import { getPosts, getPillarPosts, getCategories, categoryHref, postGenre } from "@/lib/content";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Blog",
   description: "Trainingsgidsen en atletenverhalen rond functionele snelheid en kracht.",
+  alternates: { canonical: `${SITE_URL}/blog` },
 };
-
-function PostCard({ p }: { p: PostMeta }) {
-  return (
-    <Link href={`/blog/${p.slug}`} className="pcard">
-      <div className="pcard__img">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={localImg(p.featured_image)} alt="" loading="lazy" />
-      </div>
-      <div className="pcard__b">
-        <span className="pcard__date">{p.date}</span>
-        <h3 className="pcard__t">{p.title}</h3>
-        <p className="pcard__ex">{p.excerpt.slice(0, 120)}…</p>
-        <div className="pcard__tags">
-          {p.tags.slice(0, 3).map((t) => (
-            <span key={t}>{t}</span>
-          ))}
-        </div>
-      </div>
-    </Link>
-  );
-}
 
 export default function BlogIndex() {
   const posts = getPosts();
   const guides = posts.filter((p) => postGenre(p.slug) === "guide");
   const profiles = posts.filter((p) => postGenre(p.slug) === "profile");
+  const pillars = getPillarPosts();
+  const topics = getCategories({ pagesOnly: true }).slice(0, 8);
 
   return (
     <>
@@ -44,7 +28,46 @@ export default function BlogIndex() {
         image="Loopcoordinatie-Training-Voetbal-e1577925080993.jpg"
       />
 
+      {/* The old sidebar's category cloud, as a strip: the eight biggest archives with
+          their counts, and a way through to all of them. */}
+      <div className="topics">
+        <div className="wrap topics__in">
+          <span className="topics__lab">Onderwerpen</span>
+          <div className="topics__chips">
+            {topics.map((c) => (
+              <Link key={c.slug} href={categoryHref(c.slug)} className="chip">
+                {c.name} <b>{c.count}</b>
+              </Link>
+            ))}
+            <Link href="/blog/onderwerpen" className="chip chip--all">
+              Alle onderwerpen →
+            </Link>
+          </div>
+        </div>
+      </div>
+
       <section className="pad">
+        <div className="wrap">
+          <Reveal className="sec-head">
+            <div>
+              <span className="sec-num">Start hier</span>
+              <h2 className="display">De zes die de rest verklaren</h2>
+            </div>
+          </Reveal>
+          {/* The six posts the old site's Blog dropdown promoted, in its order. */}
+          <Reveal className="startlist">
+            {pillars.map((p, i) => (
+              <Link key={p.slug} href={`/blog/${p.slug}`} className="srow">
+                <span className="srow__no">{String(i + 1).padStart(2, "0")}</span>
+                <span className="srow__t">{p.title}</span>
+                <span className="srow__ar">→</span>
+              </Link>
+            ))}
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <Reveal className="sec-head">
             <div>
@@ -77,20 +100,24 @@ export default function BlogIndex() {
       </section>
 
       <style>{`
-        .pgrid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
-        .pcard { background:var(--ink); border:1px solid var(--line-d); display:flex; flex-direction:column; transition:transform var(--card-t), border-color var(--card-t); }
-        .pcard:hover, .pcard:focus-visible { transform:translateY(var(--card-lift)); border-color:var(--blue); }
-        .pcard__img { aspect-ratio:16/10; overflow:hidden; background:#000; }
-        .pcard__img img { width:100%; height:100%; object-fit:cover; filter:grayscale(.45) brightness(.9); transition:filter .5s, transform .5s; }
-        .pcard:hover .pcard__img img, .pcard:focus-visible .pcard__img img { filter:grayscale(0) brightness(1); transform:scale(1.04); }
-        .pcard__b { padding:22px 22px 26px; display:flex; flex-direction:column; gap:10px; flex:1; }
-        .pcard__date { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.14em; color:var(--blue); }
-        .pcard__t { font-size:20px; font-weight:700; line-height:1.2; }
-        .pcard__ex { font-size:14px; color:var(--text-dim); flex:1; }
-        .pcard__tags { display:flex; gap:8px; flex-wrap:wrap; }
-        .pcard__tags span { font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--ash); border:1px solid var(--line-d); padding:3px 8px; }
-        @media(max-width:1000px){ .pgrid{ grid-template-columns:repeat(2,1fr);} }
-        @media(max-width:640px){ .pgrid{ grid-template-columns:1fr;} }
+        ${POSTCARD_CSS}
+        .topics { border-bottom:1px solid var(--line-d); background:var(--ink-2); }
+        .topics__in { display:flex; align-items:center; gap:20px; padding-top:18px; padding-bottom:18px; flex-wrap:wrap; }
+        .topics__lab { min-width:0; font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--ash); }
+        .topics__chips { display:flex; flex-wrap:wrap; gap:8px; min-width:0; }
+        .chip { display:inline-flex; align-items:center; gap:8px; font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--text-muted); border:1px solid var(--line-d); padding:6px 11px; transition:.25s; }
+        .chip b { color:var(--blue); font-weight:400; }
+        .chip:hover, .chip:focus-visible { border-color:var(--blue); color:var(--paper); }
+        .chip--all { color:var(--blue); border-color:rgba(0,144,216,.4); }
+
+        .startlist { display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line-d); border:1px solid var(--line-d); }
+        .srow { min-width:0; background:var(--ink); display:flex; align-items:center; gap:16px; padding:20px 24px; transition:background var(--card-t); }
+        .srow:hover, .srow:focus-visible { background:var(--ink-2); }
+        .srow__no { font-family:var(--font-jetbrains),monospace; font-size:12px; color:var(--blue); letter-spacing:.2em; }
+        .srow__t { flex:1; min-width:0; font-weight:600; font-size:17px; line-height:1.25; overflow-wrap:anywhere; }
+        .srow__ar { color:var(--ash); transition:transform var(--card-t), color var(--card-t); }
+        .srow:hover .srow__ar, .srow:focus-visible .srow__ar { transform:translateX(5px); color:var(--blue); }
+        @media(max-width:760px){ .startlist{ grid-template-columns:1fr; } }
       `}</style>
     </>
   );
