@@ -62,19 +62,31 @@ export default function ShopGrid({ products }: { products: Product[] }) {
         .shop-tab:hover, .shop-tab:focus-visible { color:var(--blue); border-color:var(--blue); }
         .shop-tab.active { background:var(--blue); border-color:var(--blue); color:#fff; }
         .sgrid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
-        .sprod { background:var(--ink-2); border:1px solid var(--line-d); transition:transform var(--card-t), border-color var(--card-t); display:block; }
+        /* min-width:0 — a grid item defaults to min-width:auto, so it refuses to shrink
+           below its content. With a nowrap price and an unbreakable product name in the
+           row below, the two 1fr tracks blew out past the viewport and took the whole
+           page into horizontal scroll on a phone. */
+        .sprod { background:var(--ink-2); border:1px solid var(--line-d); transition:transform var(--card-t), border-color var(--card-t); display:block; min-width:0; }
         .sprod:hover, .sprod:focus-visible { transform:translateY(var(--card-lift)); border-color:var(--blue); }
         .sprod__img { position:relative; aspect-ratio:1; overflow:hidden; background:#fff; }
         .sprod__img img { width:100%; height:100%; object-fit:cover; transition:.5s; }
         .sprod:hover .sprod__img img, .sprod:focus-visible .sprod__img img { transform:scale(1.04); }
         .sprod__badge { position:absolute; top:10px; left:10px; font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; background:var(--blue); color:#fff; padding:4px 8px; }
         .sprod__out { position:absolute; left:0; bottom:0; font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.12em; text-transform:uppercase; background:var(--ink); color:var(--paper); padding:5px 9px; }
-        .sprod__b { padding:16px; display:flex; justify-content:space-between; align-items:flex-start; gap:10px; }
-        .sprod__n { font-size:13.5px; font-weight:600; line-height:1.3; }
+        .sprod__b { padding:16px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:6px 10px; }
+        /* Product names include unbreakable runs like "Stroboscoop-Bril"; without this a
+           single long word sets the card's floor width. */
+        .sprod__n { font-size:13.5px; font-weight:600; line-height:1.3; min-width:0; overflow-wrap:anywhere; }
         .sprod__p { font-family:var(--font-jetbrains),monospace; font-size:14px; color:var(--blue); white-space:nowrap; }
         .sprod__was { color:var(--ash); margin-right:7px; font-size:12px; }
         @media(max-width:1000px){ .sgrid{ grid-template-columns:repeat(3,1fr);} }
-        @media(max-width:760px){ .sgrid{ grid-template-columns:repeat(2,1fr);} }
+        @media(max-width:760px){ .sgrid{ grid-template-columns:repeat(2,1fr); gap:14px; } }
+        /* Below this the two columns are ~150px wide: a name and a two-part sale price
+           cannot share a row, so the price drops onto its own line. */
+        @media(max-width:560px){
+          .sprod__b { flex-direction:column; align-items:flex-start; padding:13px; }
+          .sprod__p { font-size:13.5px; }
+        }
       `}</style>
     </>
   );
