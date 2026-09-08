@@ -947,7 +947,37 @@
       "category": "merch",
       "slug": "longsleeved-shirt-black",
       "url": "https://www.jessecaron.com/product/longsleeved-shirt-black/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2016/09/Jesse-Caron-Kleding-Longsleeve-Black.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2016/09/Jesse-Caron-Kleding-Longsleeve-Black.jpg",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "gallery": [
+        "/brand/photos/Jesse-Caron-Kleding-Longsleeve-Black.jpg",
+        "/brand/photos/Jesse-Caron-Kleding-Longsleeve-Zwart.jpg",
+        "/brand/photos/Jesse-Caron-Kleding-Longsleeve-Zwart-Detail.jpg"
+      ],
+      "attributes": {
+        "Gewicht": "0.200 kg",
+        "Afmetingen": "10 × 10 × 10 cm"
+      },
+      "stock_status": "instock",
+      "variant_stock": {
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "L": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "short_description": "Iconic Jesse Caron origami brand shirt, high quality and a pleasure to wear."
     },
     {
       "name": "Longsleeved – White",
@@ -955,7 +985,32 @@
       "category": "merch",
       "slug": "longsleeved-white",
       "url": "https://www.jessecaron.com/product/longsleeved-white/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2016/09/Longsleeve-Jesse-Caron-Wit-Zwart-Adelaar.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2016/09/Longsleeve-Jesse-Caron-Wit-Zwart-Adelaar.jpg",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "gallery": [
+        "/brand/photos/Longsleeve-Jesse-Caron-Wit-Zwart-Adelaar.jpg",
+        "/brand/photos/Longsleeve-Jesse-Caron-Wit-Zwart-Adelaar-Logo.jpg"
+      ],
+      "stock_status": "instock",
+      "variant_stock": {
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "L": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "short_description": "The shirts are fashionable, high quality and a pleasure to wear."
     },
     {
       "name": "Shirt White",
@@ -963,7 +1018,33 @@
       "category": "merch",
       "slug": "shirt-white",
       "url": "https://www.jessecaron.com/product/shirt-white/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2017/03/Jesse-Caron-Shirt-Wit-Zwart.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2017/03/Jesse-Caron-Shirt-Wit-Zwart.jpg",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "gallery": [
+        "/brand/photos/Jesse-Caron-Shirt-Wit-Zwart.jpg",
+        "/brand/photos/Jesse-Caron-Shirt-Wit-Zwart-Logo.jpg",
+        "/brand/photos/Loic-Wondel-Shirt-Wit-Zwart.jpg"
+      ],
+      "stock_status": "instock",
+      "variant_stock": {
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "L": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "short_description": "The shirts are fashionable, high quality and a pleasure to wear."
     },
     {
       "name": "Shirt Black",
@@ -971,7 +1052,35 @@
       "category": "merch",
       "slug": "shirt-black",
       "url": "https://www.jessecaron.com/product/shirt-black/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2017/03/Caron-Kleding-Shirt-Zwart-Wit-Adelaar.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2017/03/Caron-Kleding-Shirt-Zwart-Wit-Adelaar.jpg",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "gallery": [
+        "/brand/photos/Caron-Kleding-Shirt-Zwart-Wit-Adelaar.jpg",
+        "/brand/photos/Adelaar-Shirt.jpg"
+      ],
+      "attributes": {
+        "Gewicht": "N/B"
+      },
+      "stock_status": "instock",
+      "variant_stock": {
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "L": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "short_description": "Iconic Jesse Caron origami brand shirt, high quality and a pleasure to wear. 95% Cotton + 5% Elastane"
     },
     {
       "name": "Reaction Balls",
@@ -979,7 +1088,17 @@
       "category": "merch",
       "slug": "reaction-balls",
       "url": "https://www.jessecaron.com/product/reaction-balls/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Product-Reactieballen-Blauw-Zwart.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Product-Reactieballen-Blauw-Zwart.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Jesse-Caron-Product-Reactieballen-Blauw-Zwart.jpg",
+        "/brand/photos/Jesse-Caron-Product-Reactieballen-Blauw-Zwart-Zakje-scaled.jpg",
+        "/brand/photos/JC_RB_01.jpg",
+        "/brand/photos/JC_RB_04.jpg"
+      ],
+      "stock_status": "instock",
+      "stock_text": "Op voorraad",
+      "short_description": "Two reaction balls and a instruction booklet in a polyester carry bag."
     },
     {
       "name": "Bidon – Black",
@@ -987,7 +1106,19 @@
       "category": "merch",
       "slug": "bidon",
       "url": "https://www.jessecaron.com/product/bidon/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2017/04/Blauwe-Zwarte-Bidon-Illustraties.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2017/04/Blauwe-Zwarte-Bidon-Illustraties.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Blauwe-Zwarte-Bidon-Illustraties.jpg",
+        "/brand/photos/Lockable-Spout.png",
+        "/brand/photos/Screw-on-Cap.png"
+      ],
+      "attributes": {
+        "Gewicht": "1 kg",
+        "Afmetingen": "10 × 10 × 20 cm"
+      },
+      "stock_status": "instock",
+      "short_description": "This Shiva Tacx bidon (one > 1) has been a favourite of many sport teams for many years because it is so user-friendly."
     },
     {
       "name": "Zweetband – Zwart-Blauw",
@@ -995,7 +1126,14 @@
       "category": "merch",
       "slug": "zweetband-zwart-blauw",
       "url": "https://www.jessecaron.com/product/zweetband-zwart-blauw/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2017/04/DSC_0857-b-scaled.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2017/04/DSC_0857-b-scaled.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/DSC_0857-b-scaled.jpg"
+      ],
+      "stock_status": "outofstock",
+      "stock_text": "Uitverkocht",
+      "short_description": "These (2) wristbands help keep sweat from challenging workouts or matches."
     },
     {
       "name": "Zweetbanden – Zwart – Wit",
@@ -1003,7 +1141,15 @@
       "category": "merch",
       "slug": "zweetbanden-zwart-wit",
       "url": "https://www.jessecaron.com/product/zweetbanden-zwart-wit/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Zweetbanden-Wit-Zwart.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Zweetbanden-Wit-Zwart.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Jesse-Caron-Zweetbanden-Wit-Zwart.jpg",
+        "/brand/photos/Sweatbands-Black-White.jpg"
+      ],
+      "stock_status": "instock",
+      "stock_text": "Op voorraad",
+      "short_description": "These (2) wristbands help keep sweat from challenging workouts or matches. Made Made of a comfortable, thick polyester/cotton blend, these wristbands feature the Jesse Caron origami logos."
     },
     {
       "name": "Zweetbanden – Wit – Zwart",
@@ -1011,7 +1157,15 @@
       "category": "merch",
       "slug": "zweetbanden-wit-zwart",
       "url": "https://www.jessecaron.com/product/zweetbanden-wit-zwart/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Zweetbanden-Zwart-Wit-1.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Zweetbanden-Zwart-Wit-1.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Jesse-Caron-Zweetbanden-Zwart-Wit-1.jpg",
+        "/brand/photos/Sweatbands-Black-White.jpg"
+      ],
+      "stock_status": "instock",
+      "stock_text": "Op voorraad",
+      "short_description": "These (2) wristbands help keep sweat from challenging workouts or matches. Made Made of a comfortable, thick polyester/cotton blend, these wristbands feature the Jesse Caron origami logos."
     },
     {
       "name": "Shoe Bag",
@@ -1019,7 +1173,15 @@
       "category": "merch",
       "slug": "shoe-bag",
       "url": "https://www.jessecaron.com/product/shoe-bag/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Product-Schoenentas-Origiami-Adelaar.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Product-Schoenentas-Origiami-Adelaar.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Jesse-Caron-Product-Schoenentas-Origiami-Adelaar.jpg",
+        "/brand/photos/Jesse-Caron-Product-Schoenentas-Origiami-Adelaar-Close.jpg"
+      ],
+      "stock_status": "instock",
+      "stock_text": "Op voorraad",
+      "short_description": "This high quality shoe bag is fits any sport-shoe for challenging trainingsessions or competitions."
     },
     {
       "name": "Massage Stick",
@@ -1027,7 +1189,17 @@
       "category": "merch",
       "slug": "massage-stick",
       "url": "https://www.jessecaron.com/product/massage-stick/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2017/04/Massage-Stick.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2017/04/Massage-Stick.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Massage-Stick.jpg",
+        "/brand/photos/Masseer-Stok.jpg",
+        "/brand/photos/Masseer-Stick.jpg"
+      ],
+      "stock_status": "instock",
+      "stock_text": "Op voorraad",
+      "regular_price_eur": "30.00",
+      "short_description": "Keep your muscles flexible and recover faster with this (self-) massage stick. This firm model are good to use for a deeper massage because you can apply more pressure to it, because of the compact size you can easyliy put in your training bag to use is before and/or after your workout or match."
     },
     {
       "name": "Stroboscoop Glasses",
@@ -1035,7 +1207,17 @@
       "category": "merch",
       "slug": "stroboscoop-glasses",
       "url": "https://www.jessecaron.com/product/stroboscoop-glasses/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2017/10/Stroboscoopbril-Reactiebril.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2017/10/Stroboscoopbril-Reactiebril.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Stroboscoopbril-Reactiebril.jpg",
+        "/brand/photos/Reactiebril.jpg",
+        "/brand/photos/Reactiesnelheid-Bril.jpg",
+        "/brand/photos/Reactievermogen-Bril.png"
+      ],
+      "stock_status": "instock",
+      "regular_price_eur": "600.00",
+      "short_description": "The Stroboscoop Glasses works its sensory mojo by blocking or disrupting vision using a user-adjustable strobe or flicker effect (the glasses are made of curved plastic LCD lenses). By switching between clear and blocked vision, the glasses train the athlete’s brain to anticipate what’s coming when the eyes are blocked. This, in turn, leads to a hypersensitive ability to pick up on subtle motion cues, better visual information processing, and superior timing of motion. In real world terms, the glasses could improve hand-eye coordination, making it easier for a football player to make a tough catch."
     },
     {
       "name": "Kids Shirt White",
@@ -1043,7 +1225,31 @@
       "category": "merch",
       "slug": "kids-shirt-white",
       "url": "https://www.jessecaron.com/product/kids-shirt-white/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2018/03/Jesse-Caron-Shirt-Wit-Kids.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2018/03/Jesse-Caron-Shirt-Wit-Kids.jpg",
+      "sizes": [
+        "140",
+        "152",
+        "164"
+      ],
+      "gallery": [
+        "/brand/photos/Jesse-Caron-Shirt-Wit-Kids.jpg",
+        "/brand/photos/Jesse-Caron-Shirt-Wit-Kids-Detail.jpg"
+      ],
+      "stock_status": "instock",
+      "variant_stock": {
+        "140": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "152": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "164": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      }
     },
     {
       "name": "Dream Shirt Kids",
@@ -1051,7 +1257,34 @@
       "category": "merch",
       "slug": "dream-shirt-kids",
       "url": "https://www.jessecaron.com/product/dream-shirt-kids/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2018/03/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Doel.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2018/03/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Doel.jpg",
+      "sizes": [
+        "140",
+        "152",
+        "164"
+      ],
+      "gallery": [
+        "/brand/photos/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Doel.jpg",
+        "/brand/photos/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt.jpg",
+        "/brand/photos/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Bank.jpg",
+        "/brand/photos/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Close.jpg",
+        "/brand/photos/Jesse-Caron-Shirt-Wit-Kids-Detail.jpg"
+      ],
+      "stock_status": "instock",
+      "variant_stock": {
+        "140": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "152": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "164": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      }
     },
     {
       "name": "Kids Shirt Black",
@@ -1059,7 +1292,31 @@
       "category": "merch",
       "slug": "kids-shirt-black",
       "url": "https://www.jessecaron.com/product/kids-shirt-black/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2018/03/Jesse-Caron-Black-Shirt-Kids.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2018/03/Jesse-Caron-Black-Shirt-Kids.jpg",
+      "sizes": [
+        "140",
+        "152",
+        "164"
+      ],
+      "gallery": [
+        "/brand/photos/Jesse-Caron-Black-Shirt-Kids.jpg",
+        "/brand/photos/LauradeKwantPhotography-206.jpg"
+      ],
+      "stock_status": "instock",
+      "variant_stock": {
+        "164": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "152": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "140": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      }
     },
     {
       "name": "Dream Shirt",
@@ -1067,7 +1324,31 @@
       "category": "merch",
       "slug": "dream-shirt",
       "url": "https://www.jessecaron.com/product/dream-shirt/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2018/03/Dont-Tell-People-Your-Dreams-Show-Them-Shirt.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2018/03/Dont-Tell-People-Your-Dreams-Show-Them-Shirt.jpg",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "gallery": [
+        "/brand/photos/Dont-Tell-People-Your-Dreams-Show-Them-Shirt.jpg",
+        "/brand/photos/Jesse-Caron-Casual-Kleding.jpg"
+      ],
+      "stock_status": "instock",
+      "variant_stock": {
+        "L": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      }
     },
     {
       "name": "Sport Shirt Black",
@@ -1075,7 +1356,30 @@
       "category": "merch",
       "slug": "sport-shirt-black",
       "url": "https://www.jessecaron.com/product/sport-shirt-black/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2018/03/Chris-Garia-Sport-Shirt-Black-Jesse-Caron.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2018/03/Chris-Garia-Sport-Shirt-Black-Jesse-Caron.jpg",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "gallery": [
+        "/brand/photos/Chris-Garia-Sport-Shirt-Black-Jesse-Caron.jpg"
+      ],
+      "stock_status": "outofstock",
+      "variant_stock": {
+        "L": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      }
     },
     {
       "name": "Functionele Looptraining – Medicine- & Voetbaloefeningen",
@@ -1083,7 +1387,14 @@
       "category": "ebook",
       "slug": "functionele-looptraining-medicine-voetbaloefeningen",
       "url": "https://www.jessecaron.com/product/functionele-looptraining-medicine-voetbaloefeningen/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2018/07/Loopoefeningen-Voetbal-Warming-Up.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2018/07/Loopoefeningen-Voetbal-Warming-Up.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Loopoefeningen-Voetbal-Warming-Up.jpg",
+        "/brand/photos/Functionele-Looptraining-Medicinebal-en-Voetbaloefeningen.jpg"
+      ],
+      "stock_status": "instock",
+      "short_description": "Dit downloadbare e-book bestaat uit een functionele looptraining met twintig duidelijk geïllustreerde oefeningen en toelichting m.b.t. de juiste technische uitvoering. Deze twintig oefeningen worden met behulp van een medicine- en/of voetbal uitgevoerd en zijn perfect toepasbaar voor(afgaand) aan een loop- of voetbaltraining. De eerste vijf oefeningen richten zich op het verbeteren van de looptechniek waarbij tegelijkertijd het lichaam wordt opgewarmd, de daaropvolgende vijf oefeningen richten zich op lenigheid en stabiliteit met behulp van dynamische rekoefeningen om vervolgens met vijf kracht – en vijf explosiviteitsoefeningen om sporters functioneel sneller te maken."
     },
     {
       "name": "Frisbees",
@@ -1091,7 +1402,17 @@
       "category": "merch",
       "slug": "frisbees",
       "url": "https://www.jessecaron.com/product/frisbees/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2018/07/Frisbee-Hand-Oog-Coordinatie-Reactievermogen-Trainen.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2018/07/Frisbee-Hand-Oog-Coordinatie-Reactievermogen-Trainen.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Frisbee-Hand-Oog-Coordinatie-Reactievermogen-Trainen.jpg"
+      ],
+      "attributes": {
+        "Gewicht": "1 kg",
+        "Afmetingen": "10 × 10 × 20 cm"
+      },
+      "stock_status": "instock",
+      "short_description": "Use these frisbees (2) in your training to improve your hand-eye-coordination, also a different and fun form to train the position play for sports like soccer, hockey, basketball, baseball etc."
     },
     {
       "name": "Bidon Blauw",
@@ -1099,7 +1420,20 @@
       "category": "merch",
       "slug": "bidon-blauw",
       "url": "https://www.jessecaron.com/product/bidon-blauw/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2018/07/Blauwe-Zwarte-Bidon-Quote.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2018/07/Blauwe-Zwarte-Bidon-Quote.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Blauwe-Zwarte-Bidon-Quote.jpg",
+        "/brand/photos/Lockable-Spout.png",
+        "/brand/photos/Screw-on-Cap.png"
+      ],
+      "attributes": {
+        "Gewicht": "1 kg",
+        "Afmetingen": "10 × 10 × 20 cm"
+      },
+      "stock_status": "instock",
+      "stock_text": "Op voorraad",
+      "short_description": "This Shiva Tacx 500cc bidon (one > 1) has been a favourite of many sport teams for many years because it is so user-friendly."
     },
     {
       "name": "Functionele Reactie Training – Hand-Oog-Coördinatie Oefeningen",
@@ -1107,7 +1441,14 @@
       "category": "ebook",
       "slug": "reactie-training-hand-oog-coordinatie-oefeningen",
       "url": "https://www.jessecaron.com/product/reactie-training-hand-oog-coordinatie-oefeningen/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2018/08/Reactietraining-Hand-Oog-Coordinatie-Oefeningen.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2018/08/Reactietraining-Hand-Oog-Coordinatie-Oefeningen.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Reactietraining-Hand-Oog-Coordinatie-Oefeningen.jpg",
+        "/brand/photos/Hand-Oog-Coordinatie-Oefeningen.jpg"
+      ],
+      "stock_status": "instock",
+      "short_description": "Dit downloadbare e-book bestaat uit een functionele reactie training met tien duidelijk geïllustreerde oefeningen en toelichting m.b.t. de juiste technische uitvoering."
     },
     {
       "name": "Sports Tech Gloves",
@@ -1115,7 +1456,26 @@
       "category": "merch",
       "slug": "sports-tech-gloves",
       "url": "https://www.jessecaron.com/product/sports-tech-gloves/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2018/11/Voetbal-Loop-Handschoenen-Adelaar-Vogel-Origami.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2018/11/Voetbal-Loop-Handschoenen-Adelaar-Vogel-Origami.jpg",
+      "sizes": [
+        "S/M",
+        "L/XL"
+      ],
+      "gallery": [
+        "/brand/photos/Voetbal-Loop-Handschoenen-Adelaar-Vogel-Origami.jpg"
+      ],
+      "stock_status": "instock",
+      "variant_stock": {
+        "L/XL": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "S/M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "short_description": "Houd je handen warm tijdens je training en/of wedstrijd met deze sporthandschoenen."
     },
     {
       "name": "Kids Sport Shirt Black",
@@ -1123,7 +1483,31 @@
       "category": "merch",
       "slug": "kids-sport-shirt-black",
       "url": "https://www.jessecaron.com/product/kids-sport-shirt-black/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2019/05/Adelaar-Sport-Shirt-Jesse-Caron-Zwart.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2019/05/Adelaar-Sport-Shirt-Jesse-Caron-Zwart.jpg",
+      "sizes": [
+        "140",
+        "152",
+        "164"
+      ],
+      "gallery": [
+        "/brand/photos/Adelaar-Sport-Shirt-Jesse-Caron-Zwart.jpg",
+        "/brand/photos/Jesse-Caron-Sport-Kleding-Kinderen.jpg"
+      ],
+      "stock_status": "instock",
+      "variant_stock": {
+        "140": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "152": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "164": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      }
     },
     {
       "name": "Kids Sport Shirt White",
@@ -1131,7 +1515,31 @@
       "category": "merch",
       "slug": "kids-sport-shirt-white",
       "url": "https://www.jessecaron.com/product/kids-sport-shirt-white/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Sportkleding-Vogel-Adelaar-Logo.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Sportkleding-Vogel-Adelaar-Logo.jpg",
+      "sizes": [
+        "140",
+        "152",
+        "164"
+      ],
+      "gallery": [
+        "/brand/photos/Jesse-Caron-Sportkleding-Vogel-Adelaar-Logo.jpg",
+        "/brand/photos/Jesse-Caron-Shirt-Wit-Logo.jpg"
+      ],
+      "stock_status": "instock",
+      "variant_stock": {
+        "140": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "152": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "164": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      }
     },
     {
       "name": "Reflection Hoodie",
@@ -1139,7 +1547,32 @@
       "category": "merch",
       "slug": "reflection-hoodie",
       "url": "https://www.jessecaron.com/product/reflection-hoodie/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2019/05/Adelaar-Hoodie-Reflectie.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2019/05/Adelaar-Hoodie-Reflectie.jpg",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "gallery": [
+        "/brand/photos/Adelaar-Hoodie-Reflectie.jpg",
+        "/brand/photos/Adelaar-Hoodie-Reflectie-Detail.jpg",
+        "/brand/photos/Zwarte-Trui-Jesse-Caron-Adelaar.jpg"
+      ],
+      "stock_status": "instock",
+      "variant_stock": {
+        "L": {
+          "in_stock": true,
+          "text": "Slechts 2 resterend op voorraad"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      }
     },
     {
       "name": "Reflection Cowl Sweatshirt",
@@ -1147,7 +1580,33 @@
       "category": "merch",
       "slug": "reflection-cowl-sweatshirt",
       "url": "https://www.jessecaron.com/product/reflection-cowl-sweatshirt/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2019/05/Sport-Cowl-Trui-Jesse-Caron-Reflectie.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2019/05/Sport-Cowl-Trui-Jesse-Caron-Reflectie.jpg",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "gallery": [
+        "/brand/photos/Sport-Cowl-Trui-Jesse-Caron-Reflectie.jpg",
+        "/brand/photos/Sport-Cowl-Trui-Jesse-Caron-Reflection.jpg",
+        "/brand/photos/Sport-Cowl-Trui-Jesse-Caron-Reflection-Detail.jpg",
+        "/brand/photos/Sport-Cowl-Trui-Jesse-Caron-Detail.jpg"
+      ],
+      "stock_status": "outofstock",
+      "variant_stock": {
+        "L": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "M": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "S": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        }
+      }
     },
     {
       "name": "Sport Shirt White",
@@ -1155,7 +1614,31 @@
       "category": "merch",
       "slug": "sport-shirt-white",
       "url": "https://www.jessecaron.com/product/sport-shirt-white/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo-Adelaar.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo-Adelaar.jpg",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "gallery": [
+        "/brand/photos/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo-Adelaar.jpg",
+        "/brand/photos/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo.jpg"
+      ],
+      "stock_status": "instock",
+      "variant_stock": {
+        "L": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      }
     },
     {
       "name": "Tapered Jogpant",
@@ -1163,7 +1646,32 @@
       "category": "merch",
       "slug": "sport-shirt-white-kopie",
       "url": "https://www.jessecaron.com/product/sport-shirt-white-kopie/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2019/05/Tapered-Jogpant-Jesse-Caron-Broek-Detail.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2019/05/Tapered-Jogpant-Jesse-Caron-Broek-Detail.jpg",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "gallery": [
+        "/brand/photos/Tapered-Jogpant-Jesse-Caron-Broek-Detail.jpg",
+        "/brand/photos/Tapered-Jogpant-Jesse-Caron-Broek.jpg",
+        "/brand/photos/Tapered-Jogpant-Jesse-Caron-Broek-Details.jpg"
+      ],
+      "stock_status": "instock",
+      "variant_stock": {
+        "L": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "M": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "S": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        }
+      }
     },
     {
       "name": "Sport Shirt Black & Blue",
@@ -1171,7 +1679,31 @@
       "category": "merch",
       "slug": "sport-shirt-black-blue",
       "url": "https://www.jessecaron.com/product/sport-shirt-black-blue/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2019/05/Nargelis-Statia.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2019/05/Nargelis-Statia.jpg",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "gallery": [
+        "/brand/photos/Nargelis-Statia.jpg",
+        "/brand/photos/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo.jpg"
+      ],
+      "stock_status": "outofstock",
+      "variant_stock": {
+        "L": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      }
     },
     {
       "name": "Vector Ball",
@@ -1179,7 +1711,17 @@
       "category": "merch",
       "slug": "vector-ball",
       "url": "https://www.jessecaron.com/product/vector-ball/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2020/04/Vector-Ball-Vision-Reaction-Training.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2020/04/Vector-Ball-Vision-Reaction-Training.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Vector-Ball-Vision-Reaction-Training.jpg",
+        "/brand/photos/Eye-On-Ball-Reactiebal.jpg",
+        "/brand/photos/Reactie-Ball-Lichtgevende-Bal.jpg",
+        "/brand/photos/Reactie-Honkbal.jpg",
+        "/brand/photos/Vector-Ball-Reactie-Kleuren-Bal.jpg"
+      ],
+      "stock_status": "outofstock",
+      "stock_text": "Uitverkocht"
     },
     {
       "name": "Functional Speed Training – Stair Running & Jumping Exercises",
@@ -1187,7 +1729,15 @@
       "category": "ebook",
       "slug": "functional-speed-training-stair-running-jumping-exercises",
       "url": "https://www.jessecaron.com/product/functional-speed-training-stair-running-jumping-exercises/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2020/04/Webshop-Functional-Speed-Training-Stair-Running-Jumping-Exercises.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2020/04/Webshop-Functional-Speed-Training-Stair-Running-Jumping-Exercises.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Webshop-Functional-Speed-Training-Stair-Running-Jumping-Exercises.jpg",
+        "/brand/photos/Jesse-Caron-Functionele-Snelheid-Training-Traplopen.jpg",
+        "/brand/photos/Functionele-Snelheid-Trainig-Voetbal-Traplopen.jpg"
+      ],
+      "stock_status": "instock",
+      "short_description": "This downloadable e-book consists of 25 exercises, divided into warm-up (1), dynamic stretching (3), dynamic strength (3) and stair running & jumping exercises (18)."
     },
     {
       "name": "Tennisballs (3)",
@@ -1195,7 +1745,19 @@
       "category": "merch",
       "slug": "tennisballs-3",
       "url": "https://www.jessecaron.com/product/tennisballs-3/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2021/02/JC-Tennisballen.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2021/02/JC-Tennisballen.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/JC-Tennisballen.jpg",
+        "/brand/photos/JC-Tennisballs.jpg"
+      ],
+      "attributes": {
+        "Gewicht": "1 kg",
+        "Afmetingen": "10 × 10 × 20 cm"
+      },
+      "stock_status": "instock",
+      "stock_text": "Slechts 2 resterend op voorraad",
+      "short_description": "Use these tennisball (3) in your training to improve your hand-eye-coordination and cognitive vision, use our exercise E-books to give you an headstart how to use these balls."
     },
     {
       "name": "Jumprope (Junior)",
@@ -1203,7 +1765,19 @@
       "category": "merch",
       "slug": "springtouw",
       "url": "https://www.jessecaron.com/product/springtouw/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2021/02/Springtouw-Zwart-Blauw.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2021/02/Springtouw-Zwart-Blauw.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Springtouw-Zwart-Blauw.jpg",
+        "/brand/photos/Springtouw-Blauw-Zwart.jpg"
+      ],
+      "attributes": {
+        "Gewicht": "1 kg",
+        "Afmetingen": "10 × 10 × 20 cm"
+      },
+      "stock_status": "instock",
+      "stock_text": "Slechts 2 resterend op voorraad",
+      "short_description": "Use this jumprope in your training to improve your rhythm, use our exercise E-books to give you an headstart how to use this jumprope."
     },
     {
       "name": "Jumprope (Senior)",
@@ -1211,7 +1785,19 @@
       "category": "merch",
       "slug": "jumprope",
       "url": "https://www.jessecaron.com/product/jumprope/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2021/02/Zwart-Springtouw.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2021/02/Zwart-Springtouw.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Zwart-Springtouw.jpg",
+        "/brand/photos/Springtouw-Zwart.jpg"
+      ],
+      "attributes": {
+        "Gewicht": "1 kg",
+        "Afmetingen": "10 × 10 × 20 cm"
+      },
+      "stock_status": "instock",
+      "stock_text": "Slechts 2 resterend op voorraad",
+      "short_description": "Use this jumprope in your training to improve your rhythm, use our exercise E-books to give you an headstart how to use this jumprope."
     },
     {
       "name": "Backpack",
@@ -1219,7 +1805,15 @@
       "category": "merch",
       "slug": "backpack",
       "url": "https://www.jessecaron.com/product/backpack/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2021/02/Rugzak-Sportzak-Adelaar-Vogel-Blauw.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2021/02/Rugzak-Sportzak-Adelaar-Vogel-Blauw.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Rugzak-Sportzak-Adelaar-Vogel-Blauw.jpg",
+        "/brand/photos/Sportzak-Rugzak-Adelaar-Vogel-Blauw.jpg"
+      ],
+      "stock_status": "instock",
+      "stock_text": "Op voorraad",
+      "short_description": "This high quality backpack fits your training accessories for challenging trainingsessions or competitions."
     },
     {
       "name": "Functional Speed Training – Vector Ball – Cognitive Vision Exercises",
@@ -1227,7 +1821,15 @@
       "category": "merch",
       "slug": "functional-speed-training-vector-ball-cognitive-vision-exercises",
       "url": "https://www.jessecaron.com/product/functional-speed-training-vector-ball-cognitive-vision-exercises/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2021/03/Webshop-Functional-Speed-Training-Vector-Ball-Cognitive-Vision-Exercises.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2021/03/Webshop-Functional-Speed-Training-Vector-Ball-Cognitive-Vision-Exercises.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Webshop-Functional-Speed-Training-Vector-Ball-Cognitive-Vision-Exercises.jpg",
+        "/brand/photos/02-Voorpagina-Engels.jpg",
+        "/brand/photos/VECTOR-BALL-EXERCISE-1.jpg"
+      ],
+      "stock_status": "instock",
+      "short_description": "This downloadable e-book consists of 8 exercises with the Vector Ball ."
     },
     {
       "name": "Functionele Warming Up – Dynamische Strekoefeningen & Krachtoefeningen",
@@ -1235,7 +1837,15 @@
       "category": "ebook",
       "slug": "functionele-warming-up-oefeningen",
       "url": "https://www.jessecaron.com/product/functionele-warming-up-oefeningen/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2021/03/Warming-Up-Rekoefeningen-Kracht-Oefeningen-Voorbeelden.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2021/03/Warming-Up-Rekoefeningen-Kracht-Oefeningen-Voorbeelden.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Warming-Up-Rekoefeningen-Kracht-Oefeningen-Voorbeelden.jpg",
+        "/brand/photos/Dynamische-Oefeningen-Warming-Up.jpg",
+        "/brand/photos/Dynamische-Warming-Up-Kracht-Oefening-Voorbeeld.jpg"
+      ],
+      "stock_status": "instock",
+      "short_description": "Dit downloadbare e-book bestaat uit een functionele warming up met dertig duidelijk geïllustreerde oefeningen met bijbehorende uitleg gericht op de juiste technische uitvoering. Deze oefeningen gericht op het verbeteren van de beweegtechnieken kunnen zonder hulpmiddelen en/of attributen worden uitgevoerd en zijn perfect toepasbaar voor(afgaand) aan een loop-, voetbal- of andere spelsporttraining."
     },
     {
       "name": "Padeltoernooi 19 november",
@@ -1243,7 +1853,34 @@
       "category": "event",
       "slug": "padeltoernooi",
       "url": "https://www.jessecaron.com/product/padeltoernooi/",
-      "image": "https://www.jessecaron.com/wp-content/uploads/2023/09/Padel-Toernooi-Schiedam.jpg"
+      "image": "https://www.jessecaron.com/wp-content/uploads/2023/09/Padel-Toernooi-Schiedam.jpg",
+      "sizes": [],
+      "gallery": [
+        "/brand/photos/Padel-Toernooi-Schiedam.jpg"
+      ],
+      "variants": {
+        "niveau": [
+          "Beginner",
+          "Gevorderd",
+          "Expert"
+        ]
+      },
+      "stock_status": "outofstock",
+      "variant_stock": {
+        "Beginner": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "Gevorderd": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "Expert": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        }
+      },
+      "short_description": "Op zondag 19 november 2023 organiseert Jesse Caron in samenwerking met Buitenlandsche Zaken een padeltoernooi op de top indoor-padel accomodatie – ‘RacketSport Schiedam’, koop nu je deelnemers-ticket dat recht geeft om samen met één partner deel te nemen aan dit toernooi."
     }
   ],
   "videos": [

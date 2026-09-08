@@ -41,6 +41,9 @@ export type PostMeta = {
   excerpt: string;
 };
 
+/** Per-variation availability as scraped from the WooCommerce variations form. */
+export type VariantStock = { in_stock: boolean; text: string };
+
 export type Product = {
   name: string;
   price_eur: string;
@@ -48,6 +51,21 @@ export type Product = {
   slug: string;
   url: string;
   image: string;
+  /** Struck-through original price — only present on the two sale items. */
+  regular_price_eur?: string;
+  /** Local image paths, main first. 33 of the 38 products carry more than one. */
+  gallery?: string[];
+  /** Size run (S/M/L, kids 140/152/164, or the gloves' S/M–L/XL). Empty for 21 products. */
+  sizes?: string[];
+  /** Non-size variation axes. Only `padeltoernooi`, whose axis is a skill level. */
+  variants?: Record<string, string[]>;
+  /** WooCommerce attribute table — Dutch labels kept verbatim (Gewicht, Afmetingen). */
+  attributes?: Record<string, string>;
+  stock_status?: string;
+  stock_text?: string;
+  /** Keyed by size (or, for `padeltoernooi`, by niveau). */
+  variant_stock?: Record<string, VariantStock>;
+  short_description?: string;
 };
 
 export type Video = {
@@ -174,4 +192,109 @@ export function fmtPrice(eur: string): string {
   const n = Number(eur);
   if (Number.isNaN(n)) return eur;
   return n % 1 === 0 ? `€${n}` : `€${n.toFixed(2)}`;
+}
+
+export const CATEGORY_LABEL: Record<Product["category"], string> = {
+  merch: "Kleding & Materiaal",
+  ebook: "Online Training",
+  event: "Event",
+};
+
+export function categoryLabel(p: Product): string {
+  return CATEGORY_LABEL[p.category] ?? p.category;
+}
+
+/**
+ * `sport-shirt-black-blue` came back from the harvest priced at 0.00 — a hole in
+ * the old shop's data, not a free product. Rather than print "€0" we say nothing
+ * about the price and let the webshop be the source of truth.
+ */
+export function hasPrice(p: Product): boolean {
+  const n = Number(p.price_eur);
+  return Number.isFinite(n) && n > 0;
+}
+
+export function isOnSale(p: Product): boolean {
+  if (!p.regular_price_eur || !hasPrice(p)) return false;
+  const was = Number(p.regular_price_eur);
+  return Number.isFinite(was) && was > Number(p.price_eur);
+}
+
+// ----- Product gallery ----------------------------------------------------
+/** Always at least one image; the harvest verified every gallery path resolves. */
+export function productGallery(p: Product): string[] {
+  const g = (p.gallery ?? []).filter(Boolean);
+  if (g.length) return g;
+  const fallback = localImg(p.image);
+  return fallback ? [fallback] : [];
+}
+
+// ----- Product options ----------------------------------------------------
+export type ProductOption = { value: string; inStock: boolean; text?: string };
+
+/**
+ * The one selectable axis a product has, if any. For 17 products that is the
+ * size run; for `padeltoernooi` it is a skill level (`niveau`), which is why the
+ * label travels with the options instead of being hard-coded to "Maat".
+ */
+export type OptionRun = { key: string; label: string; options: ProductOption[] };
+
+const VARIANT_LABEL: Record<string, string> = { niveau: "Niveau" };
+
+export function productOptions(p: Product): OptionRun | null {
+  const stock = p.variant_stock ?? {};
+  const build = (key: string, label: string, values: string[]): OptionRun => ({
+    key,
+    label,
+    options: values.map((value) => ({
+      value,
+      // No per-variation row means the harvest saw no sold-out marker for it.
+      inStock: stock[value] ? stock[value].in_stock : true,
+      text: stock[value]?.text,
+    })),
+  });
+
+  if (p.sizes?.length) return build("maat", "Maat", p.sizes);
+
+  const variantKey = Object.keys(p.variants ?? {}).find((k) => (p.variants?.[k] ?? []).length);
+  if (variantKey) {
+    const label = VARIANT_LABEL[variantKey] ?? variantKey[0].toUpperCase() + variantKey.slice(1);
+    return build(variantKey, label, p.variants?.[variantKey] ?? []);
+  }
+  return null;
+}
+
+/**
+ * Variation-level truth beats the parent flag. WooCommerce left several parents
+ * marked `outofstock` while S and M were still sellable (`sport-shirt-black`),
+ * so a product only counts as sold out when nothing on it can be bought.
+ */
+export function isSoldOut(p: Product): boolean {
+  const variants = Object.values(p.variant_stock ?? {});
+  if (variants.length) return variants.every((v) => !v.in_stock);
+  return p.stock_status === "outofstock";
+}
+
+/** Attribute rows worth printing — WooCommerce leaves "N/B" (n/a) placeholders behind. */
+export function productAttributes(p: Product): [string, string][] {
+  return Object.entries(p.attributes ?? {}).filter(
+    ([, v]) => v && v.trim() && !/^n\/b$/i.test(v.trim()),
+  );
+}
+
+/**
+ * Same category first, then the rest of the shop, never the product itself.
+ * The walk starts at the current product and wraps, rather than always taking
+ * the first four in the file — otherwise every merch page recommended the same
+ * four shirts.
+ */
+export function relatedProducts(slug: string, limit = 4): Product[] {
+  const all = data.products;
+  const start = all.findIndex((p) => p.slug === slug);
+  if (start < 0) return [];
+  const self = all[start];
+  const rotated = [...all.slice(start + 1), ...all.slice(0, start)];
+  const sameCat = rotated.filter((p) => p.category === self.category);
+  const rest = rotated.filter((p) => p.category !== self.category);
+  return [...sameCat, ...rest].slice(0, limit);
 }

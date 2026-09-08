@@ -129,3 +129,30 @@ export function getPostBody(slug: string): string {
 export function getProductBody(slug: string): string {
   return readBody("products", slug);
 }
+
+/**
+ * WooCommerce's short description and the first paragraph of the long description
+ * are the same sentence on 16 of the 25 products that have both. The product page
+ * shows the short description as a lead next to the price, so printing it again as
+ * the opening line of the body reads like a stutter. Drop the body's first
+ * paragraph only when it demonstrably restates the lead; where the two genuinely
+ * differ (nine products) both are kept, because neither is ours to rewrite.
+ */
+function normaliseLead(s: string): string {
+  return s
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/[*_`>#]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
+export function getProductBodyAfterLead(slug: string, lead?: string): string {
+  const body = getProductBody(slug);
+  if (!lead || !body) return body;
+  const paragraphs = body.split(/\n{2,}/);
+  const head = normaliseLead(paragraphs[0] ?? "");
+  const tail = normaliseLead(lead);
+  if (head.slice(0, 60) === tail.slice(0, 60)) return paragraphs.slice(1).join("\n\n").trim();
+  return body;
+}

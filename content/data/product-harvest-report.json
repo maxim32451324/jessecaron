@@ -1,0 +1,2036 @@
+{
+  "generated": "2026-09-08",
+  "source_site": "https://www.jessecaron.com/",
+  "method": "Sequential GET of each product URL (1.5s delay, desktop UA), read-only. Gallery from .woocommerce-product-gallery__wrapper data-large_image, in DOM order, with the WordPress -WxH size suffix stripped so the full-size original is requested. Sizes from select[name^=attribute_] and form.variations_form data-product_variations (the review star-rating select#rating is excluded). Price from div.summary p.price cross-checked against the embedded product JSON. Stock from schema.org offers availability, p.stock and per-variation availability_html. Attributes from table.woocommerce-product-attributes.",
+  "totals": {
+    "products": 38,
+    "products_with_sizes": 17,
+    "products_without_sizes": 21,
+    "products_with_multi_image_gallery": 33,
+    "gallery_size_distribution": {
+      "1": 5,
+      "2": 18,
+      "3": 10,
+      "4": 3,
+      "5": 2
+    },
+    "gallery_images_total": 93,
+    "manifest_entries_added": 49,
+    "manifest_entries_total": 182,
+    "broken_gallery_paths": [],
+    "all_gallery_paths_resolve": true,
+    "price_disagreements": [],
+    "images_downloaded_occurrences": 54,
+    "images_downloaded_bytes_occurrences": 33811568,
+    "images_already_local_occurrences": 39,
+    "images_downloaded_unique": 49,
+    "images_downloaded_unique_bytes": 31073014,
+    "images_already_local_unique": 39,
+    "note_on_counts": "Occurrence counts double-count the 5 images that appear in two products' galleries (Sweatbands-Black-White.jpg, Lockable-Spout.png, Screw-on-Cap.png, Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo.jpg, Jesse-Caron-Shirt-Wit-Kids-Detail.jpg). Each file was fetched once."
+  },
+  "products": [
+    {
+      "slug": "longsleeved-shirt-black",
+      "name": "Longsleeved Shirt – Black",
+      "source_url": "https://www.jessecaron.com/product/longsleeved-shirt-black/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "30.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "30.00"
+      ],
+      "sizes_found": [
+        "S",
+        "M",
+        "L"
+      ],
+      "variants_found": {},
+      "attributes_found": {
+        "Gewicht": "0.200 kg",
+        "Afmetingen": "10 × 10 × 10 cm"
+      },
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "L": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2016/09/Jesse-Caron-Kleding-Longsleeve-Black.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2016/09/Jesse-Caron-Kleding-Longsleeve-Zwart.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2016/09/Jesse-Caron-Kleding-Longsleeve-Zwart-Detail.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2016/09/Jesse-Caron-Kleding-Longsleeve-Zwart.jpg",
+          "local": "/brand/photos/Jesse-Caron-Kleding-Longsleeve-Zwart.jpg",
+          "bytes": 824541
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2016/09/Jesse-Caron-Kleding-Longsleeve-Zwart-Detail.jpg",
+          "local": "/brand/photos/Jesse-Caron-Kleding-Longsleeve-Zwart-Detail.jpg",
+          "bytes": 1128193
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2016/09/Jesse-Caron-Kleding-Longsleeve-Black.jpg",
+          "local": "/brand/photos/Jesse-Caron-Kleding-Longsleeve-Black.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Jesse-Caron-Kleding-Longsleeve-Black.jpg",
+        "/brand/photos/Jesse-Caron-Kleding-Longsleeve-Zwart.jpg",
+        "/brand/photos/Jesse-Caron-Kleding-Longsleeve-Zwart-Detail.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "longsleeved-white",
+      "name": "Longsleeved – White",
+      "source_url": "https://www.jessecaron.com/product/longsleeved-white/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "30.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "30.00"
+      ],
+      "sizes_found": [
+        "S",
+        "M",
+        "L"
+      ],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "L": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2016/09/Longsleeve-Jesse-Caron-Wit-Zwart-Adelaar.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2016/09/Longsleeve-Jesse-Caron-Wit-Zwart-Adelaar-Logo.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2016/09/Longsleeve-Jesse-Caron-Wit-Zwart-Adelaar-Logo.jpg",
+          "local": "/brand/photos/Longsleeve-Jesse-Caron-Wit-Zwart-Adelaar-Logo.jpg",
+          "bytes": 981087
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2016/09/Longsleeve-Jesse-Caron-Wit-Zwart-Adelaar.jpg",
+          "local": "/brand/photos/Longsleeve-Jesse-Caron-Wit-Zwart-Adelaar.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Longsleeve-Jesse-Caron-Wit-Zwart-Adelaar.jpg",
+        "/brand/photos/Longsleeve-Jesse-Caron-Wit-Zwart-Adelaar-Logo.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "shirt-white",
+      "name": "Shirt White",
+      "source_url": "https://www.jessecaron.com/product/shirt-white/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "25.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "25.00"
+      ],
+      "sizes_found": [
+        "S",
+        "M",
+        "L"
+      ],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "L": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2017/03/Jesse-Caron-Shirt-Wit-Zwart.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/03/Jesse-Caron-Shirt-Wit-Zwart-Logo.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/03/Loic-Wondel-Shirt-Wit-Zwart.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/03/Jesse-Caron-Shirt-Wit-Zwart-Logo.jpg",
+          "local": "/brand/photos/Jesse-Caron-Shirt-Wit-Zwart-Logo.jpg",
+          "bytes": 1082482
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/03/Loic-Wondel-Shirt-Wit-Zwart.jpg",
+          "local": "/brand/photos/Loic-Wondel-Shirt-Wit-Zwart.jpg",
+          "bytes": 929879
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/03/Jesse-Caron-Shirt-Wit-Zwart.jpg",
+          "local": "/brand/photos/Jesse-Caron-Shirt-Wit-Zwart.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Jesse-Caron-Shirt-Wit-Zwart.jpg",
+        "/brand/photos/Jesse-Caron-Shirt-Wit-Zwart-Logo.jpg",
+        "/brand/photos/Loic-Wondel-Shirt-Wit-Zwart.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "shirt-black",
+      "name": "Shirt Black",
+      "source_url": "https://www.jessecaron.com/product/shirt-black/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "25.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "25.00"
+      ],
+      "sizes_found": [
+        "S",
+        "M",
+        "L"
+      ],
+      "variants_found": {},
+      "attributes_found": {
+        "Gewicht": "N/B"
+      },
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "L": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2017/03/Caron-Kleding-Shirt-Zwart-Wit-Adelaar.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/03/Adelaar-Shirt.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/03/Adelaar-Shirt.jpg",
+          "local": "/brand/photos/Adelaar-Shirt.jpg",
+          "bytes": 1010640
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/03/Caron-Kleding-Shirt-Zwart-Wit-Adelaar.jpg",
+          "local": "/brand/photos/Caron-Kleding-Shirt-Zwart-Wit-Adelaar.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Caron-Kleding-Shirt-Zwart-Wit-Adelaar.jpg",
+        "/brand/photos/Adelaar-Shirt.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "reaction-balls",
+      "name": "Reaction Balls",
+      "source_url": "https://www.jessecaron.com/product/reaction-balls/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "15.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "15.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": "Op voorraad",
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Product-Reactieballen-Blauw-Zwart.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Product-Reactieballen-Blauw-Zwart-Zakje-scaled.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/JC_RB_01.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/JC_RB_04.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Product-Reactieballen-Blauw-Zwart-Zakje-scaled.jpg",
+          "local": "/brand/photos/Jesse-Caron-Product-Reactieballen-Blauw-Zwart-Zakje-scaled.jpg",
+          "bytes": 902358
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/JC_RB_01.jpg",
+          "local": "/brand/photos/JC_RB_01.jpg",
+          "bytes": 72888
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/JC_RB_04.jpg",
+          "local": "/brand/photos/JC_RB_04.jpg",
+          "bytes": 350571
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Product-Reactieballen-Blauw-Zwart.jpg",
+          "local": "/brand/photos/Jesse-Caron-Product-Reactieballen-Blauw-Zwart.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Jesse-Caron-Product-Reactieballen-Blauw-Zwart.jpg",
+        "/brand/photos/Jesse-Caron-Product-Reactieballen-Blauw-Zwart-Zakje-scaled.jpg",
+        "/brand/photos/JC_RB_01.jpg",
+        "/brand/photos/JC_RB_04.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "bidon",
+      "name": "Bidon – Black",
+      "source_url": "https://www.jessecaron.com/product/bidon/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "10.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "10.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {
+        "Gewicht": "1 kg",
+        "Afmetingen": "10 × 10 × 20 cm"
+      },
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Blauwe-Zwarte-Bidon-Illustraties.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Lockable-Spout.png",
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Screw-on-Cap.png"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Lockable-Spout.png",
+          "local": "/brand/photos/Lockable-Spout.png",
+          "bytes": 181933
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Screw-on-Cap.png",
+          "local": "/brand/photos/Screw-on-Cap.png",
+          "bytes": 220774
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Blauwe-Zwarte-Bidon-Illustraties.jpg",
+          "local": "/brand/photos/Blauwe-Zwarte-Bidon-Illustraties.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Blauwe-Zwarte-Bidon-Illustraties.jpg",
+        "/brand/photos/Lockable-Spout.png",
+        "/brand/photos/Screw-on-Cap.png"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "zweetband-zwart-blauw",
+      "name": "Zweetband – Zwart-Blauw",
+      "source_url": "https://www.jessecaron.com/product/zweetband-zwart-blauw/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "5.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "5.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "outofstock",
+      "stock_text": "Uitverkocht",
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/DSC_0857-b-scaled.jpg"
+      ],
+      "images_downloaded": [],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/DSC_0857-b-scaled.jpg",
+          "local": "/brand/photos/DSC_0857-b-scaled.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/DSC_0857-b-scaled.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "zweetbanden-zwart-wit",
+      "name": "Zweetbanden – Zwart – Wit",
+      "source_url": "https://www.jessecaron.com/product/zweetbanden-zwart-wit/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "10.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "10.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": "Op voorraad",
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Zweetbanden-Wit-Zwart.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Sweatbands-Black-White.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Sweatbands-Black-White.jpg",
+          "local": "/brand/photos/Sweatbands-Black-White.jpg",
+          "bytes": 712752
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Zweetbanden-Wit-Zwart.jpg",
+          "local": "/brand/photos/Jesse-Caron-Zweetbanden-Wit-Zwart.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Jesse-Caron-Zweetbanden-Wit-Zwart.jpg",
+        "/brand/photos/Sweatbands-Black-White.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "zweetbanden-wit-zwart",
+      "name": "Zweetbanden – Wit – Zwart",
+      "source_url": "https://www.jessecaron.com/product/zweetbanden-wit-zwart/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "10.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "10.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": "Op voorraad",
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Zweetbanden-Zwart-Wit-1.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Sweatbands-Black-White.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Sweatbands-Black-White.jpg",
+          "local": "/brand/photos/Sweatbands-Black-White.jpg",
+          "bytes": 712752
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Zweetbanden-Zwart-Wit-1.jpg",
+          "local": "/brand/photos/Jesse-Caron-Zweetbanden-Zwart-Wit-1.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Jesse-Caron-Zweetbanden-Zwart-Wit-1.jpg",
+        "/brand/photos/Sweatbands-Black-White.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "shoe-bag",
+      "name": "Shoe Bag",
+      "source_url": "https://www.jessecaron.com/product/shoe-bag/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "20.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "20.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": "Op voorraad",
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Product-Schoenentas-Origiami-Adelaar.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Product-Schoenentas-Origiami-Adelaar-Close.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Product-Schoenentas-Origiami-Adelaar-Close.jpg",
+          "local": "/brand/photos/Jesse-Caron-Product-Schoenentas-Origiami-Adelaar-Close.jpg",
+          "bytes": 247106
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Jesse-Caron-Product-Schoenentas-Origiami-Adelaar.jpg",
+          "local": "/brand/photos/Jesse-Caron-Product-Schoenentas-Origiami-Adelaar.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Jesse-Caron-Product-Schoenentas-Origiami-Adelaar.jpg",
+        "/brand/photos/Jesse-Caron-Product-Schoenentas-Origiami-Adelaar-Close.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "massage-stick",
+      "name": "Massage Stick",
+      "source_url": "https://www.jessecaron.com/product/massage-stick/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "20.00",
+      "price_page_regular": "30.00",
+      "embedded_product_json_prices": [
+        "20.00",
+        "30.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": "Op voorraad",
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Massage-Stick.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Masseer-Stok.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Masseer-Stick.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Masseer-Stick.jpg",
+          "local": "/brand/photos/Masseer-Stick.jpg",
+          "bytes": 341346
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Massage-Stick.jpg",
+          "local": "/brand/photos/Massage-Stick.jpg"
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Masseer-Stok.jpg",
+          "local": "/brand/photos/Masseer-Stok.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Massage-Stick.jpg",
+        "/brand/photos/Masseer-Stok.jpg",
+        "/brand/photos/Masseer-Stick.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "stroboscoop-glasses",
+      "name": "Stroboscoop Glasses",
+      "source_url": "https://www.jessecaron.com/product/stroboscoop-glasses/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "550.00",
+      "price_page_regular": "600.00",
+      "embedded_product_json_prices": [
+        "550.00",
+        "600.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2017/10/Stroboscoopbril-Reactiebril.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/10/Reactiebril.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/10/Reactiesnelheid-Bril.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/10/Reactievermogen-Bril.png"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/10/Reactiebril.jpg",
+          "local": "/brand/photos/Reactiebril.jpg",
+          "bytes": 77460
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/10/Reactiesnelheid-Bril.jpg",
+          "local": "/brand/photos/Reactiesnelheid-Bril.jpg",
+          "bytes": 158318
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/10/Reactievermogen-Bril.png",
+          "local": "/brand/photos/Reactievermogen-Bril.png",
+          "bytes": 271522
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/10/Stroboscoopbril-Reactiebril.jpg",
+          "local": "/brand/photos/Stroboscoopbril-Reactiebril.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Stroboscoopbril-Reactiebril.jpg",
+        "/brand/photos/Reactiebril.jpg",
+        "/brand/photos/Reactiesnelheid-Bril.jpg",
+        "/brand/photos/Reactievermogen-Bril.png"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "kids-shirt-white",
+      "name": "Kids Shirt White",
+      "source_url": "https://www.jessecaron.com/product/kids-shirt-white/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "25.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "25.00"
+      ],
+      "sizes_found": [
+        "140",
+        "152",
+        "164"
+      ],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {
+        "140": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "152": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "164": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2018/03/Jesse-Caron-Shirt-Wit-Kids.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2018/03/Jesse-Caron-Shirt-Wit-Kids-Detail.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/03/Jesse-Caron-Shirt-Wit-Kids-Detail.jpg",
+          "local": "/brand/photos/Jesse-Caron-Shirt-Wit-Kids-Detail.jpg",
+          "bytes": 819501
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/03/Jesse-Caron-Shirt-Wit-Kids.jpg",
+          "local": "/brand/photos/Jesse-Caron-Shirt-Wit-Kids.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Jesse-Caron-Shirt-Wit-Kids.jpg",
+        "/brand/photos/Jesse-Caron-Shirt-Wit-Kids-Detail.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "dream-shirt-kids",
+      "name": "Dream Shirt Kids",
+      "source_url": "https://www.jessecaron.com/product/dream-shirt-kids/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "30.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "30.00"
+      ],
+      "sizes_found": [
+        "140",
+        "152",
+        "164"
+      ],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {
+        "140": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "152": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "164": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2018/03/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Doel.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2018/03/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2018/03/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Bank.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2018/03/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Close.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2018/03/Jesse-Caron-Shirt-Wit-Kids-Detail.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/03/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt.jpg",
+          "local": "/brand/photos/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt.jpg",
+          "bytes": 881028
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/03/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Bank.jpg",
+          "local": "/brand/photos/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Bank.jpg",
+          "bytes": 1346502
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/03/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Close.jpg",
+          "local": "/brand/photos/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Close.jpg",
+          "bytes": 873690
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/03/Jesse-Caron-Shirt-Wit-Kids-Detail.jpg",
+          "local": "/brand/photos/Jesse-Caron-Shirt-Wit-Kids-Detail.jpg",
+          "bytes": 819501
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/03/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Doel.jpg",
+          "local": "/brand/photos/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Doel.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Doel.jpg",
+        "/brand/photos/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt.jpg",
+        "/brand/photos/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Bank.jpg",
+        "/brand/photos/Dont-Tell-People-Your-Dreams-Show-Them-Kids-Shirt-Close.jpg",
+        "/brand/photos/Jesse-Caron-Shirt-Wit-Kids-Detail.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "kids-shirt-black",
+      "name": "Kids Shirt Black",
+      "source_url": "https://www.jessecaron.com/product/kids-shirt-black/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "25.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "25.00"
+      ],
+      "sizes_found": [
+        "140",
+        "152",
+        "164"
+      ],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {
+        "164": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "152": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "140": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2018/03/Jesse-Caron-Black-Shirt-Kids.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2018/03/LauradeKwantPhotography-206.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/03/LauradeKwantPhotography-206.jpg",
+          "local": "/brand/photos/LauradeKwantPhotography-206.jpg",
+          "bytes": 848328
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/03/Jesse-Caron-Black-Shirt-Kids.jpg",
+          "local": "/brand/photos/Jesse-Caron-Black-Shirt-Kids.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Jesse-Caron-Black-Shirt-Kids.jpg",
+        "/brand/photos/LauradeKwantPhotography-206.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "dream-shirt",
+      "name": "Dream Shirt",
+      "source_url": "https://www.jessecaron.com/product/dream-shirt/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "30.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "30.00"
+      ],
+      "sizes_found": [
+        "S",
+        "M",
+        "L"
+      ],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {
+        "L": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2018/03/Dont-Tell-People-Your-Dreams-Show-Them-Shirt.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2018/03/Jesse-Caron-Casual-Kleding.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/03/Jesse-Caron-Casual-Kleding.jpg",
+          "local": "/brand/photos/Jesse-Caron-Casual-Kleding.jpg",
+          "bytes": 1062163
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/03/Dont-Tell-People-Your-Dreams-Show-Them-Shirt.jpg",
+          "local": "/brand/photos/Dont-Tell-People-Your-Dreams-Show-Them-Shirt.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Dont-Tell-People-Your-Dreams-Show-Them-Shirt.jpg",
+        "/brand/photos/Jesse-Caron-Casual-Kleding.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "sport-shirt-black",
+      "name": "Sport Shirt Black",
+      "source_url": "https://www.jessecaron.com/product/sport-shirt-black/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "25.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "25.00"
+      ],
+      "sizes_found": [
+        "S",
+        "M",
+        "L"
+      ],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "outofstock",
+      "stock_text": null,
+      "variant_stock": {
+        "L": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2018/03/Chris-Garia-Sport-Shirt-Black-Jesse-Caron.jpg"
+      ],
+      "images_downloaded": [],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/03/Chris-Garia-Sport-Shirt-Black-Jesse-Caron.jpg",
+          "local": "/brand/photos/Chris-Garia-Sport-Shirt-Black-Jesse-Caron.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Chris-Garia-Sport-Shirt-Black-Jesse-Caron.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "functionele-looptraining-medicine-voetbaloefeningen",
+      "name": "Functionele Looptraining – Medicine- & Voetbaloefeningen",
+      "source_url": "https://www.jessecaron.com/product/functionele-looptraining-medicine-voetbaloefeningen/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "15.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "15.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2018/07/Loopoefeningen-Voetbal-Warming-Up.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2018/07/Functionele-Looptraining-Medicinebal-en-Voetbaloefeningen.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/07/Functionele-Looptraining-Medicinebal-en-Voetbaloefeningen.jpg",
+          "local": "/brand/photos/Functionele-Looptraining-Medicinebal-en-Voetbaloefeningen.jpg",
+          "bytes": 448550
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/07/Loopoefeningen-Voetbal-Warming-Up.jpg",
+          "local": "/brand/photos/Loopoefeningen-Voetbal-Warming-Up.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Loopoefeningen-Voetbal-Warming-Up.jpg",
+        "/brand/photos/Functionele-Looptraining-Medicinebal-en-Voetbaloefeningen.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "frisbees",
+      "name": "Frisbees",
+      "source_url": "https://www.jessecaron.com/product/frisbees/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "10.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "10.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {
+        "Gewicht": "1 kg",
+        "Afmetingen": "10 × 10 × 20 cm"
+      },
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2018/07/Frisbee-Hand-Oog-Coordinatie-Reactievermogen-Trainen.jpg"
+      ],
+      "images_downloaded": [],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/07/Frisbee-Hand-Oog-Coordinatie-Reactievermogen-Trainen.jpg",
+          "local": "/brand/photos/Frisbee-Hand-Oog-Coordinatie-Reactievermogen-Trainen.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Frisbee-Hand-Oog-Coordinatie-Reactievermogen-Trainen.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "bidon-blauw",
+      "name": "Bidon Blauw",
+      "source_url": "https://www.jessecaron.com/product/bidon-blauw/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "10.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "10.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {
+        "Gewicht": "1 kg",
+        "Afmetingen": "10 × 10 × 20 cm"
+      },
+      "stock_status": "instock",
+      "stock_text": "Op voorraad",
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2018/07/Blauwe-Zwarte-Bidon-Quote.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Lockable-Spout.png",
+        "https://www.jessecaron.com/wp-content/uploads/2017/04/Screw-on-Cap.png"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Lockable-Spout.png",
+          "local": "/brand/photos/Lockable-Spout.png",
+          "bytes": 181933
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2017/04/Screw-on-Cap.png",
+          "local": "/brand/photos/Screw-on-Cap.png",
+          "bytes": 220774
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/07/Blauwe-Zwarte-Bidon-Quote.jpg",
+          "local": "/brand/photos/Blauwe-Zwarte-Bidon-Quote.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Blauwe-Zwarte-Bidon-Quote.jpg",
+        "/brand/photos/Lockable-Spout.png",
+        "/brand/photos/Screw-on-Cap.png"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "reactie-training-hand-oog-coordinatie-oefeningen",
+      "name": "Functionele Reactie Training – Hand-Oog-Coördinatie Oefeningen",
+      "source_url": "https://www.jessecaron.com/product/reactie-training-hand-oog-coordinatie-oefeningen/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "10.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "10.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2018/08/Reactietraining-Hand-Oog-Coordinatie-Oefeningen.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2018/08/Hand-Oog-Coordinatie-Oefeningen.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/08/Hand-Oog-Coordinatie-Oefeningen.jpg",
+          "local": "/brand/photos/Hand-Oog-Coordinatie-Oefeningen.jpg",
+          "bytes": 436022
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/08/Reactietraining-Hand-Oog-Coordinatie-Oefeningen.jpg",
+          "local": "/brand/photos/Reactietraining-Hand-Oog-Coordinatie-Oefeningen.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Reactietraining-Hand-Oog-Coordinatie-Oefeningen.jpg",
+        "/brand/photos/Hand-Oog-Coordinatie-Oefeningen.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "sports-tech-gloves",
+      "name": "Sports Tech Gloves",
+      "source_url": "https://www.jessecaron.com/product/sports-tech-gloves/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "20.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "20.00"
+      ],
+      "sizes_found": [
+        "S/M",
+        "L/XL"
+      ],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {
+        "L/XL": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "S/M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2018/11/Voetbal-Loop-Handschoenen-Adelaar-Vogel-Origami.jpg"
+      ],
+      "images_downloaded": [],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2018/11/Voetbal-Loop-Handschoenen-Adelaar-Vogel-Origami.jpg",
+          "local": "/brand/photos/Voetbal-Loop-Handschoenen-Adelaar-Vogel-Origami.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Voetbal-Loop-Handschoenen-Adelaar-Vogel-Origami.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "kids-sport-shirt-black",
+      "name": "Kids Sport Shirt Black",
+      "source_url": "https://www.jessecaron.com/product/kids-sport-shirt-black/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "25.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "25.00"
+      ],
+      "sizes_found": [
+        "140",
+        "152",
+        "164"
+      ],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {
+        "140": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "152": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "164": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Adelaar-Sport-Shirt-Jesse-Caron-Zwart.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Sport-Kleding-Kinderen.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Sport-Kleding-Kinderen.jpg",
+          "local": "/brand/photos/Jesse-Caron-Sport-Kleding-Kinderen.jpg",
+          "bytes": 923971
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Adelaar-Sport-Shirt-Jesse-Caron-Zwart.jpg",
+          "local": "/brand/photos/Adelaar-Sport-Shirt-Jesse-Caron-Zwart.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Adelaar-Sport-Shirt-Jesse-Caron-Zwart.jpg",
+        "/brand/photos/Jesse-Caron-Sport-Kleding-Kinderen.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "kids-sport-shirt-white",
+      "name": "Kids Sport Shirt White",
+      "source_url": "https://www.jessecaron.com/product/kids-sport-shirt-white/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "25.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "25.00"
+      ],
+      "sizes_found": [
+        "140",
+        "152",
+        "164"
+      ],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {
+        "140": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "152": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "164": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Sportkleding-Vogel-Adelaar-Logo.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Shirt-Wit-Logo.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Shirt-Wit-Logo.jpg",
+          "local": "/brand/photos/Jesse-Caron-Shirt-Wit-Logo.jpg",
+          "bytes": 847609
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Sportkleding-Vogel-Adelaar-Logo.jpg",
+          "local": "/brand/photos/Jesse-Caron-Sportkleding-Vogel-Adelaar-Logo.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Jesse-Caron-Sportkleding-Vogel-Adelaar-Logo.jpg",
+        "/brand/photos/Jesse-Caron-Shirt-Wit-Logo.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "reflection-hoodie",
+      "name": "Reflection Hoodie",
+      "source_url": "https://www.jessecaron.com/product/reflection-hoodie/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "40.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "40.00"
+      ],
+      "sizes_found": [
+        "S",
+        "M",
+        "L"
+      ],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {
+        "L": {
+          "in_stock": true,
+          "text": "Slechts 2 resterend op voorraad"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Adelaar-Hoodie-Reflectie.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Adelaar-Hoodie-Reflectie-Detail.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Zwarte-Trui-Jesse-Caron-Adelaar.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Adelaar-Hoodie-Reflectie-Detail.jpg",
+          "local": "/brand/photos/Adelaar-Hoodie-Reflectie-Detail.jpg",
+          "bytes": 907364
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Zwarte-Trui-Jesse-Caron-Adelaar.jpg",
+          "local": "/brand/photos/Zwarte-Trui-Jesse-Caron-Adelaar.jpg",
+          "bytes": 978636
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Adelaar-Hoodie-Reflectie.jpg",
+          "local": "/brand/photos/Adelaar-Hoodie-Reflectie.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Adelaar-Hoodie-Reflectie.jpg",
+        "/brand/photos/Adelaar-Hoodie-Reflectie-Detail.jpg",
+        "/brand/photos/Zwarte-Trui-Jesse-Caron-Adelaar.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "reflection-cowl-sweatshirt",
+      "name": "Reflection Cowl Sweatshirt",
+      "source_url": "https://www.jessecaron.com/product/reflection-cowl-sweatshirt/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "40.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "40.00"
+      ],
+      "sizes_found": [
+        "S",
+        "M",
+        "L"
+      ],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "outofstock",
+      "stock_text": null,
+      "variant_stock": {
+        "L": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "M": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "S": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Sport-Cowl-Trui-Jesse-Caron-Reflectie.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Sport-Cowl-Trui-Jesse-Caron-Reflection.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Sport-Cowl-Trui-Jesse-Caron-Reflection-Detail.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Sport-Cowl-Trui-Jesse-Caron-Detail.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Sport-Cowl-Trui-Jesse-Caron-Reflection.jpg",
+          "local": "/brand/photos/Sport-Cowl-Trui-Jesse-Caron-Reflection.jpg",
+          "bytes": 768576
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Sport-Cowl-Trui-Jesse-Caron-Reflection-Detail.jpg",
+          "local": "/brand/photos/Sport-Cowl-Trui-Jesse-Caron-Reflection-Detail.jpg",
+          "bytes": 863956
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Sport-Cowl-Trui-Jesse-Caron-Detail.jpg",
+          "local": "/brand/photos/Sport-Cowl-Trui-Jesse-Caron-Detail.jpg",
+          "bytes": 906303
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Sport-Cowl-Trui-Jesse-Caron-Reflectie.jpg",
+          "local": "/brand/photos/Sport-Cowl-Trui-Jesse-Caron-Reflectie.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Sport-Cowl-Trui-Jesse-Caron-Reflectie.jpg",
+        "/brand/photos/Sport-Cowl-Trui-Jesse-Caron-Reflection.jpg",
+        "/brand/photos/Sport-Cowl-Trui-Jesse-Caron-Reflection-Detail.jpg",
+        "/brand/photos/Sport-Cowl-Trui-Jesse-Caron-Detail.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "sport-shirt-white",
+      "name": "Sport Shirt White",
+      "source_url": "https://www.jessecaron.com/product/sport-shirt-white/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "25.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "25.00"
+      ],
+      "sizes_found": [
+        "S",
+        "M",
+        "L"
+      ],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {
+        "L": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo-Adelaar.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo.jpg",
+          "local": "/brand/photos/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo.jpg",
+          "bytes": 803594
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo-Adelaar.jpg",
+          "local": "/brand/photos/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo-Adelaar.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo-Adelaar.jpg",
+        "/brand/photos/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "sport-shirt-white-kopie",
+      "name": "Tapered Jogpant",
+      "source_url": "https://www.jessecaron.com/product/sport-shirt-white-kopie/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "40.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "40.00"
+      ],
+      "sizes_found": [
+        "S",
+        "M",
+        "L"
+      ],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {
+        "L": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "M": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "S": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Tapered-Jogpant-Jesse-Caron-Broek-Detail.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Tapered-Jogpant-Jesse-Caron-Broek.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Tapered-Jogpant-Jesse-Caron-Broek-Details.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Tapered-Jogpant-Jesse-Caron-Broek.jpg",
+          "local": "/brand/photos/Tapered-Jogpant-Jesse-Caron-Broek.jpg",
+          "bytes": 1015330
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Tapered-Jogpant-Jesse-Caron-Broek-Details.jpg",
+          "local": "/brand/photos/Tapered-Jogpant-Jesse-Caron-Broek-Details.jpg",
+          "bytes": 1258343
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Tapered-Jogpant-Jesse-Caron-Broek-Detail.jpg",
+          "local": "/brand/photos/Tapered-Jogpant-Jesse-Caron-Broek-Detail.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Tapered-Jogpant-Jesse-Caron-Broek-Detail.jpg",
+        "/brand/photos/Tapered-Jogpant-Jesse-Caron-Broek.jpg",
+        "/brand/photos/Tapered-Jogpant-Jesse-Caron-Broek-Details.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "sport-shirt-black-blue",
+      "name": "Sport Shirt Black & Blue",
+      "source_url": "https://www.jessecaron.com/product/sport-shirt-black-blue/",
+      "notes": [],
+      "failures": [],
+      "price_eur": "0.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "0.00"
+      ],
+      "sizes_found": [
+        "S",
+        "M",
+        "L"
+      ],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "outofstock",
+      "stock_text": null,
+      "variant_stock": {
+        "L": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "M": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        },
+        "S": {
+          "in_stock": true,
+          "text": "Op voorraad"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Nargelis-Statia.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo.jpg",
+          "local": "/brand/photos/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo.jpg",
+          "bytes": 803594
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2019/05/Nargelis-Statia.jpg",
+          "local": "/brand/photos/Nargelis-Statia.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Nargelis-Statia.jpg",
+        "/brand/photos/Jesse-Caron-Sport-Shirt-Wit-Zwart-Logo.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "vector-ball",
+      "name": "Vector Ball",
+      "source_url": "https://www.jessecaron.com/product/vector-ball/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "70.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "70.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "outofstock",
+      "stock_text": "Uitverkocht",
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2020/04/Vector-Ball-Vision-Reaction-Training.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2020/04/Eye-On-Ball-Reactiebal.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2020/04/Reactie-Ball-Lichtgevende-Bal.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2020/04/Reactie-Honkbal.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2020/04/Vector-Ball-Reactie-Kleuren-Bal.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2020/04/Eye-On-Ball-Reactiebal.jpg",
+          "local": "/brand/photos/Eye-On-Ball-Reactiebal.jpg",
+          "bytes": 250684
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2020/04/Reactie-Ball-Lichtgevende-Bal.jpg",
+          "local": "/brand/photos/Reactie-Ball-Lichtgevende-Bal.jpg",
+          "bytes": 255229
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2020/04/Reactie-Honkbal.jpg",
+          "local": "/brand/photos/Reactie-Honkbal.jpg",
+          "bytes": 218451
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2020/04/Vector-Ball-Reactie-Kleuren-Bal.jpg",
+          "local": "/brand/photos/Vector-Ball-Reactie-Kleuren-Bal.jpg",
+          "bytes": 180335
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2020/04/Vector-Ball-Vision-Reaction-Training.jpg",
+          "local": "/brand/photos/Vector-Ball-Vision-Reaction-Training.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Vector-Ball-Vision-Reaction-Training.jpg",
+        "/brand/photos/Eye-On-Ball-Reactiebal.jpg",
+        "/brand/photos/Reactie-Ball-Lichtgevende-Bal.jpg",
+        "/brand/photos/Reactie-Honkbal.jpg",
+        "/brand/photos/Vector-Ball-Reactie-Kleuren-Bal.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "functional-speed-training-stair-running-jumping-exercises",
+      "name": "Functional Speed Training – Stair Running & Jumping Exercises",
+      "source_url": "https://www.jessecaron.com/product/functional-speed-training-stair-running-jumping-exercises/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "10.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "10.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2020/04/Webshop-Functional-Speed-Training-Stair-Running-Jumping-Exercises.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2020/04/Jesse-Caron-Functionele-Snelheid-Training-Traplopen.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2020/04/Functionele-Snelheid-Trainig-Voetbal-Traplopen.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2020/04/Jesse-Caron-Functionele-Snelheid-Training-Traplopen.jpg",
+          "local": "/brand/photos/Jesse-Caron-Functionele-Snelheid-Training-Traplopen.jpg",
+          "bytes": 422367
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2020/04/Functionele-Snelheid-Trainig-Voetbal-Traplopen.jpg",
+          "local": "/brand/photos/Functionele-Snelheid-Trainig-Voetbal-Traplopen.jpg",
+          "bytes": 333102
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2020/04/Webshop-Functional-Speed-Training-Stair-Running-Jumping-Exercises.jpg",
+          "local": "/brand/photos/Webshop-Functional-Speed-Training-Stair-Running-Jumping-Exercises.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Webshop-Functional-Speed-Training-Stair-Running-Jumping-Exercises.jpg",
+        "/brand/photos/Jesse-Caron-Functionele-Snelheid-Training-Traplopen.jpg",
+        "/brand/photos/Functionele-Snelheid-Trainig-Voetbal-Traplopen.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "tennisballs-3",
+      "name": "Tennisballs (3)",
+      "source_url": "https://www.jessecaron.com/product/tennisballs-3/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "10.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "10.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {
+        "Gewicht": "1 kg",
+        "Afmetingen": "10 × 10 × 20 cm"
+      },
+      "stock_status": "instock",
+      "stock_text": "Slechts 2 resterend op voorraad",
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2021/02/JC-Tennisballen.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2021/02/JC-Tennisballs.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2021/02/JC-Tennisballs.jpg",
+          "local": "/brand/photos/JC-Tennisballs.jpg",
+          "bytes": 622871
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2021/02/JC-Tennisballen.jpg",
+          "local": "/brand/photos/JC-Tennisballen.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/JC-Tennisballen.jpg",
+        "/brand/photos/JC-Tennisballs.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "springtouw",
+      "name": "Jumprope (Junior)",
+      "source_url": "https://www.jessecaron.com/product/springtouw/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "10.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "10.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {
+        "Gewicht": "1 kg",
+        "Afmetingen": "10 × 10 × 20 cm"
+      },
+      "stock_status": "instock",
+      "stock_text": "Slechts 2 resterend op voorraad",
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2021/02/Springtouw-Zwart-Blauw.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2021/02/Springtouw-Blauw-Zwart.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2021/02/Springtouw-Blauw-Zwart.jpg",
+          "local": "/brand/photos/Springtouw-Blauw-Zwart.jpg",
+          "bytes": 632253
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2021/02/Springtouw-Zwart-Blauw.jpg",
+          "local": "/brand/photos/Springtouw-Zwart-Blauw.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Springtouw-Zwart-Blauw.jpg",
+        "/brand/photos/Springtouw-Blauw-Zwart.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "jumprope",
+      "name": "Jumprope (Senior)",
+      "source_url": "https://www.jessecaron.com/product/jumprope/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "10.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "10.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {
+        "Gewicht": "1 kg",
+        "Afmetingen": "10 × 10 × 20 cm"
+      },
+      "stock_status": "instock",
+      "stock_text": "Slechts 2 resterend op voorraad",
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2021/02/Zwart-Springtouw.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2021/02/Springtouw-Zwart.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2021/02/Springtouw-Zwart.jpg",
+          "local": "/brand/photos/Springtouw-Zwart.jpg",
+          "bytes": 412788
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2021/02/Zwart-Springtouw.jpg",
+          "local": "/brand/photos/Zwart-Springtouw.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Zwart-Springtouw.jpg",
+        "/brand/photos/Springtouw-Zwart.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "backpack",
+      "name": "Backpack",
+      "source_url": "https://www.jessecaron.com/product/backpack/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "10.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "10.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": "Op voorraad",
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2021/02/Rugzak-Sportzak-Adelaar-Vogel-Blauw.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2021/02/Sportzak-Rugzak-Adelaar-Vogel-Blauw.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2021/02/Sportzak-Rugzak-Adelaar-Vogel-Blauw.jpg",
+          "local": "/brand/photos/Sportzak-Rugzak-Adelaar-Vogel-Blauw.jpg",
+          "bytes": 471969
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2021/02/Rugzak-Sportzak-Adelaar-Vogel-Blauw.jpg",
+          "local": "/brand/photos/Rugzak-Sportzak-Adelaar-Vogel-Blauw.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Rugzak-Sportzak-Adelaar-Vogel-Blauw.jpg",
+        "/brand/photos/Sportzak-Rugzak-Adelaar-Vogel-Blauw.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "functional-speed-training-vector-ball-cognitive-vision-exercises",
+      "name": "Functional Speed Training – Vector Ball – Cognitive Vision Exercises",
+      "source_url": "https://www.jessecaron.com/product/functional-speed-training-vector-ball-cognitive-vision-exercises/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "10.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "10.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2021/03/Webshop-Functional-Speed-Training-Vector-Ball-Cognitive-Vision-Exercises.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2021/03/02-Voorpagina-Engels.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2021/03/VECTOR-BALL-EXERCISE-1.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2021/03/02-Voorpagina-Engels.jpg",
+          "local": "/brand/photos/02-Voorpagina-Engels.jpg",
+          "bytes": 549824
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2021/03/VECTOR-BALL-EXERCISE-1.jpg",
+          "local": "/brand/photos/VECTOR-BALL-EXERCISE-1.jpg",
+          "bytes": 578100
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2021/03/Webshop-Functional-Speed-Training-Vector-Ball-Cognitive-Vision-Exercises.jpg",
+          "local": "/brand/photos/Webshop-Functional-Speed-Training-Vector-Ball-Cognitive-Vision-Exercises.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Webshop-Functional-Speed-Training-Vector-Ball-Cognitive-Vision-Exercises.jpg",
+        "/brand/photos/02-Voorpagina-Engels.jpg",
+        "/brand/photos/VECTOR-BALL-EXERCISE-1.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "functionele-warming-up-oefeningen",
+      "name": "Functionele Warming Up – Dynamische Strekoefeningen & Krachtoefeningen",
+      "source_url": "https://www.jessecaron.com/product/functionele-warming-up-oefeningen/",
+      "notes": [
+        "Simple (non-variable) WooCommerce product on the old site - no size or variant select at all."
+      ],
+      "failures": [],
+      "price_eur": "15.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "15.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {},
+      "attributes_found": {},
+      "stock_status": "instock",
+      "stock_text": null,
+      "variant_stock": {},
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2021/03/Warming-Up-Rekoefeningen-Kracht-Oefeningen-Voorbeelden.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2021/03/Dynamische-Oefeningen-Warming-Up.jpg",
+        "https://www.jessecaron.com/wp-content/uploads/2021/03/Dynamische-Warming-Up-Kracht-Oefening-Voorbeeld.jpg"
+      ],
+      "images_downloaded": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2021/03/Dynamische-Oefeningen-Warming-Up.jpg",
+          "local": "/brand/photos/Dynamische-Oefeningen-Warming-Up.jpg",
+          "bytes": 362698
+        },
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2021/03/Dynamische-Warming-Up-Kracht-Oefening-Voorbeeld.jpg",
+          "local": "/brand/photos/Dynamische-Warming-Up-Kracht-Oefening-Voorbeeld.jpg",
+          "bytes": 299027
+        }
+      ],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2021/03/Warming-Up-Rekoefeningen-Kracht-Oefeningen-Voorbeelden.jpg",
+          "local": "/brand/photos/Warming-Up-Rekoefeningen-Kracht-Oefeningen-Voorbeelden.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Warming-Up-Rekoefeningen-Kracht-Oefeningen-Voorbeelden.jpg",
+        "/brand/photos/Dynamische-Oefeningen-Warming-Up.jpg",
+        "/brand/photos/Dynamische-Warming-Up-Kracht-Oefening-Voorbeeld.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    },
+    {
+      "slug": "padeltoernooi",
+      "name": "Padeltoernooi 19 november",
+      "source_url": "https://www.jessecaron.com/product/padeltoernooi/",
+      "notes": [
+        "No size attribute on the old page; the only variation attribute is 'niveau' (Beginner, Gevorderd, Expert). Recorded under `variants`; `sizes` left empty rather than inventing a size run."
+      ],
+      "failures": [],
+      "price_eur": "40.00",
+      "price_page_regular": null,
+      "embedded_product_json_prices": [
+        "40.00"
+      ],
+      "sizes_found": [],
+      "variants_found": {
+        "niveau": [
+          "Beginner",
+          "Gevorderd",
+          "Expert"
+        ]
+      },
+      "attributes_found": {},
+      "stock_status": "outofstock",
+      "stock_text": null,
+      "variant_stock": {
+        "Beginner": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "Gevorderd": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        },
+        "Expert": {
+          "in_stock": false,
+          "text": "Uitverkocht"
+        }
+      },
+      "images_found": [
+        "https://www.jessecaron.com/wp-content/uploads/2023/09/Padel-Toernooi-Schiedam.jpg"
+      ],
+      "images_downloaded": [],
+      "images_already_local": [
+        {
+          "url": "https://www.jessecaron.com/wp-content/uploads/2023/09/Padel-Toernooi-Schiedam.jpg",
+          "local": "/brand/photos/Padel-Toernooi-Schiedam.jpg"
+        }
+      ],
+      "gallery_written": [
+        "/brand/photos/Padel-Toernooi-Schiedam.jpg"
+      ],
+      "gallery_paths_all_resolve": true
+    }
+  ]
+}
