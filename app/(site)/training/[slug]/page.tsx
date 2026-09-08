@@ -11,6 +11,17 @@ export function generateStaticParams() {
   return TRAINING_SLUGS.map((slug) => ({ slug }));
 }
 
+/**
+ * Only the nine slugs above may answer here. Anything else is a 404.
+ *
+ * Without this, Next renders any slug present in the content index on demand, even
+ * though it is not in generateStaticParams — which is how `/training/about` was live
+ * and serving twenty paragraphs of the theme's Lorem ipsum on the client's public
+ * site, along with `/training/shirts` and `/training/teamkleding`. Nothing linked to
+ * them, so nothing looked wrong; they were simply reachable, and indexable.
+ */
+export const dynamicParams = false;
+
 // Pages that own a top-level route must not answer here as well.
 const OWN_ROUTE = new Set(["prijzen", "voorwaarden", "contact"]);
 
