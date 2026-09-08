@@ -222,7 +222,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       <style>{`
         ${POSTCARD_CSS}
         .post-meta { display:flex; align-items:baseline; gap:16px; flex-wrap:wrap; padding-bottom:16px; border-bottom:1px solid var(--line-d); margin-bottom:18px; }
-        .post-date { font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.16em; color:var(--blue); }
+        .post-date { font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.16em; font-weight:600; color:var(--blue-bright); }
         .post-cats { display:flex; gap:8px; flex-wrap:wrap; min-width:0; }
         .post-cat { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--text-muted); border:1px solid var(--line-d); padding:5px 10px; transition:.25s; }
         .post-cat:hover, .post-cat:focus-visible { border-color:var(--blue); color:var(--paper); }
@@ -238,7 +238,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         .adj__img img { width:100%; height:100%; object-fit:cover; filter:grayscale(.45) brightness(.9); transition:filter .5s; }
         .adj:hover .adj__img img, .adj:focus-visible .adj__img img { filter:grayscale(0) brightness(1); }
         .adj__b { min-width:0; display:flex; flex-direction:column; gap:8px; }
-        .adj__lab { font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--blue); }
+        .adj__lab { font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; font-weight:600; color:var(--blue-bright); }
         .adj__t { font-size:16px; font-weight:600; line-height:1.25; overflow-wrap:anywhere; }
         @media(max-width:760px){ .adjgrid{ grid-template-columns:1fr; } }
       `}</style>

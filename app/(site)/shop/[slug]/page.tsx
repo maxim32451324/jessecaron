@@ -352,7 +352,7 @@ export default async function ProductPage({
         .prel__out { position:absolute; left:0; bottom:0; font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.12em; text-transform:uppercase; background:var(--ink); color:var(--paper); padding:5px 9px; }
         .prel__meta { display:flex; justify-content:space-between; align-items:flex-start; gap:10px; padding:15px; }
         .prel__name { font-size:13.5px; font-weight:600; line-height:1.3; }
-        .prel__price { font-family:var(--font-jetbrains),monospace; font-size:14px; color:var(--blue); white-space:nowrap; }
+        .prel__price { font-family:var(--font-jetbrains),monospace; font-size:14px; font-weight:600; color:var(--blue-bright); white-space:nowrap; }
 
         @media(min-width:761px){
           .prel__rail { grid-auto-flow:row; grid-template-columns:repeat(4,minmax(0,1fr)); overflow-x:visible; scroll-snap-type:none; }

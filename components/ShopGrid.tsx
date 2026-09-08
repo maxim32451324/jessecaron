@@ -55,7 +55,7 @@ export const SHOPGRID_CSS = `
   /* Product names include unbreakable runs like "Stroboscoop-Bril"; without this a
      single long word sets the card's floor width. */
   .sprod__n { font-size:13.5px; font-weight:600; line-height:1.3; min-width:0; overflow-wrap:anywhere; }
-  .sprod__p { font-family:var(--font-jetbrains),monospace; font-size:14px; color:var(--blue); white-space:nowrap; }
+  .sprod__p { font-family:var(--font-jetbrains),monospace; font-size:14px; font-weight:600; color:var(--blue-bright); white-space:nowrap; }
   .sprod__was { color:var(--ash); margin-right:7px; font-size:12px; }
   @media(max-width:1000px){ .sgrid{ grid-template-columns:repeat(3,1fr);} }
   @media(max-width:760px){ .sgrid{ grid-template-columns:repeat(2,1fr); gap:14px; } }

@@ -296,7 +296,7 @@ export default function NavClient({
         .np-no { flex:none; font-family:var(--font-jetbrains),monospace; font-size:11px; color:var(--ash); transition:color .2s; }
         .np-n { min-width:0; overflow-wrap:anywhere; }
         .np-c { flex:none; margin-left:auto; font-family:var(--font-jetbrains),monospace; font-size:11px; color:var(--ash); }
-        .np-more { display:block; margin-top:6px; padding:11px 18px 4px; border-top:1px solid var(--line-d); font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--blue); transition:color .2s; }
+        .np-more { display:block; margin-top:6px; padding:11px 18px 4px; border-top:1px solid var(--line-d); font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; font-weight:600; color:var(--blue-bright); transition:color .2s; }
         .np-more:hover, .np-more:focus-visible { color:var(--paper); }
 
         .burger { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px; }
@@ -324,7 +324,7 @@ export default function NavClient({
         .mm-sub a.is-current { color:var(--paper); border-left-color:var(--blue); }
         .mm-sub__n { min-width:0; overflow-wrap:anywhere; }
         .mm-sub__c { flex:none; margin-left:auto; font-family:var(--font-jetbrains),monospace; font-size:11px; color:var(--ash); }
-        .mm-sub__all { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--blue); }
+        .mm-sub__all { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; font-weight:600; color:var(--blue-bright); }
 
         @media(max-width:860px){ .nav-links{display:none;} .burger{display:flex;} }
         @media(prefers-reduced-motion:reduce){

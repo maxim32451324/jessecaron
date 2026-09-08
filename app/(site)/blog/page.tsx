@@ -113,7 +113,7 @@ export default function BlogIndex() {
         .startlist { display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line-d); border:1px solid var(--line-d); }
         .srow { min-width:0; background:var(--ink); display:flex; align-items:center; gap:16px; padding:20px 24px; transition:background var(--card-t); }
         .srow:hover, .srow:focus-visible { background:var(--ink-2); }
-        .srow__no { font-family:var(--font-jetbrains),monospace; font-size:12px; color:var(--blue); letter-spacing:.2em; }
+        .srow__no { font-family:var(--font-jetbrains),monospace; font-size:12px; font-weight:600; color:var(--blue-bright); letter-spacing:.2em; }
         .srow__t { flex:1; min-width:0; font-weight:600; font-size:17px; line-height:1.25; overflow-wrap:anywhere; }
         .srow__ar { color:var(--ash); transition:transform var(--card-t), color var(--card-t); }
         .srow:hover .srow__ar, .srow:focus-visible .srow__ar { transform:translateX(5px); color:var(--blue); }

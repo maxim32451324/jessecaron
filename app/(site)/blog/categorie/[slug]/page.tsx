@@ -155,7 +155,7 @@ export default async function CategoryArchive({
       <style>{`
         ${POSTCARD_CSS}
         .arch-bar { display:flex; justify-content:space-between; align-items:baseline; gap:20px; flex-wrap:wrap; margin-bottom:32px; padding-bottom:16px; border-bottom:1px solid var(--line-d); }
-        .arch-count { font-family:var(--font-jetbrains),monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; color:var(--blue); }
+        .arch-count { font-family:var(--font-jetbrains),monospace; font-size:13px; letter-spacing:.2em; text-transform:uppercase; font-weight:600; color:var(--blue-bright); }
         .arch-all { font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--ash); }
         .arch-all:hover, .arch-all:focus-visible { color:var(--paper); }
         .arch-intro { margin-bottom:40px; }

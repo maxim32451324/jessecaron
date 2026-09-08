@@ -118,7 +118,7 @@ export default async function CourseOverview({
         .les__tick.on { background:var(--blue); border-color:var(--blue); color:#fff; }
         .les__t { flex:1; font-size:15px; }
         .les__t:hover, .les__t:focus-visible { color:var(--blue); }
-        .les__tag { font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--blue); border:1px solid var(--line-d); padding:3px 7px; }
+        .les__tag { font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; font-weight:600; color:var(--blue-bright); border:1px solid var(--line-d); padding:3px 7px; }
         .les__tag--lock { color:var(--ash); }
         @media(max-width:760px){ .co-hero{ grid-template-columns:1fr; } }
       `}</style>

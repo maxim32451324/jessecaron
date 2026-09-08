@@ -109,7 +109,7 @@ export default function TopicsIndex() {
         .trow { min-width:0; background:var(--ink); display:flex; align-items:center; gap:16px; padding:20px 24px; transition:background var(--card-t), color var(--card-t); }
         .trow:hover, .trow:focus-visible { background:var(--ink-2); }
         .trow__n { flex:1; min-width:0; font-family:var(--font-anton),sans-serif; text-transform:uppercase; font-size:22px; line-height:1; overflow-wrap:anywhere; }
-        .trow__c { font-family:var(--font-jetbrains),monospace; font-size:13px; color:var(--blue); letter-spacing:.1em; }
+        .trow__c { font-family:var(--font-jetbrains),monospace; font-size:13px; font-weight:600; color:var(--blue-bright); letter-spacing:.1em; }
         .trow__ar { color:var(--ash); transition:transform var(--card-t), color var(--card-t); }
         .trow:hover .trow__ar, .trow:focus-visible .trow__ar { transform:translateX(5px); color:var(--blue); }
         .tnote { color:var(--text-dim); font-size:15px; max-width:62ch; margin:-24px 0 26px; }

@@ -114,7 +114,7 @@ export default async function LessonPlayer({
         .player__back { font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--ash); display:block; margin-bottom:18px; }
         .player__back:hover { color:var(--blue); }
         .psm { margin-bottom:18px; }
-        .psm__t { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--blue); margin-bottom:8px; }
+        .psm__t { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.12em; text-transform:uppercase; font-weight:600; color:var(--blue-bright); margin-bottom:8px; }
         .psm ul { list-style:none; display:grid; gap:2px; }
         .psl { display:flex; align-items:center; gap:10px; padding:9px 10px; font-size:14px; color:var(--text-muted); border-left:2px solid transparent; }
         .psl:hover, .psl:focus-visible { background:var(--ink-2); border-left-color:var(--blue); color:#fff; }

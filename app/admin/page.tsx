@@ -116,7 +116,7 @@ export default async function AdminOverview() {
         .adm-cols { display:grid; grid-template-columns:1.3fr 1fr; gap:36px; align-items:start; }
         .adm-h { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px; }
         .adm-h h2 { font-size:20px; font-weight:700; }
-        .adm-link { font-family:var(--font-jetbrains),monospace; font-size:12px; color:var(--blue); }
+        .adm-link { font-family:var(--font-jetbrains),monospace; font-size:12px; font-weight:600; color:var(--blue-bright); }
         .adm-table { width:100%; border-collapse:collapse; font-size:14px; }
         .adm-table th { text-align:left; font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ash); padding:10px 12px; border-bottom:1px solid var(--line-d); }
         .adm-table td { padding:12px; border-bottom:1px solid var(--line-d); }

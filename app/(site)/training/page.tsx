@@ -79,7 +79,7 @@ export default function TrainingIndex() {
         .tcard__img img { width:100%; height:100%; object-fit:cover; filter:grayscale(.45) brightness(.9); transition:filter .5s, transform .5s; }
         .tcard:hover .tcard__img img, .tcard:focus-visible .tcard__img img { filter:grayscale(0) brightness(1); transform:scale(1.04); }
         .tcard__b { padding:26px 26px 30px; }
-        .tcard__no { font-family:var(--font-jetbrains),monospace; font-size:12px; color:var(--blue); letter-spacing:.2em; }
+        .tcard__no { font-family:var(--font-jetbrains),monospace; font-size:12px; font-weight:600; color:var(--blue-bright); letter-spacing:.2em; }
         .tcard__t { font-family:var(--font-anton),sans-serif; text-transform:uppercase; font-size:26px; line-height:1; margin:12px 0 16px; overflow-wrap:anywhere; }
         .tcard__go { font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--paper); display:inline-flex; gap:8px; align-items:center; }
         .tcard__go .ar { color:var(--blue); transition:.3s; }

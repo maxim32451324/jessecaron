@@ -27,7 +27,8 @@ import { SITE_URL } from "@/lib/site";
  * a small quote. The order below is that brief:
  *
  *   1  HERO                  full-bleed photograph, its own composition (see SHERO_SRC)
- *   2  UIT DE COLLECTIE      full-bleed mosaic of twelve second-angle gallery shots
+ *   2  UIT DE COLLECTIE      a rail of twelve second-angle gallery shots, one in view
+ *                            at a time with its price, read left to right
  *   3  01 Kleding & Materiaal  33 products
  *   4  TRUST                 payments, delivery, returns — shared with the product page
  *   5  IN HET DETAIL         three close-ups, out of the same galleries
@@ -85,13 +86,27 @@ const SHERO_SRC = "Nargelis-Statia-Jesse-Caron-Sportkleding-Blauw.jpg";
  * and drops out of the row instead of 404-ing. Anchored on "/" so
  * `Stroboscoopbril-Reactiebril.jpg` cannot answer for `Reactiebril.jpg`.
  */
-type Shot = { src: string; slug: string; name: string };
+type Shot = {
+  src: string;
+  slug: string;
+  name: string;
+  /** Formatted, or null where the old shop holds no price (sport-shirt-black-blue is 0.00). */
+  price: string | null;
+  soldOut: boolean;
+};
 
 function shot(slug: string, basename: string): Shot | null {
   const p: Product | undefined = getProduct(slug);
   if (!p) return null;
   const src = productGallery(p).find((s) => s.startsWith("/") && s.endsWith(`/${basename}`));
-  return src ? { src, slug: p.slug, name: p.name } : null;
+  if (!src) return null;
+  return {
+    src,
+    slug: p.slug,
+    name: p.name,
+    price: hasPrice(p) ? fmtPrice(p.price_eur) : null,
+    soldOut: isSoldOut(p),
+  };
 }
 
 function shots(pairs: [string, string][]): Shot[] {
@@ -101,9 +116,12 @@ function shots(pairs: [string, string][]): Shot[] {
 /**
  * "Uit de collectie" — twelve second-angle shots, none of them the picture already
  * on that product's card in the grid below. Eight apparel, four training material,
- * so the strip shows the actual range rather than twelve shirts. Twelve is not
- * arbitrary: the mosaic is 6 / 4 / 3 tracks, and twelve fills every one of those
- * exactly, so no breakpoint ends on a ragged half-row.
+ * so the strip shows the actual range rather than twelve shirts.
+ *
+ * They are a rail now, not a mosaic: one image in view at a time, scrolled left to
+ * right, each captioned with its name and price. Twelve at roughly one screen each
+ * is a long scroll on purpose — this band is where the collection is looked at,
+ * and the grid below is where it is scanned.
  */
 const COLLECTION: [string, string][] = [
   ["longsleeved-shirt-black", "Jesse-Caron-Kleding-Longsleeve-Zwart.jpg"],
@@ -153,8 +171,11 @@ const SHOP_LINE = brand.taglines.find((t) => /dreams/i.test(t)) ?? brand.tagline
    browser picks a candidate far larger than the box and next/image has done
    nothing at all.
    -------------------------------------------------------------------------- */
-// .scoll__grid is full-bleed (not inside .wrap): 6 tracks with 1px gaps -> 4 -> 3.
-const COLLECTION_SIZES = "(max-width: 640px) 34vw, (max-width: 1000px) 25vw, 17vw";
+// .scoll__slide is a rail slide, not a mosaic tile: 88vw on a phone, 82vw to 1000px,
+// then 46vw where two fit. These were 34/25/17vw for the six-track mosaic this band
+// used to be, which is exactly the silent failure described above — a near-full-width
+// slide served a 17vw candidate is a soft image, and nothing reports it.
+const COLLECTION_SIZES = "(max-width: 640px) 88vw, (max-width: 1000px) 82vw, 46vw";
 // .sdet: 3 tracks, 1px gaps, inside the column -> 1 track below 760px.
 const DETAIL_SIZES =
   "(max-width: 760px) calc(100vw - 56px), (max-width: 1280px) calc((100vw - 58px) / 3), 407px";
@@ -286,14 +307,26 @@ export default function ShopPage() {
           {/* Full-bleed on purpose: the one band that steps outside the 1224px
               column, which is most of what stops the page reading as one long
               grid again. */}
-          <ul className="scoll__grid" role="list">
-            {collection.map((s) => (
-              <li className="scoll__i" key={s.src}>
+          {/* One image at a time, read left to right, each with its price.
+              Native scroll-snap does the paging: no script, so it works before
+              hydration and with JavaScript off, and it is the same rail mechanic
+              the related-products strip on the product page already uses. */}
+          <ul className="scoll__rail" role="list" tabIndex={0} aria-label="Beelden uit de collectie">
+            {collection.map((s, i) => (
+              <li className="scoll__slide" key={s.src}>
                 <Link className="scoll__l" href={`/shop/${s.slug}`}>
-                  {/* alt="" — the tile's accessible name is the product name in the
-                      span below it, so a screen reader hears it once, not twice. */}
-                  <Image src={s.src} alt="" fill sizes={COLLECTION_SIZES} />
-                  <span className="scoll__n">{s.name}</span>
+                  <span className="scoll__frame">
+                    <Image src={s.src} alt="" fill sizes={COLLECTION_SIZES} />
+                    {s.soldOut ? <span className="scoll__out">Uitverkocht</span> : null}
+                  </span>
+                  {/* The caption is the tile's accessible name and its price line at
+                      once — always in the accessibility tree, never hover-only, because
+                      a price a touch user cannot reveal is a price that is not there. */}
+                  <span className="scoll__cap">
+                    <span className="scoll__no">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="scoll__n">{s.name}</span>
+                    <span className="scoll__p">{s.price ?? "Zie webshop"}</span>
+                  </span>
                 </Link>
               </li>
             ))}
@@ -584,19 +617,34 @@ function ShopStyles() {
       .scoll__head > * { min-width:0; }
       .scoll__h { font-size:clamp(30px,4.4vw,62px); max-width:16ch; margin-top:12px; }
       .scoll__p { max-width:34ch; color:var(--text-dim); font-size:15px; }
-      /* Full-bleed: six tracks edge to edge, the hairline gaps drawn by the
-         background showing through. Twelve tiles fill 6 / 4 / 3 tracks exactly. */
-      .scoll__grid { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:1px; background:var(--line-d); border-top:1px solid var(--line-d); border-bottom:1px solid var(--line-d); }
-      .scoll__i { min-width:0; }
-      .scoll__l { position:relative; display:block; aspect-ratio:1; overflow:hidden; background:#fff; }
-      .scoll__l img { width:100%; height:100%; object-fit:cover; filter:grayscale(.5) brightness(.92); transition:filter .5s, transform .5s; }
-      .scoll__l:hover img, .scoll__l:focus-visible img { filter:none; transform:scale(1.05); }
-      .scoll__l::after { content:""; position:absolute; inset:0; box-shadow:inset 0 0 0 0 var(--blue); transition:box-shadow var(--card-t); }
-      .scoll__l:hover::after, .scoll__l:focus-visible::after { box-shadow:inset 0 0 0 2px var(--blue); }
-      /* The name is the tile's accessible name and its caption at once: always in
-         the accessibility tree, revealed visually on hover or keyboard focus. */
-      .scoll__n { position:absolute; left:0; right:0; bottom:0; z-index:1; padding:9px 10px; font-family:var(--font-jetbrains),monospace; font-size:10px; line-height:1.35; letter-spacing:.06em; text-transform:uppercase; color:var(--paper); background:linear-gradient(180deg,rgba(14,14,16,0),rgba(14,14,16,.9)); opacity:0; transform:translateY(6px); transition:opacity var(--card-t), transform var(--card-t); overflow-wrap:anywhere; }
-      .scoll__l:hover .scoll__n, .scoll__l:focus-visible .scoll__n { opacity:1; transform:none; }
+      /* One slide in view, scrolled left to right. The slide is 82% of the viewport
+         so the next one always peeks in at the right edge — that sliver is the only
+         honest affordance a scroll rail has, and without it people do not know there
+         is more. Padding on both ends lets the first and last slide still centre. */
+      .scoll__rail { list-style:none; margin:0; padding:0 0 4px; display:flex; gap:1px;
+        overflow-x:auto; scroll-snap-type:x mandatory; overscroll-behavior-x:contain;
+        border-top:1px solid var(--line-d); border-bottom:1px solid var(--line-d);
+        background:var(--line-d); scrollbar-width:none; }
+      .scoll__rail::-webkit-scrollbar { display:none; }
+      .scoll__rail:focus-visible { outline:2px solid var(--blue); outline-offset:-2px; }
+      .scoll__slide { min-width:0; flex:0 0 82%; scroll-snap-align:center; }
+      @media(min-width:1000px){ .scoll__slide { flex:0 0 46%; } }
+      @media(max-width:640px){ .scoll__slide { flex:0 0 88%; } }
+      .scoll__l { display:block; background:var(--ink); }
+      .scoll__frame { position:relative; display:block; aspect-ratio:4/3; overflow:hidden; background:#fff; }
+      .scoll__frame img { width:100%; height:100%; object-fit:cover; filter:grayscale(.35) brightness(.95); transition:filter .5s, transform .5s; }
+      .scoll__l:hover .scoll__frame img, .scoll__l:focus-visible .scoll__frame img { filter:none; transform:scale(1.04); }
+      .scoll__frame::after { content:""; position:absolute; inset:0; box-shadow:inset 0 0 0 0 var(--blue); transition:box-shadow var(--card-t); }
+      .scoll__l:hover .scoll__frame::after, .scoll__l:focus-visible .scoll__frame::after { box-shadow:inset 0 0 0 2px var(--blue); }
+      .scoll__out { position:absolute; left:0; bottom:0; z-index:1; font-family:var(--font-jetbrains),monospace; font-size:10px; letter-spacing:.12em; text-transform:uppercase; background:var(--ink); color:var(--paper); padding:5px 9px; }
+      .scoll__cap { display:grid; grid-template-columns:auto minmax(0,1fr) auto; gap:12px; align-items:baseline; padding:14px 16px 16px; }
+      .scoll__cap > * { min-width:0; }
+      .scoll__no { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.14em; color:var(--ash); }
+      .scoll__n { font-size:14px; font-weight:600; line-height:1.3; color:var(--paper); overflow-wrap:anywhere; }
+      /* .price, not raw --blue: see the token comment in globals.css — brand blue at
+         mono 400 is optically thin at this size and the price is the one number on
+         the tile somebody actually needs to read. */
+      .scoll__p { font-family:var(--font-jetbrains),monospace; font-size:14px; font-weight:600; color:var(--blue-bright); white-space:nowrap; }
 
       /* ---- band furniture ------------------------------------------------ */
       .sband__note { max-width:32ch; color:var(--text-dim); font-size:13.5px; font-family:var(--font-jetbrains),monospace; letter-spacing:.02em; line-height:1.8; }
@@ -618,7 +666,7 @@ function ShopStyles() {
       .sdet__img img { width:100%; height:100%; object-fit:cover; transition:transform .6s; }
       .sdet__i:hover .sdet__img img, .sdet__i:focus-visible .sdet__img img { transform:scale(1.04); }
       .sdet__b { display:flex; flex-direction:column; gap:8px; padding:24px 26px 28px; min-width:0; }
-      .sdet__k { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--blue); }
+      .sdet__k { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.2em; text-transform:uppercase; font-weight:600; color:var(--blue-bright); }
       .sdet__n { font-family:var(--font-anton),sans-serif; text-transform:uppercase; font-size:24px; line-height:1; letter-spacing:.01em; min-width:0; overflow-wrap:anywhere; }
       .sdet__go { margin-top:6px; font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--paper); display:inline-flex; gap:8px; align-items:center; }
       .sdet__go .ar { color:var(--blue); transition:transform .3s; }
@@ -636,7 +684,7 @@ function ShopStyles() {
       .sbook__b { display:flex; flex-direction:column; gap:12px; padding:22px 24px 26px; min-width:0; flex:1; }
       .sbook__top { display:flex; justify-content:space-between; align-items:flex-start; gap:14px; flex-wrap:wrap; min-width:0; }
       .sbook__n { font-size:17px; font-weight:700; line-height:1.25; min-width:0; overflow-wrap:anywhere; }
-      .sbook__p { font-family:var(--font-jetbrains),monospace; font-size:15px; color:var(--blue); white-space:nowrap; }
+      .sbook__p { font-family:var(--font-jetbrains),monospace; font-size:15px; font-weight:600; color:var(--blue-bright); white-space:nowrap; }
       .sbook__d { font-size:14px; line-height:1.6; color:var(--text-dim); }
 
       /* ---- 7. event ------------------------------------------------------ */
@@ -647,7 +695,7 @@ function ShopStyles() {
       .sevent__b { padding:8px 40px 8px 0; display:flex; flex-direction:column; align-items:flex-start; gap:16px; }
       .sevent__n { font-size:clamp(24px,3vw,40px); }
       .sevent__d { color:var(--text-muted); font-size:15.5px; max-width:40ch; }
-      .sevent__p { font-family:var(--font-jetbrains),monospace; font-size:20px; color:var(--blue); }
+      .sevent__p { font-family:var(--font-jetbrains),monospace; font-size:20px; font-weight:600; color:var(--blue-bright); }
 
       /* ---- 8. quote ------------------------------------------------------ */
       /* Deliberately not the home page's .mani band: that one is full-bleed brand

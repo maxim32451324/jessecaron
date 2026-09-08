@@ -13,6 +13,19 @@
   --paper-2: #e8e8e3;
   --blue: #0090d8;
   --blue-deep: #0a6fa5;
+  /*
+   * The same brand blue, lifted for SMALL TEXT ON THE DARK GROUND.
+   *
+   * --blue on --ink measures about 4.5:1, which is fine behind a 90px Anton headline
+   * and fine as a border or a fill. But most of the blue text on this site is
+   * JetBrains Mono at 11-14px and weight 400, and mono at that size has thin stems:
+   * it passes a contrast check and still reads faint. A price is the one number a
+   * shopper has to read without effort, so prices get this plus weight 600.
+   *
+   * ~7:1 on --ink, same hue. Keep --blue for headlines, rules, borders and fills, and
+   * --blue-deep for blue text on the paper ground.
+   */
+  --blue-bright: #43b4ec;
   --ash: #8c8c8a;
   --line-d: rgba(255, 255, 255, 0.14);
   --line-l: rgba(14, 14, 16, 0.14);

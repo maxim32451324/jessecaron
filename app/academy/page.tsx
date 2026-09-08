@@ -93,7 +93,7 @@ export default async function AcademyCatalog() {
         .ccard__b { padding:22px; display:flex; gap:16px; align-items:flex-start; }
         .ccard__t { font-size:20px; font-weight:700; line-height:1.2; margin-bottom:8px; }
         .ccard__d { font-size:14px; color:var(--text-dim); margin-bottom:12px; }
-        .ccard__meta { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--blue); }
+        .ccard__meta { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; font-weight:600; color:var(--blue-bright); }
         .empty { border:1px dashed var(--line-d); padding:48px; text-align:center; color:var(--ash); }
         @media(max-width:760px){ .cat-grid{ grid-template-columns:1fr; } }
       `}</style>
