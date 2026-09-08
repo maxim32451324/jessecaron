@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-08T20:13:16Z",
+ "generated": "2026-09-08T21:34:32Z",
  "base": "http://localhost:3100",
  "note": "Produced by scripts/crawl-old-urls.mjs against a local production build. Every URL in content/data/old-urls.json (the old wp-sitemap.xml) plus a set of extra probes for patterns WordPress served but never listed. PARITY-PLAN §10 Phase 5.",
  "old_urls": 797,

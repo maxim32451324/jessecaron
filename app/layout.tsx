@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Anton, Inter, JetBrains_Mono } from "next/font/google";
+import ScrollRunner from "@/components/ScrollRunner";
 import { brand } from "@/lib/content";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
@@ -83,7 +84,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANISATION) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <ScrollRunner />
+        {children}
+      </body>
     </html>
   );
 }
