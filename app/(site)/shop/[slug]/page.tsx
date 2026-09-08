@@ -177,6 +177,46 @@ export default async function ProductPage({
                   ))}
                 </dl>
               ) : null}
+
+              {/*
+                Checkout, delivery and returns — the reassurance block a shop page is expected
+                to carry, at the moment somebody decides to buy.
+
+                Every line here is a fact this business already publishes, and nothing else.
+                Payment methods and the PostNL/Netherlands-only delivery terms are stated in
+                the product copy on 29 of the 38 products; the 14-day withdrawal right, and
+                that return postage is the customer's, are from `content/pages/voorwaarden.md`
+                (§Herroepingsrecht) and link to it. No free-delivery threshold is claimed
+                anywhere on this business's own material, so none is claimed here.
+
+                It says "op jessecaron.com" rather than "hier" because the basket, the payment
+                and the stock all live on the old webshop — promising a secure checkout on a
+                page that cannot take a payment would be the one dishonest line on it.
+              */}
+              <section className="ptrust" aria-labelledby="ptrust-h">
+                <h2 className="ptrust__h" id="ptrust-h">
+                  Veilig afrekenen op jessecaron.com
+                </h2>
+                <ul className="ptrust__pay" role="list">
+                  {["iDEAL", "Visa", "Mastercard", "American Express", "PayPal", "Bankoverschrijving"].map(
+                    (m) => (
+                      <li className="ptrust__chip" key={m}>
+                        {m}
+                      </li>
+                    ),
+                  )}
+                </ul>
+                <ul className="ptrust__list" role="list">
+                  <li>Verzending met PostNL — doorgaans binnen 5 werkdagen</li>
+                  <li>Alleen bezorging in Nederland — daarbuiten eerst even mailen</li>
+                  <li>Ophalen bij je personal of groepstraining kan ook</li>
+                  <li>
+                    14 dagen bedenktijd —{" "}
+                    <Link href="/voorwaarden">retourvoorwaarden</Link> (retourzending voor eigen
+                    rekening)
+                  </li>
+                </ul>
+              </section>
             </div>
 
             <div className="pdp__copy">
@@ -278,6 +318,16 @@ export default async function ProductPage({
         .pdp__unavailable { font-size:15px; color:var(--text-muted); margin-bottom:16px; }
         .pdp__note { margin-top:14px; font-size:13px; line-height:1.65; color:var(--text-dim); max-width:48ch; }
 
+        .ptrust { margin:30px 0 0; padding:20px; border:1px solid var(--line-d); background:var(--ink-2); }
+        .ptrust__h { font-family:var(--font-jetbrains),monospace; font-size:11px; font-weight:600;
+          letter-spacing:.16em; text-transform:uppercase; color:var(--paper); margin:0 0 14px; }
+        .ptrust__pay { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 14px; padding:0; list-style:none; }
+        .ptrust__chip { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.06em;
+          color:var(--text-muted); border:1px solid var(--line-d); padding:4px 8px; white-space:nowrap; }
+        .ptrust__list { margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:7px; }
+        .ptrust__list li { font-size:13.5px; line-height:1.5; color:var(--text-muted); padding-left:16px; position:relative; }
+        .ptrust__list li::before { content:""; position:absolute; left:0; top:.62em; width:6px; height:1px; background:var(--blue); }
+        .ptrust__list a { color:var(--blue); text-decoration:underline; text-underline-offset:2px; }
         .pdl { margin:34px 0 0; border-top:1px solid var(--line-d); }
         .pdl__row { display:grid; grid-template-columns:118px minmax(0,1fr); gap:16px; align-items:baseline; padding:11px 0; border-bottom:1px solid var(--line-d); }
         .pdl__k { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--ash); }

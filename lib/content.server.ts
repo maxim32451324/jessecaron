@@ -147,8 +147,28 @@ function normaliseLead(s: string): string {
     .toLowerCase();
 }
 
+/**
+ * The identical "Shipment" and "Payment" blocks WooCommerce appended to 29 of the 38
+ * product bodies — carrier, delivery window, the Netherlands-only rule, the accepted
+ * cards, and the two logo images.
+ *
+ * The product page now states all of that once, as structured content in the checkout
+ * block beside the buy button, where somebody deciding to buy will actually look. Left
+ * in the body as well it appears twice on the same page, the second time as a wall of
+ * scraped prose ending in two logos. So it is removed from the body — the facts are not
+ * lost, they moved up the page.
+ *
+ * Anchored on the headings the export produced. If a body ever stops matching, the
+ * fallback is simply that the old block stays visible: nothing breaks, it just reads
+ * the way it did before.
+ */
+function stripShippingBlocks(body: string): string {
+  const cut = body.search(/^\s*(?:\*\*)?(?:Shipment|Verzending|Payment|Betaling)(?:\*\*)?\s*$/im);
+  return cut === -1 ? body : body.slice(0, cut).trimEnd();
+}
+
 export function getProductBodyAfterLead(slug: string, lead?: string): string {
-  const body = getProductBody(slug);
+  const body = stripShippingBlocks(getProductBody(slug));
   if (!lead || !body) return body;
   const paragraphs = body.split(/\n{2,}/);
   const head = normaliseLead(paragraphs[0] ?? "");
