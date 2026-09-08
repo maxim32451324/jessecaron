@@ -329,12 +329,23 @@ function HomeStyles() {
       .hero__inner { position:relative; z-index:2; width:100%; padding-top:110px; padding-bottom:64px; }
       .hero__kicker { display:flex; gap:18px; align-items:center; margin-bottom:26px; flex-wrap:wrap; }
       .hero__kicker .tick { width:34px; height:1px; background:var(--blue); }
+      /* .eyebrow is brand blue, which reads well against the site's solid near-black — but
+         this one sits on a photograph, and lands squarely on the bright teal wristband:
+         blue on blue, illegible. Only the hero copy is overridden. White with a soft shadow
+         survives whatever is behind it, and the blue tick to its left keeps the accent. */
+      .hero__kicker .eyebrow { color:var(--paper); text-shadow:0 1px 14px rgba(0,0,0,.85), 0 0 3px rgba(0,0,0,.6); }
       .hero__h1 { font-size:clamp(48px,9.5vw,150px); max-width:14ch; }
       .hero__row { display:flex; justify-content:space-between; align-items:flex-end; gap:30px; margin-top:34px; flex-wrap:wrap; }
       .hero__sub { max-width:42ch; color:var(--text-muted); font-size:16px; }
       .hero__actions { display:flex; gap:14px; flex-wrap:wrap; }
       .hero__side { position:absolute; right:28px; top:50%; transform:translateY(-50%) rotate(180deg); writing-mode:vertical-rl; font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.4em; text-transform:uppercase; color:var(--ash); z-index:2; }
 
+      /* Every grid child on this page can shrink to its track. Grid items default to
+         min-width:auto, which means one long word or one wide image quietly overrides
+         the 1fr track and pushes the row past the content column — the same fault that skewed
+         .vid-feature here, blew out the shop cards, and sent the footer links off-screen.
+         Declared once so it stops happening. */
+      .disc-grid > *, .vid-grid > *, .shop-grid > *, .partners__row > * { min-width:0; }
       .disc-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line-d); border:1px solid var(--line-d); }
       .disc { position:relative; background:var(--ink); padding:34px 30px 30px; min-height:340px; display:flex; flex-direction:column; justify-content:space-between; overflow:hidden; transition:transform var(--card-t), box-shadow var(--card-t); z-index:0; }
       .disc__img { position:absolute; inset:0; z-index:0; opacity:1; transition:opacity var(--card-t); }
@@ -357,8 +368,17 @@ function HomeStyles() {
       .mani__sm { font-family:var(--font-jetbrains),monospace; font-size:13px; letter-spacing:.28em; text-transform:uppercase; opacity:.85; margin-bottom:30px; }
 
       .vid-feature { display:grid; grid-template-columns:1.4fr 1fr; gap:1px; background:var(--line-d); border:1px solid var(--line-d); margin-bottom:1px; }
-      /* the narrower second column is shorter at 16/9 — stretch it so the row has no dead grid-coloured gap */
-      .vid-feature > *:nth-child(2) { height:100%; }
+      /* width:100% here is load-bearing. The tiles carry aspect-ratio 16/9, and the old
+         height:100% on the second cell made that ratio resolve the wrong way round: it
+         derived each tile's WIDTH from the row HEIGHT. Measured at a 1440 viewport the row
+         was 401 tall, so both tiles came out 401 x 16/9 = 712 wide and the pair ran to
+         x=1527, while every other section on the page stops at 1324. That 200px overhang
+         is what made the video block look crooked against everything else. Pinning the
+         width to the track makes the ratio set the height again, which is its job.
+         The dead gap under the shorter cell is closed by align-items:stretch plus the
+         image's object-fit, so no cell has to be told its height. */
+      .vid-feature { align-items:stretch; }
+      .vid-feature > * { min-width:0; width:100%; }
       .vid-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line-d); border:1px solid var(--line-d); border-top:0; }
 
       .about { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
