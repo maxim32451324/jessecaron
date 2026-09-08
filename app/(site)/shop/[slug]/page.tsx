@@ -3,9 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Markdown from "@/components/Markdown";
-import PaymentMarks from "@/components/PaymentMarks";
 import ProductGallery from "@/components/ProductGallery";
 import ProductOptions from "@/components/ProductOptions";
+import { CheckoutTrust, Guarantees, SHOPTRUST_CSS } from "@/components/ShopTrust";
 import StickyBuy from "@/components/StickyBuy";
 import {
   categoryLabel,
@@ -38,71 +38,6 @@ export const dynamicParams = false;
 function localOnly(paths: string[]): string[] {
   return paths.filter((s) => s.startsWith("/"));
 }
-
-/**
- * The guarantees, and where each one comes from.
- *
- * Four lines, every one of them a promise this business has already put in
- * writing — the terms page or the shipping paragraph the product copy carries.
- * Nothing here is a shop-page cliché: there is no free delivery (this business
- * publishes no threshold anywhere), no money-back beyond the statutory
- * withdrawal right, and no padlock, because the payment happens on the webshop
- * and not on this page.
- */
-const GUARANTEES: { glyph: React.ReactElement; head: string; sub: string }[] = [
-  {
-    // voorwaarden.md § Herroepingsrecht — "de mogelijkheid de overeenkomst
-    // zonder opgave van redenen te ontbinden gedurende 14 dagen", and "komen
-    // ten hoogste de kosten van terugzending voor zijn rekening".
-    glyph: (
-      <>
-        <path d="M3 5.4h6.4a3.3 3.3 0 0 1 0 6.6H5.2" />
-        <path d="M5.8 2.6 3 5.4l2.8 2.8" />
-      </>
-    ),
-    head: "14 dagen bedenktijd",
-    sub: "Retourzending voor eigen rekening",
-  },
-  {
-    // voorwaarden.md § Garantie — "De garantietermijn van de ondernemer komt
-    // overeen met de fabrieksgarantietermijn", and defects reported "binnen 14
-    // dagen na levering".
-    glyph: (
-      <>
-        <path d="M8 1.7 2.7 3.8v3.9c0 3.3 2.2 5.5 5.3 6.6 3.1-1.1 5.3-3.3 5.3-6.6V3.8L8 1.7Z" />
-        <path d="M5.9 7.9 7.4 9.4l2.9-2.9" />
-      </>
-    ),
-    head: "Fabrieksgarantie",
-    sub: "Gebreken binnen 14 dagen melden",
-  },
-  {
-    // Product copy, on 29 of the 38 products — "estimated up to 5 business days
-    // by Post NL".
-    glyph: (
-      <>
-        <path d="M1.4 3.9h7.3v6.9H1.4z" />
-        <path d="M8.7 6.4h2.8l2.1 2.2v2.2H8.7z" />
-        <circle cx="4.4" cy="12.3" r="1.4" />
-        <circle cx="11.2" cy="12.3" r="1.4" />
-      </>
-    ),
-    head: "Verzending met PostNL",
-    sub: "Doorgaans binnen 5 werkdagen",
-  },
-  {
-    // voorwaarden.md § Feedback & Klachten — "Ingediende klachten worden binnen
-    // een termijn van 14 dagen gerekend vanaf de datum van ontvangst beantwoord."
-    glyph: (
-      <>
-        <path d="M1.9 3.1h12.2v7.5H8.3l-3.2 2.9v-2.9H1.9z" />
-        <path d="M4.8 5.9h6.4M4.8 8h4" />
-      </>
-    ),
-    head: "Antwoord binnen 14 dagen",
-    sub: "Op elke ingediende klacht",
-  },
-];
 
 export async function generateMetadata({
   params,
@@ -256,31 +191,7 @@ export default async function ProductPage({
                 </p>
               </div>
 
-              <ul className="pguar" role="list">
-                {GUARANTEES.map((g) => (
-                  <li className="pguar__i" key={g.head}>
-                    <svg
-                      className="pguar__g"
-                      viewBox="0 0 16 16"
-                      width="16"
-                      height="16"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden
-                      focusable="false"
-                    >
-                      {g.glyph}
-                    </svg>
-                    <span className="pguar__t">
-                      <span className="pguar__h">{g.head}</span>
-                      <span className="pguar__s">{g.sub}</span>
-                    </span>
-                  </li>
-                ))}
-              </ul>
+              <Guarantees />
 
               {facts.length ? (
                 <dl className="pdl" aria-label="Productgegevens">
@@ -294,39 +205,14 @@ export default async function ProductPage({
               ) : null}
 
               {/*
-                Checkout, delivery and returns — the reassurance block a shop page is expected
-                to carry, at the moment somebody decides to buy.
-
-                Every line here is a fact this business already publishes, and nothing else.
-                Payment methods and the PostNL/Netherlands-only delivery terms are stated in
-                the product copy on 29 of the 38 products; the 14-day withdrawal right, and
-                that return postage is the customer's, are from `content/pages/voorwaarden.md`
-                (§Herroepingsrecht) and link to it. No free-delivery threshold is claimed
-                anywhere on this business's own material, so none is claimed here.
-
-                It says "op jessecaron.com" rather than "hier" because the basket, the payment
-                and the stock all live on the old webshop — promising a secure checkout on a
-                page that cannot take a payment would be the one dishonest line on it.
-
-                The strip carries five marks. Bankoverschrijving is a sixth method the copy
-                lists but has no logo of its own, so it is a sentence underneath rather than a
-                chip pretending to be a brand.
+                Checkout, delivery and returns — the reassurance block a shop page is
+                expected to carry, at the moment somebody decides to buy. /shop carries
+                the same two blocks a section above its grids, so both live in
+                components/ShopTrust.tsx: every line in them is a fact this business
+                already publishes, and two copies of that is how one of them becomes a
+                lie. The sourcing comments are in that file.
               */}
-              <section className="ptrust" aria-labelledby="ptrust-h">
-                <h2 className="ptrust__h" id="ptrust-h">
-                  Veilig afrekenen op jessecaron.com
-                </h2>
-                <PaymentMarks />
-                <ul className="ptrust__list" role="list">
-                  <li>Betalen kan ook per bankoverschrijving</li>
-                  <li>Alleen bezorging in Nederland — daarbuiten eerst even mailen</li>
-                  <li>Ophalen bij je personal of groepstraining kan ook</li>
-                  <li>
-                    Levering wettelijk uiterlijk binnen 30 dagen —{" "}
-                    <Link href="/voorwaarden">lees de voorwaarden</Link>
-                  </li>
-                </ul>
-              </section>
+              <CheckoutTrust />
             </div>
 
             <div className="pdp__copy">
@@ -400,6 +286,9 @@ export default async function ProductPage({
       )}
 
       <style>{`
+        /* .pguar / .ptrust / .ppay, exactly as /shop draws them — the guarantees and
+           the payment strip must not become two slightly different blocks. */
+        ${SHOPTRUST_CSS}
         .pdp-wrap { padding:132px 0 0; }
         .pcrumb { margin-bottom:28px; }
         .pcrumb__list { list-style:none; display:flex; flex-wrap:wrap; gap:10px; margin:0; padding:0; font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--ash); }
@@ -442,34 +331,6 @@ export default async function ProductPage({
         .pdp__unavailable { font-size:15px; color:var(--text-muted); margin-bottom:16px; }
         .pdp__note { margin-top:14px; font-size:13px; line-height:1.65; color:var(--text-dim); max-width:48ch; }
 
-        /* Guarantees, straight under the button. Two columns so four short
-           promises read as a block rather than a list to work through. */
-        .pguar { list-style:none; margin:22px 0 0; padding:0;
-          display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px 18px; }
-        .pguar__i { display:flex; align-items:flex-start; gap:10px; min-width:0; }
-        .pguar__g { flex:0 0 auto; margin-top:1px; color:var(--blue); }
-        .pguar__t { display:flex; flex-direction:column; gap:2px; min-width:0; }
-        .pguar__h { font-size:13px; font-weight:600; line-height:1.35; color:var(--paper); }
-        .pguar__s { font-size:11.5px; line-height:1.4; color:var(--text-dim); }
-
-        .ptrust { margin:30px 0 0; padding:20px; border:1px solid var(--line-d); background:var(--ink-2); }
-        .ptrust__h { font-family:var(--font-jetbrains),monospace; font-size:11px; font-weight:600;
-          letter-spacing:.16em; text-transform:uppercase; color:var(--paper); margin:0 0 14px; }
-
-        /* The marks are coloured artwork on a near-black page, so each one gets
-           a light chip to sit on — the same ground a real checkout gives them. */
-        .ppay { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 14px; padding:0; list-style:none; }
-        .ppay__item { display:flex; }
-        .ppay__mark { display:inline-flex; padding:3px;
-          background:#f7f7f5; border:1px solid rgba(0,0,0,.12); }
-        .ppay__mark svg { display:block; width:38px; height:24px; }
-        .ppay__vh { position:absolute; width:1px; height:1px; overflow:hidden;
-          clip-path:inset(50%); white-space:nowrap; }
-
-        .ptrust__list { margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:7px; }
-        .ptrust__list li { font-size:13.5px; line-height:1.5; color:var(--text-muted); padding-left:16px; position:relative; }
-        .ptrust__list li::before { content:""; position:absolute; left:0; top:.62em; width:6px; height:1px; background:var(--blue); }
-        .ptrust__list a { color:var(--blue); text-decoration:underline; text-underline-offset:2px; }
         .pdl { margin:34px 0 0; border-top:1px solid var(--line-d); }
         .pdl__row { display:grid; grid-template-columns:118px minmax(0,1fr); gap:16px; align-items:baseline; padding:11px 0; border-bottom:1px solid var(--line-d); }
         .pdl__k { font-family:var(--font-jetbrains),monospace; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--ash); }
@@ -503,9 +364,6 @@ export default async function ProductPage({
         @media(max-width:640px){
           .pdp-wrap { padding-top:108px; }
           .prel { padding:72px 0 84px; }
-        }
-        @media(max-width:400px){
-          .pguar { grid-template-columns:minmax(0,1fr); gap:12px; }
         }
         @media print {
           .pcrumb, .pdp__back, .prel { display:none; }
