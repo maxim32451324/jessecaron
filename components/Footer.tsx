@@ -87,7 +87,12 @@ export default function Footer() {
         .foot-contact .v { font-size:18px; font-weight:600; }
         .foot-contact .v a:hover, .foot-contact .v a:focus-visible { color:var(--blue-deep); }
         .foot-bottom { display:flex; justify-content:space-between; align-items:center; gap:24px; padding-top:26px; border-top:1px solid var(--line-l); flex-wrap:wrap; }
-        .foot-social { display:flex; gap:22px; font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; }
+        /* flex-wrap here is load-bearing. This row was three social links and fitted a
+           phone; it is now five, and unwrapped it measured 449px inside a 375px viewport
+           — which set the scrollWidth of EVERY page on the site and let the whole thing
+           pan sideways. body{overflow-x:hidden} did not save it: iOS still pans, and it
+           would only have hidden the symptom in any case. */
+        .foot-social { display:flex; flex-wrap:wrap; gap:12px 22px; font-family:var(--font-jetbrains),monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; }
         .foot-social a:hover, .foot-social a:focus-visible { color:var(--blue-deep); }
         .foot-copy { font-family:var(--font-jetbrains),monospace; font-size:11px; color:var(--ash); letter-spacing:.06em; }
         @media(max-width:860px){ .foot-top{ grid-template-columns:1fr; gap:36px; } }
